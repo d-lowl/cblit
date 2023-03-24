@@ -1,6 +1,8 @@
 import typer
 from rich import print
 
+from cblit.gpt.country import ConstructedCountrySession
+
 app = typer.Typer(pretty_exceptions_show_locals=False)
 
 
@@ -13,7 +15,16 @@ def cli() -> None:
 @app.command()
 def start() -> None:
     """Start game command"""
-    print("Game entrypoint")
+    country_session = ConstructedCountrySession()
+    print(country_session.chat)
+    print(country_session.country)
+    # chat = ChatSession()
+    while(True):
+        user_message = typer.prompt(">")
+        gpt_response = country_session.from_english(user_message)
+        print(country_session.chat.to_list())
+        print(f"<: {gpt_response}")
+
     pass
 
 

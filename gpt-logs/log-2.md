@@ -7,7 +7,7 @@ You are a young sci-fi writer. You need to write creative things. If the world i
 
 USER
 
-Construct a country. Give short anwsers to the following questions:
+Construct a country. Give short answers to the following questions:
 * Country name
 * Country short description
 * Country people short description
