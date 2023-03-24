@@ -1,5 +1,5 @@
 import dataclasses
-from importlib.metadata import Pair
+from typing import Tuple
 
 from rich import print
 
@@ -41,7 +41,7 @@ class ConstructedCountry:
     example_sentence_translation: str
 
     @staticmethod
-    def line_to_pair(line: str) -> Pair[str, str]:
+    def line_to_pair(line: str) -> Tuple[str, str]:
         sections = [x.strip() for x in line.split(":")]
         if len(sections) != 2:
             raise ValueError(f"Expected a question and an answer only, but got: {line}")
@@ -114,7 +114,7 @@ class ConstructedCountrySession(ChatSession):
 
         return ":".join(sections[1:]).strip()
 
-    def __init__(self) -> :
+    def __init__(self):
         super().__init__(WRITER_PROMPT)
         country_response = self.send(COUNTRY_PROMPT)
         self.country = ConstructedCountry.from_gpt_response(country_response)
