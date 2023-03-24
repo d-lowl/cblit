@@ -13,7 +13,7 @@ Construct a country in a sci-fi world. Give short anwsers to the following quest
 * Country people short description
 * National language name
 * National language short description
-* Example sentence in the national language 
+* Example sentence in the national language
 * Its translation to English
 
 USER
@@ -34,7 +34,7 @@ National Language Name: Novan
 
 National Language Short Description: Novan is a complex language that is based on mathematical principles and is designed to be easily translated into other languages. It is the language of science, innovation, and progress.
 
-Example Sentence in the National Language: "Ili novan ydri jenara." 
+Example Sentence in the National Language: "Ili novan ydri jenara."
 
 Translation: "We speak Novan here."
 

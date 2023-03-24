@@ -13,7 +13,7 @@ Construct a country. Give short anwsers to the following questions:
 * Country people short description
 * National language name
 * National language short description
-* Example sentence in the national language 
+* Example sentence in the national language
 * Its translation to English
 
 ASSISTANT
@@ -77,7 +77,7 @@ ASSISTANT
 "Give me your work permit and the letter from your landlord."
 
 --------
-Comment: the language is still self-consistent and it can translate back fine; the descriptions are a bit 
+Comment: the language is still self-consistent and it can translate back fine; the descriptions are a bit
 
 --------
 ASSISTANT
@@ -154,18 +154,18 @@ Word-by-word translation to English: "Give (to) me your work permit and the lett
 USER
 
 Translate these words to English:
-* rilien 
-* aynorin 
-* melarion 
-* nyras 
-* meiraion 
+* rilien
+* aynorin
+* melarion
+* nyras
+* meiraion
 * nethen
 
 ASSISTANT
 
 * rilien: give
-* aynorin: your 
-* melarion: work permit 
-* nyras: and 
-* meiraion: the letter 
+* aynorin: your
+* melarion: work permit
+* nyras: and
+* meiraion: the letter
 * nethen: from your

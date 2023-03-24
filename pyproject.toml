@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "immigration-game"
+version = "0.1.0"
+description = "Cosmic Bureaucracy: Lost in Translation"
+authors = ["D. Lowl <d.lowl@d-lowl.space>"]
+readme = "README.md"
+packages = [{include = "cblit"}]
+
+[tool.poetry.scripts]
+cblit = "cblit.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+typer = {extras = ["all"], version = "^0.7.0"}
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.2.0"
+pytest = "^7.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+show_error_codes = true
+exclude = ["test"]
+strict = true
+disallow_untyped_decorators = false  # ignore functions using decorators
+ignore_missing_imports = true  # silence all import errors related to untyped libraries
