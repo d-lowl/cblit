@@ -1,6 +1,8 @@
+import click
 import typer
 from rich import print
 
+from cblit.cli.session_wrapper import SessionWrapper
 from cblit.gpt.country import ConstructedCountrySession
 
 app = typer.Typer(pretty_exceptions_show_locals=False)
@@ -12,20 +14,21 @@ def cli() -> None:
     pass
 
 
+def language() -> None:
+    country_session = ConstructedCountrySession()
+    print(country_session.country)
+
+    wrapper = SessionWrapper(country_session)
+    wrapper.run()
+
+
 @app.command()
 def start() -> None:
     """Start game command"""
-    country_session = ConstructedCountrySession()
-    print(country_session.chat)
-    print(country_session.country)
-    # chat = ChatSession()
-    while(True):
-        user_message = typer.prompt(">")
-        gpt_response = country_session.from_english(user_message)
-        print(country_session.chat.to_list())
-        print(f"<: {gpt_response}")
-
-    pass
+    modes = click.Choice(["language", "officer"])
+    mode = typer.prompt("Select mode", "language", show_choices=True, type=modes)
+    if mode == "language":
+        language()
 
 
 if __name__ == "__main__":

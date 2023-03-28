@@ -52,7 +52,7 @@ class ConstructedCountry:
     def from_gpt_response(cls, response: str) -> Self:
         lines = [x.replace("\n", "") for x in response.split("\n\n") if x.strip() != ""]
         if len(lines) != 7:
-            raise ValueError(f"Expected 7 questions answered, but got {len(lines)}: {response}")
+            raise ValueError(f"Expected 7 questions answered, but got {len(lines)}: {response}; {lines}")
 
         pairs = [ConstructedCountry.line_to_pair(line) for line in lines]
 
