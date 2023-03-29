@@ -14,6 +14,7 @@ python = "^3.8"
 typer = {extras = ["all"], version = "^0.7.0"}
 openai = "^0.27.2"
 typing-extensions = "^4.5.0"
+dataclasses-json = "^0.5.7"
 
 
 [tool.poetry.group.dev.dependencies]

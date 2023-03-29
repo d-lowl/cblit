@@ -15,10 +15,7 @@ def cli() -> None:
 
 
 def language() -> None:
-    country_session = ConstructedCountrySession()
-    print(country_session.country)
-
-    wrapper = SessionWrapper(country_session)
+    wrapper = SessionWrapper(ConstructedCountrySession)
     wrapper.run()
 
 

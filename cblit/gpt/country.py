@@ -1,11 +1,12 @@
 import dataclasses
 from typing import Tuple
 
+from dataclasses_json import dataclass_json
 from rich import print
 
 from typing_extensions import Self
 
-from cblit.gpt.gpt_api import ChatSession
+from cblit.gpt.gpt_api import ChatSession, Chat
 
 WRITER_PROMPT = "You are a young sci-fi writer. You need to write creative things. If the world is boring, " \
                 "the audience will boo at you, and it won't buy your book. Every time you give an answer re-evaluate " \
@@ -30,6 +31,7 @@ def format_translation_prompt(source_language: str, target_language: str, prompt
     return TRANSLATION_PROMPT.format(source_language, target_language, prompt)
 
 
+@dataclass_json
 @dataclasses.dataclass
 class ConstructedCountry:
     country_name: str
@@ -103,6 +105,8 @@ class ConstructedCountry:
         )
 
 
+@dataclass_json
+@dataclasses.dataclass
 class ConstructedCountrySession(ChatSession):
     country: ConstructedCountry
 
@@ -114,10 +118,16 @@ class ConstructedCountrySession(ChatSession):
 
         return ":".join(sections[1:]).strip()
 
-    def __init__(self):
-        super().__init__(WRITER_PROMPT)
-        country_response = self.send(COUNTRY_PROMPT)
-        self.country = ConstructedCountry.from_gpt_response(country_response)
+    @classmethod
+    def generate(cls):
+        chat = Chat.initialise_with_system(system_prompt=WRITER_PROMPT)
+        session = ChatSession(chat=chat)
+        country_response = session.send(COUNTRY_PROMPT)
+        country = ConstructedCountry.from_gpt_response(country_response)
+        return ConstructedCountrySession(
+            chat=session.chat,
+            country=country
+        )
 
     def from_english(self, sentence: str) -> str:
         prompt = format_translation_prompt("English", self.country.language_name, sentence)
