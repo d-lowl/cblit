@@ -1,6 +1,5 @@
 import click
 import typer
-from rich import print
 
 from cblit.cli.session_wrapper import SessionWrapper
 from cblit.gpt.country import ConstructedCountrySession

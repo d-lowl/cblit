@@ -94,7 +94,7 @@ class ConstructedCountry:
         else:
             raise ValueError(f"Expected Its translation to English, but got {pairs[6]}")
 
-        return ConstructedCountry(
+        return cls(
             country_name=country_name,
             country_description=country_description,
             people_description=people_description,
@@ -119,12 +119,12 @@ class ConstructedCountrySession(ChatSession):
         return ":".join(sections[1:]).strip()
 
     @classmethod
-    def generate(cls):
+    def generate(cls) -> Self:
         chat = Chat.initialise_with_system(system_prompt=WRITER_PROMPT)
         session = ChatSession(chat=chat)
         country_response = session.send(COUNTRY_PROMPT)
         country = ConstructedCountry.from_gpt_response(country_response)
-        return ConstructedCountrySession(
+        return cls(
             chat=session.chat,
             country=country
         )

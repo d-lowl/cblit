@@ -2,10 +2,9 @@
 import dataclasses
 import os
 from enum import Enum
-from typing import Type, Dict, List, Optional
+from typing import Type, Dict, List, Optional, Self
 
 from dataclasses_json import dataclass_json
-from typing_extensions import Self
 
 import openai
 
@@ -18,7 +17,7 @@ class ChatRole(Enum):
     ASSISTANT = "assistant"
 
     @classmethod
-    def from_role(cls: Type[Self], role: str) -> Self:
+    def from_role(cls: Type[Self], role: str) -> "ChatRole":
         for chat_role in ChatRole:
             if chat_role.value == role:
                 return chat_role
@@ -38,8 +37,8 @@ class ChatMessage:
         }
 
     @classmethod
-    def from_dict(cls, d: Dict[str, str]):
-        return ChatMessage(
+    def from_dict(cls, d: Dict[str, str]) -> Self:
+        return cls(
             role=ChatRole.from_role(d["role"]),
             content=d["content"]
         )
@@ -51,7 +50,7 @@ class Chat:
     messages: List[ChatMessage]
 
     @classmethod
-    def initialise_with_system(cls, system_prompt: Optional[str] = None):
+    def initialise_with_system(cls: Type["Chat"], system_prompt: Optional[str] = None) -> "Chat":
         if system_prompt is not None:
             return cls(
                 messages=[
@@ -72,10 +71,9 @@ class Chat:
         return [message.to_str_dict() for message in self.messages]
 
     @classmethod
-    def from_list(cls, input_list: List[Dict[str, str]]):
+    def from_list(cls, input_list: List[Dict[str, str]]) -> Self:
         messages = [ChatMessage.from_dict(item) for item in input_list]
-        chat = Chat()
-        chat.messages = messages
+        chat = cls(messages=messages)
         return chat
 
 
@@ -85,7 +83,7 @@ class ChatSession:
     chat: Chat
 
     @classmethod
-    def generate(cls):
+    def generate(cls) -> Self:
         raise NotImplementedError
 
     def send(self, content: str) -> str:

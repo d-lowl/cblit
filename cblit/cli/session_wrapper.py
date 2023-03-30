@@ -20,7 +20,7 @@ class SessionMethodWrapper:
         self.name = name
         self.method = method
 
-    def run(self):
+    def run(self) -> None:
         print(f"[green]{self.name}:[/green]")
         print("Ctrl-D or Ctrl-C to go back")
         while True:
@@ -54,7 +54,7 @@ class SessionWrapper:
         self.session_class = session_class
         self.methods = []
 
-    def detect_methods(self):
+    def detect_methods(self) -> None:
         self.methods = [SessionMethodWrapper(name, method) for name, method in
                         inspect.getmembers(self.session, predicate=inspect.ismethod) if
                         not name.startswith("_") and SessionMethodWrapper.is_compatible(inspect.signature(method))]
@@ -86,7 +86,7 @@ class SessionWrapper:
 
         return self.methods[int(choice) - 1]
 
-    def run(self):
+    def run(self) -> None:
         while True:
             try:
                 method = self.select_mode()
@@ -108,7 +108,10 @@ class SessionWrapper:
         print(f"[green]Session file is saved: {filename}[/green]")
 
     def _save(self, destination: str) -> None:
-        session_json = self.session.to_json(indent=2)
+        if self.session is None:
+            raise ValueError("Session has not been started, cannot save")
+        # mypy does not recognise dataclass_json stuff
+        session_json = self.session.to_json(indent=2)  # type: ignore
         with open(destination, "w") as f:
             f.write(session_json)
 
@@ -125,5 +128,5 @@ class SessionWrapper:
 
     def _load(self, source: str) -> None:
         with open(source, "r") as f:
-            self.session = self.session_class.from_json(f.read())
-
+            # mypy does not recognise dataclass_json stuff
+            self.session = self.session_class.from_json(f.read())  # type: ignore
