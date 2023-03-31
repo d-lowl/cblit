@@ -13,7 +13,8 @@ REGISTRATION_STEPS_PROMPTS = [
     "Ask for a reason to immigrate",
     "If it is for work, ask for the work permit and employment contract",
     "Ask for the postal address",
-    "Thank them and tell that they will receive; Say \"%SUCCESS%\" when finished"
+    "Thank them and tell that they will receive the residence permit via post in 14 to 21 days",
+    "Say \"%%SUCCESS%%\" when finished"
 ]
 
 
