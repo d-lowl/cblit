@@ -92,9 +92,8 @@ class Chat:
         return chat
 
 
-@dataclass_json
 @dataclasses.dataclass
-class ChatSession:
+class ChatSession(DataClassJsonMixin):
     chat: Chat
 
     @classmethod

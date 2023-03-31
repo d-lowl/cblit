@@ -111,7 +111,7 @@ class SessionWrapper:
         if self.session is None:
             raise ValueError("Session has not been started, cannot save")
         # mypy does not recognise dataclass_json stuff
-        session_json = self.session.to_json(indent=2)  # type: ignore
+        session_json = self.session.to_json(indent=2)
         with open(destination, "w") as f:
             f.write(session_json)
 
@@ -129,4 +129,4 @@ class SessionWrapper:
     def _load(self, source: str) -> None:
         with open(source, "r") as f:
             # mypy does not recognise dataclass_json stuff
-            self.session = self.session_class.from_json(f.read())  # type: ignore
+            self.session = self.session_class.from_json(f.read())
