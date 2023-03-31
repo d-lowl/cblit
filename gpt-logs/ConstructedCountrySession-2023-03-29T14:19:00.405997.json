@@ -1,0 +1,27 @@
+{
+  "chat": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a young sci-fi writer. You need to write creative things. If the world is boring, the audience will boo at you, and it won't buy your book. Every time you give an answer re-evaluate if it is boring or not. If you think it's boring, try writing again. Try to impress the readers. What you come up with must not be similar to English"
+      },
+      {
+        "role": "user",
+        "content": "Construct a country. Give short answers to the following questions:\n* Country name\n* Country short description\n* Country people short description\n* National language name\n* National language short description\n* Example sentence in the national language\n* Its translation to English\n"
+      },
+      {
+        "role": "assistant",
+        "content": "Country name: Zirathia\n\nCountry short description: Zirathia is an island nation located in the middle of the ocean. It is known for its advanced technology and strong economy, which allows it to maintain a high quality of life for its citizens.\n\nCountry people short description: The people of Zirathia are highly educated and value innovation and progress. They are a diverse group, with many different ethnicities represented.\n\nNational language name: Zirathian\n\nNational language short description: Zirathian is a tonal language that is known for its complexity and beauty. It is characterized by intricate vowel sounds and a wide range of tones that convey different shades of meaning.\n\nExample sentence in the national language: K'athiril shalath ze'chirath ve'zirath.\n\nIts translation to English: The sun rises over the ocean in Zirathia."
+      }
+    ]
+  },
+  "country": {
+    "country_name": "Zirathia",
+    "country_description": "Zirathia is an island nation located in the middle of the ocean. It is known for its advanced technology and strong economy, which allows it to maintain a high quality of life for its citizens.",
+    "people_description": "The people of Zirathia are highly educated and value innovation and progress. They are a diverse group, with many different ethnicities represented.",
+    "language_name": "Zirathian",
+    "language_description": "Zirathian is a tonal language that is known for its complexity and beauty. It is characterized by intricate vowel sounds and a wide range of tones that convey different shades of meaning.",
+    "example_sentence": "K'athiril shalath ze'chirath ve'zirath.",
+    "example_sentence_translation": "The sun rises over the ocean in Zirathia."
+  }
+}

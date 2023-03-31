@@ -6,21 +6,24 @@ from rich import print
 
 from typing_extensions import Self
 
-from cblit.gpt.gpt_api import ChatSession, Chat
+from cblit.gpt.gpt_api import ChatSession, Chat, DataClassGPTJsonMixin
 
 WRITER_PROMPT = "You are a young sci-fi writer. You need to write creative things. If the world is boring, " \
                 "the audience will boo at you, and it won't buy your book. Every time you give an answer re-evaluate " \
                 "if it is boring or not. If you think it's boring, try writing again. Try to impress the readers. " \
-                "What you come up with must not be similar to English"
+                "What you come up with must not be similar to English."
+
+JSON_PROMPT = "I want every reply to be formated as JSON. " \
+              "Do not ever write anything other then valid JSON. Do not add \"Note\""
 
 COUNTRY_PROMPT = "Construct a country. Give short answers to the following questions:\n" \
-                 "* Country name\n" \
-                 "* Country short description\n" \
-                 "* Country people short description\n" \
-                 "* National language name\n" \
-                 "* National language short description\n" \
-                 "* Example sentence in the national language\n" \
-                 "* Its translation to English\n"
+                 "* Country name, key: country_name\n" \
+                 "* Country short description, key: country_description\n" \
+                 "* Country people short description, key: people_description\n" \
+                 "* National language name, key: language_name\n" \
+                 "* National language short description, key: language_description\n" \
+                 "* Example sentence in the national language, key: example_sentence\n" \
+                 "* Its translation to English, key: example_sentence_translation\n"
 
 TRANSLATION_PROMPT = "Translate from {} to {}: {}. Give your answer in this format \"Translation: " \
                      "X\". Avoid providing unnecessary details. If you think there\'s no translation, respond with: " \
@@ -33,7 +36,7 @@ def format_translation_prompt(source_language: str, target_language: str, prompt
 
 @dataclass_json
 @dataclasses.dataclass
-class ConstructedCountry:
+class ConstructedCountry(DataClassGPTJsonMixin):
     country_name: str
     country_description: str
     people_description: str
@@ -49,6 +52,7 @@ class ConstructedCountry:
             raise ValueError(f"Expected a question and an answer only, but got: {line}")
 
         return sections[0], sections[1]
+
 
     @classmethod
     def from_gpt_response(cls, response: str) -> Self:
@@ -120,7 +124,7 @@ class ConstructedCountrySession(ChatSession):
 
     @classmethod
     def generate(cls) -> Self:
-        chat = Chat.initialise_with_system(system_prompt=WRITER_PROMPT)
+        chat = Chat.initialise_with_system(system_prompt=("\n".join([WRITER_PROMPT, JSON_PROMPT])))
         session = ChatSession(chat=chat)
         country_response = session.send(COUNTRY_PROMPT)
         country = ConstructedCountry.from_gpt_response(country_response)

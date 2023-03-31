@@ -1,14 +1,29 @@
 """API for interacting with OpenAI GPT"""
 import dataclasses
 import os
+import re
 from enum import Enum
-from typing import Type, Dict, List, Optional, Self
+from typing import Type, Dict, List, Optional, Self, Any
 
-from dataclasses_json import dataclass_json
+from dataclasses_json import dataclass_json, DataClassJsonMixin
 
 import openai
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
+
+
+class DataClassGPTJsonMixin(DataClassJsonMixin):
+    @classmethod
+    def from_gpt_response(cls: Type[Self], response: str) -> Self:
+        return cls.from_json(cls.get_json_from_response(response))
+
+    @staticmethod
+    def get_json_from_response(response: str) -> str:
+        json_pattern = r'\{[\s\S]+\}'
+        match = re.search(json_pattern, response)
+        if match is None:
+            raise ValueError(f"Response does not contain JSON: {response}")
+        return match.group(0)
 
 
 class ChatRole(Enum):
@@ -91,7 +106,8 @@ class ChatSession:
 
         model: str = "gpt-3.5-turbo"
 
-        completion = openai.ChatCompletion.create(
+        # No types are provided but for Chat Completion at least a Dict with this hierarchy is expected
+        completion: Dict[str, Any] = openai.ChatCompletion.create(  # type: ignore[no-untyped-call]
             model=model,
             messages=self.chat.to_list()
         )
