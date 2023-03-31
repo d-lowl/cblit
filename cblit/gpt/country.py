@@ -54,61 +54,6 @@ class ConstructedCountry(DataClassGPTJsonMixin):
         return sections[0], sections[1]
 
 
-    @classmethod
-    def from_gpt_response(cls, response: str) -> Self:
-        lines = [x.replace("\n", "") for x in response.split("\n\n") if x.strip() != ""]
-        if len(lines) != 7:
-            raise ValueError(f"Expected 7 questions answered, but got {len(lines)}: {response}; {lines}")
-
-        pairs = [ConstructedCountry.line_to_pair(line) for line in lines]
-
-        # TODO improve customisability
-        if pairs[0][0] == "Country name":
-            country_name = pairs[0][1]
-        else:
-            raise ValueError(f"Expected Country name, but got {pairs[0]}")
-
-        if pairs[1][0] == "Country short description":
-            country_description = pairs[1][1]
-        else:
-            raise ValueError(f"Expected Country short description, but got {pairs[1]}")
-
-        if pairs[2][0] == "Country people short description":
-            people_description = pairs[2][1]
-        else:
-            raise ValueError(f"Expected Country people short description, but got {pairs[2]}")
-
-        if pairs[3][0] == "National language name":
-            language_name = pairs[3][1]
-        else:
-            raise ValueError(f"Expected National language name, but got {pairs[3]}")
-
-        if pairs[4][0] == "National language short description":
-            language_description = pairs[4][1]
-        else:
-            raise ValueError(f"National language short description, but got {pairs[4]}")
-
-        if pairs[5][0] == "Example sentence in the national language":
-            example_sentence = pairs[5][1]
-        else:
-            raise ValueError(f"Expected Example sentence in the national language, but got {pairs[5]}")
-
-        if pairs[6][0] == "Its translation to English":
-            example_sentence_translation = pairs[6][1]
-        else:
-            raise ValueError(f"Expected Its translation to English, but got {pairs[6]}")
-
-        return cls(
-            country_name=country_name,
-            country_description=country_description,
-            people_description=people_description,
-            language_name=language_name,
-            language_description=language_description,
-            example_sentence=example_sentence,
-            example_sentence_translation=example_sentence_translation
-        )
-
-
 @dataclass_json
 @dataclasses.dataclass
 class ConstructedCountrySession(ChatSession):
