@@ -7,14 +7,12 @@ from rich import print
 from typing_extensions import Self
 
 from cblit.gpt.gpt_api import ChatSession, Chat, DataClassGPTJsonMixin
+from cblit.gpt.gpt_queries import JSON_PROMPT
 
 WRITER_PROMPT = "You are a young sci-fi writer. You need to write creative things. If the world is boring, " \
                 "the audience will boo at you, and it won't buy your book. Every time you give an answer re-evaluate " \
                 "if it is boring or not. If you think it's boring, try writing again. Try to impress the readers. " \
                 "What you come up with must not be similar to English."
-
-JSON_PROMPT = "I want every reply to be formated as JSON. " \
-              "Do not ever write anything other then valid JSON. Do not add \"Note\""
 
 COUNTRY_PROMPT = "Construct a country. Give short answers to the following questions:\n" \
                  "* Country name, key: country_name\n" \

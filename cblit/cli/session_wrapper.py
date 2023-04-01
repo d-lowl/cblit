@@ -9,6 +9,8 @@ from typing import Callable, List, Optional, Type, Union
 import click
 import typer
 
+from cblit.gpt.country import ConstructedCountrySession
+from cblit.gpt.documents import Quenta
 from cblit.gpt.gpt_api import ChatSession
 
 
@@ -98,6 +100,9 @@ class SessionWrapper:
 
     def generate(self) -> None:
         self.session = self.session_class.generate()
+        if isinstance(self.session, ConstructedCountrySession):
+            quenta = Quenta.from_session(self.session)
+            print(quenta)
         self.detect_methods()
         print("[green]New session is generated[/green]")
 
