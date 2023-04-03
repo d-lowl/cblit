@@ -12,6 +12,10 @@ class Document(DataClassGPTJsonMixin):
     def game_repr(self) -> str:
         raise NotImplementedError
 
+    @property
+    def player_repr(self) -> str:
+        raise NotImplementedError
+
 
 QUENTA_PROMPT = "Generate me a quenta or a biography of a citizen of a neighbouring country."
 
@@ -22,6 +26,7 @@ class Quenta(DataClassGPTJsonMixin):
     dob: str
     employer: str
     employer_address: str
+    job_title: str
     address: str
 
     @staticmethod
@@ -32,6 +37,7 @@ class Quenta(DataClassGPTJsonMixin):
             GPTJSONPart(question="Date of birth", key="dob"),
             GPTJSONPart(question="Employer company name", key="employer"),
             GPTJSONPart(question=f"Employer company address in {country.country_name}", key="employer_address"),
+            GPTJSONPart(question="Job title of the person", key="job_title"),
             GPTJSONPart(question=f"Person's address in {country.country_name}", key="address"),
         ]).compose()
 
@@ -49,19 +55,55 @@ class Passport(Document):
     dob: str
 
     @classmethod
-    def generate(cls, country_session: ConstructedCountrySession) -> Self:
-        response = country_session.send(
-            "Generate me a passport of a citizen of neighbouring country. "
-            "I want every reply to be formated as JSON. Do not ever write anything other then valid JSON. "
-            "Do not add \"Note\". "
-            "* Full name; key: name * Country name; key: country * Date of birth: key: dob ")
-        print(response)
-        return cls.from_gpt_response(response)
+    def from_quenta(cls, quenta: Quenta) -> Self:
+        return cls(
+            name=quenta.name,
+            country=quenta.country,
+            dob=quenta.dob
+        )
 
     @property
     def game_repr(self) -> str:
-        return f"Passport:" \
-               f"Country of issue: {self.country}" \
-               f"Country of birth: {self.country}" \
-               f"Full name: {self.name}" \
-               f"Date of birth: {self.dob}"
+        return f"Passport:\n" \
+               f"--------\n" \
+               f"Country of issue: {self.country}\n" \
+               f"Country of birth: {self.country}\n" \
+               f"Full name: {self.name}\n" \
+               f"Date of birth: {self.dob}\n"
+
+    @property
+    def player_repr(self) -> str:
+        return self.game_repr
+
+
+@dataclasses.dataclass
+class WorkPermit(Document):
+    name: str
+    employer: str
+    employer_address: str
+    job_title: str
+    player_translation: str = ""
+
+    @classmethod
+    def from_quenta(cls, quenta: Quenta, session: ConstructedCountrySession) -> Self:
+        self = cls(
+            name=quenta.name,
+            employer=quenta.employer,
+            employer_address=quenta.employer_address,
+            job_title=quenta.job_title
+        )
+        self.player_translation = session.from_english(self.game_repr)
+        return self
+
+    @property
+    def player_repr(self) -> str:
+        return self.player_translation
+
+    @property
+    def game_repr(self) -> str:
+        return "Work Permit\n" \
+               "--------\n" \
+               f"Full Name: {self.name}\n" \
+               f"Company of employment: {self.employer}\n" \
+               f"Job title: {self.job_title}\n" \
+               f"Company address: {self.employer_address}"

@@ -10,7 +10,7 @@ import click
 import typer
 
 from cblit.gpt.country import ConstructedCountrySession
-from cblit.gpt.documents import Quenta
+from cblit.gpt.documents import Quenta, WorkPermit
 from cblit.gpt.gpt_api import ChatSession
 
 
@@ -103,6 +103,8 @@ class SessionWrapper:
         if isinstance(self.session, ConstructedCountrySession):
             quenta = Quenta.from_session(self.session)
             print(quenta)
+            work_permit = WorkPermit.from_quenta(quenta, self.session)
+            print(work_permit)
         self.detect_methods()
         print("[green]New session is generated[/green]")
 

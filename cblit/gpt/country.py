@@ -2,12 +2,11 @@ import dataclasses
 from typing import Tuple
 
 from dataclasses_json import dataclass_json
-from rich import print
 
 from typing_extensions import Self
 
 from cblit.gpt.gpt_api import ChatSession, Chat, DataClassGPTJsonMixin
-from cblit.gpt.gpt_queries import JSON_PROMPT
+from cblit.gpt.gpt_queries import JSON_PROMPT, GPTQuery, enquote, GPTJSONPart
 
 WRITER_PROMPT = "You are a young sci-fi writer. You need to write creative things. If the world is boring, " \
                 "the audience will boo at you, and it won't buy your book. Every time you give an answer re-evaluate " \
@@ -23,16 +22,16 @@ COUNTRY_PROMPT = "Construct a country. Give short answers to the following quest
                  "* Example sentence in the national language, key: example_sentence\n" \
                  "* Its translation to English, key: example_sentence_translation\n"
 
-TRANSLATION_PROMPT = "Translate from {} to {}: {}. Give your answer in this format \"Translation: " \
-                     "X\". Avoid providing unnecessary details. If you think there\'s no translation, respond with: " \
-                     "\"Translation: []\""
+TRANSLATION_PROMPT = "Translate from {} to {}:"
 
 
 def format_translation_prompt(source_language: str, target_language: str, prompt: str) -> str:
-    return TRANSLATION_PROMPT.format(source_language, target_language, prompt)
+    translation_prompt = TRANSLATION_PROMPT.format(source_language, target_language)
+    return GPTQuery().add(translation_prompt).add(enquote(prompt)).add_json([
+        GPTJSONPart("Translation", "translation")
+    ]).compose()
 
 
-@dataclass_json
 @dataclasses.dataclass
 class ConstructedCountry(DataClassGPTJsonMixin):
     country_name: str
@@ -78,7 +77,6 @@ class ConstructedCountrySession(ChatSession):
 
     def from_english(self, sentence: str) -> str:
         prompt = format_translation_prompt("English", self.country.language_name, sentence)
-        print(prompt)
         response = self.send(prompt)
         return ConstructedCountrySession._parse_translation(response)
 

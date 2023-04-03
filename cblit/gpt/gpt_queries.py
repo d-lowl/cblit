@@ -7,6 +7,10 @@ JSON_PROMPT = "I want every reply to be formatted as JSON. " \
 BREAK_PROMPT = ""
 
 
+def enquote(query: str) -> str:
+    return f"\"{query}\""
+
+
 @dataclasses.dataclass
 class GPTJSONPart:
     question: str
