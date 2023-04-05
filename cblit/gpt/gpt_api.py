@@ -5,9 +5,13 @@ import re
 from enum import Enum
 from typing import Type, Dict, List, Optional, Self, Any
 
+from dacite import from_dict
 from dataclasses_json import dataclass_json, DataClassJsonMixin
 
 import openai
+from loguru import logger
+
+from cblit.gpt.completion import Completion, CompletionUsage
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
@@ -95,6 +99,7 @@ class Chat:
 @dataclasses.dataclass
 class ChatSession(DataClassJsonMixin):
     chat: Chat
+    usage: CompletionUsage
 
     @classmethod
     def generate(cls) -> Self:
@@ -106,13 +111,18 @@ class ChatSession(DataClassJsonMixin):
         model: str = "gpt-3.5-turbo"
 
         # No types are provided but for Chat Completion at least a Dict with this hierarchy is expected
-        completion: Dict[str, Any] = openai.ChatCompletion.create(  # type: ignore[no-untyped-call]
+        completion_dict: Dict[str, Any] = openai.ChatCompletion.create(  # type: ignore[no-untyped-call]
             model=model,
             messages=self.chat.to_list()
         )
 
-        response_content: str = completion["choices"][0]["message"]["content"]
+        completion = from_dict(data_class=Completion, data=completion_dict)
+
+        logger.debug(completion)
+
+        response_content: str = completion.choices[0].message.content
 
         self.chat.add(ChatRole.ASSISTANT, response_content)
+        self.usage.add(completion.usage)
 
         return response_content

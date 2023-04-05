@@ -6,6 +6,7 @@ from dataclasses_json import dataclass_json
 
 from typing_extensions import Self
 
+from cblit.gpt.completion import CompletionUsage
 from cblit.gpt.gpt_api import ChatSession, Chat, DataClassGPTJsonMixin
 from cblit.gpt.gpt_queries import JSON_PROMPT, GPTQuery, enquote, GPTJSONPart
 
@@ -73,12 +74,13 @@ class ConstructedCountrySession(ChatSession):
     @classmethod
     def generate(cls) -> Self:
         chat = Chat.initialise_with_system(system_prompt=("\n".join([WRITER_PROMPT, JSON_PROMPT])))
-        session = ChatSession(chat=chat)
+        session = ChatSession(chat=chat, usage=CompletionUsage(0, 0, 0))
         country_response = session.send(COUNTRY_PROMPT)
         country = ConstructedCountry.from_gpt_response(country_response)
         return cls(
             chat=session.chat,
-            country=country
+            country=country,
+            usage=session.usage
         )
 
     def _translate(self, from_lang: str, to_lang: str, sentence: str) -> str:

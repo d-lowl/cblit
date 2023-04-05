@@ -12,6 +12,7 @@ import typer
 from cblit.gpt.country import ConstructedCountrySession
 from cblit.gpt.documents import Quenta, WorkPermit
 from cblit.gpt.gpt_api import ChatSession
+from loguru import logger
 
 
 class SessionMethodWrapper:
@@ -102,9 +103,9 @@ class SessionWrapper:
         self.session = self.session_class.generate()
         if isinstance(self.session, ConstructedCountrySession):
             quenta = Quenta.from_session(self.session)
-            print(quenta)
+            logger.debug(quenta)
             work_permit = WorkPermit.from_quenta(quenta, self.session)
-            print(work_permit)
+            logger.debug(work_permit)
         self.detect_methods()
         print("[green]New session is generated[/green]")
 

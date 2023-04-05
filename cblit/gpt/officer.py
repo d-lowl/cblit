@@ -1,6 +1,7 @@
 import dataclasses
 from typing import Optional, Self
 
+from cblit.gpt.completion import CompletionUsage
 from cblit.gpt.gpt_api import ChatSession, Chat
 
 OFFICER_PROMPT = "Pretend you are an immigration officer at an immigration office."
@@ -35,7 +36,7 @@ class OfficerSession(ChatSession):
     @classmethod
     def generate(cls) -> Self:
         chat = Chat.initialise_with_system(system_prompt=build_officer_prompt())
-        return cls(chat=chat)
+        return cls(chat=chat, usage=CompletionUsage(0, 0, 0))
 
     def do_action(self, action: str) -> str:
         return ""
