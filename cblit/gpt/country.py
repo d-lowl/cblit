@@ -1,5 +1,6 @@
 import dataclasses
 from typing import Tuple
+from loguru import logger
 
 from dataclasses_json import dataclass_json
 
@@ -51,6 +52,11 @@ class ConstructedCountry(DataClassGPTJsonMixin):
         return sections[0], sections[1]
 
 
+@dataclasses.dataclass
+class Translation(DataClassGPTJsonMixin):
+    translation: str
+
+
 @dataclass_json
 @dataclasses.dataclass
 class ConstructedCountrySession(ChatSession):
@@ -75,12 +81,17 @@ class ConstructedCountrySession(ChatSession):
             country=country
         )
 
-    def from_english(self, sentence: str) -> str:
-        prompt = format_translation_prompt("English", self.country.language_name, sentence)
+    def _translate(self, from_lang: str, to_lang: str, sentence: str) -> str:
+        prompt = format_translation_prompt(from_lang, to_lang, sentence)
+        logger.debug(f"Translation prompt: '{prompt}'")
         response = self.send(prompt)
-        return ConstructedCountrySession._parse_translation(response)
+        logger.debug(f"Translation response: '{response}'")
+        translation = Translation.from_gpt_response(response)
+        logger.debug(f"Translation: '{translation}'")
+        return translation.translation
+
+    def from_english(self, sentence: str) -> str:
+        return self._translate("English", self.country.language_name, sentence)
 
     def to_english(self, sentence: str) -> str:
-        prompt = format_translation_prompt(self.country.language_name, "English", sentence)
-        response = self.send(prompt)
-        return ConstructedCountrySession._parse_translation(response)
+        return self._translate(self.country.language_name, "English", sentence)

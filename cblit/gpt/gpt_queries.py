@@ -2,7 +2,9 @@ import dataclasses
 from typing import List, Self
 
 JSON_PROMPT = "I want every reply to be formatted as JSON. " \
-              "Do not ever write anything other then valid JSON. Do not add \"Note\""
+              "Do not ever write anything other then valid JSON. Do not add \"Note\". " \
+              "JSON multi-line strings should be put on a single line with new line characters, " \
+              "as expected by JSON standard."
 
 BREAK_PROMPT = ""
 

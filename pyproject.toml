@@ -16,6 +16,7 @@ openai = "^0.27.2"
 typing-extensions = "^4.5.0"
 dataclasses-json = "^0.5.7"
 mypy = "^1.1.1"
+loguru = "^0.6.0"
 
 
 [tool.poetry.group.dev.dependencies]
