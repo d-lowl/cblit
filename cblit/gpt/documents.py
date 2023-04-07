@@ -19,6 +19,7 @@ class Document(DataClassGPTJsonMixin):
 
 QUENTA_PROMPT = "Generate me a quenta or a biography of a citizen of a neighbouring country."
 
+
 @dataclasses.dataclass
 class Quenta(DataClassGPTJsonMixin):
     name: str
@@ -27,6 +28,8 @@ class Quenta(DataClassGPTJsonMixin):
     employer: str
     employer_address: str
     job_title: str
+    job_duties: str
+    salary: str
     address: str
 
     @staticmethod
@@ -38,6 +41,8 @@ class Quenta(DataClassGPTJsonMixin):
             GPTJSONPart(question="Employer company name", key="employer"),
             GPTJSONPart(question=f"Employer company address in {country.country_name}", key="employer_address"),
             GPTJSONPart(question="Job title of the person", key="job_title"),
+            GPTJSONPart(question="Job duties", key="job_duties"),
+            GPTJSONPart(question="Salary", key="salary"),
             GPTJSONPart(question=f"Person's address in {country.country_name}", key="address"),
         ]).compose()
 
@@ -106,4 +111,43 @@ class WorkPermit(Document):
                f"Full Name: {self.name}\n" \
                f"Company of employment: {self.employer}\n" \
                f"Job title: {self.job_title}\n" \
+               f"Company address: {self.employer_address}"
+
+
+@dataclasses.dataclass
+class EmploymentAgreement(Document):
+    employee_name: str
+    employer: str
+    employer_address: str
+    job_title: str
+    job_duties: str
+    salary: str
+    player_translation: str = ""
+
+    @classmethod
+    def from_quenta(cls, quenta: Quenta, session: ConstructedCountrySession) -> Self:
+        self = cls(
+            employee_name=quenta.name,
+            employer=quenta.employer,
+            employer_address=quenta.employer_address,
+            job_title=quenta.job_title,
+            job_duties=quenta.job_duties,
+            salary=quenta.salary
+        )
+        self.player_translation = session.from_english(self.game_repr)
+        return self
+
+    @property
+    def player_repr(self) -> str:
+        return self.player_translation
+
+    @property
+    def game_repr(self) -> str:
+        return "Employment Agreement: \n" \
+               "--------\n" \
+               f"Employee Name: {self.employee_name}\n" \
+               f"Employer Name: {self.employer}\n" \
+               f"Job title: {self.job_title}\n" \
+               f"Job duties: {self.job_duties}\n" \
+               f"Salary: {self.salary}\n" \
                f"Company address: {self.employer_address}"

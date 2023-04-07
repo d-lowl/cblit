@@ -1,7 +1,9 @@
 import click
 import typer
+from rich import print
 
 from cblit.cli.session_wrapper import SessionWrapper
+from cblit.game.game import Game
 from cblit.gpt.country import ConstructedCountrySession
 from cblit.gpt.officer import OfficerSession
 
@@ -27,6 +29,8 @@ def officer() -> None:
 @app.command()
 def start() -> None:
     """Start game command"""
+    game = Game.generate()
+    print(game)
     modes = click.Choice(["language", "officer"])
     mode = typer.prompt("Select mode", "officer", show_choices=True, type=modes)
     if mode == "language":

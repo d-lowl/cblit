@@ -86,9 +86,7 @@ class ConstructedCountrySession(ChatSession):
     def _translate(self, from_lang: str, to_lang: str, sentence: str) -> str:
         prompt = format_translation_prompt(from_lang, to_lang, sentence)
         logger.debug(f"Translation prompt: '{prompt}'")
-        response = self.send(prompt)
-        logger.debug(f"Translation response: '{response}'")
-        translation = Translation.from_gpt_response(response)
+        translation = self.send_structured(prompt, Translation)
         logger.debug(f"Translation: '{translation}'")
         return translation.translation
 

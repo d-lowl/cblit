@@ -3,7 +3,8 @@ import dataclasses
 import os
 import re
 from enum import Enum
-from typing import Type, Dict, List, Optional, Self, Any
+from json import JSONDecodeError
+from typing import Type, Dict, List, Optional, Self, Any, TypeVar
 
 from dacite import from_dict
 from dataclasses_json import dataclass_json, DataClassJsonMixin
@@ -19,7 +20,13 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 class DataClassGPTJsonMixin(DataClassJsonMixin):
     @classmethod
     def from_gpt_response(cls: Type[Self], response: str) -> Self:
-        return cls.from_json(cls.get_json_from_response(response))
+        json_str = cls.get_json_from_response(response)
+        json_fixed_str = cls.fix_multiline_str(json_str)
+        if json_str != json_fixed_str:
+            logger.debug("JSON string was fixed:")
+            logger.debug(json_str)
+            logger.debug(json_fixed_str)
+        return cls.from_json(json_fixed_str)
 
     @staticmethod
     def get_json_from_response(response: str) -> str:
@@ -28,6 +35,26 @@ class DataClassGPTJsonMixin(DataClassJsonMixin):
         if match is None:
             raise ValueError(f"Response does not contain JSON: {response}")
         return match.group(0)
+
+    @staticmethod
+    def fix_multiline_str(json_str: str) -> str:
+        in_str = False
+        result = ""
+        for x in json_str:
+            if not in_str and (x == "\"" or x == "'"):
+                in_str = True
+                result += x
+            elif in_str and (x == "\"" or x == "'"):
+                in_str = False
+                result += x
+            elif in_str and x == "\n":
+                result += "\\n"
+            else:
+                result += x
+        return result
+
+
+ExtendsDataClassGPTJsonMixin = TypeVar("ExtendsDataClassGPTJsonMixin", bound=DataClassGPTJsonMixin)
 
 
 class ChatRole(Enum):
@@ -95,6 +122,16 @@ class Chat:
         chat = cls(messages=messages)
         return chat
 
+    def get_last(self, role: Optional[ChatRole] = None) -> ChatMessage:
+        if role is None:
+            return self.messages[-1]
+        else:
+            return [message for message in self.messages if message.role == role][-1]
+
+    def remove(self, count: int) -> Self:
+        self.messages = self.messages[:-count]
+        return self
+
 
 @dataclasses.dataclass
 class ChatSession(DataClassJsonMixin):
@@ -126,3 +163,32 @@ class ChatSession(DataClassJsonMixin):
         self.usage.add(completion.usage)
 
         return response_content
+
+    def regenerate(self) -> str:
+        prompt = self.chat.get_last(ChatRole.USER).content
+        self.chat.remove(2)
+        return self.send(prompt)
+
+    def send_structured(
+            self,
+            content: str,
+            klass: Type[ExtendsDataClassGPTJsonMixin],
+            no_retries: int = 3
+    ) -> ExtendsDataClassGPTJsonMixin:
+        response = self.send(content)
+        for attempt in range(no_retries):
+            try:
+                instance = klass.from_gpt_response(response)
+            except JSONDecodeError:
+                logger.warning(
+                    f"Retry {attempt}/{no_retries}: Failed to parse GPT response into class '{klass.__name__}': "
+                    f"{response}"
+                )
+                response = self.regenerate()
+            else:
+                break
+        else:
+            raise Exception(
+                f"All attempts to parse GPT response into class '{klass.__name__}' failed, last one: {response}")
+
+        return instance
