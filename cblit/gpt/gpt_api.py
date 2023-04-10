@@ -1,5 +1,6 @@
 """API for interacting with OpenAI GPT"""
 import dataclasses
+import json
 import os
 import re
 from enum import Enum
@@ -28,9 +29,27 @@ class DataClassGPTJsonMixin(DataClassJsonMixin):
             logger.debug(json_fixed_str)
         return cls.from_json(json_fixed_str)
 
+    @classmethod
+    def list_from_gpt_response(cls: Type[Self], response: str) -> List[Self]:
+        json_str = cls.get_json_list_from_response(response)
+        json_fixed_str = cls.fix_multiline_str(json_str)
+        if json_str != json_fixed_str:
+            logger.debug("JSON string was fixed:")
+            logger.debug(json_str)
+            logger.debug(json_fixed_str)
+        raw_list: List[Any] = json.loads(json_fixed_str)
+        return [cls.from_json(json.dumps(item)) for item in raw_list]
+
+    @staticmethod
+    def get_json_list_from_response(response: str) -> str:
+        return DataClassGPTJsonMixin._get_json_from_response(response, r'\[[\s\S]+\]')
+
     @staticmethod
     def get_json_from_response(response: str) -> str:
-        json_pattern = r'\{[\s\S]+\}'
+        return DataClassGPTJsonMixin._get_json_from_response(response, r'\{[\s\S]+\}')
+
+    @staticmethod
+    def _get_json_from_response(response: str, json_pattern: str) -> str:
         match = re.search(json_pattern, response)
         if match is None:
             raise ValueError(f"Response does not contain JSON: {response}")
@@ -41,10 +60,10 @@ class DataClassGPTJsonMixin(DataClassJsonMixin):
         in_str = False
         result = ""
         for x in json_str:
-            if not in_str and (x == "\"" or x == "'"):
+            if not in_str and (x == "\""):
                 in_str = True
                 result += x
-            elif in_str and (x == "\"" or x == "'"):
+            elif in_str and (x == "\""):
                 in_str = False
                 result += x
             elif in_str and x == "\n":

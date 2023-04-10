@@ -6,6 +6,12 @@ JSON_PROMPT = "I want every reply to be formatted as JSON. " \
               "JSON multi-line strings should be put on a single line with new line characters, " \
               "as expected by JSON standard."
 
+JSON_LIST_PROMPT = "I want every reply to be formatted as a list of JSON objects. " \
+              "Do not ever write anything other then valid JSON. Do not add \"Note\". " \
+              "JSON multi-line strings should be put on a single line with new line characters, " \
+              "as expected by JSON standard. " \
+              "Each object must include these key-value pairs:"
+
 BREAK_PROMPT = ""
 
 
@@ -33,6 +39,12 @@ class GPTQuery:
 
     def add_json(self, questions: List[GPTJSONPart]) -> Self:
         self.add(JSON_PROMPT)
+        for question in questions:
+            self.add(f"* {question.question}; key: {question.key}")
+        return self
+
+    def add_json_list(self, questions: List[GPTJSONPart]) -> Self:
+        self.add(JSON_LIST_PROMPT)
         for question in questions:
             self.add(f"* {question.question}; key: {question.key}")
         return self
