@@ -31,6 +31,7 @@ class Quenta(DataClassGPTJsonMixin):
     job_duties: str
     salary: str
     address: str
+    rent: str
 
     @staticmethod
     def compose_query(country: ConstructedCountry) -> str:
@@ -44,6 +45,7 @@ class Quenta(DataClassGPTJsonMixin):
             GPTJSONPart(question="Job duties", key="job_duties"),
             GPTJSONPart(question="Salary", key="salary"),
             GPTJSONPart(question=f"Person's address in {country.country_name}", key="address"),
+            GPTJSONPart(question="Rent price for that apartment", key="rent"),
         ]).compose()
 
     @classmethod
@@ -151,3 +153,33 @@ class EmploymentAgreement(Document):
                f"Job duties: {self.job_duties}\n" \
                f"Salary: {self.salary}\n" \
                f"Company address: {self.employer_address}"
+
+
+@dataclasses.dataclass
+class TenancyAgreement(Document):
+    name: str
+    address: str
+    rent: str
+    player_translation: str = ""
+
+    @classmethod
+    def from_quenta(cls, quenta: Quenta, session: ConstructedCountrySession) -> Self:
+        self = cls(
+            name=quenta.name,
+            address=quenta.address,
+            rent=quenta.rent
+        )
+        self.player_translation = session.from_english(self.game_repr)
+        return self
+
+    @property
+    def player_repr(self) -> str:
+        return self.player_translation
+
+    @property
+    def game_repr(self) -> str:
+        return "Tenancy Agreement\n" \
+               "--------\n" \
+               f"Full Name: {self.name}\n" \
+               f"Address: {self.address}\n" \
+               f"Rent price: {self.rent}\n"

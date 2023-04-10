@@ -4,7 +4,7 @@ from typing import List, Self
 from dataclasses_json import DataClassJsonMixin
 
 from cblit.gpt.country import ConstructedCountrySession
-from cblit.gpt.documents import Quenta, Document, Passport, WorkPermit, EmploymentAgreement
+from cblit.gpt.documents import Quenta, Document, Passport, WorkPermit, EmploymentAgreement, TenancyAgreement
 from cblit.gpt.officer import OfficerSession
 
 
@@ -33,5 +33,6 @@ class Game(DataClassJsonMixin):
         return [
             Passport.from_quenta(quenta),
             WorkPermit.from_quenta(quenta, session),
-            EmploymentAgreement.from_quenta(quenta, session)
+            EmploymentAgreement.from_quenta(quenta, session),
+            TenancyAgreement.from_quenta(quenta, session)
         ]
