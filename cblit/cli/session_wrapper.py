@@ -4,7 +4,7 @@ import os.path
 
 from rich import print
 import inspect
-from typing import Callable, List, Optional, Type, Union
+from typing import Callable, List, Optional, Type, Union, Self, Any
 
 import click
 import typer
@@ -17,19 +17,26 @@ from loguru import logger
 
 class SessionMethodWrapper:
     name: str
-    method: Callable[[str], str]
+    method: Callable[[str, int], Any]
+    priority: int
 
-    def __init__(self, name: str, method: Callable[[str], str]):
+    def __init__(self, name: str, method: Callable[[str, int], Any], priority: int = 0):
         self.name = name
         self.method = method
+        self.priority = priority
 
     def run(self) -> None:
         print(f"[green]{self.name}:[/green]")
+        print(f"Priority: {self.priority}")
         print("Ctrl-D or Ctrl-C to go back")
         while True:
             try:
                 user_message = typer.prompt(">")
-                gpt_response = self.method(user_message)
+                if user_message.startswith("%%p"):
+                    self.priority = int(user_message[3:])
+                    print(f"Priority: {self.priority}")
+                    continue
+                gpt_response = self.method(user_message, self.priority)
                 print(f"<: {gpt_response}")
             except click.exceptions.Abort:
                 print("[yellow]Done[/yellow]")
@@ -37,11 +44,13 @@ class SessionMethodWrapper:
 
     @staticmethod
     def is_compatible(signature: inspect.Signature) -> bool:
-        parameters = signature.parameters
+        parameters = list(signature.parameters.values())
         return (
-                len(parameters) == 1 and
-                list(parameters.values())[0].annotation == str and
-                signature.return_annotation == str
+            len(parameters) == 2 and
+            parameters[0].annotation == str and
+            parameters[1].annotation == int and
+            parameters[1].name == "priority" and
+            signature.return_annotation is not None
         )
 
 
@@ -138,3 +147,10 @@ class SessionWrapper:
         with open(source, "r") as f:
             # mypy does not recognise dataclass_json stuff
             self.session = self.session_class.from_json(f.read())
+
+    @classmethod
+    def from_session(cls, session: ChatSession) -> Self:
+        wrapper = cls(session.__class__)
+        wrapper.session = session
+        wrapper.detect_methods()
+        return wrapper

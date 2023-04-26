@@ -8,6 +8,7 @@ from rich import print
 import click
 import typer
 
+from cblit.cli.session_wrapper import SessionWrapper, SessionMethodWrapper
 from cblit.game.game import Game
 
 LOG_DIRECTORY = os.path.join(os.getcwd(), os.pardir, "gpt-logs")
@@ -20,31 +21,74 @@ class GameCliMode:
 
 
 class GameCliWrapper:
-    game: Optional[Game]
+    _game: Optional[Game]
     modes: Dict[str, GameCliMode]
 
+    @property
+    def game(self) -> Game:
+        if self._game is None:
+            raise ValueError("Game is not initialised")
+        return self._game
+
     def __init__(self, game: Optional[Game] = None) -> None:
-        self.game = game
+        self._game = game
         self.detect_modes()
 
     def detect_modes(self) -> None:
         self.modes = {
-            "n": GameCliMode("New game", self.generate)
+            "n": GameCliMode("New game", self.generate),
+            "l": GameCliMode("Load game", self.load)
         }
 
-        if self.game is not None:
+        if self._game is not None:
             self.modes.update({
                 "p": GameCliMode("Pretty print game", self.print),
                 "s": GameCliMode("Save game", self.save),
-                "l": GameCliMode("Load game", self.load),
+                "ic": GameCliMode("Inspect country session", self.inspect_country),
+                "io": GameCliMode("Inspect officer session", self.inspect_officer),
+                "t": GameCliMode("Talk to officer", self.talk),
+                "b": GameCliMode("Show phrasebook", self.show_phrasebook),
+                "g": GameCliMode("Give document", self.give_document)
             })
 
     def generate(self) -> None:
-        self.game = Game.generate()
+        self._game = Game.generate()
         self.detect_modes()
+        reply = self.game.start()
+        print(f"<: {reply}")
 
     def print(self) -> None:
         print(self.game)
+
+    def inspect_country(self) -> None:
+        SessionWrapper.from_session(self.game.country_session).run()
+
+    def inspect_officer(self) -> None:
+        SessionWrapper.from_session(self.game.officer_session).run()
+
+    def talk(self) -> None:
+        def wrap_say_to_officer(sentence: str, priority: int) -> str:
+            return self.game.say_to_officer(sentence)
+
+        wrapper = SessionMethodWrapper("say_to_officer", wrap_say_to_officer)
+        wrapper.run()
+
+    def show_phrasebook(self) -> None:
+        for phrase in self.game.phrasebook.phrases:
+            print(f"{phrase.original} -> {phrase.translation}")
+
+    def give_document(self) -> None:
+        try:
+            print("Select document to give:")
+            for i, document in enumerate(self.game.documents):
+                print(i, document.player_repr, "\n")
+            choice_labels = [str(x) for x in range(len(self.game.documents))]
+            choice = typer.prompt("> ", type=click.Choice(choice_labels))
+            reply = self.game.give_document(int(choice))
+            print(f"<: {reply}")
+        except click.exceptions.Abort:
+            print("[yellow]Done[/yellow]")
+            return
 
     def save(self) -> None:
         filename = f"Game-{datetime.datetime.now().isoformat()}.json"
@@ -67,11 +111,12 @@ class GameCliWrapper:
         choice = typer.prompt("File index", type=click.Choice([str(i) for i in range(len(paths))]))
         source = paths[int(choice)]
         self._load(source)
+        self.detect_modes()
         print(f"[green]Game file is loaded: {os.path.basename(source)}[/green]")
 
     def _load(self, source: str) -> None:
         with open(source, "r") as f:
-            self.game = Game.from_json(f.read())
+            self._game = Game.from_json(f.read())
 
     def run(self) -> None:
         while True:

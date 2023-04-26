@@ -2,7 +2,7 @@ import dataclasses
 from typing import Self
 
 from cblit.gpt.country import ConstructedCountrySession, ConstructedCountry
-from cblit.gpt.gpt_api import DataClassGPTJsonMixin
+from cblit.gpt.gpt_api import DataClassGPTJsonMixin, CRITICAL_PRIORITY
 from cblit.gpt.gpt_queries import GPTQuery, GPTJSONPart
 
 
@@ -51,7 +51,7 @@ class Quenta(DataClassGPTJsonMixin):
     @classmethod
     def from_session(cls, session: ConstructedCountrySession) -> Self:
         query = cls.compose_query(session.country)
-        response = session.send(query)
+        response = session.send(query, priority=CRITICAL_PRIORITY)
         return cls.from_gpt_response(response)
 
 
@@ -99,7 +99,7 @@ class WorkPermit(Document):
             employer_address=quenta.employer_address,
             job_title=quenta.job_title
         )
-        self.player_translation = session.from_english(self.game_repr)
+        self.player_translation = session.from_english(self.game_repr, CRITICAL_PRIORITY)
         return self
 
     @property
@@ -136,7 +136,7 @@ class EmploymentAgreement(Document):
             job_duties=quenta.job_duties,
             salary=quenta.salary
         )
-        self.player_translation = session.from_english(self.game_repr)
+        self.player_translation = session.from_english(self.game_repr, CRITICAL_PRIORITY)
         return self
 
     @property
@@ -169,7 +169,7 @@ class TenancyAgreement(Document):
             address=quenta.address,
             rent=quenta.rent
         )
-        self.player_translation = session.from_english(self.game_repr)
+        self.player_translation = session.from_english(self.game_repr, CRITICAL_PRIORITY)
         return self
 
     @property

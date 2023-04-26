@@ -12,11 +12,16 @@ from dataclasses_json import dataclass_json, DataClassJsonMixin
 
 import openai
 from loguru import logger
+from openai import InvalidRequestError
 
+from cblit.errors.errors import CblitOpenaiError
 from cblit.gpt.completion import Completion, CompletionUsage
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
+CRITICAL_PRIORITY = 999
+FORGET_PRIORITY = -1
+NORMAL_PRIORITY = 100
 
 class DataClassGPTJsonMixin(DataClassJsonMixin):
     @classmethod
@@ -94,52 +99,51 @@ class ChatRole(Enum):
 class ChatMessage:
     role: ChatRole
     content: str
+    priority: int
 
-    def to_str_dict(self) -> Dict[str, str]:
+    def to_openai_dict(self) -> Dict[str, str]:
         return {
             "role": self.role.value,
             "content": self.content
         }
 
-    @classmethod
-    def from_dict(cls, d: Dict[str, str]) -> Self:
-        return cls(
-            role=ChatRole.from_role(d["role"]),
-            content=d["content"]
-        )
+    # @classmethod
+    # def from_dict(cls, d: Dict[str, str]) -> Self:
+    #     return cls(
+    #         role=ChatRole.from_role(d["role"]),
+    #         content=d["content"],
+    #         priority=d["priority"]
+    #     )
 
 
 @dataclass_json
 @dataclasses.dataclass
 class Chat:
+    full_history: List[ChatMessage]
     messages: List[ChatMessage]
 
     @classmethod
     def initialise_with_system(cls: Type["Chat"], system_prompt: Optional[str] = None) -> "Chat":
         if system_prompt is not None:
+            system_msg = ChatMessage(
+                role=ChatRole.SYSTEM,
+                content=system_prompt,
+                priority=CRITICAL_PRIORITY
+            )
             return cls(
-                messages=[
-                    ChatMessage(
-                        role=ChatRole.SYSTEM,
-                        content=system_prompt
-                    )
-                ]
+                messages=[system_msg],
+                full_history=[system_msg],
             )
         else:
-            return cls(messages=[])
+            return cls(messages=[], full_history=[])
 
-    def add(self, role: ChatRole, content: str) -> Self:
-        self.messages += [ChatMessage(role, content)]
+    def add(self, role: ChatRole, content: str, priority: int) -> Self:
+        self.messages += [ChatMessage(role, content, priority)]
+        self.full_history += [ChatMessage(role, content, priority)]
         return self
 
     def to_list(self) -> List[Dict[str, str]]:
-        return [message.to_str_dict() for message in self.messages]
-
-    @classmethod
-    def from_list(cls, input_list: List[Dict[str, str]]) -> Self:
-        messages = [ChatMessage.from_dict(item) for item in input_list]
-        chat = cls(messages=messages)
-        return chat
+        return [message.to_openai_dict() for message in self.messages]
 
     def get_last(self, role: Optional[ChatRole] = None) -> ChatMessage:
         if role is None:
@@ -149,6 +153,37 @@ class Chat:
 
     def remove(self, count: int) -> Self:
         self.messages = self.messages[:-count]
+        return self
+
+    def remove_priority(self) -> Self:
+        lowest_priority = CRITICAL_PRIORITY + 1
+        lowest_start_index = -1
+        lowest_stop_index = -1
+        is_current_span = False
+
+        for index, message in enumerate(self.messages):
+            if not is_current_span:
+                if message.role == ChatRole.USER and message.priority < lowest_priority:
+                    lowest_priority = message.priority
+                    lowest_start_index = index
+                    is_current_span = True
+            else:
+                if message.role == ChatRole.USER:
+                    if message.priority < lowest_priority:
+                        lowest_priority = message.priority
+                        lowest_start_index = index
+                    else:
+                        lowest_stop_index = index - 1
+                        is_current_span = False
+
+        if is_current_span:
+            lowest_stop_index = len(self.messages) - 1
+
+        logger.debug(
+            f"Removing these lowest priority messages: {self.messages[lowest_start_index:lowest_stop_index+1]}"
+        )
+        self.messages = self.messages[:lowest_start_index] + self.messages[lowest_stop_index+1:]
+
         return self
 
 
@@ -161,40 +196,80 @@ class ChatSession(DataClassJsonMixin):
     def generate(cls) -> Self:
         raise NotImplementedError
 
-    def send(self, content: str) -> str:
-        self.chat.add(ChatRole.USER, content)
-
+    def _send(self, chat: Chat) -> str:
         model: str = "gpt-3.5-turbo"
 
-        # No types are provided but for Chat Completion at least a Dict with this hierarchy is expected
-        completion_dict: Dict[str, Any] = openai.ChatCompletion.create(  # type: ignore[no-untyped-call]
-            model=model,
-            messages=self.chat.to_list()
-        )
+        try:
+            # No types are provided but for Chat Completion at least a Dict with this hierarchy is expected
+            completion_dict: Dict[str, Any] = openai.ChatCompletion.create(  # type: ignore[no-untyped-call]
+                model=model,
+                messages=chat.to_list()
+            )
+        except InvalidRequestError as e:
+            if "This model's maximum context length" in e._message:
+                raise CblitOpenaiError("The request was marked invalid, because of the context length")
+            else:
+                raise e
 
         completion = from_dict(data_class=Completion, data=completion_dict)
 
         logger.debug(completion)
 
-        response_content: str = completion.choices[0].message.content
+        if completion.choices[0].finish_reason == "length":
+            raise CblitOpenaiError("The response was not finished, because the length was exceeded")
 
-        self.chat.add(ChatRole.ASSISTANT, response_content)
+        response_content: str = completion.choices[0].message.content
         self.usage.add(completion.usage)
 
         return response_content
 
+    def send(self, content: str, priority: int) -> str:
+        logger.debug(f"Sending (priority={priority}): {content}")
+        self.chat.add(ChatRole.USER, content, priority)
+
+        while True:
+            try:
+                response_content = self._send(self.chat)
+                break
+            except CblitOpenaiError as e:
+                logger.warning(e)
+                logger.warning("Removing chat messages from the based on priority")
+                self.chat.remove_priority()
+                logger.warning("Retrying...")
+
+        if priority >= 0:
+            self.chat.add(ChatRole.ASSISTANT, response_content, priority)
+
+        if priority < 0:
+            self.chat.remove(1)
+
+        return response_content
+
+    def next(self, priority: int) -> str:
+        logger.debug(f"Getting next (priority={priority})")
+        response_content = self._send(self.chat)
+
+        if priority >= 0:
+            self.chat.add(ChatRole.ASSISTANT, response_content, priority)
+
+        return response_content
+
     def regenerate(self) -> str:
-        prompt = self.chat.get_last(ChatRole.USER).content
+        last = self.chat.get_last(ChatRole.USER)
+        prompt = last.content
+        priority = last.priority
+        logger.debug(f"Regenerating (priority={priority}): {prompt}")
         self.chat.remove(2)
-        return self.send(prompt)
+        return self.send(prompt, priority)
 
     def send_structured(
             self,
             content: str,
             klass: Type[ExtendsDataClassGPTJsonMixin],
+            priority: int,
             no_retries: int = 3
     ) -> ExtendsDataClassGPTJsonMixin:
-        response = self.send(content)
+        response = self.send(content, priority)
         for attempt in range(no_retries):
             try:
                 instance = klass.from_gpt_response(response)
