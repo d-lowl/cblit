@@ -46,13 +46,13 @@ class LanguageUnderstanding(Enum):
 class OfficerSession(ChatSession):
 
     @classmethod
-    def generate(cls) -> Self:
+    async def generate(cls) -> Self:
         chat = Chat.initialise_with_system(system_prompt=build_officer_prompt())
         session = cls(chat=chat, usage=CompletionUsage(0, 0, 0))
-        session.send("hi", priority=NORMAL_PRIORITY)
+        await session.send("hi", priority=NORMAL_PRIORITY)
         return session
 
-    def say(self, saying: str, language: LanguageUnderstanding) -> str:
+    async def say(self, saying: str, language: LanguageUnderstanding) -> str:
         understanding_prompt = ""
         if language == LanguageUnderstanding.NATIVE_CLEAR:
             understanding_prompt = "speaks clearly, you understand well"
@@ -61,9 +61,9 @@ class OfficerSession(ChatSession):
         elif language == LanguageUnderstanding.NON_NATIVE:
             understanding_prompt = "speaks not in your native language, you understand about 75% of what is said"
         prompt = f"<{understanding_prompt}> {saying}"
-        return self.send(prompt, NORMAL_PRIORITY)
+        return await self.send(prompt, NORMAL_PRIORITY)
 
-    def give_document(self, document: Document) -> str:
+    async def give_document(self, document: Document) -> str:
         prompt = f"[I give the following document]\n{document.game_repr}"
 
-        return self.send(prompt, NORMAL_PRIORITY)
+        return await self.send(prompt, NORMAL_PRIORITY)

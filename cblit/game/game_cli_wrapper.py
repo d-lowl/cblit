@@ -2,7 +2,7 @@ import dataclasses
 import datetime
 import glob
 import os
-from typing import Callable, Dict, Optional
+from typing import Any, Callable, Dict, Optional, Coroutine, TypeAlias, Union
 from rich import print
 
 import click
@@ -13,11 +13,13 @@ from cblit.game.game import Game
 
 LOG_DIRECTORY = os.path.join(os.getcwd(), os.pardir, "gpt-logs")
 
+GameMethod: TypeAlias = Union[Callable[[], None], Callable[[], Coroutine[Any, Any, None]]]
+
 
 @dataclasses.dataclass
 class GameCliMode:
     name: str
-    method: Callable[[], None]
+    method: GameMethod
 
 
 class GameCliWrapper:
@@ -51,27 +53,27 @@ class GameCliWrapper:
                 "g": GameCliMode("Give document", self.give_document)
             })
 
-    def generate(self) -> None:
-        self._game = Game.generate()
+    async def generate(self) -> None:
+        self._game = await Game.generate()
         self.detect_modes()
-        reply = self.game.start()
+        reply: str = await self.game.start()
         print(f"<: {reply}")
 
     def print(self) -> None:
         print(self.game)
 
-    def inspect_country(self) -> None:
-        SessionWrapper.from_session(self.game.country_session).run()
+    async def inspect_country(self) -> None:
+        await SessionWrapper.from_session(self.game.country_session).run()
 
-    def inspect_officer(self) -> None:
-        SessionWrapper.from_session(self.game.officer_session).run()
+    async def inspect_officer(self) -> None:
+        await SessionWrapper.from_session(self.game.officer_session).run()
 
-    def talk(self) -> None:
-        def wrap_say_to_officer(sentence: str, priority: int) -> str:
-            return self.game.say_to_officer(sentence)
+    async def talk(self) -> None:
+        async def wrap_say_to_officer(sentence: str, priority: int) -> str:
+            return await self.game.say_to_officer(sentence)
 
         wrapper = SessionMethodWrapper("say_to_officer", wrap_say_to_officer)
-        wrapper.run()
+        await wrapper.run()
 
     def show_phrasebook(self) -> None:
         for phrase in self.game.phrasebook.phrases:
@@ -118,7 +120,7 @@ class GameCliWrapper:
         with open(source, "r") as f:
             self._game = Game.from_json(f.read())
 
-    def run(self) -> None:
+    async def run(self) -> None:
         while True:
             try:
                 prompt = "Select mode:\n"
@@ -128,7 +130,9 @@ class GameCliWrapper:
                 choice_labels = list(self.modes.keys())
                 choice = typer.prompt(prompt, type=click.Choice(choice_labels))
                 method = self.modes[choice].method
-                method()
+                promise = method()
+                if isinstance(promise, Coroutine):
+                    await promise
             except click.exceptions.Abort:
                 print("[yellow]Done[/yellow]")
                 return

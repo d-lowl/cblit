@@ -1,5 +1,5 @@
 import typer
-
+from asyncio import run as aiorun
 from cblit.game.game_cli_wrapper import GameCliWrapper
 
 app = typer.Typer(pretty_exceptions_show_locals=False)
@@ -14,8 +14,10 @@ def cli() -> None:
 @app.command()
 def start() -> None:
     """Start game command"""
-    game_wrapper = GameCliWrapper()
-    game_wrapper.run()
+    async def _start() -> None:
+        game_wrapper = GameCliWrapper()
+        await game_wrapper.run()
+    aiorun(_start())
 
 
 if __name__ == "__main__":

@@ -49,9 +49,9 @@ class Quenta(DataClassGPTJsonMixin):
         ]).compose()
 
     @classmethod
-    def from_session(cls, session: ConstructedCountrySession) -> Self:
+    async def from_session(cls, session: ConstructedCountrySession) -> Self:
         query = cls.compose_query(session.country)
-        response = session.send(query, priority=CRITICAL_PRIORITY)
+        response = await session.send(query, priority=CRITICAL_PRIORITY)
         return cls.from_gpt_response(response)
 
 
@@ -92,14 +92,14 @@ class WorkPermit(Document):
     player_translation: str = ""
 
     @classmethod
-    def from_quenta(cls, quenta: Quenta, session: ConstructedCountrySession) -> Self:
+    async def from_quenta(cls, quenta: Quenta, session: ConstructedCountrySession) -> Self:
         self = cls(
             name=quenta.name,
             employer=quenta.employer,
             employer_address=quenta.employer_address,
             job_title=quenta.job_title
         )
-        self.player_translation = session.from_english(self.game_repr, CRITICAL_PRIORITY)
+        self.player_translation = await session.from_english(self.game_repr, CRITICAL_PRIORITY)
         return self
 
     @property
@@ -127,7 +127,7 @@ class EmploymentAgreement(Document):
     player_translation: str = ""
 
     @classmethod
-    def from_quenta(cls, quenta: Quenta, session: ConstructedCountrySession) -> Self:
+    async def from_quenta(cls, quenta: Quenta, session: ConstructedCountrySession) -> Self:
         self = cls(
             employee_name=quenta.name,
             employer=quenta.employer,
@@ -136,7 +136,7 @@ class EmploymentAgreement(Document):
             job_duties=quenta.job_duties,
             salary=quenta.salary
         )
-        self.player_translation = session.from_english(self.game_repr, CRITICAL_PRIORITY)
+        self.player_translation = await session.from_english(self.game_repr, CRITICAL_PRIORITY)
         return self
 
     @property
@@ -163,13 +163,13 @@ class TenancyAgreement(Document):
     player_translation: str = ""
 
     @classmethod
-    def from_quenta(cls, quenta: Quenta, session: ConstructedCountrySession) -> Self:
+    async def from_quenta(cls, quenta: Quenta, session: ConstructedCountrySession) -> Self:
         self = cls(
             name=quenta.name,
             address=quenta.address,
             rent=quenta.rent
         )
-        self.player_translation = session.from_english(self.game_repr, CRITICAL_PRIORITY)
+        self.player_translation = await session.from_english(self.game_repr, CRITICAL_PRIORITY)
         return self
 
     @property

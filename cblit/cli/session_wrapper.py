@@ -4,7 +4,7 @@ import os.path
 
 from rich import print
 import inspect
-from typing import Callable, List, Optional, Type, Union, Self, Any
+from typing import Callable, List, Optional, Type, Union, Self, Any, TypeAlias, Coroutine
 
 import click
 import typer
@@ -14,10 +14,12 @@ from cblit.gpt.documents import Quenta, WorkPermit
 from cblit.gpt.gpt_api import ChatSession
 from loguru import logger
 
+SessionMethod: TypeAlias = Union[Callable[[str, int], Any], Callable[[str, int], Coroutine[Any, Any, Any]]]
+
 
 class SessionMethodWrapper:
     name: str
-    method: Callable[[str, int], Any]
+    method: SessionMethod
     priority: int
 
     def __init__(self, name: str, method: Callable[[str, int], Any], priority: int = 0):
@@ -25,7 +27,7 @@ class SessionMethodWrapper:
         self.method = method
         self.priority = priority
 
-    def run(self) -> None:
+    async def run(self) -> None:
         print(f"[green]{self.name}:[/green]")
         print(f"Priority: {self.priority}")
         print("Ctrl-D or Ctrl-C to go back")
@@ -37,6 +39,8 @@ class SessionMethodWrapper:
                     print(f"Priority: {self.priority}")
                     continue
                 gpt_response = self.method(user_message, self.priority)
+                if isinstance(gpt_response, Coroutine):
+                    gpt_response = await gpt_response
                 print(f"<: {gpt_response}")
             except click.exceptions.Abort:
                 print("[yellow]Done[/yellow]")
@@ -46,11 +50,11 @@ class SessionMethodWrapper:
     def is_compatible(signature: inspect.Signature) -> bool:
         parameters = list(signature.parameters.values())
         return (
-            len(parameters) == 2 and
-            parameters[0].annotation == str and
-            parameters[1].annotation == int and
-            parameters[1].name == "priority" and
-            signature.return_annotation is not None
+                len(parameters) == 2 and
+                parameters[0].annotation == str and
+                parameters[1].annotation == int and
+                parameters[1].name == "priority" and
+                signature.return_annotation is not None
         )
 
 
@@ -71,7 +75,7 @@ class SessionWrapper:
                         inspect.getmembers(self.session, predicate=inspect.ismethod) if
                         not name.startswith("_") and SessionMethodWrapper.is_compatible(inspect.signature(method))]
 
-    def select_mode(self) -> Optional[SessionMethodWrapper]:
+    async def select_mode(self) -> Optional[SessionMethodWrapper]:
         prompt_options = [f"{i + 1}) {method.name}" for i, method in enumerate(self.methods)]
         prompt_options += ["n) new", "l) load"]
         choice_labels = [str(i + 1) for i in range(len(self.methods))] + ["n", "l"]
@@ -84,7 +88,7 @@ class SessionWrapper:
         choice = typer.prompt(prompt, type=choices)
 
         if choice == "n":
-            self.generate()
+            await self.generate()
             return None
         elif choice == "l":
             self.load()
@@ -98,22 +102,22 @@ class SessionWrapper:
 
         return self.methods[int(choice) - 1]
 
-    def run(self) -> None:
+    async def run(self) -> None:
         while True:
             try:
-                method = self.select_mode()
+                method = await self.select_mode()
                 if method is not None:
-                    method.run()
+                    await method.run()
             except click.exceptions.Abort:
                 print("[yellow]Done[/yellow]")
                 return
 
-    def generate(self) -> None:
-        self.session = self.session_class.generate()
+    async def generate(self) -> None:
+        self.session = await self.session_class.generate()
         if isinstance(self.session, ConstructedCountrySession):
-            quenta = Quenta.from_session(self.session)
+            quenta = await Quenta.from_session(self.session)
             logger.debug(quenta)
-            work_permit = WorkPermit.from_quenta(quenta, self.session)
+            work_permit = await WorkPermit.from_quenta(quenta, self.session)
             logger.debug(work_permit)
         self.detect_methods()
         print("[green]New session is generated[/green]")

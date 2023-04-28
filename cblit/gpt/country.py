@@ -78,10 +78,10 @@ class ConstructedCountrySession(ChatSession):
         return ":".join(sections[1:]).strip()
 
     @classmethod
-    def generate(cls) -> Self:
+    async def generate(cls) -> Self:
         chat = Chat.initialise_with_system(system_prompt=("\n".join([WRITER_PROMPT, JSON_PROMPT])))
         session = ChatSession(chat=chat, usage=CompletionUsage(0, 0, 0))
-        country_response = session.send(COUNTRY_PROMPT, CRITICAL_PRIORITY)
+        country_response = await session.send(COUNTRY_PROMPT, CRITICAL_PRIORITY)
         country = ConstructedCountry.from_gpt_response(country_response)
         return cls(
             chat=session.chat,
@@ -89,27 +89,27 @@ class ConstructedCountrySession(ChatSession):
             usage=session.usage
         )
 
-    def _translate(self, from_lang: str, to_lang: str, sentence: str, priority: int) -> str:
+    async def _translate(self, from_lang: str, to_lang: str, sentence: str, priority: int) -> str:
         prompt = format_translation_prompt(from_lang, to_lang, sentence)
         logger.debug(f"Translation prompt: '{prompt}'")
-        translation = self.send_structured(prompt, Translation, priority)
+        translation = await self.send_structured(prompt, Translation, priority)
         logger.debug(f"Translation: '{translation}'")
         return translation.translation
 
-    def from_english(self, sentence: str, priority: int) -> str:
-        return self._translate("English", self.country.language_name, sentence, priority)
+    async def from_english(self, sentence: str, priority: int) -> str:
+        return await self._translate("English", self.country.language_name, sentence, priority)
 
-    def to_english(self, sentence: str, priority: int) -> str:
-        return self._translate(self.country.language_name, "English", sentence, priority)
+    async def to_english(self, sentence: str, priority: int) -> str:
+        return await self._translate(self.country.language_name, "English", sentence, priority)
 
-    def _is_language(self, sentence: str, language: str, priority: int) -> bool:
+    async def _is_language(self, sentence: str, language: str, priority: int) -> bool:
         prompt = format_language_check_prompt(sentence, language)
         logger.debug(f"Language check prompt: {prompt}")
-        reply = self.send(prompt, priority)
+        reply = await self.send(prompt, priority)
         return "yes" in reply.lower()
 
-    def is_english(self, sentence: str, priority: int) -> bool:
-        return self._is_language(sentence, "English", priority)
+    async def is_english(self, sentence: str, priority: int) -> bool:
+        return await self._is_language(sentence, "English", priority)
 
-    def is_national(self, sentence: str, priority: int) -> bool:
-        return self._is_language(sentence, self.country.language_name, priority)
+    async def is_national(self, sentence: str, priority: int) -> bool:
+        return await self._is_language(sentence, self.country.language_name, priority)

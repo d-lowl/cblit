@@ -193,15 +193,15 @@ class ChatSession(DataClassJsonMixin):
     usage: CompletionUsage
 
     @classmethod
-    def generate(cls) -> Self:
+    async def generate(cls) -> Self:
         raise NotImplementedError
 
-    def _send(self, chat: Chat) -> str:
+    async def _send(self, chat: Chat) -> str:
         model: str = "gpt-3.5-turbo"
 
         try:
             # No types are provided but for Chat Completion at least a Dict with this hierarchy is expected
-            completion_dict: Dict[str, Any] = openai.ChatCompletion.create(  # type: ignore[no-untyped-call]
+            completion_dict: Dict[str, Any] = await openai.ChatCompletion.acreate(  # type: ignore[no-untyped-call]
                 model=model,
                 messages=chat.to_list()
             )
@@ -223,13 +223,13 @@ class ChatSession(DataClassJsonMixin):
 
         return response_content
 
-    def send(self, content: str, priority: int) -> str:
+    async def send(self, content: str, priority: int) -> str:
         logger.debug(f"Sending (priority={priority}): {content}")
         self.chat.add(ChatRole.USER, content, priority)
 
         while True:
             try:
-                response_content = self._send(self.chat)
+                response_content = await self._send(self.chat)
                 break
             except CblitOpenaiError as e:
                 logger.warning(e)
@@ -245,31 +245,31 @@ class ChatSession(DataClassJsonMixin):
 
         return response_content
 
-    def next(self, priority: int) -> str:
+    async def next(self, priority: int) -> str:
         logger.debug(f"Getting next (priority={priority})")
-        response_content = self._send(self.chat)
+        response_content = await self._send(self.chat)
 
         if priority >= 0:
             self.chat.add(ChatRole.ASSISTANT, response_content, priority)
 
         return response_content
 
-    def regenerate(self) -> str:
+    async def regenerate(self) -> str:
         last = self.chat.get_last(ChatRole.USER)
         prompt = last.content
         priority = last.priority
         logger.debug(f"Regenerating (priority={priority}): {prompt}")
         self.chat.remove(2)
-        return self.send(prompt, priority)
+        return await self.send(prompt, priority)
 
-    def send_structured(
+    async def send_structured(
             self,
             content: str,
             klass: Type[ExtendsDataClassGPTJsonMixin],
             priority: int,
             no_retries: int = 3
     ) -> ExtendsDataClassGPTJsonMixin:
-        response = self.send(content, priority)
+        response = await self.send(content, priority)
         for attempt in range(no_retries):
             try:
                 instance = klass.from_gpt_response(response)
@@ -278,7 +278,7 @@ class ChatSession(DataClassJsonMixin):
                     f"Retry {attempt}/{no_retries}: Failed to parse GPT response into class '{klass.__name__}': "
                     f"{response}"
                 )
-                response = self.regenerate()
+                response = await self.regenerate()
             else:
                 break
         else:

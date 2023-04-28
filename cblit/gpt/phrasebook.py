@@ -44,9 +44,9 @@ class Phrasebook(DataClassJsonMixin):
             .compose()
 
     @classmethod
-    def from_session(cls, session: ConstructedCountrySession) -> Self:
+    async def from_session(cls, session: ConstructedCountrySession) -> Self:
         query = cls.compose_query(session.country)
-        response = session.send(query, CRITICAL_PRIORITY)
+        response = await session.send(query, CRITICAL_PRIORITY)
         phrases = Phrase.list_from_gpt_response(response)
         phrases += [
             Phrase(original=session.country.example_sentence_translation, translation=session.country.example_sentence)
