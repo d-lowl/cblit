@@ -4,6 +4,7 @@ from typing import List, Self
 from dataclasses_json import DataClassJsonMixin
 from loguru import logger
 
+from cblit.errors.errors import CblitArgumentError
 from cblit.gpt.country import ConstructedCountrySession
 from cblit.gpt.documents import Quenta, Document, Passport, WorkPermit, EmploymentAgreement, TenancyAgreement
 from cblit.gpt.gpt_api import ChatRole, NORMAL_PRIORITY, FORGET_PRIORITY
@@ -73,5 +74,7 @@ class Game(DataClassJsonMixin):
         return await self.process_officer(reply)
 
     async def give_document(self, index: int) -> str:
+        if not (0 <= index < len(self.documents)):
+            raise CblitArgumentError(f"Document with {index} does not exist")
         reply = await self.officer_session.give_document(self.documents[index])
         return await self.process_officer(reply)

@@ -1,25 +1,29 @@
+import os.path
 from typing import Dict, Any
-import asyncio
 import socketio
 from sanic import Sanic
 
 from cblit.game.game import Game
+from cblit.socketio.game import GameSessionManager
+from cblit.socketio.messages import Message, SayPayload
 
-games_event_loop = asyncio.new_event_loop()
+static_path = os.path.join(os.path.dirname(__file__), "static")
+print(static_path)
+
 games: Dict[str, Game] = {}
 
 sio = socketio.AsyncServer(async_mode='sanic')
 
 app = Sanic(name="cblit")
+app.static("/", os.path.join(static_path, "index.html"), name="game")
+app.static("/static/", static_path, name="statics")
 sio.attach(app)
+
+session_manager = GameSessionManager(sio)
 
 
 def generate_game(sid: str) -> None:
-    async def _generate_game() -> None:
-        games[sid] = await Game.generate()
-        print("game generated for: ", sid)
-
-    asyncio.get_running_loop().create_task(_generate_game())
+    session_manager.create_session(sid)
 
 
 @sio.event
@@ -33,8 +37,10 @@ def disconnect(sid: str) -> None:
 
 
 @sio.event
-def test(sid: str, data: str) -> None:
-    print("test event: ", sid, data)
+def say(sid: str, data: str) -> None:
+    print(data)
+    Message[SayPayload].deserialize(data)
+
 
 
 if __name__ == "__main__":
