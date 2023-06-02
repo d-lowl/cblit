@@ -1,12 +1,10 @@
 import dataclasses
 from enum import Enum
-from typing import Self
 
-from langchain import PromptTemplate
+from langchain import PromptTemplate, OpenAI, ConversationChain
+from langchain.memory import ConversationBufferMemory
 
-from cblit.gpt.completion import CompletionUsage
 from cblit.gpt.documents import Document
-from cblit.gpt.gpt_api import ChatSession, Chat, NORMAL_PRIORITY
 
 OFFICER_PROMPT = "Pretend you are an immigration officer at an immigration office. " \
                  "You only talk as the officer, you never reply to your own phrases on my behalf " \
@@ -40,7 +38,7 @@ def build_officer_prompt() -> str:
 
 def build_officer_langchain_prompt() -> PromptTemplate:
     template = build_officer_prompt() + """
-    
+
     Current conversation:
     {history}
     Visitor: {input}
@@ -56,14 +54,21 @@ class LanguageUnderstanding(Enum):
 
 
 @dataclasses.dataclass
-class OfficerSession(ChatSession):
+class OfficerLangchain:
+    conversation: ConversationChain
 
-    @classmethod
-    async def generate(cls) -> Self:
-        chat = Chat.initialise_with_system(system_prompt=build_officer_prompt())
-        session = cls(chat=chat, usage=CompletionUsage(0, 0, 0))
-        await session.send("hi", priority=NORMAL_PRIORITY)
-        return session
+    def __init__(self) -> None:
+        llm = OpenAI(temperature=0)  # type: ignore [call-arg]
+        prompt = build_officer_langchain_prompt()
+        self.conversation = ConversationChain(
+            llm=llm,
+            verbose=True,
+            memory=ConversationBufferMemory(
+                human_prefix="Visitor",
+                ai_prefix="Officer"
+            ),
+            prompt=prompt,
+        )
 
     async def say(self, saying: str, language: LanguageUnderstanding) -> str:
         understanding_prompt = ""
@@ -74,9 +79,9 @@ class OfficerSession(ChatSession):
         elif language == LanguageUnderstanding.NON_NATIVE:
             understanding_prompt = "speaks not in your native language, you understand about 75% of what is said"
         prompt = f"<{understanding_prompt}> {saying}"
-        return await self.send(prompt, NORMAL_PRIORITY)
+        return await self.conversation.apredict(input=prompt)
 
     async def give_document(self, document: Document) -> str:
         prompt = f"[I give the following document]\n{document.game_repr}"
 
-        return await self.send(prompt, NORMAL_PRIORITY)
+        return await self.conversation.apredict(input=prompt)

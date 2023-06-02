@@ -66,7 +66,8 @@ class GameCliWrapper:
         await SessionWrapper.from_session(self.game.country_session).run()
 
     async def inspect_officer(self) -> None:
-        await SessionWrapper.from_session(self.game.officer_session).run()
+        raise NotImplementedError()
+        # await SessionWrapper.from_session(self.game.officer_session).run()
 
     async def talk(self) -> None:
         async def wrap_say_to_officer(sentence: str, priority: int) -> str:

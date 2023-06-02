@@ -1,4 +1,3 @@
-import langchain
 from langchain.llms import OpenAI
 from langchain.chains import ConversationChain
 from langchain.memory import ConversationBufferMemory
@@ -7,7 +6,7 @@ from cblit.gpt.officer import build_officer_langchain_prompt
 
 
 def main() -> None:
-    llm = OpenAI(temperature=0)
+    llm = OpenAI(temperature=0)  # type: ignore [call-arg]
     prompt = build_officer_langchain_prompt()
     conversation = ConversationChain(
         llm=llm,

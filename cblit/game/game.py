@@ -8,15 +8,15 @@ from loguru import logger
 from cblit.errors.errors import CblitArgumentError
 from cblit.gpt.country import ConstructedCountrySession
 from cblit.gpt.documents import Quenta, Document, Passport, WorkPermit, EmploymentAgreement, TenancyAgreement
-from cblit.gpt.gpt_api import ChatRole, NORMAL_PRIORITY, FORGET_PRIORITY
-from cblit.gpt.officer import OfficerSession, LanguageUnderstanding
+from cblit.gpt.gpt_api import NORMAL_PRIORITY, FORGET_PRIORITY
+from cblit.gpt.officer import LanguageUnderstanding, OfficerLangchain
 from cblit.gpt.phrasebook import Phrasebook
 
 
 @dataclasses.dataclass
 class Game(DataClassJsonMixin):
     country_session: ConstructedCountrySession
-    officer_session: OfficerSession
+    officer_session: OfficerLangchain
     quenta: Quenta
     documents: List[Document]
     phrasebook: Phrasebook
@@ -27,7 +27,7 @@ class Game(DataClassJsonMixin):
     async def generate(cls) -> Self:
         country_session = await ConstructedCountrySession.generate()
         phrasebook = await Phrasebook.from_session(country_session)
-        officer_session = await OfficerSession.generate()
+        officer_session = OfficerLangchain()
         quenta = await Quenta.from_session(country_session)
         documents = await cls.generate_documents(quenta, country_session)
         return cls(
@@ -42,7 +42,7 @@ class Game(DataClassJsonMixin):
 
     async def start(self) -> str:
         self.started = True
-        reply = self.officer_session.chat.get_last(ChatRole.ASSISTANT).content
+        reply = await self.officer_session.say("Hi!", LanguageUnderstanding.NATIVE_CLEAR)
         return await self.country_session.from_english(reply, NORMAL_PRIORITY)
 
     @staticmethod
@@ -75,6 +75,7 @@ class Game(DataClassJsonMixin):
         return await self.process_officer(reply)
 
     async def give_document(self, index: int) -> str:
+        # raise NotImplementedError()
         if not (0 <= index < len(self.documents)):
             raise CblitArgumentError(f"Document with {index} does not exist")
         reply = await self.officer_session.give_document(self.documents[index])
