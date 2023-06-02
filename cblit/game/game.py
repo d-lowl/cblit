@@ -1,3 +1,4 @@
+import asyncio
 import dataclasses
 from typing import List, Self
 
@@ -46,12 +47,12 @@ class Game(DataClassJsonMixin):
 
     @staticmethod
     async def generate_documents(quenta: Quenta, session: ConstructedCountrySession) -> List[Document]:
-        return [
+        return list(await asyncio.gather(
             Passport.from_quenta(quenta),
-            await WorkPermit.from_quenta(quenta, session),
-            await EmploymentAgreement.from_quenta(quenta, session),
-            await TenancyAgreement.from_quenta(quenta, session)
-        ]
+            WorkPermit.from_quenta(quenta, session),
+            EmploymentAgreement.from_quenta(quenta, session),
+            TenancyAgreement.from_quenta(quenta, session)
+        ))
 
     async def process_officer(self, reply: str) -> str:
         if "%%SUCCESS%%" in reply:

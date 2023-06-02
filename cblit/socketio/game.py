@@ -4,7 +4,8 @@ import socketio
 import asyncio
 
 from cblit.game.game import Game
-from cblit.socketio.messages import OutgoingMessage, SayPayload, WaitPayload, WinPayload
+from cblit.socketio.messages import OutgoingMessage, SayPayload, WaitPayload, WinPayload, DocumentsPayload, \
+    DocumentPayload
 
 
 def aiorun(coroutine: Coroutine[Any, Any, Any]) -> None:
@@ -45,27 +46,43 @@ class GameSessionManager:
 
     async def reply(self, session_id: str, message: str) -> None:
         session = self.get_session(session_id)
-        await self.server.send(
-            OutgoingMessage(
-                SayPayload(
-                    who="officer",
-                    message=message
-                )
-            ).serialize(),
+        await self.server.emit(
+            "say",
+            SayPayload(
+                who="officer",
+                message=message
+            ).to_json(),
             session_id
         )
-        await self.server.send(
-            OutgoingMessage(
-                WinPayload(
-                    won=session.game.won
-                )
-            ).serialize(),
+        await self.server.emit(
+            "win",
+            WinPayload(
+                won=session.game.won
+            ).to_json(),
             session_id
         )
 
     async def tell_to_wait(self, session_id: str, wait: bool) -> None:
-        await self.server.send(
-            OutgoingMessage(WaitPayload(wait)).serialize(),
+        await self.server.emit(
+            "wait",
+            WaitPayload(wait).to_json(),
+            session_id
+        )
+
+    async def send_documents(self, session_id: str) -> None:
+        documents = self.get_session(session_id).game.documents
+        payload = DocumentsPayload([DocumentPayload(document.player_repr) for document in documents])
+        await self.server.emit(
+            "documents",
+            payload.to_json(),
+            session_id
+        )
+
+    async def send_phrasebook(self, session_id: str) -> None:
+        phrasebook = self.get_session(session_id).game.phrasebook
+        await self.server.emit(
+            "phrasebook",
+            phrasebook.to_json(),
             session_id
         )
 
@@ -100,7 +117,11 @@ class GameSessionManager:
         await self.tell_to_wait(session_id, True)
         await self.sessions[session_id].initialise()
         start_officer_line = await self.sessions[session_id].start()
-        await self.reply(session_id, start_officer_line)
+        await asyncio.gather(
+            self.reply(session_id, start_officer_line),
+            self.send_documents(session_id),
+            self.send_phrasebook(session_id)
+        )
         await self.tell_to_wait(session_id, False)
 
     def create_session(self, session_id: str) -> None:

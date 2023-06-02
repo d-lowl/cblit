@@ -5,7 +5,7 @@ from sanic import Sanic
 
 from cblit.game.game import Game
 from cblit.socketio.game import GameSessionManager
-from cblit.socketio.messages import Message, SayPayload
+from cblit.socketio.messages import Message, SayPayload, GiveDocumentPayload
 
 static_path = os.path.join(os.path.dirname(__file__), "static")
 print(static_path)
@@ -40,6 +40,13 @@ def disconnect(sid: str) -> None:
 def say(sid: str, data: str) -> None:
     print(data)
     Message[SayPayload].deserialize(data)
+
+
+@sio.event
+def give_document(sid: str, data: str) -> None:
+    print(data)
+    payload = GiveDocumentPayload.from_json(data)
+    session_manager.give_documents(sid, payload.index)
 
 
 

@@ -1,6 +1,6 @@
 import dataclasses
 import json
-from typing import Generic, TypeVar, TypeAlias, Union, Self, cast
+from typing import Generic, TypeVar, TypeAlias, Union, Self, cast, List
 
 from dataclasses_json import DataClassJsonMixin
 
@@ -17,6 +17,11 @@ class SayPayload(DataClassJsonMixin):
 
 
 @dataclasses.dataclass
+class GiveDocumentPayload(DataClassJsonMixin):
+    index: int
+
+
+@dataclasses.dataclass
 class WinPayload(DataClassJsonMixin):
     won: bool
 
@@ -25,6 +30,16 @@ class WinPayload(DataClassJsonMixin):
 class ErrorPayload(DataClassJsonMixin):
     code: int
     message: str
+
+
+@dataclasses.dataclass
+class DocumentPayload(DataClassJsonMixin):
+    text: str
+
+
+@dataclasses.dataclass
+class DocumentsPayload(DataClassJsonMixin):
+    documents: List[DocumentPayload]
 
 
 IncomingMessagePayload: TypeAlias = Union[

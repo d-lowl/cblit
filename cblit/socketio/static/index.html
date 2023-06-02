@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <link rel="stylesheet" href="static/schema.css">
+  <link rel="stylesheet" href="static/main.css">
+  <link rel="stylesheet" href="static/spinner.css">
+  <script type="module" src="static/main.js"></script>
+  <title>Cosmic Bureaucracy: Lost in Translation</title>
+</head>
+<body>
+<div class="loading-spinner" id="loading-spinner">
+  <div class="sk-wave">
+    <div class="sk-circle sk-circle1"></div>
+    <div class="sk-circle sk-circle2"></div>
+    <div class="sk-circle sk-circle3"></div>
+    <div class="sk-circle sk-circle4"></div>
+    <div class="sk-circle sk-circle5"></div>
+  </div>
+</div>
+<h1>Cosmic Bureaucracy: Lost in Translation</h1>
+<div class="game-container">
+  <div class="small-column bordered">
+    <p>phrasebook</p>
+    <hr/>
+    <div id="phrasebook">
+    </div>
+  </div>
+  <div class="column bordered">
+    <p>chat</p>
+    <hr/>
+    <input type="text" id="chat-input" />
+    <button id="chat-submit">Say</button>
+    <hr/>
+    <div id="chat">
+    </div>
+  </div>
+  <div class="small-column bordered">
+    <p>documents</p>
+    <hr/>
+    <div id="documents"></div>
+  </div>
+</div>
+</body>
+</html>

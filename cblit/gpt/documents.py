@@ -62,7 +62,7 @@ class Passport(Document):
     dob: str
 
     @classmethod
-    def from_quenta(cls, quenta: Quenta) -> Self:
+    async def from_quenta(cls, quenta: Quenta) -> Self:
         return cls(
             name=quenta.name,
             country=quenta.country,

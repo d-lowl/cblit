@@ -1,0 +1,51 @@
+body {
+    text-align: center;
+    font-family: monospace;
+    background-color: var(--secondary-colour);
+    color: var(--primary-colour);
+    border-color: var(--primary-colour);
+}
+
+.game-container {
+    display: flex;
+}
+
+.bordered {
+    border-style: solid;
+    margin: 4px;
+    padding: 4px;
+}
+
+.column {
+    flex: 3;
+}
+
+.small-column {
+    flex: 1;
+}
+
+.chat-message > p {
+    text-align: left;
+    font-size: small;
+}
+
+.chat-message > p.chat-message-title {
+    font-size: smaller;
+    color: var(--accent-colour);
+}
+
+.chat-message > p.right {
+    text-align: right;
+}
+
+.document {
+    white-space: pre-wrap;
+    text-align: left;
+}
+
+.document:hover {
+    border-color: var(--accent-colour);
+    border-style: double;
+    cursor: pointer;
+}
+
