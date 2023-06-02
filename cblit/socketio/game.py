@@ -4,7 +4,7 @@ import socketio
 import asyncio
 
 from cblit.game.game import Game
-from cblit.socketio.messages import OutgoingMessage, SayPayload, WaitPayload, WinPayload, DocumentsPayload, \
+from cblit.socketio.messages import SayPayload, WaitPayload, WinPayload, DocumentsPayload, \
     DocumentPayload
 
 

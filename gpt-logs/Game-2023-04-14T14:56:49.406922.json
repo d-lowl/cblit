@@ -1,0 +1,252 @@
+{
+  "country_session": {
+    "chat": {
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a young sci-fi writer. You need to write creative things. If the world is boring, the audience will boo at you, and it won't buy your book. Every time you give an answer re-evaluate if it is boring or not. If you think it's boring, try writing again. Try to impress the readers. What you come up with must not be similar to English.\nI want every reply to be formatted as JSON. Do not ever write anything other then valid JSON. Do not add \"Note\". JSON multi-line strings should be put on a single line with new line characters, as expected by JSON standard.",
+          "priority": 999
+        },
+        {
+          "role": "user",
+          "content": "Construct a country. Give short answers to the following questions:\n* Country name, key: country_name\n* Country short description, key: country_description\n* Country people short description, key: people_description\n* National language name, key: language_name\n* National language short description, key: language_description\n* Example sentence in the national language, key: example_sentence\n* Its translation to English, key: example_sentence_translation\n",
+          "priority": 999
+        },
+        {
+          "role": "assistant",
+          "content": "{\n  \"country_name\": \"Xalax\",\n  \"country_description\": \"Xalax is a country located on a small, isolated island in the middle of the ocean. Its landscapes are diverse, ranging from lush jungles to mountainous terrains.\",\n  \"people_description\": \"The Xalaxians are a hardy and self-reliant people, with a strong sense of community.\",\n  \"language_name\": \"Zalaxian\",\n  \"language_description\": \"Zalaxian is a guttural language with many glottal stops, primarily spoken by the people of Xalax.\",\n  \"example_sentence\": \"Haxun qakal kezalax shalaxon.\",\n  \"example_sentence_translation\": \"The sun rises over the mountains of Xalax.\" \n}",
+          "priority": 999
+        },
+        {
+          "role": "user",
+          "content": "Give me a phrasebook in Zalaxian\nI want every reply to be formatted as a list of JSON objects. Do not ever write anything other then valid JSON. Do not add \"Note\". JSON multi-line strings should be put on a single line with new line characters, as expected by JSON standard. Each object must include these key-value pairs:\n* Original phrase in English; key: original\n* Translation to Zalaxian; key: translation\nIn addition to whatever phrases you come up with, add these phrases, if they are not already there:\n* Document\n* Work\n* Immigration office\n* Required\n* I do not understand\n* Too fast\n* Orchard",
+          "priority": 999
+        },
+        {
+          "role": "assistant",
+          "content": "[\n  {\n    \"original\": \"Hello\",\n    \"translation\": \"Kaxar\"\n  },\n  {\n    \"original\": \"Goodbye\",\n    \"translation\": \"Kixra\"\n  },\n  {\n    \"original\": \"Thank you\",\n    \"translation\": \"Halax\"\n  },\n  {\n    \"original\": \"Please\",\n    \"translation\": \"Kexal\"\n  },\n  {\n    \"original\": \"Yes\",\n    \"translation\": \"Zal\"\n  },\n  {\n    \"original\": \"No\",\n    \"translation\": \"Kal\"\n  },\n  {\n    \"original\": \"Document\",\n    \"translation\": \"Xalaxlax\"\n  },\n  {\n    \"original\": \"Work\",\n    \"translation\": \"Haqilax\"\n  },\n  {\n    \"original\": \"Immigration office\",\n    \"translation\": \"Zaxirxax kalaxor\"\n  },\n  {\n    \"original\": \"Required\",\n    \"translation\": \"Laxorix\"\n  },\n  {\n    \"original\": \"I do not understand\",\n    \"translation\": \"Lax haxalax zaxalax.\"\n  },\n  {\n    \"original\": \"Too fast\",\n    \"translation\": \"Kixlaxor chaxaror.\"\n  },\n  {\n    \"original\": \"Orchard\",\n    \"translation\": \"Kaxaqilax.\"\n  }\n]",
+          "priority": 999
+        },
+        {
+          "role": "user",
+          "content": "Generate me a quenta or a biography of a citizen of a neighbouring country.\nI want every reply to be formatted as JSON. Do not ever write anything other then valid JSON. Do not add \"Note\". JSON multi-line strings should be put on a single line with new line characters, as expected by JSON standard.\n* Full name; key: name\n* Neighboring country name; key: country\n* Date of birth; key: dob\n* Employer company name; key: employer\n* Employer company address in Xalax; key: employer_address\n* Job title of the person; key: job_title\n* Job duties; key: job_duties\n* Salary; key: salary\n* Person's address in Xalax; key: address\n* Rent price for that apartment; key: rent",
+          "priority": 999
+        },
+        {
+          "role": "assistant",
+          "content": "{\n  \"name\": \"Sara Khan\",\n  \"country\": \"Zaloria\",\n  \"dob\": \"1990-03-15\",\n  \"employer\": \"Zaloria Co.\",\n  \"employer_address\": \"Xalorian Tower, Xalax Island\",\n  \"job_title\": \"Senior Software Engineer\",\n  \"job_duties\": \"Developing and maintaining software applications for the company's clients\",\n  \"salary\": \"5500 Xalaxian Dollars per month\",\n  \"address\": \"12 Cypress Grove, Xalax Island\",\n  \"rent\": \"1500 Xalaxian Dollars per month\"\n}",
+          "priority": 999
+        },
+        {
+          "role": "user",
+          "content": "Translate from English to Zalaxian:\n\"Work Permit\n--------\nFull Name: Sara Khan\nCompany of employment: Zaloria Co.\nJob title: Senior Software Engineer\nCompany address: Xalorian Tower, Xalax Island\"\nI want every reply to be formatted as JSON. Do not ever write anything other then valid JSON. Do not add \"Note\". JSON multi-line strings should be put on a single line with new line characters, as expected by JSON standard.\n* Translation; key: translation",
+          "priority": 999
+        },
+        {
+          "role": "assistant",
+          "content": "{\n  \"translation\": \"Haqilax Laxorix\\n--------\\nLaxorix Halax: Sara Khan\\nHaqilax haqilaxor: Zaloria Co.\\nKaxar haqilaxoror: Senior Software Engineer\\nHaqilax haqilaxororor laxorix: Xalorian Tower, Xalax Island\"\n}",
+          "priority": 999
+        },
+        {
+          "role": "user",
+          "content": "Translate from English to Zalaxian:\n\"Employment Agreement: \n--------\nEmployee Name: Sara Khan\nEmployer Name: Zaloria Co.\nJob title: Senior Software Engineer\nJob duties: Developing and maintaining software applications for the company's clients\nSalary: 5500 Xalaxian Dollars per month\nCompany address: Xalorian Tower, Xalax Island\"\nI want every reply to be formatted as JSON. Do not ever write anything other then valid JSON. Do not add \"Note\". JSON multi-line strings should be put on a single line with new line characters, as expected by JSON standard.\n* Translation; key: translation",
+          "priority": 999
+        },
+        {
+          "role": "assistant",
+          "content": "{\n  \"translation\": \"Haqilax Laxorix:\\n--------\\nHalaxor Laxorix: Sara Khan\\nHaqilaxor Laxorix: Zaloria Co.\\nKaxar haqilaxoror: Senior Software Engineer\\nHaqilaxor laxorixor: Xaxorlax laxorixax kexalax kaxaqilaxoror chaxorax.\\nHalaxix: 5500 Xalaxian Dollars laxorax haxaxor.\\nHaqilaxoror laxorix: Xalorian Tower, Xalax Island\"\n}",
+          "priority": 999
+        },
+        {
+          "role": "user",
+          "content": "Translate from English to Zalaxian:\n\"Tenancy Agreement\n--------\nFull Name: Sara Khan\nAddress: 12 Cypress Grove, Xalax Island\nRent price: 1500 Xalaxian Dollars per month\n\"\nI want every reply to be formatted as JSON. Do not ever write anything other then valid JSON. Do not add \"Note\". JSON multi-line strings should be put on a single line with new line characters, as expected by JSON standard.\n* Translation; key: translation",
+          "priority": 999
+        },
+        {
+          "role": "assistant",
+          "content": "{\n  \"translation\": \"Kaxaqilax Laxorix\\n--------\\nLaxorix Halax: Sara Khan\\nLaxorixax: 12 Cypress Grove, Xalax Island\\nKaxaqilax laxorax: 1500 Xalaxian Dollars laxorax haxaxor.\"\n}",
+          "priority": 999
+        },
+        {
+          "role": "user",
+          "content": "Translate from English to Zalaxian:\n\"Hello, how can I assist you today? Is this for immigration registration?\"\nI want every reply to be formatted as JSON. Do not ever write anything other then valid JSON. Do not add \"Note\". JSON multi-line strings should be put on a single line with new line characters, as expected by JSON standard.\n* Translation; key: translation",
+          "priority": 100
+        },
+        {
+          "role": "assistant",
+          "content": "{\n  \"translation\": \"Kaxar, haxax ixlax taraxor kaxaroror? Laxorax halax zaxax laxoroxaxororor xalaxor?\"\n}",
+          "priority": 100
+        },
+        {
+          "role": "user",
+          "content": "Translate from Zalaxian to English:\n\"xalaxor\"\nI want every reply to be formatted as JSON. Do not ever write anything other then valid JSON. Do not add \"Note\". JSON multi-line strings should be put on a single line with new line characters, as expected by JSON standard.\n* Translation; key: translation",
+          "priority": 100
+        },
+        {
+          "role": "assistant",
+          "content": "{\n  \"translation\": \"Island\"\n}",
+          "priority": 100
+        },
+        {
+          "role": "user",
+          "content": "Translate from English to Zalaxian:\n\"I'm sorry, I didn't understand. Could you please repeat that again?\"\nI want every reply to be formatted as JSON. Do not ever write anything other then valid JSON. Do not add \"Note\". JSON multi-line strings should be put on a single line with new line characters, as expected by JSON standard.\n* Translation; key: translation",
+          "priority": 100
+        },
+        {
+          "role": "assistant",
+          "content": "{\n  \"translation\": \"Halax haxalax, lax haxalax zaxalax. Kexalaxor lax haxalax haxoror kaxaror?\"\n}",
+          "priority": 100
+        }
+      ]
+    },
+    "usage": {
+      "completion_tokens": 987,
+      "prompt_tokens": 16262,
+      "total_tokens": 17249
+    },
+    "country": {
+      "country_name": "Xalax",
+      "country_description": "Xalax is a country located on a small, isolated island in the middle of the ocean. Its landscapes are diverse, ranging from lush jungles to mountainous terrains.",
+      "people_description": "The Xalaxians are a hardy and self-reliant people, with a strong sense of community.",
+      "language_name": "Zalaxian",
+      "language_description": "Zalaxian is a guttural language with many glottal stops, primarily spoken by the people of Xalax.",
+      "example_sentence": "Haxun qakal kezalax shalaxon.",
+      "example_sentence_translation": "The sun rises over the mountains of Xalax."
+    }
+  },
+  "officer_session": {
+    "chat": {
+      "messages": [
+        {
+          "role": "system",
+          "content": "Pretend you are an immigration officer at an immigration office. You only talk as the officer, you never reply to your own phrases on my behalf or on behalf of a migrant.\nPretend that I, a recent migrant, walk in, and approach your window.\n\nFor an immigrant registration the procedure is as follows:\n1. Greeting and ask for what the purpose is. Confirm that this is for the registration.\n2. Ask for the name and identity documents\n3. If the identity documents are alright, scan them for filing\n4. Ask for a reason to immigrate\n5. If it is for work, ask for the work permit and employment contract\n6. Ask for the postal address\n7. Thank them and tell that they will receive the residence permit via post in 14 to 21 days\n8. Say \"%%SUCCESS%%\" when finished\nThis will be a dialog. Reply one phrase at a time please.",
+          "priority": 999
+        },
+        {
+          "role": "user",
+          "content": "hi",
+          "priority": 100
+        },
+        {
+          "role": "assistant",
+          "content": "Hello, how can I assist you today? Is this for immigration registration?",
+          "priority": 100
+        },
+        {
+          "role": "user",
+          "content": "<speaks with an accent> Island",
+          "priority": 100
+        },
+        {
+          "role": "assistant",
+          "content": "I'm sorry, I didn't understand. Could you please repeat that again?",
+          "priority": 100
+        }
+      ]
+    },
+    "usage": {
+      "completion_tokens": 31,
+      "prompt_tokens": 445,
+      "total_tokens": 476
+    }
+  },
+  "quenta": {
+    "name": "Sara Khan",
+    "country": "Zaloria",
+    "dob": "1990-03-15",
+    "employer": "Zaloria Co.",
+    "employer_address": "Xalorian Tower, Xalax Island",
+    "job_title": "Senior Software Engineer",
+    "job_duties": "Developing and maintaining software applications for the company's clients",
+    "salary": "5500 Xalaxian Dollars per month",
+    "address": "12 Cypress Grove, Xalax Island",
+    "rent": "1500 Xalaxian Dollars per month"
+  },
+  "documents": [
+    {
+      "name": "Sara Khan",
+      "country": "Zaloria",
+      "dob": "1990-03-15"
+    },
+    {
+      "name": "Sara Khan",
+      "employer": "Zaloria Co.",
+      "employer_address": "Xalorian Tower, Xalax Island",
+      "job_title": "Senior Software Engineer",
+      "player_translation": "Haqilax Laxorix\n--------\nLaxorix Halax: Sara Khan\nHaqilax haqilaxor: Zaloria Co.\nKaxar haqilaxoror: Senior Software Engineer\nHaqilax haqilaxororor laxorix: Xalorian Tower, Xalax Island"
+    },
+    {
+      "employee_name": "Sara Khan",
+      "employer": "Zaloria Co.",
+      "employer_address": "Xalorian Tower, Xalax Island",
+      "job_title": "Senior Software Engineer",
+      "job_duties": "Developing and maintaining software applications for the company's clients",
+      "salary": "5500 Xalaxian Dollars per month",
+      "player_translation": "Haqilax Laxorix:\n--------\nHalaxor Laxorix: Sara Khan\nHaqilaxor Laxorix: Zaloria Co.\nKaxar haqilaxoror: Senior Software Engineer\nHaqilaxor laxorixor: Xaxorlax laxorixax kexalax kaxaqilaxoror chaxorax.\nHalaxix: 5500 Xalaxian Dollars laxorax haxaxor.\nHaqilaxoror laxorix: Xalorian Tower, Xalax Island"
+    },
+    {
+      "name": "Sara Khan",
+      "address": "12 Cypress Grove, Xalax Island",
+      "rent": "1500 Xalaxian Dollars per month",
+      "player_translation": "Kaxaqilax Laxorix\n--------\nLaxorix Halax: Sara Khan\nLaxorixax: 12 Cypress Grove, Xalax Island\nKaxaqilax laxorax: 1500 Xalaxian Dollars laxorax haxaxor."
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "original": "Hello",
+        "translation": "Kaxar"
+      },
+      {
+        "original": "Goodbye",
+        "translation": "Kixra"
+      },
+      {
+        "original": "Thank you",
+        "translation": "Halax"
+      },
+      {
+        "original": "Please",
+        "translation": "Kexal"
+      },
+      {
+        "original": "Yes",
+        "translation": "Zal"
+      },
+      {
+        "original": "No",
+        "translation": "Kal"
+      },
+      {
+        "original": "Document",
+        "translation": "Xalaxlax"
+      },
+      {
+        "original": "Work",
+        "translation": "Haqilax"
+      },
+      {
+        "original": "Immigration office",
+        "translation": "Zaxirxax kalaxor"
+      },
+      {
+        "original": "Required",
+        "translation": "Laxorix"
+      },
+      {
+        "original": "I do not understand",
+        "translation": "Lax haxalax zaxalax."
+      },
+      {
+        "original": "Too fast",
+        "translation": "Kixlaxor chaxaror."
+      },
+      {
+        "original": "Orchard",
+        "translation": "Kaxaqilax."
+      }
+    ]
+  },
+  "started": true,
+  "won": false
+}

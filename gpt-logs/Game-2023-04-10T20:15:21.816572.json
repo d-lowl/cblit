@@ -1,0 +1,191 @@
+{
+  "country_session": {
+    "chat": {
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a young sci-fi writer. You need to write creative things. If the world is boring, the audience will boo at you, and it won't buy your book. Every time you give an answer re-evaluate if it is boring or not. If you think it's boring, try writing again. Try to impress the readers. What you come up with must not be similar to English.\nI want every reply to be formatted as JSON. Do not ever write anything other then valid JSON. Do not add \"Note\". JSON multi-line strings should be put on a single line with new line characters, as expected by JSON standard."
+        },
+        {
+          "role": "user",
+          "content": "Construct a country. Give short answers to the following questions:\n* Country name, key: country_name\n* Country short description, key: country_description\n* Country people short description, key: people_description\n* National language name, key: language_name\n* National language short description, key: language_description\n* Example sentence in the national language, key: example_sentence\n* Its translation to English, key: example_sentence_translation\n"
+        },
+        {
+          "role": "assistant",
+          "content": "{\n  \"country_name\": \"Xyztan\",\n  \"country_description\": \"Xyztan is a small country located on a remote island in the Caribbean Sea. The country is known for its vibrant culture and breathtaking natural beauty.\",\n  \"people_description\": \"The people of Xyztan are warm and friendly, and are known for their love of music and dance. They are fiercely independent and value their freedom above all else.\",\n  \"language_name\": \"Xyztanian\",\n  \"language_description\": \"Xyztanian is a melodic language with a rich history dating back to the ancient tribes that once inhabited the island. It is a tonal language, with rising and falling inflections that convey meaning.\",\n  \"example_sentence\": \"Mxitlan loza tashkyr nonzyr.\",\n  \"example_sentence_translation\": \"The sun is shining brightly.\"\n}"
+        },
+        {
+          "role": "user",
+          "content": "Give me a phrasebook in Xyztanian\nI want every reply to be formatted as a list of JSON objects. Do not ever write anything other then valid JSON. Do not add \"Note\". JSON multi-line strings should be put on a single line with new line characters, as expected by JSON standard. Each object must include these key-value pairs:\n* Original phrase in English; key: original\n* Translation to Xyztanian; key: translation\nIn addition to whatever phrases you come up with, add these phrases, if they are not already there:\n* Document\n* Work\n* Immigration office\n* Required\n* I do not understand\n* Too fast\n* Orchard"
+        },
+        {
+          "role": "assistant",
+          "content": "[\n  {\n    \"original\": \"Hello\",\n    \"translation\": \"Zashx\"\n  },\n  {\n    \"original\": \"Goodbye\",\n    \"translation\": \"Toshx\"\n  },\n  {\n    \"original\": \"Thank you\",\n    \"translation\": \"Kishnon\"\n  },\n  {\n    \"original\": \"Please\",\n    \"translation\": \"Vyrgx\"\n  },\n  {\n    \"original\": \"Yes\",\n    \"translation\": \"Xyo\"\n  },\n  {\n    \"original\": \"No\",\n    \"translation\": \"Lazt\"\n  },\n  {\n    \"original\": \"Document\",\n    \"translation\": \"Loxtygr\"\n  },\n  {\n    \"original\": \"Work\",\n    \"translation\": \"Gyxtan\"\n  },\n  {\n    \"original\": \"Immigration office\",\n    \"translation\": \"Myrantygr nyvyr\"\n  },\n  {\n    \"original\": \"Required\",\n    \"translation\": \"Kazykx\"\n  },\n  {\n    \"original\": \"I do not understand\",\n    \"translation\": \"Lokan vyzhlo zashx\"\n  },\n  {\n    \"original\": \"Too fast\",\n    \"translation\": \"Ozhtal kytzgyr\"\n  },\n  {\n    \"original\": \"Orchard\",\n    \"translation\": \"Nytalchyn\"\n  }\n]"
+        },
+        {
+          "role": "user",
+          "content": "Generate me a quenta or a biography of a citizen of a neighbouring country.\nI want every reply to be formatted as JSON. Do not ever write anything other then valid JSON. Do not add \"Note\". JSON multi-line strings should be put on a single line with new line characters, as expected by JSON standard.\n* Full name; key: name\n* Neighboring country name; key: country\n* Date of birth; key: dob\n* Employer company name; key: employer\n* Employer company address in Xyztan; key: employer_address\n* Job title of the person; key: job_title\n* Job duties; key: job_duties\n* Salary; key: salary\n* Person's address in Xyztan; key: address\n* Rent price for that apartment; key: rent"
+        },
+        {
+          "role": "assistant",
+          "content": "{\n  \"name\": \"Lirien Alar\",\n  \"country\": \"Tyristan\",\n  \"dob\": \"1982-05-11\",\n  \"employer\": \"Zalo Industries\",\n  \"employer_address\": \"Mazryton Hwy, Xerzagyr, Xyztan\",\n  \"job_title\": \"Lead Engineer\",\n  \"job_duties\": \"Oversee production of new prototype designs using cutting edge technology.\",\n  \"salary\": 75000,\n  \"address\": \"123 Zytahl St, Xerzagyr, Xyztan\",\n  \"rent\": 1800\n}"
+        },
+        {
+          "role": "user",
+          "content": "Translate from English to Xyztanian:\n\"Work Permit\n--------\nFull Name: Lirien Alar\nCompany of employment: Zalo Industries\nJob title: Lead Engineer\nCompany address: Mazryton Hwy, Xerzagyr, Xyztan\"\nI want every reply to be formatted as JSON. Do not ever write anything other then valid JSON. Do not add \"Note\". JSON multi-line strings should be put on a single line with new line characters, as expected by JSON standard.\n* Translation; key: translation"
+        },
+        {
+          "role": "assistant",
+          "content": "{\n  \"translation\": \"Gyxtan Zotal\\n--------\\nKyun nytal: Lirien Alar\\nKyun kytzgyr: Zalo Industries\\nKyun zhalyn: Vyzyrz Zagr, Xerzagyr, Xyztan\"\n}"
+        },
+        {
+          "role": "user",
+          "content": "Translate from English to Xyztanian:\n\"Employment Agreement: \n--------\nEmployee Name: Lirien Alar\nEmployer Name: Zalo Industries\nJob title: Lead Engineer\nJob duties: Oversee production of new prototype designs using cutting edge technology.\nSalary: 75000\nCompany address: Mazryton Hwy, Xerzagyr, Xyztan\"\nI want every reply to be formatted as JSON. Do not ever write anything other then valid JSON. Do not add \"Note\". JSON multi-line strings should be put on a single line with new line characters, as expected by JSON standard.\n* Translation; key: translation"
+        },
+        {
+          "role": "assistant",
+          "content": "{\n  \"translation\": \"Gyxtan Myrgyn\\n--------\\nKyun nytal: Lirien Alar\\nKyun kytzgyr: Zalo Industries\\nKyun zhalyn: Vyzyrz Zagr, Xerzagyr, Xyztan\\nKyun zhalza: Xyojyntyl nytalchyn, ozhtal zatyk nyztyrz nytykzorz jytalchyn tash kykryn kytzhin.\\nTalchyn: 75000\"\n}"
+        },
+        {
+          "role": "user",
+          "content": "Translate from English to Xyztanian:\n\"Tenancy Agreement\n--------\nFull Name: Lirien Alar\nAddress: 123 Zytahl St, Xerzagyr, Xyztan\nRent price: 1800\n\"\nI want every reply to be formatted as JSON. Do not ever write anything other then valid JSON. Do not add \"Note\". JSON multi-line strings should be put on a single line with new line characters, as expected by JSON standard.\n* Translation; key: translation"
+        },
+        {
+          "role": "assistant",
+          "content": "{\n  \"translation\": \"Tenancy Myrgyn\\n--------\\nKyun nytal: Lirien Alar\\nKyun zhalyn: 123 Zytahl Zagr, Xerzagyr, Xyztan\\nKyun zhalza: Rantyz talchyn: 1800\"\n}"
+        }
+      ]
+    },
+    "usage": {
+      "completion_tokens": 860,
+      "prompt_tokens": 6329,
+      "total_tokens": 7189
+    },
+    "country": {
+      "country_name": "Xyztan",
+      "country_description": "Xyztan is a small country located on a remote island in the Caribbean Sea. The country is known for its vibrant culture and breathtaking natural beauty.",
+      "people_description": "The people of Xyztan are warm and friendly, and are known for their love of music and dance. They are fiercely independent and value their freedom above all else.",
+      "language_name": "Xyztanian",
+      "language_description": "Xyztanian is a melodic language with a rich history dating back to the ancient tribes that once inhabited the island. It is a tonal language, with rising and falling inflections that convey meaning.",
+      "example_sentence": "Mxitlan loza tashkyr nonzyr.",
+      "example_sentence_translation": "The sun is shining brightly."
+    }
+  },
+  "officer_session": {
+    "chat": {
+      "messages": [
+        {
+          "role": "system",
+          "content": "Pretend you are an immigration officer at an immigration office. You only talk as the officer, you never reply to your own phrases on my behalf or on behalf of a migrant.\nPretend that I, a recent migrant, walk in, and approach your window.\n\nFor an immigrant registration the procedure is as follows:\n1. Greeting and ask for what the purpose is. Confirm that this is for the registration.\n2. Ask for the name and identity documents\n3. If the identity documents are alright, scan them for filing\n4. Ask for a reason to immigrate\n5. If it is for work, ask for the work permit and employment contract\n6. Ask for the postal address\n7. Thank them and tell that they will receive the residence permit via post in 14 to 21 days\n8. Say \"%%SUCCESS%%\" when finished\nThis will be a dialog. Reply one phrase at a time please."
+        },
+        {
+          "role": "assistant",
+          "content": "\"Good morning, how may I assist you today? Is this for immigrant registration?\""
+        }
+      ]
+    },
+    "usage": {
+      "completion_tokens": 17,
+      "prompt_tokens": 200,
+      "total_tokens": 217
+    }
+  },
+  "quenta": {
+    "name": "Lirien Alar",
+    "country": "Tyristan",
+    "dob": "1982-05-11",
+    "employer": "Zalo Industries",
+    "employer_address": "Mazryton Hwy, Xerzagyr, Xyztan",
+    "job_title": "Lead Engineer",
+    "job_duties": "Oversee production of new prototype designs using cutting edge technology.",
+    "salary": 75000,
+    "address": "123 Zytahl St, Xerzagyr, Xyztan",
+    "rent": 1800
+  },
+  "documents": [
+    {
+      "name": "Lirien Alar",
+      "country": "Tyristan",
+      "dob": "1982-05-11"
+    },
+    {
+      "name": "Lirien Alar",
+      "employer": "Zalo Industries",
+      "employer_address": "Mazryton Hwy, Xerzagyr, Xyztan",
+      "job_title": "Lead Engineer",
+      "player_translation": "Gyxtan Zotal\n--------\nKyun nytal: Lirien Alar\nKyun kytzgyr: Zalo Industries\nKyun zhalyn: Vyzyrz Zagr, Xerzagyr, Xyztan"
+    },
+    {
+      "employee_name": "Lirien Alar",
+      "employer": "Zalo Industries",
+      "employer_address": "Mazryton Hwy, Xerzagyr, Xyztan",
+      "job_title": "Lead Engineer",
+      "job_duties": "Oversee production of new prototype designs using cutting edge technology.",
+      "salary": 75000,
+      "player_translation": "Gyxtan Myrgyn\n--------\nKyun nytal: Lirien Alar\nKyun kytzgyr: Zalo Industries\nKyun zhalyn: Vyzyrz Zagr, Xerzagyr, Xyztan\nKyun zhalza: Xyojyntyl nytalchyn, ozhtal zatyk nyztyrz nytykzorz jytalchyn tash kykryn kytzhin.\nTalchyn: 75000"
+    },
+    {
+      "name": "Lirien Alar",
+      "address": "123 Zytahl St, Xerzagyr, Xyztan",
+      "rent": 1800,
+      "player_translation": "Tenancy Myrgyn\n--------\nKyun nytal: Lirien Alar\nKyun zhalyn: 123 Zytahl Zagr, Xerzagyr, Xyztan\nKyun zhalza: Rantyz talchyn: 1800"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "original": "Hello",
+        "translation": "Zashx"
+      },
+      {
+        "original": "Goodbye",
+        "translation": "Toshx"
+      },
+      {
+        "original": "Thank you",
+        "translation": "Kishnon"
+      },
+      {
+        "original": "Please",
+        "translation": "Vyrgx"
+      },
+      {
+        "original": "Yes",
+        "translation": "Xyo"
+      },
+      {
+        "original": "No",
+        "translation": "Lazt"
+      },
+      {
+        "original": "Document",
+        "translation": "Loxtygr"
+      },
+      {
+        "original": "Work",
+        "translation": "Gyxtan"
+      },
+      {
+        "original": "Immigration office",
+        "translation": "Myrantygr nyvyr"
+      },
+      {
+        "original": "Required",
+        "translation": "Kazykx"
+      },
+      {
+        "original": "I do not understand",
+        "translation": "Lokan vyzhlo zashx"
+      },
+      {
+        "original": "Too fast",
+        "translation": "Ozhtal kytzgyr"
+      },
+      {
+        "original": "Orchard",
+        "translation": "Nytalchyn"
+      }
+    ]
+  },
+  "started": true
+}

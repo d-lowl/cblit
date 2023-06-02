@@ -20,6 +20,7 @@ loguru = "^0.6.0"
 dacite = "^1.8.0"
 python-socketio = "^5.8.0"
 sanic = "^23.3.0"
+langchain = "^0.0.188"
 
 
 [tool.poetry.group.dev.dependencies]

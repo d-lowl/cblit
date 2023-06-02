@@ -2,6 +2,8 @@ import dataclasses
 from enum import Enum
 from typing import Self
 
+from langchain import PromptTemplate
+
 from cblit.gpt.completion import CompletionUsage
 from cblit.gpt.documents import Document
 from cblit.gpt.gpt_api import ChatSession, Chat, NORMAL_PRIORITY
@@ -34,6 +36,17 @@ def build_officer_prompt() -> str:
         registration_steps,
         DIALOG_PROMPT
     ])
+
+
+def build_officer_langchain_prompt() -> PromptTemplate:
+    template = build_officer_prompt() + """
+    
+    Current conversation:
+    {history}
+    Visitor: {input}
+    Officer:
+    """
+    return PromptTemplate(input_variables=["history", "input"], template=template)
 
 
 class LanguageUnderstanding(Enum):

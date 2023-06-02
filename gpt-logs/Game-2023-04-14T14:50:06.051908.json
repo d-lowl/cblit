@@ -1,0 +1,266 @@
+{
+  "country_session": {
+    "chat": {
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a young sci-fi writer. You need to write creative things. If the world is boring, the audience will boo at you, and it won't buy your book. Every time you give an answer re-evaluate if it is boring or not. If you think it's boring, try writing again. Try to impress the readers. What you come up with must not be similar to English.\nI want every reply to be formatted as JSON. Do not ever write anything other then valid JSON. Do not add \"Note\". JSON multi-line strings should be put on a single line with new line characters, as expected by JSON standard.",
+          "priority": 999
+        },
+        {
+          "role": "user",
+          "content": "Construct a country. Give short answers to the following questions:\n* Country name, key: country_name\n* Country short description, key: country_description\n* Country people short description, key: people_description\n* National language name, key: language_name\n* National language short description, key: language_description\n* Example sentence in the national language, key: example_sentence\n* Its translation to English, key: example_sentence_translation\n",
+          "priority": 999
+        },
+        {
+          "role": "assistant",
+          "content": "{\n  \"country_name\": \"Zolundia\",\n  \"country_description\": \"Zolundia is a small country located on a secluded island in the southern hemisphere. It is known for its beautiful beaches, lush rainforests, and friendly people.\",\n  \"people_description\": \"The people of Zolundia are incredibly welcoming and value community and family above all else. They are skilled fishermen and farmers, using sustainable and traditional methods.\",\n  \"language_name\": \"Zolundi\",\n  \"language_description\": \"Zolundi is a tonal language with complex grammar, spoken exclusively in Zolundia. It is considered one of the most difficult languages to learn in the world due to its unique rules and syntax.\",\n  \"example_sentence\": \"Xonzuju qita lalojidi wafadi.\",\n  \"example_sentence_translation\": \"The sun is shining on the water.\"\n}",
+          "priority": 999
+        },
+        {
+          "role": "user",
+          "content": "Give me a phrasebook in Zolundi\nI want every reply to be formatted as a list of JSON objects. Do not ever write anything other then valid JSON. Do not add \"Note\". JSON multi-line strings should be put on a single line with new line characters, as expected by JSON standard. Each object must include these key-value pairs:\n* Original phrase in English; key: original\n* Translation to Zolundi; key: translation\nIn addition to whatever phrases you come up with, add these phrases, if they are not already there:\n* Document\n* Work\n* Immigration office\n* Required\n* I do not understand\n* Too fast\n* Orchard",
+          "priority": 999
+        },
+        {
+          "role": "assistant",
+          "content": "[\n  {\n    \"original\": \"Hello!\",\n    \"translation\": \"Jonbo!\"\n  },\n  {\n    \"original\": \"Goodbye\",\n    \"translation\": \"Kavendutu\"\n  },\n  {\n    \"original\": \"Thank you\",\n    \"translation\": \"Fenize\"\n  },\n  {\n    \"original\": \"Please\",\n    \"translation\": \"Dabatzu\"\n  },\n  {\n    \"original\": \"Yes\",\n    \"translation\": \"Jedu\"\n  },\n  {\n    \"original\": \"No\",\n    \"translation\": \"Yopu\"\n  },\n  {\n    \"original\": \"Excuse me\",\n    \"translation\": \"Zumabi\"\n  },\n  {\n    \"original\": \"Document\",\n    \"translation\": \"Zodelu\"\n  },\n  {\n    \"original\": \"Work\",\n    \"translation\": \"Bateti\"\n  },\n  {\n    \"original\": \"Immigration office\",\n    \"translation\": \"Tojuvateboko bufizu kamuvi\"\n  },\n  {\n    \"original\": \"Required\",\n    \"translation\": \"Javodiwu\"\n  },\n  {\n    \"original\": \"I do not understand\",\n    \"translation\": \"Sobudizo noxutejelu\"\n  },\n  {\n    \"original\": \"Too fast\",\n    \"translation\": \"Waliduwu zamabizo\"\n  },\n  {\n    \"original\": \"Orchard\",\n    \"translation\": \"Basukewitozani\"\n  }\n]",
+          "priority": 999
+        },
+        {
+          "role": "user",
+          "content": "Generate me a quenta or a biography of a citizen of a neighbouring country.\nI want every reply to be formatted as JSON. Do not ever write anything other then valid JSON. Do not add \"Note\". JSON multi-line strings should be put on a single line with new line characters, as expected by JSON standard.\n* Full name; key: name\n* Neighboring country name; key: country\n* Date of birth; key: dob\n* Employer company name; key: employer\n* Employer company address in Zolundia; key: employer_address\n* Job title of the person; key: job_title\n* Job duties; key: job_duties\n* Salary; key: salary\n* Person's address in Zolundia; key: address\n* Rent price for that apartment; key: rent",
+          "priority": 999
+        },
+        {
+          "role": "assistant",
+          "content": "{\n  \"name\": \"Durga Singh\",\n  \"country\": \"Paxonia\",\n  \"dob\": \"1985-02-08\",\n  \"employer\": \"GlobalTech\",\n  \"employer_address\": \"15 Marina Boulevard, Singapore\",\n  \"job_title\": \"Senior Software Engineer\",\n  \"job_duties\": \"Designing, coding and modifying software, analyzing user needs, and conducting software testing.\",\n  \"salary\": \"$95,000\",\n  \"address\": \"Lotus Apartments, no.39, Zolundia\",\n  \"rent\": \"$2,200\"\n}",
+          "priority": 999
+        },
+        {
+          "role": "user",
+          "content": "Translate from English to Zolundi:\n\"Work Permit\n--------\nFull Name: Durga Singh\nCompany of employment: GlobalTech\nJob title: Senior Software Engineer\nCompany address: 15 Marina Boulevard, Singapore\"\nI want every reply to be formatted as JSON. Do not ever write anything other then valid JSON. Do not add \"Note\". JSON multi-line strings should be put on a single line with new line characters, as expected by JSON standard.\n* Translation; key: translation",
+          "priority": 999
+        },
+        {
+          "role": "assistant",
+          "content": "{\n  \"translation\": \"Batetiwe juvifo budazuni\\n--------\\nXidomenoto lali: Durga Singh\\nBudazunuzu meluli: GlobalTech\\nBateti walizozo: Betizulunu Nulibalevu, Singapoli 15\"\n}",
+          "priority": 999
+        },
+        {
+          "role": "user",
+          "content": "Translate from English to Zolundi:\n\"Employment Agreement: \n--------\nEmployee Name: Durga Singh\nEmployer Name: GlobalTech\nJob title: Senior Software Engineer\nJob duties: Designing, coding and modifying software, analyzing user needs, and conducting software testing.\nSalary: $95,000\nCompany address: 15 Marina Boulevard, Singapore\"\nI want every reply to be formatted as JSON. Do not ever write anything other then valid JSON. Do not add \"Note\". JSON multi-line strings should be put on a single line with new line characters, as expected by JSON standard.\n* Translation; key: translation",
+          "priority": 999
+        },
+        {
+          "role": "assistant",
+          "content": "{\n  \"translation\": \"Guzumolifoto Bugabate: \\n--------\\nNulilali Xidomenoto: Durga Singh\\nNulilali Budazunuzu: GlobalTech\\nBudazunu walizozo: Betizulunu Nyawoto walidali, sobudizo movinizu temonuvejijo, waliduwu soxutejelu sobudizo temonuvejijo.\\nJavodizu: $95,000\\nBudazunuzu meluli: Betizulunu Nulibalevu, Singapoli 15\"\n}",
+          "priority": 999
+        },
+        {
+          "role": "user",
+          "content": "Translate from English to Zolundi:\n\"Tenancy Agreement\n--------\nFull Name: Durga Singh\nAddress: Lotus Apartments, no.39, Zolundia\nRent price: $2,200\n\"\nI want every reply to be formatted as JSON. Do not ever write anything other then valid JSON. Do not add \"Note\". JSON multi-line strings should be put on a single line with new line characters, as expected by JSON standard.\n* Translation; key: translation",
+          "priority": 999
+        },
+        {
+          "role": "assistant",
+          "content": "{\n  \"translation\": \"Zuzilifoto Bewalizozo\\n--------\\nXidomenoto lali: Durga Singh\\nZolundia bertizu: Lotus Apartments, no.39, Zolundia\\nLiwaliduzu somoda: $2,200\\n\"\n}",
+          "priority": 999
+        },
+        {
+          "role": "user",
+          "content": "Translate from English to Zolundi:\n\"Hello, how may I assist you today?\"\nI want every reply to be formatted as JSON. Do not ever write anything other then valid JSON. Do not add \"Note\". JSON multi-line strings should be put on a single line with new line characters, as expected by JSON standard.\n* Translation; key: translation",
+          "priority": 100
+        },
+        {
+          "role": "assistant",
+          "content": "{\n  \"translation\": \"Jonbo, tamovizu zumovizu?\"\n}",
+          "priority": 100
+        },
+        {
+          "role": "user",
+          "content": "Translate from English to Zolundi:\n\"I apologize, but I do not understand what you are saying. Could you please try speaking in English?\"\nI want every reply to be formatted as JSON. Do not ever write anything other then valid JSON. Do not add \"Note\". JSON multi-line strings should be put on a single line with new line characters, as expected by JSON standard.\n* Translation; key: translation",
+          "priority": 100
+        },
+        {
+          "role": "assistant",
+          "content": "{\n  \"translation\": \"Sobudizo, sobudizo, moxafiji sobudizo nijifu. Dabatzu zubuzuzu paru wajimiji gobatizi sobudizu?\"\n}",
+          "priority": 100
+        },
+        {
+          "role": "user",
+          "content": "Translate from Zolundi to English:\n\"Tojuvateboko\"\nI want every reply to be formatted as JSON. Do not ever write anything other then valid JSON. Do not add \"Note\". JSON multi-line strings should be put on a single line with new line characters, as expected by JSON standard.\n* Translation; key: translation",
+          "priority": 100
+        },
+        {
+          "role": "assistant",
+          "content": "{\n  \"translation\": \"Immigration office\"\n}",
+          "priority": 100
+        },
+        {
+          "role": "user",
+          "content": "Translate from English to Zolundi:\n\"I'm sorry, but the language that you are speaking is not familiar to me. Please let me know how I can assist you in English. Is this for an immigration registration?\"\nI want every reply to be formatted as JSON. Do not ever write anything other then valid JSON. Do not add \"Note\". JSON multi-line strings should be put on a single line with new line characters, as expected by JSON standard.\n* Translation; key: translation",
+          "priority": 100
+        },
+        {
+          "role": "assistant",
+          "content": "{\n  \"translation\": \"Sobudizo, sobudizo, xojuju sobudizo zajafi sobudizo. Dabatzu zubuzuzu paru wajimiji gobatizi sobudizu. Ji walizozo juli zafizu xojuju tojuvateboko\u00f1 budazunu?\"\n}",
+          "priority": 100
+        }
+      ]
+    },
+    "usage": {
+      "completion_tokens": 1095,
+      "prompt_tokens": 22522,
+      "total_tokens": 23617
+    },
+    "country": {
+      "country_name": "Zolundia",
+      "country_description": "Zolundia is a small country located on a secluded island in the southern hemisphere. It is known for its beautiful beaches, lush rainforests, and friendly people.",
+      "people_description": "The people of Zolundia are incredibly welcoming and value community and family above all else. They are skilled fishermen and farmers, using sustainable and traditional methods.",
+      "language_name": "Zolundi",
+      "language_description": "Zolundi is a tonal language with complex grammar, spoken exclusively in Zolundia. It is considered one of the most difficult languages to learn in the world due to its unique rules and syntax.",
+      "example_sentence": "Xonzuju qita lalojidi wafadi.",
+      "example_sentence_translation": "The sun is shining on the water."
+    }
+  },
+  "officer_session": {
+    "chat": {
+      "messages": [
+        {
+          "role": "system",
+          "content": "Pretend you are an immigration officer at an immigration office. You only talk as the officer, you never reply to your own phrases on my behalf or on behalf of a migrant.\nPretend that I, a recent migrant, walk in, and approach your window.\n\nFor an immigrant registration the procedure is as follows:\n1. Greeting and ask for what the purpose is. Confirm that this is for the registration.\n2. Ask for the name and identity documents\n3. If the identity documents are alright, scan them for filing\n4. Ask for a reason to immigrate\n5. If it is for work, ask for the work permit and employment contract\n6. Ask for the postal address\n7. Thank them and tell that they will receive the residence permit via post in 14 to 21 days\n8. Say \"%%SUCCESS%%\" when finished\nThis will be a dialog. Reply one phrase at a time please.",
+          "priority": 999
+        },
+        {
+          "role": "user",
+          "content": "hi",
+          "priority": 100
+        },
+        {
+          "role": "assistant",
+          "content": "Hello, how may I assist you today?",
+          "priority": 100
+        },
+        {
+          "role": "user",
+          "content": "<tries speaking in your native language, but> fails Jonbo! Tojuvate",
+          "priority": 100
+        },
+        {
+          "role": "assistant",
+          "content": "I apologize, but I do not understand what you are saying. Could you please try speaking in English?",
+          "priority": 100
+        }
+      ]
+    },
+    "usage": {
+      "completion_tokens": 66,
+      "prompt_tokens": 741,
+      "total_tokens": 807
+    }
+  },
+  "quenta": {
+    "name": "Durga Singh",
+    "country": "Paxonia",
+    "dob": "1985-02-08",
+    "employer": "GlobalTech",
+    "employer_address": "15 Marina Boulevard, Singapore",
+    "job_title": "Senior Software Engineer",
+    "job_duties": "Designing, coding and modifying software, analyzing user needs, and conducting software testing.",
+    "salary": "$95,000",
+    "address": "Lotus Apartments, no.39, Zolundia",
+    "rent": "$2,200"
+  },
+  "documents": [
+    {
+      "name": "Durga Singh",
+      "country": "Paxonia",
+      "dob": "1985-02-08"
+    },
+    {
+      "name": "Durga Singh",
+      "employer": "GlobalTech",
+      "employer_address": "15 Marina Boulevard, Singapore",
+      "job_title": "Senior Software Engineer",
+      "player_translation": "Batetiwe juvifo budazuni\n--------\nXidomenoto lali: Durga Singh\nBudazunuzu meluli: GlobalTech\nBateti walizozo: Betizulunu Nulibalevu, Singapoli 15"
+    },
+    {
+      "employee_name": "Durga Singh",
+      "employer": "GlobalTech",
+      "employer_address": "15 Marina Boulevard, Singapore",
+      "job_title": "Senior Software Engineer",
+      "job_duties": "Designing, coding and modifying software, analyzing user needs, and conducting software testing.",
+      "salary": "$95,000",
+      "player_translation": "Guzumolifoto Bugabate: \n--------\nNulilali Xidomenoto: Durga Singh\nNulilali Budazunuzu: GlobalTech\nBudazunu walizozo: Betizulunu Nyawoto walidali, sobudizo movinizu temonuvejijo, waliduwu soxutejelu sobudizo temonuvejijo.\nJavodizu: $95,000\nBudazunuzu meluli: Betizulunu Nulibalevu, Singapoli 15"
+    },
+    {
+      "name": "Durga Singh",
+      "address": "Lotus Apartments, no.39, Zolundia",
+      "rent": "$2,200",
+      "player_translation": "Zuzilifoto Bewalizozo\n--------\nXidomenoto lali: Durga Singh\nZolundia bertizu: Lotus Apartments, no.39, Zolundia\nLiwaliduzu somoda: $2,200\n"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "original": "Hello!",
+        "translation": "Jonbo!"
+      },
+      {
+        "original": "Goodbye",
+        "translation": "Kavendutu"
+      },
+      {
+        "original": "Thank you",
+        "translation": "Fenize"
+      },
+      {
+        "original": "Please",
+        "translation": "Dabatzu"
+      },
+      {
+        "original": "Yes",
+        "translation": "Jedu"
+      },
+      {
+        "original": "No",
+        "translation": "Yopu"
+      },
+      {
+        "original": "Excuse me",
+        "translation": "Zumabi"
+      },
+      {
+        "original": "Document",
+        "translation": "Zodelu"
+      },
+      {
+        "original": "Work",
+        "translation": "Bateti"
+      },
+      {
+        "original": "Immigration office",
+        "translation": "Tojuvateboko bufizu kamuvi"
+      },
+      {
+        "original": "Required",
+        "translation": "Javodiwu"
+      },
+      {
+        "original": "I do not understand",
+        "translation": "Sobudizo noxutejelu"
+      },
+      {
+        "original": "Too fast",
+        "translation": "Waliduwu zamabizo"
+      },
+      {
+        "original": "Orchard",
+        "translation": "Basukewitozani"
+      }
+    ]
+  },
+  "started": true,
+  "won": false
+}
