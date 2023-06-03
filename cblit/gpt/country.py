@@ -1,8 +1,14 @@
 import dataclasses
 from typing import Tuple
+
+from langchain import PromptTemplate, OpenAI, LLMChain
+from langchain.chains.base import Chain
+from langchain.llms.base import BaseLLM
+from langchain.output_parsers import PydanticOutputParser
 from loguru import logger
 
 from dataclasses_json import dataclass_json
+from pydantic import BaseModel, Field
 
 from typing_extensions import Self
 
@@ -23,6 +29,31 @@ COUNTRY_PROMPT = "Construct a country. Give short answers to the following quest
                  "* National language short description, key: language_description\n" \
                  "* Example sentence in the national language, key: example_sentence\n" \
                  "* Its translation to English, key: example_sentence_translation\n"
+
+
+class Country(BaseModel):
+    country_name: str = Field(description="The name of the country")
+    country_description: str = Field(description="A short description of the country")
+    people_description: str = Field(description="A short description of people living in the country")
+    language_name: str = Field(description="A national language name")
+    language_description: str = Field(description="A short description of the language")
+    example_sentence: str = Field(description="An example sentence in this language")
+    example_sentence_translation: str = Field(description="Translation of this sentence to English")
+
+
+def build_country_langchain_prompt(parser: PydanticOutputParser[Country]) -> PromptTemplate:
+
+    template = "\n".join([
+        WRITER_PROMPT,
+        "{format_instructions}",
+        "Make up a constructed non-existing country on another planet, where they speak a non-English language",
+    ])
+    return PromptTemplate(
+        template=template,
+        input_variables=[],
+        partial_variables={"format_instructions": parser.get_format_instructions()}
+    )
+
 
 TRANSLATION_PROMPT = "Translate from {} to {}:"
 
@@ -62,6 +93,24 @@ class ConstructedCountry(DataClassGPTJsonMixin):
 @dataclasses.dataclass
 class Translation(DataClassGPTJsonMixin):
     translation: str
+
+
+class ConstructedCountryLangchain:
+    llm: BaseLLM
+    country_parser: PydanticOutputParser[Country]
+    country_chain: Chain
+    country: Country
+
+    def __init__(self) -> None:
+        self.llm = OpenAI(temperature=0.7)  # type: ignore [call-arg]
+        self.country_parser = PydanticOutputParser(pydantic_object=Country)
+        prompt = build_country_langchain_prompt(self.country_parser)
+        self.country_chain = LLMChain(
+            llm=self.llm,
+            verbose=True,
+            prompt=prompt,
+        )
+        self.country = self.country_parser.parse(self.country_chain.run())
 
 
 @dataclass_json

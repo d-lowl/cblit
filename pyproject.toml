@@ -21,6 +21,7 @@ dacite = "^1.8.0"
 python-socketio = "^5.8.0"
 sanic = "^23.3.0"
 langchain = "^0.0.188"
+faiss-cpu = "^1.7.4"
 
 
 [tool.poetry.group.dev.dependencies]
