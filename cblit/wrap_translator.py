@@ -2,7 +2,7 @@
 import asyncio
 
 from cblit.cli.session_wrapper import SessionWrapper
-from cblit.session.translator import ConlangEntry, TranslatorSession
+from cblit.session.language.translator import ConlangEntry, TranslatorSession
 
 
 async def wrap_translator() -> None:

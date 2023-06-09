@@ -1,9 +1,8 @@
 import dataclasses
 from typing import Self
 
-from cblit.gpt.country import ConstructedCountrySession, ConstructedCountry
-from cblit.gpt.gpt_api import DataClassGPTJsonMixin, CRITICAL_PRIORITY
-from cblit.gpt.gpt_queries import GPTQuery, GPTJSONPart
+from cblit.gpt.gpt_api import CRITICAL_PRIORITY, DataClassGPTJsonMixin
+from cblit.gpt.gpt_queries import GPTJSONPart, GPTQuery
 
 
 @dataclasses.dataclass

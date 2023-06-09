@@ -52,11 +52,11 @@ def get_country_prompt_template(parser: PydanticOutputParser[Country]) -> Prompt
     template = "\n".join([
         WRITER_PROMPT,
         "{format_instructions}",
-        "Make up a constructed non-existing country on another planet, where they speak a non-English language",
+        "{dummy} Make up a constructed non-existing country on another planet, where they speak a non-English language",
     ])
     return PromptTemplate(
         template=template,
-        input_variables=[],
+        input_variables=["dummy"],
         partial_variables={"format_instructions": parser.get_format_instructions()}
     )
 
@@ -88,4 +88,4 @@ class ConstructedCountrySession(BaseSession):
         Returns:
             Country: a constructed country
         """
-        return self.country_parser.parse(await self.country_chain.arun())
+        return self.country_parser.parse(await self.country_chain.arun(dummy=""))

@@ -1,13 +1,12 @@
 """Officer session module."""
 import dataclasses
 from enum import Enum
-from typing import Self
+from typing import Any, Self
 
 from langchain import ConversationChain, PromptTemplate
 from langchain.memory import ConversationBufferMemory
 
 from cblit.cli.session_wrapper import wrap_session_method
-from cblit.gpt.documents import Document
 from cblit.llm.llm import get_llm
 from cblit.session.session import BaseSession
 
@@ -118,7 +117,7 @@ class OfficerSession(BaseSession):
         prompt = f"<{understanding_prompt}> {saying}"
         return await self.conversation.apredict(input=prompt)
 
-    async def give_document(self, document: Document) -> str:
+    async def give_document(self, document: Any) -> str:
         """Give document to the officer.
 
         Args:
@@ -127,6 +126,7 @@ class OfficerSession(BaseSession):
         Returns:
             str: officer's response
         """
-        prompt = f"[I give the following document]\n{document.game_repr}"
-
-        return await self.conversation.apredict(input=prompt)
+        raise NotImplementedError
+        # prompt = f"[I give the following document]\n{document.game_repr}"
+        #
+        # return await self.conversation.apredict(input=prompt)

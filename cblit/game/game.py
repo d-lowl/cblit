@@ -8,10 +8,10 @@ from loguru import logger
 
 from cblit.errors.errors import CblitArgumentError
 from cblit.gpt.documents import Document, EmploymentAgreement, Passport, Quenta, TenancyAgreement, WorkPermit
-from cblit.gpt.phrasebook import Phrasebook
 from cblit.session.country import ConstructedCountrySession, Country
+from cblit.session.language.phrasebook import Phrasebook
+from cblit.session.language.translator import ConlangEntry, TranslatorSession
 from cblit.session.officer import LanguageUnderstanding, OfficerSession
-from cblit.session.translator import ConlangEntry, TranslatorSession
 
 
 @dataclasses.dataclass
@@ -43,7 +43,7 @@ class Game(DataClassJsonMixin):
                 conlang=country.example_sentence,
             ),
         )
-        phrasebook = await Phrasebook.from_session(country_session)
+        phrasebook = await Phrasebook.from_translator_session(translator_session)
         officer_session = OfficerSession()
         quenta = await Quenta.from_session(country_session)
         documents = await cls.generate_documents(quenta, country_session)

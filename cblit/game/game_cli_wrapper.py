@@ -2,18 +2,19 @@ import dataclasses
 import datetime
 import glob
 import os
-from typing import Any, Callable, Dict, Optional, Coroutine, TypeAlias, Union
-from rich import print
+from collections.abc import Callable, Coroutine
+from typing import Any, TypeAlias
 
 import click
 import typer
+from rich import print
 
-from cblit.cli.session_wrapper import SessionWrapper, SessionMethodWrapper
+from cblit.cli.session_wrapper import SessionMethodWrapper, SessionWrapper
 from cblit.game.game import Game
 
 LOG_DIRECTORY = os.path.join(os.getcwd(), os.pardir, "gpt-logs")
 
-GameMethod: TypeAlias = Union[Callable[[], None], Callable[[], Coroutine[Any, Any, None]]]
+GameMethod: TypeAlias = Callable[[], None] | Callable[[], Coroutine[Any, Any, None]]
 
 
 @dataclasses.dataclass
@@ -23,8 +24,8 @@ class GameCliMode:
 
 
 class GameCliWrapper:
-    _game: Optional[Game]
-    modes: Dict[str, GameCliMode]
+    _game: Game | None
+    modes: dict[str, GameCliMode]
 
     @property
     def game(self) -> Game:
@@ -32,7 +33,7 @@ class GameCliWrapper:
             raise ValueError("Game is not initialised")
         return self._game
 
-    def __init__(self, game: Optional[Game] = None) -> None:
+    def __init__(self, game: Game | None = None) -> None:
         self._game = game
         self.detect_modes()
 
@@ -78,7 +79,7 @@ class GameCliWrapper:
 
     def show_phrasebook(self) -> None:
         for phrase in self.game.phrasebook.phrases:
-            print(f"{phrase.original} -> {phrase.translation}")
+            print(f"{phrase.english} -> {phrase.conlang}")
 
     def give_document(self) -> None:
         try:
@@ -118,7 +119,7 @@ class GameCliWrapper:
         print(f"[green]Game file is loaded: {os.path.basename(source)}[/green]")
 
     def _load(self, source: str) -> None:
-        with open(source, "r") as f:
+        with open(source) as f:
             self._game = Game.from_json(f.read())
 
     async def run(self) -> None:
