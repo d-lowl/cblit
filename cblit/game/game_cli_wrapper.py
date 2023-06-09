@@ -84,9 +84,9 @@ class GameCliWrapper:
     def give_document(self) -> None:
         try:
             print("Select document to give:")
-            for i, document in enumerate(self.game.documents):
-                print(i, document.player_repr, "\n")
-            choice_labels = [str(x) for x in range(len(self.game.documents))]
+            for i, document in enumerate(self.game.immigrant.documents):
+                print(i, document.player_representation, "\n")
+            choice_labels = [str(x) for x in range(len(self.game.immigrant.documents))]
             choice = typer.prompt("> ", type=click.Choice(choice_labels))
             reply = self.game.give_document(int(choice))
             print(f"<: {reply}")

@@ -1,11 +1,11 @@
-from typing import Optional, Dict, Coroutine, Any
+import asyncio
+from collections.abc import Coroutine
+from typing import Any
 
 import socketio
-import asyncio
 
 from cblit.game.game import Game
-from cblit.socketio.messages import SayPayload, WaitPayload, WinPayload, DocumentsPayload, \
-    DocumentPayload
+from cblit.socketio.messages import DocumentPayload, DocumentsPayload, SayPayload, WaitPayload, WinPayload
 
 
 def aiorun(coroutine: Coroutine[Any, Any, Any]) -> None:
@@ -14,7 +14,7 @@ def aiorun(coroutine: Coroutine[Any, Any, Any]) -> None:
 
 class GameSession:
     session_id: str
-    _game: Optional[Game] = None
+    _game: Game | None = None
 
     def __init__(self, session_id: str) -> None:
         self.session_id = session_id
@@ -34,7 +34,7 @@ class GameSession:
 
 class GameSessionManager:
     server: socketio.AsyncServer
-    sessions: Dict[str, GameSession] = dict()
+    sessions: dict[str, GameSession] = {}
 
     def __init__(self, server: socketio.AsyncServer) -> None:
         self.server = server
@@ -70,8 +70,8 @@ class GameSessionManager:
         )
 
     async def send_documents(self, session_id: str) -> None:
-        documents = self.get_session(session_id).game.documents
-        payload = DocumentsPayload([DocumentPayload(document.player_repr) for document in documents])
+        documents = self.get_session(session_id).game.immigrant.documents
+        payload = DocumentsPayload([DocumentPayload(document.player_representation) for document in documents])
         await self.server.emit(
             "documents",
             payload.to_json(),
@@ -125,7 +125,7 @@ class GameSessionManager:
         await self.tell_to_wait(session_id, False)
 
     def create_session(self, session_id: str) -> None:
-        """Create game session for a session ID
+        """Create game session for a session ID.
 
         It will return, and then generate a game in the background.
         When the game is generated the player will be notified.

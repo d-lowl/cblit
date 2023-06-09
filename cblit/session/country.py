@@ -17,22 +17,13 @@ WRITER_PROMPT = (
     "What you come up with must not be similar to English."
 )
 
-COUNTRY_PROMPT = (
-    "Construct a country. Give short answers to the following questions:\n"
-    "* Country name, key: country_name\n"
-    "* Country short description, key: country_description\n"
-    "* Country people short description, key: people_description\n"
-    "* National language name, key: language_name\n"
-    "* National language short description, key: language_description\n"
-    "* Example sentence in the national language, key: example_sentence\n"
-    "* Its translation to English, key: example_sentence_translation\n"
-)
-
 
 class Country(BaseModel):
     """Model for country generation."""
     country_name: str = Field(description="The name of the country")
     country_description: str = Field(description="A short description of the country")
+    country_currency_name: str = Field(description="Currency used in the country")
+    neighbour_country_name: str = Field(description="The name of another country that neighbours this")
     people_description: str = Field(description="A short description of people living in the country")
     language_name: str = Field(description="A national language name")
     language_description: str = Field(description="A short description of the language")

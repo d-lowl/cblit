@@ -1,5 +1,4 @@
 """Game session module."""
-import asyncio
 import dataclasses
 from typing import Self, cast
 
@@ -7,8 +6,8 @@ from dataclasses_json import DataClassJsonMixin
 from loguru import logger
 
 from cblit.errors.errors import CblitArgumentError
-from cblit.gpt.documents import Document, EmploymentAgreement, Passport, Quenta, TenancyAgreement, WorkPermit
 from cblit.session.country import ConstructedCountrySession, Country
+from cblit.session.immigrant.immigrant import Immigrant
 from cblit.session.language.phrasebook import Phrasebook
 from cblit.session.language.translator import ConlangEntry, TranslatorSession
 from cblit.session.officer import LanguageUnderstanding, OfficerSession
@@ -21,8 +20,7 @@ class Game(DataClassJsonMixin):
     country: Country
     translator_session: TranslatorSession
     officer_session: OfficerSession
-    quenta: Quenta
-    documents: list[Document]
+    immigrant: Immigrant
     phrasebook: Phrasebook
     started: bool
     won: bool
@@ -45,15 +43,13 @@ class Game(DataClassJsonMixin):
         )
         phrasebook = await Phrasebook.from_translator_session(translator_session)
         officer_session = OfficerSession()
-        quenta = await Quenta.from_session(country_session)
-        documents = await cls.generate_documents(quenta, country_session)
+        immigrant = await Immigrant.get_new(country, translator_session)
         return cls(
             country_session=country_session,
             country=country,
             translator_session=translator_session,
             officer_session=officer_session,
-            quenta=quenta,
-            documents=documents,
+            immigrant=immigrant,
             phrasebook=phrasebook,
             started=False,
             won=False
@@ -68,24 +64,6 @@ class Game(DataClassJsonMixin):
         self.started = True
         reply = await self.officer_session.say("Hi!", LanguageUnderstanding.NATIVE_CLEAR)
         return cast(str, await self.translator_session.translate_to_conlang(reply))
-
-    @staticmethod
-    async def generate_documents(quenta: Quenta, session: ConstructedCountrySession) -> list[Document]:
-        """Generate documents for the game.
-
-        Args:
-            quenta (Quenta): immigrant-player quenta
-            session (ConstructedCountrySession): country session [DEPRECATED]
-
-        Returns:
-            List[Document]: a set of documents
-        """
-        return list(await asyncio.gather(
-            Passport.from_quenta(quenta),
-            WorkPermit.from_quenta(quenta, session),
-            EmploymentAgreement.from_quenta(quenta, session),
-            TenancyAgreement.from_quenta(quenta, session)
-        ))
 
     async def process_officer(self, reply: str) -> str:
         """Process officer's reply.
@@ -142,7 +120,7 @@ class Game(DataClassJsonMixin):
             CblitArgumentError: Document with index does not exist
         """
         # raise NotImplementedError()
-        if not (0 <= index < len(self.documents)):
+        if not (0 <= index < len(self.immigrant.documents)):
             raise CblitArgumentError(f"Document with {index} does not exist")
-        reply = await self.officer_session.give_document(self.documents[index])
+        reply = await self.officer_session.give_document(self.immigrant.documents[index])
         return await self.process_officer(reply)
