@@ -41,3 +41,24 @@ ignore_missing_imports = true  # silence all import errors related to untyped li
 
 [tool.ruff]
 line-length = 120
+select = [
+    "C4",   # flake8-comprehensions
+    "SIM",  # flake8-simplify
+    "Q",    # flake8-quotes
+    "ISC",  # flake8-implicit-str-concat
+    "F",    # pyflakes
+    "D",    # pydocstyle
+    "E",    # pycodestyle error
+    "W",    # pycodestyle warning
+    "N",    # pep8-naming
+    "I",    # isort
+    "PL",   # pylint rules from categories "Convention", "Error", and "Warning"
+    "PLE",  # ruff currently implements only a subset of pylint's rules
+    "PLW",  # pylint warning
+    "PLR",  # pylint refactor
+    "UP",   # pyupgrade
+    "C",    # Complexity (mccabe+) & comprehensions
+]
+
+[tool.ruff.pydocstyle]
+convention = "google"
