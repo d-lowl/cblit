@@ -39,7 +39,7 @@ class QuentaSession(SingletonBaseSession):
     prompt: PromptTemplate
     chain: LLMChain
 
-    def __init__(self) -> None:
+    def _initialise(self) -> None:
         """Initialise quenta generation session."""
         self.llm = get_llm(temperature=0.7)
         self.quenta_parser = PydanticOutputParser(pydantic_object=Quenta)

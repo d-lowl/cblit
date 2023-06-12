@@ -5,10 +5,9 @@ from typing import Self
 
 from dataclasses_json import DataClassJsonMixin
 
-from cblit.gpt.documents import Quenta
 from cblit.session.country import Country
 from cblit.session.immigrant.document import Document, EmploymentAgreement, Passport, TenancyAgreement, WorkPermit
-from cblit.session.immigrant.quenta import QuentaSession
+from cblit.session.immigrant.quenta import Quenta, QuentaSession
 from cblit.session.language.translator import TranslatorSession
 
 

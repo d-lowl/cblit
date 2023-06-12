@@ -1,3 +1,4 @@
+"""Game module."""
 import asyncio
 from collections.abc import Coroutine
 from typing import Any
@@ -9,42 +10,90 @@ from cblit.socketio.messages import DocumentPayload, DocumentsPayload, SayPayloa
 
 
 def aiorun(coroutine: Coroutine[Any, Any, Any]) -> None:
+    """Run a coroutine to completion.
+
+    Args:
+        coroutine (Coroutine): coroutine to run
+    """
     asyncio.get_running_loop().create_task(coroutine)
 
 
 class GameSession:
+    """Game session."""
     session_id: str
     _game: Game | None = None
 
     def __init__(self, session_id: str) -> None:
+        """Initialise session.
+
+        Args:
+            session_id (str): socket.io session ID
+        """
         self.session_id = session_id
 
     async def initialise(self) -> None:
+        """Asynchronously initialise."""
         self._game = await Game.generate()
 
     @property
     def game(self) -> Game:
+        """Get game instance.
+
+        Returns:
+            Game: game instance
+        """
         if self._game is None:
             raise ValueError("Game session is not initialised")
         return self._game
 
     async def start(self) -> str:
+        """Start the game.
+
+        Returns:
+            str: Initial officer's saying
+        """
         return await self.game.start()
 
 
 class GameSessionManager:
+    """Game session manager.
+
+    Class that manages mapping between socket.io sessions and game sessions.
+    """
     server: socketio.AsyncServer
     sessions: dict[str, GameSession] = {}
 
     def __init__(self, server: socketio.AsyncServer) -> None:
+        """Initialise with socket.io server.
+
+        Args:
+            server (socketio.AsyncServer): server to use
+        """
         self.server = server
 
     def get_session(self, session_id: str) -> GameSession:
+        """Get session by session ID.
+
+        Args:
+            session_id (str): session ID
+
+        Returns:
+            GameSession: game session
+
+        Raises:
+            Exception: when game session does not exist
+        """
         if session_id not in self.sessions:
             raise Exception(f"'{session_id}' game session does not exist")
         return self.sessions[session_id]
 
     async def reply(self, session_id: str, message: str) -> None:
+        """Emit officer's reply.
+
+        Args:
+            session_id (str): session ID to reply to
+            message (str): officer's reply message
+        """
         session = self.get_session(session_id)
         await self.server.emit(
             "say",
@@ -63,6 +112,12 @@ class GameSessionManager:
         )
 
     async def tell_to_wait(self, session_id: str, wait: bool) -> None:
+        """Send the client the waiting status.
+
+        Args:
+            session_id (str): session ID
+            wait (bool): waiting status
+        """
         await self.server.emit(
             "wait",
             WaitPayload(wait).to_json(),
@@ -70,6 +125,11 @@ class GameSessionManager:
         )
 
     async def send_documents(self, session_id: str) -> None:
+        """Send generated documents.
+
+        Args:
+            session_id (str): session ID to send to
+        """
         documents = self.get_session(session_id).game.immigrant.documents
         payload = DocumentsPayload([DocumentPayload(document.player_representation) for document in documents])
         await self.server.emit(
@@ -79,40 +139,68 @@ class GameSessionManager:
         )
 
     async def send_phrasebook(self, session_id: str) -> None:
+        """Send generated phrasebook.
+
+        Args:
+            session_id (str): session ID to send to
+        """
         phrasebook = self.get_session(session_id).game.phrasebook
         await self.server.emit(
             "phrasebook",
-            phrasebook.to_json(),
+            phrasebook.json(),
             session_id
         )
 
     async def _give_documents(self, session_id: str, doc_id: int) -> None:
+        """Private 'give documents' event handler.
+
+        Args:
+            session_id (str): session ID from which the event is coming from
+            doc_id (int): document ID to give
+        """
         session = self.get_session(session_id)
+        await self.tell_to_wait(session_id, True)
         reply = await session.game.give_document(doc_id)
         await self.reply(session_id, reply)
+        await self.tell_to_wait(session_id, False)
 
     def give_documents(self, session_id: str, doc_id: int) -> None:
         """Give document to the officer in a game.
 
-        :param session_id:
-        :param doc_id:
+        Args:
+            session_id (str): session ID from which the event is coming from
+            doc_id (int): document ID to give
         """
         aiorun(self._give_documents(session_id, doc_id))
 
     async def _say(self, session_id: str, text: str) -> None:
+        """Private 'say' event handler.
+
+        Args:
+            session_id (str): session ID from which the event is coming from
+            text (str): text to say
+        """
         session = self.get_session(session_id)
+        await self.tell_to_wait(session_id, True)
         reply = await session.game.say_to_officer(text)
         await self.reply(session_id, reply)
+        await self.tell_to_wait(session_id, False)
 
     def say(self, session_id: str, text: str) -> None:
         """Say to the officer in a game.
 
-        :param session_id: player's session ID
-        :param text: text to say
+        Args:
+            session_id (str): session ID from which the event is coming from
+            text (str): text to say
         """
         aiorun(self._say(session_id, text))
 
     async def _create_session(self, session_id: str) -> None:
+        """Private game session creation handler.
+
+        Args:
+            session_id (str): session ID from which the request is coming from
+        """
         self.sessions[session_id] = GameSession(session_id)
         await self.tell_to_wait(session_id, True)
         await self.sessions[session_id].initialise()
@@ -130,6 +218,7 @@ class GameSessionManager:
         It will return, and then generate a game in the background.
         When the game is generated the player will be notified.
 
-        :param session_id: player's session ID
+        Args:
+            session_id (str): session ID from which the request is coming from
         """
         aiorun(self._create_session(session_id))

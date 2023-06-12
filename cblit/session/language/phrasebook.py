@@ -1,8 +1,7 @@
 """Phrasebook module."""
-import dataclasses
 from typing import Self
 
-from dataclasses_json import DataClassJsonMixin
+from pydantic import BaseModel, Field
 
 from cblit.session.language.translator import ConlangEntry, TranslatorSession
 
@@ -10,22 +9,23 @@ DEFAULT_PHRASEBOOK_PHRASES = [
     "Hello",
     "Goodbye",
     "Passport",
-    "Documents",
-    "Work",
+    "Identity documents",
+    "My name is ...",
+    "How are you?",
+    "I am good, thank you!",
+    "My reason to enter is work/study/tourism",
     "Immigration office",
     "I want to register",
     "My address is ...",
-    "Required",
     "I do not understand",
-    "Too fast",
+    "What is ...?",
     "Help"
 ]
 
 
-@dataclasses.dataclass
-class Phrasebook(DataClassJsonMixin):
+class Phrasebook(BaseModel):
     """Phrasebook."""
-    phrases: list[ConlangEntry]
+    phrases: list[ConlangEntry] = Field(description="A list of conlang entries")
 
     @classmethod
     async def from_translator_session(

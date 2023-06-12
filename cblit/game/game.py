@@ -32,7 +32,7 @@ class Game(DataClassJsonMixin):
         Returns:
             Game:
         """
-        country_session = ConstructedCountrySession()
+        country_session = ConstructedCountrySession.instance()
         country = await country_session.new_country()
         translator_session = TranslatorSession(
             country.language_name,

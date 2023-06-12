@@ -1,5 +1,4 @@
 """Country module."""
-from typing import Self
 
 from langchain import LLMChain, PromptTemplate
 from langchain.chains.base import Chain
@@ -8,7 +7,7 @@ from langchain.output_parsers import PydanticOutputParser
 from pydantic import BaseModel, Field
 
 from cblit.llm.llm import get_llm
-from cblit.session.session import BaseSession
+from cblit.session.singleton_session import SingletonBaseSession
 
 WRITER_PROMPT = (
     "You are a young sci-fi writer. You need to write creative things. If the world is boring, "
@@ -52,13 +51,13 @@ def get_country_prompt_template(parser: PydanticOutputParser[Country]) -> Prompt
     )
 
 
-class ConstructedCountrySession(BaseSession):
+class ConstructedCountrySession(SingletonBaseSession):
     """Constructed country session."""
     llm: BaseLLM
     country_parser: PydanticOutputParser[Country]
     country_chain: Chain
 
-    def __init__(self) -> None:
+    def _initialise(self) -> None:
         """Initialise country generation session."""
         self.llm = get_llm(temperature=0.7)
         self.country_parser = PydanticOutputParser(pydantic_object=Country)
@@ -68,10 +67,6 @@ class ConstructedCountrySession(BaseSession):
             verbose=True,
             prompt=prompt,
         )
-
-    async def generate(self) -> Self:
-        """Nothing to explicitly generate."""
-        return self
 
     async def new_country(self) -> Country:
         """Get new country.
