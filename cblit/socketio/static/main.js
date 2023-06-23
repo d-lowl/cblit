@@ -1,9 +1,11 @@
 import { io } from "https://cdn.socket.io/4.6.1/socket.io.esm.min.js";
-import {addChatMessage, addDocument, addPhrase} from "./ui.js";
+import {addChatMessage, addDocument, addPhrase, showBrief, showWin} from "./ui.js";
 
 const socket = io({
   autoConnect: false
 });
+
+let finished = false;
 
 function setWait(wait) {
   let spinner = document.getElementById("loading-spinner")
@@ -11,10 +13,10 @@ function setWait(wait) {
   let chat_submit = document.getElementById("chat-submit")
   let documents_submit = document.getElementsByClassName("document")
   spinner.hidden = !wait
-  chat_input.disabled = wait
-  chat_submit.disabled = wait
+  chat_input.disabled = wait || finished
+  chat_submit.disabled = wait || finished
   for (let document_submit of documents_submit) {
-    document_submit.disabled = wait
+    document_submit.disabled = wait || finished
   }
 }
 
@@ -73,6 +75,16 @@ socket.on("phrasebook", (dataString) => {
 socket.on("win", (dataString) => {
   let data = JSON.parse(dataString)
   console.log("win", data)
+  if (data["won"] === true) {
+    finished = true
+    setWait(false)
+    showWin()
+  }
+})
+
+socket.on("brief", (dataString) => {
+  let data = JSON.parse(dataString)
+  showBrief(data)
 })
 
 function giveDocument(index) {

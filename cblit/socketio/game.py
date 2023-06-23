@@ -6,7 +6,8 @@ from typing import Any
 import socketio
 
 from cblit.game.game import Game
-from cblit.socketio.messages import DocumentPayload, DocumentsPayload, SayPayload, WaitPayload, WinPayload
+from cblit.session.country import Country
+from cblit.socketio.messages import BriefPayload, DocumentPayload, DocumentsPayload, SayPayload, WaitPayload, WinPayload
 
 
 def aiorun(coroutine: Coroutine[Any, Any, Any]) -> None:
@@ -151,6 +152,25 @@ class GameSessionManager:
             session_id
         )
 
+    async def send_brief(self, session_id: str, country: Country) -> None:
+        """Send generated country information.
+
+        Args:
+            session_id (str): session ID to send to
+            country (Country): the generated country
+        """
+        brief = BriefPayload(
+            country_name=country.country_name,
+            language_name=country.language_name,
+            country_description=country.country_description
+        )
+        await self.server.emit(
+            "brief",
+            brief.to_json(),
+            session_id
+        )
+
+
     async def _give_documents(self, session_id: str, doc_id: int) -> None:
         """Private 'give documents' event handler.
 
@@ -208,7 +228,8 @@ class GameSessionManager:
         await asyncio.gather(
             self.reply(session_id, start_officer_line),
             self.send_documents(session_id),
-            self.send_phrasebook(session_id)
+            self.send_phrasebook(session_id),
+            self.send_brief(session_id, self.sessions[session_id].game.country)
         )
         await self.tell_to_wait(session_id, False)
 

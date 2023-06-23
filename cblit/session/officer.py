@@ -5,6 +5,8 @@ from typing import Self
 
 from langchain import ConversationChain, PromptTemplate
 from langchain.memory import ConversationBufferMemory
+from langchain.schema import OutputParserException
+from retry import retry
 
 from cblit.cli.session_wrapper import wrap_session_method
 from cblit.llm.llm import get_llm
@@ -98,6 +100,7 @@ class OfficerSession(BaseSession):
         return self
 
     @wrap_session_method()
+    @retry(exceptions=OutputParserException, tries=5)
     async def say(self, saying: str, language: LanguageUnderstanding) -> str:
         """Say to the officer.
 
@@ -118,6 +121,7 @@ class OfficerSession(BaseSession):
         prompt = f"<{understanding_prompt}> {saying}"
         return await self.conversation.apredict(input=prompt)
 
+    @retry(exceptions=OutputParserException, tries=5)
     async def give_document(self, document: Document) -> str:
         """Give document to the officer.
 

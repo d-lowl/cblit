@@ -8,8 +8,9 @@ from langchain.embeddings import OpenAIEmbeddings
 from langchain.llms.base import BaseLLM
 from langchain.memory import VectorStoreRetrieverMemory
 from langchain.output_parsers import PydanticOutputParser
-from langchain.schema import Document
+from langchain.schema import Document, OutputParserException
 from pydantic import BaseModel, Field
+from retry import retry
 
 from cblit.cli.session_wrapper import wrap_session_method
 from cblit.llm.llm import get_llm
@@ -123,6 +124,7 @@ class TranslatorSession(BaseSession):
         return self
 
     @wrap_session_method()
+    @retry(exceptions=OutputParserException, tries=5)
     async def translate(self, from_language: str, to_language: str, phrase: str) -> ConlangEntry:
         """Translate phrases from one language to another.
 

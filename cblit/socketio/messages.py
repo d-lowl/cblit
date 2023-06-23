@@ -1,80 +1,56 @@
+"""SocketIO messages."""
 import dataclasses
-import json
-from typing import Generic, TypeVar, TypeAlias, Union, Self, cast, List
 
 from dataclasses_json import DataClassJsonMixin
 
 
 @dataclasses.dataclass
 class WaitPayload(DataClassJsonMixin):
+    """Wait payload."""
     wait: bool
 
 
 @dataclasses.dataclass
 class SayPayload(DataClassJsonMixin):
+    """Say payload."""
     who: str
     message: str
 
 
 @dataclasses.dataclass
 class GiveDocumentPayload(DataClassJsonMixin):
+    """Give document payload."""
     index: int
 
 
 @dataclasses.dataclass
 class WinPayload(DataClassJsonMixin):
+    """Win payload."""
     won: bool
 
 
 @dataclasses.dataclass
 class ErrorPayload(DataClassJsonMixin):
+    """Error payload."""
     code: int
     message: str
 
 
 @dataclasses.dataclass
 class DocumentPayload(DataClassJsonMixin):
+    """Document payload."""
     text: str
 
 
 @dataclasses.dataclass
 class DocumentsPayload(DataClassJsonMixin):
-    documents: List[DocumentPayload]
-
-
-IncomingMessagePayload: TypeAlias = Union[
-    SayPayload
-]
-
-OutgoingMessagePayload: TypeAlias = Union[
-    SayPayload,
-    WaitPayload,
-    ErrorPayload,
-    WinPayload
-]
-
-T = TypeVar("T", bound=Union[IncomingMessagePayload, OutgoingMessagePayload])
+    """Documents payload."""
+    documents: list[DocumentPayload]
 
 
 @dataclasses.dataclass
-class Message(Generic[T], DataClassJsonMixin):
-    type: str
-    payload: T
-
-    def __init__(self, payload: T) -> None:
-        self.type = payload.__class__.__name__
-        self.payload = payload
-
-    def serialize(self) -> str:
-        return self.to_json()
-
-    @classmethod
-    def deserialize(cls, msg: str) -> Self:
-        dumb = json.loads(msg)
-        payload_type = dumb["type"]
-        payload_cls: T = globals()[payload_type]
-        return cls(cast(T, payload_cls.from_dict(dumb["payload"])))
-
-
-IncomingMessage: TypeAlias = Message[IncomingMessagePayload]
-OutgoingMessage: TypeAlias = Message[OutgoingMessagePayload]
+class BriefPayload(DataClassJsonMixin):
+    """Brief payload."""
+    country_name: str
+    language_name: str
+    country_description: str

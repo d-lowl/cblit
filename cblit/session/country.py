@@ -4,7 +4,9 @@ from langchain import LLMChain, PromptTemplate
 from langchain.chains.base import Chain
 from langchain.llms.base import BaseLLM
 from langchain.output_parsers import PydanticOutputParser
+from langchain.schema import OutputParserException
 from pydantic import BaseModel, Field
+from retry import retry
 
 from cblit.llm.llm import get_llm
 from cblit.session.singleton_session import SingletonBaseSession
@@ -68,6 +70,7 @@ class ConstructedCountrySession(SingletonBaseSession):
             prompt=prompt,
         )
 
+    @retry(exceptions=OutputParserException, tries=5)
     async def new_country(self) -> Country:
         """Get new country.
 

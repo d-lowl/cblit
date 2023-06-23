@@ -10,7 +10,6 @@ from cblit.socketio.game import GameSessionManager
 from cblit.socketio.messages import GiveDocumentPayload, SayPayload
 
 static_path = os.path.join(os.path.dirname(__file__), "static")
-print(static_path)
 
 games: dict[str, Game] = {}
 
@@ -63,7 +62,6 @@ def say(sid: str, data: str) -> None:
         sid (str): session ID
         data (str): raw event data
     """
-    print(data)
     payload = SayPayload.from_json(data)
     session_manager.say(sid, payload.message)
 
@@ -76,7 +74,6 @@ def give_document(sid: str, data: str) -> None:
         sid (str): session ID
         data (str): raw event data
     """
-    print(data)
     payload = GiveDocumentPayload.from_json(data)
     session_manager.give_documents(sid, payload.index)
 

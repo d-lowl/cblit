@@ -3,7 +3,9 @@
 from langchain import LLMChain, PromptTemplate
 from langchain.llms.base import BaseLLM
 from langchain.output_parsers import PydanticOutputParser
+from langchain.schema import OutputParserException
 from pydantic import BaseModel, Field
+from retry import retry
 
 from cblit.llm.llm import get_llm
 from cblit.session.country import WRITER_PROMPT
@@ -54,6 +56,7 @@ class QuentaSession(SingletonBaseSession):
             prompt=self.prompt
         )
 
+    @retry(exceptions=OutputParserException, tries=5)
     async def new_quenta(self, from_country: str, to_country: str) -> Quenta:
         """Generate new quenta for a country.
 
