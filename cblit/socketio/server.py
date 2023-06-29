@@ -79,4 +79,6 @@ def give_document(sid: str, data: str) -> None:
 
 
 if __name__ == "__main__":
-    app.run()
+    host = os.getenv("HOST", "0.0.0.0")
+    port = int(os.getenv("PORT", "8000"))
+    app.run(host=host, port=port)
