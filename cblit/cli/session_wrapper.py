@@ -1,160 +1,179 @@
-import datetime
-import glob
-import os.path
-
-from rich import print
+"""Wrap Langchain powered LLM session."""
 import inspect
-from typing import Callable, List, Optional, Type, Union, Self, Any, TypeAlias, Coroutine
+import os.path
+from collections.abc import Callable, Coroutine
+from enum import Enum
+from types import MappingProxyType
+from typing import Any, Self, TypeAlias, cast
 
 import click
 import typer
+from rich import print
 
-from cblit.gpt.country import ConstructedCountrySession
-from cblit.gpt.documents import Quenta, WorkPermit
-from cblit.gpt.gpt_api import ChatSession
-from loguru import logger
+from cblit.session.session import BaseSession
 
-SessionMethod: TypeAlias = Union[Callable[[str, int], Any], Callable[[str, int], Coroutine[Any, Any, Any]]]
+SessionMethod: TypeAlias = Callable[..., Any] | Callable[..., Coroutine[Any, Any, Any]]
+
+
+def wrap_session_method() -> Callable[..., Any]:
+    """Mark method for session wrapping.
+
+    Returns:
+        Callable[..., Any]: a method marked for wrapping
+    """
+    def wrapper(func: Callable[..., Any]) -> Callable[..., Any]:
+        func.is_session_method = True  # type: ignore[attr-defined]
+        return func
+    return wrapper
+
+
+def prompt_enum(param_name: str, enum: type[Enum]) -> Enum:
+    """Prompt for an enum parameter.
+
+    Args:
+        param_name (str): parameter name
+        enum (Type[Enum]): enum subtype to prompt for
+
+    Returns:
+        Enum: a resulting enum element
+    """
+    enum_elements = list(enum.__members__.values())
+    elements_dict = {element.value: element for element in enum_elements}
+    prompt_str = f"{param_name}: " + ", ".join([f"{value}) {element.name}" for value, element in elements_dict.items()])
+    choices = click.Choice([str(value) for value in elements_dict])
+    choice = typer.prompt(prompt_str, type=choices)
+    return elements_dict[int(choice)]
+
+
+def prompt_str(param_name: str) -> str:
+    """Prompt for a str parameter.
+
+    Args:
+        param_name (str): parameter name
+
+    Returns:
+        str: parameter value to pass
+    """
+    return cast(str, typer.prompt(f"{param_name}"))
+
+
+def prompt_parameter(param: inspect.Parameter) -> Any:
+    """Prompt for a single parameter based on its type.
+
+    Args:
+        param (inspect.Parameter): parameter to prompt for
+
+    Returns:
+        Any: parameter value to pass
+    """
+    if param.annotation in [str, inspect.Parameter.empty]:
+        return prompt_str(param.name)
+    elif issubclass(param.annotation, Enum):
+        return prompt_enum(param.name, param.annotation)
 
 
 class SessionMethodWrapper:
+    """Session Method Wrapper."""
     name: str
     method: SessionMethod
-    priority: int
+    parameters: MappingProxyType[str, inspect.Parameter]
 
-    def __init__(self, name: str, method: Callable[[str, int], Any], priority: int = 0):
+    def __init__(self, name: str, method: Callable[..., Any]) -> None:
+        """Wrap a method.
+
+        Args:
+            name (str): method name for displaying
+            method (Callable[..., Any]): method to call
+        """
         self.name = name
         self.method = method
-        self.priority = priority
+        self.parameters = inspect.signature(method).parameters
+
+    def _build_args(self) -> dict[str, Any]:
+        """Prompt for all arguments required by the function.
+
+        Returns:
+            Dict[str, Any]: arguments
+        """
+        return {name: prompt_parameter(param) for name, param in self.parameters.items()}
+
+    async def _call_method(self) -> None:
+        """Call the wrapped method."""
+        arguments = self._build_args()
+        result = await self.method(**arguments)
+        print("<: "+str(result))
 
     async def run(self) -> None:
-        print(f"[green]{self.name}:[/green]")
-        print(f"Priority: {self.priority}")
+        """Run wrapped method continuously."""
+        print(f"[green]::{self.name}::[/green]")
         print("Ctrl-D or Ctrl-C to go back")
         while True:
             try:
-                user_message = typer.prompt(">")
-                if user_message.startswith("%%p"):
-                    self.priority = int(user_message[3:])
-                    print(f"Priority: {self.priority}")
-                    continue
-                gpt_response = self.method(user_message, self.priority)
-                if isinstance(gpt_response, Coroutine):
-                    gpt_response = await gpt_response
-                print(f"<: {gpt_response}")
+                await self._call_method()
             except click.exceptions.Abort:
                 print("[yellow]Done[/yellow]")
                 return
 
     @staticmethod
-    def is_compatible(signature: inspect.Signature) -> bool:
-        parameters = list(signature.parameters.values())
-        return (
-                len(parameters) == 2 and
-                parameters[0].annotation == str and
-                parameters[1].annotation == int and
-                parameters[1].name == "priority" and
-                signature.return_annotation is not None
-        )
+    def is_compatible(func: Callable[..., Any]) -> bool:
+        """Check whether the function is compatible with the wrapper.
+
+        Args:
+            func (Callable): function to check
+
+        Returns:
+            bool: check results
+        """
+        return hasattr(func, "is_session_method") and func.is_session_method
 
 
 LOG_DIRECTORY = os.path.join(os.getcwd(), os.pardir, "gpt-logs")
 
 
 class SessionWrapper:
-    session: Union[ChatSession, None] = None
-    session_class: Type[ChatSession]
-    methods: List[SessionMethodWrapper]
+    """Session Wrapper."""
+    session: BaseSession | None = None
+    methods: list[SessionMethodWrapper]
 
-    def __init__(self, session_class: Type[ChatSession]):
-        self.session_class = session_class
+    def __init__(self, session: BaseSession):
+        """Wrap session as CLI.
+
+        Args:
+            session (BaseSession): session to wrap
+        """
+        self.session = session
         self.methods = []
 
     def detect_methods(self) -> None:
+        """Detect method of the session to wrap."""
         self.methods = [SessionMethodWrapper(name, method) for name, method in
                         inspect.getmembers(self.session, predicate=inspect.ismethod) if
-                        not name.startswith("_") and SessionMethodWrapper.is_compatible(inspect.signature(method))]
+                        SessionMethodWrapper.is_compatible(method)]
 
-    async def select_mode(self) -> Optional[SessionMethodWrapper]:
+    async def select_mode(self) -> SessionMethodWrapper:
+        """Select method to run."""
         prompt_options = [f"{i + 1}) {method.name}" for i, method in enumerate(self.methods)]
-        prompt_options += ["n) new", "l) load"]
-        choice_labels = [str(i + 1) for i in range(len(self.methods))] + ["n", "l"]
-        if self.session is not None:
-            prompt_options += ["s) save", "p) print"]
-            choice_labels += ["s", "p"]
+        choice_labels = [str(i + 1) for i in range(len(self.methods))]
 
         prompt = "; ".join(prompt_options)
         choices = click.Choice(choice_labels)
         choice = typer.prompt(prompt, type=choices)
 
-        if choice == "n":
-            await self.generate()
-            return None
-        elif choice == "l":
-            self.load()
-            return None
-        elif choice == "s":
-            self.save()
-            return None
-        elif choice == "p":
-            print(self.session)
-            return None
-
         return self.methods[int(choice) - 1]
 
     async def run(self) -> None:
+        """Run session wrapper."""
         while True:
             try:
                 method = await self.select_mode()
-                if method is not None:
-                    await method.run()
+                await method.run()
             except click.exceptions.Abort:
                 print("[yellow]Done[/yellow]")
                 return
 
-    async def generate(self) -> None:
-        self.session = await self.session_class.generate()
-        if isinstance(self.session, ConstructedCountrySession):
-            quenta = await Quenta.from_session(self.session)
-            logger.debug(quenta)
-            work_permit = await WorkPermit.from_quenta(quenta, self.session)
-            logger.debug(work_permit)
-        self.detect_methods()
-        print("[green]New session is generated[/green]")
-
-    def save(self) -> None:
-        filename = f"{self.session.__class__.__name__}-{datetime.datetime.now().isoformat()}.json"
-        filename = typer.prompt("Enter filename to save the log file", default=filename)
-        self._save(os.path.join(LOG_DIRECTORY, filename))
-        print(f"[green]Session file is saved: {filename}[/green]")
-
-    def _save(self, destination: str) -> None:
-        if self.session is None:
-            raise ValueError("Session has not been started, cannot save")
-        # mypy does not recognise dataclass_json stuff
-        session_json = self.session.to_json(indent=2)
-        with open(destination, "w") as f:
-            f.write(session_json)
-
-    def load(self) -> None:
-        print("Select file to load:")
-        paths = glob.glob(os.path.join(LOG_DIRECTORY, "*.json"))
-        for i, path in enumerate(paths):
-            print(f"  {i}) {os.path.basename(path)}")
-        choice = typer.prompt("File index", type=click.Choice([str(i) for i in range(len(paths))]))
-        source = paths[int(choice)]
-        self._load(source)
-        self.detect_methods()  # need to re-detect methods, as the current ones are bind to the previous session
-        print(f"[green]Session file is loaded: {os.path.basename(source)}[/green]")
-
-    def _load(self, source: str) -> None:
-        with open(source, "r") as f:
-            # mypy does not recognise dataclass_json stuff
-            self.session = self.session_class.from_json(f.read())
-
     @classmethod
-    def from_session(cls, session: ChatSession) -> Self:
-        wrapper = cls(session.__class__)
-        wrapper.session = session
+    def from_session(cls, session: BaseSession) -> Self:
+        """Construct wrapper from existing session."""
+        wrapper = cls(session)
         wrapper.detect_methods()
         return wrapper

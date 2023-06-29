@@ -21,6 +21,10 @@ dacite = "^1.8.0"
 python-socketio = "^5.8.0"
 sanic = "^23.3.0"
 langchain = "^0.0.188"
+faiss-cpu = "^1.7.4"
+pytest-asyncio = "^0.21.0"
+retry = "^0.9.2"
+types-retry = "^0.9.9.3"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -40,3 +44,24 @@ ignore_missing_imports = true  # silence all import errors related to untyped li
 
 [tool.ruff]
 line-length = 120
+select = [
+    "C4",   # flake8-comprehensions
+    "SIM",  # flake8-simplify
+    "Q",    # flake8-quotes
+    "ISC",  # flake8-implicit-str-concat
+    "F",    # pyflakes
+    "D",    # pydocstyle
+    "E",    # pycodestyle error
+    "W",    # pycodestyle warning
+    "N",    # pep8-naming
+    "I",    # isort
+    "PL",   # pylint rules from categories "Convention", "Error", and "Warning"
+    "PLE",  # ruff currently implements only a subset of pylint's rules
+    "PLW",  # pylint warning
+    "PLR",  # pylint refactor
+    "UP",   # pyupgrade
+    "C",    # Complexity (mccabe+) & comprehensions
+]
+
+[tool.ruff.pydocstyle]
+convention = "google"

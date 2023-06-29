@@ -34,3 +34,16 @@ export function addDocument(text, callback) {
     let documentsElement = document.getElementById("documents")
     documentsElement.appendChild(documentElement)
 }
+
+export function showBrief(data) {
+    addChatMessage("system", `Country: ${data["country_name"]}`)
+    addChatMessage("system", data["country_description"])
+    addChatMessage("system", `Language: ${data["language_name"]}`)
+    addChatMessage("system", "You arrive to a new country. As an immigrant you need to register here. Good luck.")
+}
+
+export function showWin() {
+    let msg = "The green light is lit! It appears you have successfully registered, " +
+        "and can continue settling in the new country. Welcome."
+    addChatMessage("system", msg, false)
+}
