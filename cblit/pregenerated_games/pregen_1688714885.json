@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Mishinae",
+    "country_description": "Mishinae is a small country located on the planet Zekra, and is known for its diverse terrain and vibrant culture.",
+    "country_currency_name": "Kasema",
+    "neighbour_country_name": "Gelonia",
+    "people_description": "The people of Mishinae are known for their welcoming nature and inventive spirit. They love to explore and are always looking for new ways to express their creativity.",
+    "language_name": "Mishin",
+    "language_description": "Mishin is the primary language spoken by the people of Mishinae. It is a melodic language full of poetic metaphors and intricate grammar.",
+    "example_sentence": "Kanok sa esashi.",
+    "example_sentence_translation": "The sky is blue."
+  },
+  "quenta": {
+    "full_name": "Marko Jovanovic",
+    "country": "Gelonia",
+    "dob": "December 12, 1998",
+    "employer": "Mishinae International",
+    "employer_address": "123 Main St, Mishinae",
+    "job_title": "International Business Consultant",
+    "job_duties": "Provide consultation services to international businesses in Mishinae",
+    "salary": 60000,
+    "address": "56 Beachside Rd, Mishinae",
+    "rent": 1200
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Gelonia\nCountry of birth: Gelonia\nFull name: Marko Jovanovic\nDate of birth: December 12, 1998",
+      "player_representation": "Passport\n========\nCountry of issue: Gelonia\nCountry of birth: Gelonia\nFull name: Marko Jovanovic\nDate of birth: December 12, 1998"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Marko Jovanovic\nCompany of employment: Mishinae International\nJob title: International Business Consultant\nJob description: Provide consultation services to international businesses in Mishinae\nCompany address: 123 Main St, Mishinae",
+      "player_representation": "Kuliv neshuk\n============\nKekaso Dusikvashi: Marko Jovanovic\nUshvumilalel yokam: Mishinae International\nUshvumilalel bisham: Kuliv oshudumilalel yokam\nMevoliv yokah: Ushvumilalel yokam ek kuliv neshuk el kuliv misheenalel neshuk\nUshvumilalel vin: 123 Main St, Mishinae"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Marko Jovanovic\nEmployer Name: Mishinae International\nJob title: International Business Consultant\nJob duties: Provide consultation services to international businesses in Mishinae\nSalary: 60000\nCompany address: 123 Main St, Mishinae",
+      "player_representation": "Ushvumilalel yokam\n==================\nUshskalalel vin: Marko Jovanovic\nUshvumilalel yokam: Mishinae Ushvumilalel\nMashuk yokam: Ushvumilalel neshuk yokam\nKuliv mukam: Ushvumilalel ryukulalel malemilalel yokam yokam yokam nishinae\nUshleyam: 60000\nUshvumilalel alerh: 123 Neshuk Oa, Mishinae"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Marko Jovanovic\n\nAddress: 56 Beachside Rd, Mishinae\n\nRent price: 1200\n",
+      "player_representation": "Ushutikalil Neshuk\n==================\nVin Uthasi: Marko Jovanovic\nAlerh: 56 Sarepauvi Rde, Mishinae\nUshutikalil Neshuk: 1200"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Uvashi"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Touvashi"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Yukvashi"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Dusikvashi"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Vin nena es ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Uvaro vivi?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Vaso wivi, touvashi!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Min qoqalel neshuk es nishtiv/tirum/pushish"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Ushvumilalel neshuk"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Miv qoqalel shashish"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Vin alerh es ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Vaso nikid neshuk"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Vas es ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Vavali"
+      }
+    ]
+  }
+}

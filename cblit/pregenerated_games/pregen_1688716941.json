@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Lunaroxia",
+    "country_description": "Lunaroxia is a small planet located in the outer reaches of the galaxy. It is a lush and vibrant world, filled with exotic plants and creatures.",
+    "country_currency_name": "Lunaro",
+    "neighbour_country_name": "Galaxion",
+    "people_description": "The people of Lunaroxia are a friendly and welcoming people, with a deep respect for nature and the environment.",
+    "language_name": "Lunaroxian",
+    "language_description": "Lunaroxian is a complex language that combines elements of several Earth languages. It is rich in vocabulary and has a unique set of grammatical rules.",
+    "example_sentence": "Xyadre nurida wo korizi.",
+    "example_sentence_translation": "The flowers bloomed in the garden."
+  },
+  "quenta": {
+    "full_name": "Rudolfo Fonseca",
+    "country": "Galaxion",
+    "dob": "1995-01-01",
+    "employer": "Lunaroxia Corporation",
+    "employer_address": "12 Moon Street, Lunaroxia",
+    "job_title": "Gravity Engineer",
+    "job_duties": "Design and maintain gravity systems for Lunaroxia",
+    "salary": 85000,
+    "address": "27 Star Road, Lunaroxia",
+    "rent": 1500
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Galaxion\nCountry of birth: Galaxion\nFull name: Rudolfo Fonseca\nDate of birth: 1995-01-01",
+      "player_representation": "Passport\n========\nCountry of issue: Galaxion\nCountry of birth: Galaxion\nFull name: Rudolfo Fonseca\nDate of birth: 1995-01-01"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Rudolfo Fonseca\nCompany of employment: Lunaroxia Corporation\nJob title: Gravity Engineer\nJob description: Design and maintain gravity systems for Lunaroxia\nCompany address: 12 Moon Street, Lunaroxia",
+      "player_representation": "Borimyad Nokon\n==============\nGonkan namil: Rudolfo Fonseca\nKonayam yalai gosin: Lunaroxia Yalayam\nTegorimyad: Borimyad Isimor\nTikon Ekoxim: Pirem vodun nokon droa olan Lunaroxia\nGosin yalai: 12 Ruhalar Gai, Lunaroxia"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Rudolfo Fonseca\nEmployer Name: Lunaroxia Corporation\nJob title: Gravity Engineer\nJob duties: Design and maintain gravity systems for Lunaroxia\nSalary: 85000\nCompany address: 12 Moon Street, Lunaroxia",
+      "player_representation": "Konayam Ximyad\n==============\nXimyadnokon: Rudolfo Fonseca\nBolayam Xonimyad: Konayam Xilonyad\nLororikam Folem: Xogayamik Rokon\nNokon Fawah: Ximyad te Borimyad Konayam Syestemah Nokon Lunaroxia\nXonyamil: 85000\nKonayam Guran: 12 Gahin Yalai, Lunaroxia"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Rudolfo Fonseca\n\nAddress: 27 Star Road, Lunaroxia\n\nRent price: 1500\n",
+      "player_representation": "Ruhamapal Gokayim\n=================\nNayamak Ruhar: Rudolfo Fonseca\nRuhar yalai: 27 Fokalai Tawyar, Lunaroxia\nTomyam Qihalim: 1500"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Yalai"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Zinam"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Gorimyad"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Galerimyad"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Gonkan yalai ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Hazuyalai?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Uzulai falam, zamgai!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Zerimyad yalai nokon yalai gesin/konayam/vosin"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Gurayamil gosin"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Yalai caxon gesin"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Ruhar yalai ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Nodai zadamalai"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Cahari ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Ezalik"
+      }
+    ]
+  }
+}

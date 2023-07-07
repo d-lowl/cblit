@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Korotan",
+    "country_description": "Korotan is a small planet located in a distant corner of the Milky Way galaxy. It is inhabited by a species of intelligent, bipedal aliens known as the Korotanians. The planet is home to a number of beautiful landscapes and mysterious ruins.",
+    "country_currency_name": "Korling",
+    "neighbour_country_name": "Trava",
+    "people_description": "The Korotanians are a friendly species with a strong sense of tradition and respect for nature. They have a unique culture and language, and are known for their hospitality.",
+    "language_name": "Korotanese",
+    "language_description": "Korotanese is a complex language with many unique words and phrases. It is spoken by the Korotanians and some neighboring species.",
+    "example_sentence": "Marao ta bem kaloi.",
+    "example_sentence_translation": "The sky is so beautiful."
+  },
+  "quenta": {
+    "full_name": "John Doe",
+    "country": "Trava",
+    "dob": "2/10/1995",
+    "employer": "Otev Corporation",
+    "employer_address": "Korotan, Korotan, 3900",
+    "job_title": "Software Engineer",
+    "job_duties": "Developing software solutions for Otev Corporation",
+    "salary": 80000,
+    "address": "Korotan, Korotan, 3900",
+    "rent": 1500
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Trava\nCountry of birth: Trava\nFull name: John Doe\nDate of birth: 2/10/1995",
+      "player_representation": "Passport\n========\nCountry of issue: Trava\nCountry of birth: Trava\nFull name: John Doe\nDate of birth: 2/10/1995"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: John Doe\nCompany of employment: Otev Corporation\nJob title: Software Engineer\nJob description: Developing software solutions for Otev Corporation\nCompany address: Korotan, Korotan, 3900",
+      "player_representation": "Uamu a Porimu\n=============\nUutu Namuai: John Doe\nUamu a otev kouporateshon\nGatimu sau: Sapurawea Einjaanisi\nKusiis ouusu: Ouutou ouusu kabukaraka otev koroporaisiin\nKumpaanii Adoresuai: Korotan, Korotan, 3900"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: John Doe\nEmployer Name: Otev Corporation\nJob title: Software Engineer\nJob duties: Developing software solutions for Otev Corporation\nSalary: 80000\nCompany address: Korotan, Korotan, 3900",
+      "player_representation": "Soukei Yusai\n============\nKoumuin Namae: John Doe\nKaisou Kaisai: Otev Kaisou\nKadon Tisuta: Sowatoru Iinjaa\nKougi Noubou: Otev Kaisha ni tame ni shougai sofutowea risoutsuu no sakusei\nMeiyai: 80000\nKanpanai adoresuai: Korotan, Korotan, 3900"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: John Doe\n\nAddress: Korotan, Korotan, 3900\n\nRent price: 1500\n",
+      "player_representation": "Yaapuua Faesi\n=============\nKomu Nami: John Doe\nAdoresuai: Korotan, Korotan, 3900\nGomaa Gefu: 1500"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Sorai"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Nuosai"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Uusoi"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Muusoi"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Ai namuai ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Hoe sai ma?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Ma bem, obrigado!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Uamu ouusu a miiya kaikai nyarai/kysa/tooromu"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Raisiik ouusu"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Miiya nyarai raisiik ouusu"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Ai adoresuai ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Ma nai komii"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Kwe sai ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Tadabu"
+      }
+    ]
+  }
+}

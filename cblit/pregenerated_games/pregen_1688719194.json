@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Arvio",
+    "country_description": "Arvio is a small planet located in a distant solar system. It is populated by a peaceful, technologically advanced species called the Arvians.",
+    "country_currency_name": "Arvian Dollar",
+    "neighbour_country_name": "Tansio",
+    "people_description": "The Arvians are a friendly people who have a strong sense of community and are very welcoming to outsiders.",
+    "language_name": "Arvian",
+    "language_description": "Arvian is the official language of Arvio. It is a highly complex language that has been influenced by many other languages over its long history.",
+    "example_sentence": "Krvatul hah ah?",
+    "example_sentence_translation": "What did you say?"
+  },
+  "quenta": {
+    "full_name": "Josiah Tansio",
+    "country": "Tansio",
+    "dob": "16/02/1982",
+    "employer": "EsperTech",
+    "employer_address": "Arvio Main Street, 4A",
+    "job_title": "Software Developer",
+    "job_duties": "Developing web and mobile applications using the latest technologies",
+    "salary": 3500,
+    "address": "Arvio Main Street, 8A",
+    "rent": 600
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Tansio\nCountry of birth: Tansio\nFull name: Josiah Tansio\nDate of birth: 16/02/1982",
+      "player_representation": "Passport\n========\nCountry of issue: Tansio\nCountry of birth: Tansio\nFull name: Josiah Tansio\nDate of birth: 16/02/1982"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Josiah Tansio\nCompany of employment: EsperTech\nJob title: Software Developer\nJob description: Developing web and mobile applications using the latest technologies\nCompany address: Arvio Main Street, 4A",
+      "player_representation": "Krvatulidh Lah Werkuh\n=====================\nKrvah m'namah: Josiah Tansio\nKumpanee uf Lahmploymahnt: EsperTech\nTulidh uf Skwahft: Devlupar\nLah Werkuh Krvahsh: Dhevluping wibbuh nuh mubayl aplikayshuns yusing thuh leitist tekneelogiseez\nKampani ahdrvss: Arvio Mhein Strit, 4A"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Josiah Tansio\nEmployer Name: EsperTech\nJob title: Software Developer\nJob duties: Developing web and mobile applications using the latest technologies\nSalary: 3500\nCompany address: Arvio Main Street, 4A",
+      "player_representation": "Krvahtulidh Mahkuhgrvah\n=======================\nAhmplahtee Nuhmvuh: Josiah Tansio\nKahpahrhr Nuhm: Ehspertech\nTulahtah Krvahtuh: Krvahtuh Sofftwer Muhvahluhrvah\nKrvahtulidh Mahkuhgrvah: Lahuvahdahng webhulidh mah mobailidh aplikasihnsh usahng lahtist technolojihz\nMahhudh: 3500\nKumpenih ahdrvss: Arvih M'kahstr'et, 4A"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Josiah Tansio\n\nAddress: Arvio Main Street, 8A\n\nRent price: 600\n",
+      "player_representation": "Tahnantsy Ugreemvnt\n===================\nKrvah M'namah: Josiah Tansio\nAhdrvss: Arvio Krayvd Strvv, 8A\nRentt Priss: 600"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Krvah"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Krvahall"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Krvatulid"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Krvatulidh"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Krvah m'namah ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Krvatul hah ahr?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Krvah m'gud, krvahall!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Krvah razh m'enahtulidh lah werkuh/studah/tourisam"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Migrahtshun ufis"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Krvah zahv m'registrah"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Krvah ahdrvss m' ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Krvah ah meh nahtulidh"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Krvatul ah ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Krvaht"
+      }
+    ]
+  }
+}

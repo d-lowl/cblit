@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Tothemi",
+    "country_description": "Tothemi is a small, mountainous country located on a distant planet. It is known for its picturesque landscapes and friendly people.",
+    "country_currency_name": "Tothemi Coins",
+    "neighbour_country_name": "Lamthor",
+    "people_description": "The people of Tothemi are friendly and kind, always willing to lend a helping hand. They are also known for their love of music and storytelling.",
+    "language_name": "Tothemian",
+    "language_description": "Tothemian is a spoken language which is based on sounds resembling birdsong. It is quite distinct from languages spoken on Earth.",
+    "example_sentence": "Poram'thag",
+    "example_sentence_translation": "Greetings, my friend!"
+  },
+  "quenta": {
+    "full_name": "Elliot Lefevre",
+    "country": "Lamthor",
+    "dob": "06/13/1997",
+    "employer": "Tothemi Tech",
+    "employer_address": "21 High Street, Tothemi",
+    "job_title": "Software Developer",
+    "job_duties": "Developing software for the company's products",
+    "salary": 85000,
+    "address": "18 Low Street, Tothemi",
+    "rent": 750
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Lamthor\nCountry of birth: Lamthor\nFull name: Elliot Lefevre\nDate of birth: 06/13/1997",
+      "player_representation": "Passport\n========\nCountry of issue: Lamthor\nCountry of birth: Lamthor\nFull name: Elliot Lefevre\nDate of birth: 06/13/1997"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Elliot Lefevre\nCompany of employment: Tothemi Tech\nJob title: Software Developer\nJob description: Developing software for the company's products\nCompany address: 21 High Street, Tothemi",
+      "player_representation": "Tahmahtas Lemta\n===============\nGomahtas Ohetham: Elliot Lefevre\nTahmahta Thahtahm: Tahmahtas Thahtah\nOhmonatas Mhatahona Tahmah: Ehmahtas Thamhtamhatah\nLemtahmahn: Suhbofftamah Tohatah Tashompah Lemta Fohtah\nGom yahathah: 21 Gom Gaham, Tothemi"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Elliot Lefevre\nEmployer Name: Tothemi Tech\nJob title: Software Developer\nJob duties: Developing software for the company's products\nSalary: 85000\nCompany address: 21 High Street, Tothemi",
+      "player_representation": "Tasasathadma Tasho\n==================\nTahdahtas Lehla: Elliot Lefevre\nTasahmah Rhamat: Tahmahtas Tech\nKashahmamah Tashod: Shomodeh Tashodastho\nTashamtoh: Tashahatadma Tahsahmah tashah mahtahma tahmah tasasathadmas\nLesahtas: 85000\nTasho satham: 21 Gomdastham, Tothemi"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Elliot Lefevre\n\nAddress: 18 Low Street, Tothemi\n\nRent price: 750\n",
+      "player_representation": "Takatahawh\n==========\nLefahm Lah: Elliot Lefevre\nTahaehtham: 18 Tawhaw Lohtah, Tothemi\nHahatamah: 750"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Poram"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Parasah"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Tasatah"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Tawhahom"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Gom ohetham ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Etoma ohetham?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Uhetham soham, poram!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Owahatas mehmo pahdah yemhahseh lemta"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Tashomhatah"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Ehetham mehmo lahdah yemhahseh lemta"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Gom tahaehtham ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Uhem hohmehseh lemteh"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Kae ohetham ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Mohmah"
+      }
+    ]
+  }
+}

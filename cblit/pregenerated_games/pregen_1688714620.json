@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Fradolia",
+    "country_description": "Fradolia is an advanced and vibrant planet located in the Vastin galaxy and is home to a variety of species. The planet is known for its unique architecture and culture.",
+    "country_currency_name": "Fradolian Credit",
+    "neighbour_country_name": "Jabronia",
+    "people_description": "The people of Fradolia are known for their friendly nature and their passion for knowledge and exploration. They are a peaceful and welcoming people who pride themselves on their inventive nature.",
+    "language_name": "Fradolian",
+    "language_description": "Fradolian is a unique language that is heavily influenced by the culture of Fradolia, and is spoken by the majority of its population. It has a distinct syntax and is composed of both spoken and written elements.",
+    "example_sentence": "Gimorzo elenda sikise",
+    "example_sentence_translation": "Let's explore together"
+  },
+  "quenta": {
+    "full_name": "John Smith",
+    "country": "Jabronia",
+    "dob": "05/31/1980",
+    "employer": "Fradolia Solutions",
+    "employer_address": "44 Main Street, Fradolia, 12345",
+    "job_title": "Software Engineer",
+    "job_duties": "Developing software solutions for a variety of clients",
+    "salary": 70000,
+    "address": "23 High Street, Fradolia, 54321",
+    "rent": 500
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Jabronia\nCountry of birth: Jabronia\nFull name: John Smith\nDate of birth: 05/31/1980",
+      "player_representation": "Passport\n========\nCountry of issue: Jabronia\nCountry of birth: Jabronia\nFull name: John Smith\nDate of birth: 05/31/1980"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: John Smith\nCompany of employment: Fradolia Solutions\nJob title: Software Engineer\nJob description: Developing software solutions for a variety of clients\nCompany address: 44 Main Street, Fradolia, 12345",
+      "player_representation": "Uviessomor Nasez\n================\nFaela Kune: John Smith\nUvadarso Ensotvizar: Fradolian Sosolutvizar\nKisivolim Insofizarom\nLirsirol Akhiliza: Idzozsezi Pokvizomor Aghaliza Bonsi Vudaliza\nKompani zahese: 44 Main Zela, Fradolia, 12345"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: John Smith\nEmployer Name: Fradolia Solutions\nJob title: Software Engineer\nJob duties: Developing software solutions for a variety of clients\nSalary: 70000\nCompany address: 44 Main Street, Fradolia, 12345",
+      "player_representation": "Kotvizarso Aghaliza\n===================\nKilazho Tazaliza: John Smith\nIghalizarso Fradolian: Fradolian Sotimizar\nGuthizarso eznoven: Tizengolik Enzontor\nTendozarso kontorza: Dokitkalizo aghsimzorso tazaliza adezo mekizarso\nGosaso: 70.000\nKomadza hene: 44 Dabza Seleka, Fradolia, 12345"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: John Smith\n\nAddress: 23 High Street, Fradolia, 54321\n\nRent price: 500\n",
+      "player_representation": "Vamzotar Zahgach\n================\nKaslae Nome: John Smith\nLamza hene: 23 Folen galma, Fradolia, 54321\nZabvozar Ghamzota: 500"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Halafa"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Lefla"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Granzemor"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Sarasota ganliza"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Sanea hene ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Galaesa?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Talaesa, kalas!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Ivi kimorzo dorendo a zemonta/dulonza/zohonze"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Moksarso tazaliza"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Zindu darano ornosso"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Lamza hene ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Taeli nai vivinta"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Saena ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Tilaya"
+      }
+    ]
+  }
+}

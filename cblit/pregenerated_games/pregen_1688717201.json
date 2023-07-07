@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Gavarria",
+    "country_description": "Gavarria is an advanced, yet peaceful planetary nation located in a distant solar system. It is known for its vibrant culture, its beautiful landscapes, and its advanced technology.",
+    "country_currency_name": "Gavarrian Credits",
+    "neighbour_country_name": "Anadon",
+    "people_description": "The people of Gavarria are known for their warm hospitality and enthusiasm for life. They are friendly and welcoming to visitors from other planets.",
+    "language_name": "Korvakian",
+    "language_description": "Korvakian is a unique language that combines elements from many different languages. It has a complex grammar and rich vocabulary.",
+    "example_sentence": "Korvakian, anu anu?",
+    "example_sentence_translation": "How are you?"
+  },
+  "quenta": {
+    "full_name": "John Doe",
+    "country": "Anadon",
+    "dob": "11/25/1985",
+    "employer": "Gavarria Industries",
+    "employer_address": "123 Main Street, Gavarria",
+    "job_title": "Software Engineer",
+    "job_duties": "Developing and maintaining software applications",
+    "salary": 80000,
+    "address": "456 Main Street, Gavarria",
+    "rent": 2000
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Anadon\nCountry of birth: Anadon\nFull name: John Doe\nDate of birth: 11/25/1985",
+      "player_representation": "Passport\n========\nCountry of issue: Anadon\nCountry of birth: Anadon\nFull name: John Doe\nDate of birth: 11/25/1985"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: John Doe\nCompany of employment: Gavarria Industries\nJob title: Software Engineer\nJob description: Developing and maintaining software applications\nCompany address: 123 Main Street, Gavarria",
+      "player_representation": "Namu-komuti\n===========\nAra Nome: John Doe\nGavarria Mokunuti: Amaku-komuti\nTekutu-komuti: Isotu-mukonu\nTutu-faru: Nalu-mokutu nana nata-tufaru iti-faru\nKomuti ara: 123 Main Street, Gavarria"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: John Doe\nEmployer Name: Gavarria Industries\nJob title: Software Engineer\nJob duties: Developing and maintaining software applications\nSalary: 80000\nCompany address: 123 Main Street, Gavarria",
+      "player_representation": "Empu-sumuitai\n=============\nUmu-saanai: John Doe\nEmpu-sumkah: Gavarria Umi-umpitai\nUmu-tegirai: Kostu-mukuti\nMofu-tasuma: Pamili-lilukutai namu-pumana komuta-sutaka\nUsuk-zemu: 80000\nKompani dutu ara: 123 Main Street, Gavarria"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: John Doe\n\nAddress: 456 Main Street, Gavarria\n\nRent price: 2000\n",
+      "player_representation": "Uresu-komuti\n============\nMe nema ara John Doe\nDutu: 456 Main Street, Gavarria\nUreso-komuti: 2000"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "anu anu"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "monu monu"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Pasupokutu"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Ana-dokutu"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Korvakian, me ara ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "anu anu?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "nu anu nel, monu anu!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Korvakian me ara edo nenu namu sikomu/opu kutu/tourismu"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Iminu-komuti"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Me namu alu edo sikomu"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Me dutu ara ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Korvakian, ku nenu yari"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "anu ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Ogokor"
+      }
+    ]
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Ardowna",
+    "country_description": "A small country located in the outer reaches of the galaxy, Ardowna is primarily made up of rocky terrain. Its diverse population includes a variety of creatures from many planets.",
+    "country_currency_name": "Ardownan Credits",
+    "neighbour_country_name": "Ridoron",
+    "people_description": "The people of Ardowna are friendly and welcoming, and they have a strong tradition of hospitality. They are known for their love of music, art, and culture.",
+    "language_name": "Gidag",
+    "language_description": "Gidag is a melodic language, composed of many tones and intricate phrases. It is spoken by all creatures in Ardowna, and is used to communicate across the galaxy.",
+    "example_sentence": "Furvah oorwa hoflom!",
+    "example_sentence_translation": "Come join us for dinner!"
+  },
+  "quenta": {
+    "full_name": "John Doe",
+    "country": "Ridoron",
+    "dob": "10/10/1990",
+    "employer": "Ardowna Tech",
+    "employer_address": "1 Ardowna Street",
+    "job_title": "Software Engineer",
+    "job_duties": "Developing software solutions for Ardowna Tech customers",
+    "salary": 120000,
+    "address": "3 Ardowna Street",
+    "rent": 1000
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Ridoron\nCountry of birth: Ridoron\nFull name: John Doe\nDate of birth: 10/10/1990",
+      "player_representation": "Passport\n========\nCountry of issue: Ridoron\nCountry of birth: Ridoron\nFull name: John Doe\nDate of birth: 10/10/1990"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: John Doe\nCompany of employment: Ardowna Tech\nJob title: Software Engineer\nJob description: Developing software solutions for Ardowna Tech customers\nCompany address: 1 Ardowna Street",
+      "player_representation": "Rachoflir Mafloh\n================\nMevlur Kwos: John Doe\nKulmwin Afajd: Ardowna Tech\nTitel der Arbeit: Softwareingenieur\nKumolpofgoc: Tiflirnashupla Nolosarokfoc Fom Ardowna Tech Kecorlac\nVahol Fozom: 1 Ardowna Mwol"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: John Doe\nEmployer Name: Ardowna Tech\nJob title: Software Engineer\nJob duties: Developing software solutions for Ardowna Tech customers\nSalary: 120000\nCompany address: 1 Ardowna Street",
+      "player_representation": "Uzegmektok\n==========\nNamugwul Gwos: John Doe\nUfektok Dantbet: Ardowna Tech\nUvliiktok: Lotecuaf Pesyk\nVezfofnalr: Orvorgemok Pazolgrakt Kizsodrut Roktog Ardowna Tech Fopdeg\nYohfchos: 120000\nSutelgaht: 1 Ardowna Sutel"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: John Doe\n\nAddress: 3 Ardowna Street\n\nRent price: 1000\n",
+      "player_representation": "Sulgahtam\n=========\nMevlur Fwef: Gwos Doe\nTuvahor: 3 Ardowna Street\nPogutem: 1000"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Furvah"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Goshef"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Tasurm"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Tuklornok"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Gwos mevlur ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Vos vurvah?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Vos demvlur, goshef!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Folihla quram rurvoflir orkumh / qimhomh / ludumh"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Kirathelnem"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Lamal quram qamoflir"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Mwol tuvahor ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Vos quram norvoflir"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Vos es ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Yenver"
+      }
+    ]
+  }
+}

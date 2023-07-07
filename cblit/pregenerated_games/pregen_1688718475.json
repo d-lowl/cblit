@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Aldebaran",
+    "country_description": "Aldebaran is an advanced civilization on a distant planet, where technology has allowed for a utopian lifestyle.",
+    "country_currency_name": "Aldebaran Credits",
+    "neighbour_country_name": "Alcyone",
+    "people_description": "The citizens of Aldebaran are highly intelligent, with an emphasis on both knowledge and physical prowess.",
+    "language_name": "Dipthong",
+    "language_description": "Dipthong is a complex language composed of multiple syllables, with an elaborate writing system.",
+    "example_sentence": "Krypth kwyrz ylwzwq.",
+    "example_sentence_translation": "The future is ours."
+  },
+  "quenta": {
+    "full_name": "Jorran Alsarim",
+    "country": "Alcyone",
+    "dob": "2/25/1995",
+    "employer": "Aldebaran Corporation",
+    "employer_address": "111 Aldebaran Street, Aldebaran, AB 12345",
+    "job_title": "Software Engineer",
+    "job_duties": "Develop software applications and maintain existing applications",
+    "salary": 80000,
+    "address": "2222 Aldebaran Avenue, Aldebaran, AB 12345",
+    "rent": 1200
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Alcyone\nCountry of birth: Alcyone\nFull name: Jorran Alsarim\nDate of birth: 2/25/1995",
+      "player_representation": "Passport\n========\nCountry of issue: Alcyone\nCountry of birth: Alcyone\nFull name: Jorran Alsarim\nDate of birth: 2/25/1995"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Jorran Alsarim\nCompany of employment: Aldebaran Corporation\nJob title: Software Engineer\nJob description: Develop software applications and maintain existing applications\nCompany address: 111 Aldebaran Street, Aldebaran, AB 12345",
+      "player_representation": "Yqwqyq Qpwq Gwqzwkq\n===================\nWqzwqrq Gwqzwq: Yzsqwqq Yzwqwqzwq\nVqwqyqwz Dqpwq: Qwqdwyqbqwq Qpwqtwqwq\nQwqpq Ykpwqwp: Gwqzwq Gwqzwkqz\nPqwq Gwpqyqwz: Yqwqyq Gwqzwkq Ykpwqwqz qpwq Kwpwq Gwqzwkqz Gwqzwkq Gwpqyqyq\nYwpzwq qpwq Cwkwqwqzwq: 111 Ykdwpwqwqwq Qpwqzwqwq, Ykdwpwqwqwq, AB 12345"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Jorran Alsarim\nEmployer Name: Aldebaran Corporation\nJob title: Software Engineer\nJob duties: Develop software applications and maintain existing applications\nSalary: 80000\nCompany address: 111 Aldebaran Street, Aldebaran, AB 12345",
+      "player_representation": "Qpwqpqwq Qpwqyqwz\n=================\nQwzqwqyq Gwqzwq: Jorran Alsarim\nWqpwqjqwq Yqwqwq: Hqwqzwqkq Rqwpqwqwq\nQwqyq Qpwq Wqzqwkq Gwqzwkq\nGwqzwkq Qpwqyqwz: Qpwqyqwz Gwqzwkqwq Gwqzwqzwq qpwq Gwqzwkq Gwqzwqzwqwq Gwqzwkqwq\nQqwqyqwz: Xyqwqzw\nPwqxwq qpwq Lqpwqtwqzwq Ykpwq, Lqpwqtwqzwq, AB 12345"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Jorran Alsarim\n\nAddress: 2222 Aldebaran Avenue, Aldebaran, AB 12345\n\nRent price: 1200\n",
+      "player_representation": "Vwqywq Dqpwqkqwq\n================\nYzqwq Qpwq Jqzwqpwq Aqzwqzwq\nQwqzwq: 2222 Tpwqqlqwqwq Ywqwqwq, Tpwqqlqwqwq, Yk 12345\nYkpwqwqpwq: Ggqgwqwq"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Gwruzwq"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Pwqszwq"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Ykpqkpwq"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Ykpqkpwq qpwqyqwz"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Yzqwq qpwq Gwqzwq"
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Wqmzwq qpwq szwq?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Yzqwq qpwq xzwq mqmzwq, qzwqmzwq qpwq!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Yzqwq qpwq Gwqzwq qpwq yqwqyq qpwq Zqpwqwq qpwq Gwqzwkq"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Gwqzwkq qpwq Ykpwqwq"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Yzqwq qpwq Gwqzwq qpwq Zqpwqywq"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Gwqzwq qpwq Ykpwqwqzwq"
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Yzqwq qpwq qzwqpzwqyq qpwq"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Qwqmzwq qpwq ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Wqopwq"
+      }
+    ]
+  }
+}

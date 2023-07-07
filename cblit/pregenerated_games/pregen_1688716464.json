@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Koronua",
+    "country_description": "Koronua is a small but vibrant planet located in the Fervent Galaxy. It is filled with lush forests, deep blue oceans, and many different species of animals.",
+    "country_currency_name": "Koronuan Credits",
+    "neighbour_country_name": "Gorumba",
+    "people_description": "The citizens of Koronua are known for their friendly and welcoming attitudes. They enjoy a peaceful, simple way of life and appreciate the beauty of their planet.",
+    "language_name": "Koronuani",
+    "language_description": "Koronuani is a language spoken by the inhabitants of Koronua. It is composed of a unique combination of words and sounds, creating a melodic yet complex language.",
+    "example_sentence": "Mofokara mokofa!",
+    "example_sentence_translation": "Welcome to Koronua!"
+  },
+  "quenta": {
+    "full_name": "Kazimiro Baranov",
+    "country": "Gorumba",
+    "dob": "2/12/1977",
+    "employer": "Koronua Automotive",
+    "employer_address": "917 Main Street, Koronua, CA 98761",
+    "job_title": "Mechanic Technician",
+    "job_duties": "Perform maintenance and repair on vehicles and other mechanical equipment",
+    "salary": 46000,
+    "address": "1123 Maple Street, Koronua, CA 98761",
+    "rent": 2400
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Gorumba\nCountry of birth: Gorumba\nFull name: Kazimiro Baranov\nDate of birth: 2/12/1977",
+      "player_representation": "Passport\n========\nCountry of issue: Gorumba\nCountry of birth: Gorumba\nFull name: Kazimiro Baranov\nDate of birth: 2/12/1977"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Kazimiro Baranov\nCompany of employment: Koronua Automotive\nJob title: Mechanic Technician\nJob description: Perform maintenance and repair on vehicles and other mechanical equipment\nCompany address: 917 Main Street, Koronua, CA 98761",
+      "player_representation": "Wokotu lokofo!\n==============\nNama Fana: Kazimiro Baranov\nFomopso kofomopso: Koronua Mopofokowa\nTofasu lomofo: Kotonokala Tekonose!\nLoposufo: Wokotu lu pafomufo pokopu lu motofo lu lofopu loposufo luwofo\nKofofu sokotu: 917 Main Street, Koronua, CA 98761"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Kazimiro Baranov\nEmployer Name: Koronua Automotive\nJob title: Mechanic Technician\nJob duties: Perform maintenance and repair on vehicles and other mechanical equipment\nSalary: 46000\nCompany address: 917 Main Street, Koronua, CA 98761",
+      "player_representation": "Luposafo luwopso!\n=================\nFana sokotu: Kazimiro Baranov\nSofutu luposafo: Koronua Automotive\nLomofo mofosofo: Mekanikotu Tekniku\nKutopso luwopso: Wofo wokotu osotu u kutopso de luwopso lu pokapefoso u parisufoso nedoso\nLofutu: 46000\nKapanyu luposafo: 917 Mofata Sotu, Koronua, CA 98761"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Kazimiro Baranov\n\nAddress: 1123 Maple Street, Koronua, CA 98761\n\nRent price: 2400\n",
+      "player_representation": "Tofofotu lupa!\n==============\nNama Fana: Kazimiro Baranov\nKofofu: 1123 Mapofu Stofotu, Koronua, CA 98761\nLupa lupefofu: 2400"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Mokofo!"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Mofokara!"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Mokofo piitso!"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Mokofo lalu!"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Fana sokotu ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Kefa omi?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Efu omi, nakosu!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Nedo wokotu lu luwofo/parisufo/tourismofo"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Papotu luposafo!"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Lipo fotodu luwokosu"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Kofofu sokotu ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Lipo ekofami"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Kemi ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Lupofa!"
+      }
+    ]
+  }
+}

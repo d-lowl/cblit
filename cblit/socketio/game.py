@@ -6,6 +6,7 @@ from typing import Any
 import socketio
 
 from cblit.game.game import Game
+from cblit.game.pregenerated_game import PregeneratedGame
 from cblit.session.country import Country
 from cblit.socketio.messages import BriefPayload, DocumentPayload, DocumentsPayload, SayPayload, WaitPayload, WinPayload
 
@@ -34,7 +35,7 @@ class GameSession:
 
     async def initialise(self) -> None:
         """Asynchronously initialise."""
-        self._game = await Game.generate()
+        self._game = PregeneratedGame.get_random().to_game()
 
     @property
     def game(self) -> Game:

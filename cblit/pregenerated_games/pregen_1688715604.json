@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Almari",
+    "country_description": "Almari is a lush planet located in an unexplored corner of the universe. It is home to many wondrous creatures, plants, and civilizations. The people of Almari are friendly and welcoming to visitors.",
+    "country_currency_name": "Almarian Credits",
+    "neighbour_country_name": "Kelvarian",
+    "people_description": "The people of Almari are a diverse group, coming from many different ethnic and cultural backgrounds. They are known for their intelligence and creativity, and they are highly regarded for their hospitality.",
+    "language_name": "Alefari",
+    "language_description": "Alefari is the official language of Almari and is spoken by most of its inhabitants. Its grammar is complex yet elegant, and it has a vast vocabulary of words and phrases.",
+    "example_sentence": "Da nahri a nyari",
+    "example_sentence_translation": "We welcome all visitors"
+  },
+  "quenta": {
+    "full_name": "Jenna Kalti",
+    "country": "Kelvarian",
+    "dob": "3/14/1990",
+    "employer": "Almari Robotics",
+    "employer_address": "34 West Street, Almari",
+    "job_title": "Software Engineer",
+    "job_duties": "Developing software and firmware for robotic applications",
+    "salary": 125000,
+    "address": "45 South Street, Almari",
+    "rent": 1400
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Kelvarian\nCountry of birth: Kelvarian\nFull name: Jenna Kalti\nDate of birth: 3/14/1990",
+      "player_representation": "Passport\n========\nCountry of issue: Kelvarian\nCountry of birth: Kelvarian\nFull name: Jenna Kalti\nDate of birth: 3/14/1990"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Jenna Kalti\nCompany of employment: Almari Robotics\nJob title: Software Engineer\nJob description: Developing software and firmware for robotic applications\nCompany address: 34 West Street, Almari",
+      "player_representation": "Dakar mehni\n===========\nGicu mehni: Jenna Kalti\nRufa tulenu: Almari Robotics\nAchel mehni: Kapor zemem\nGirah nata dafu: Nata hapwashi nata jahrufa hohfa fa mohruh shuwahi\nGicu shohri: 34 Shasir yul, Almari"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Jenna Kalti\nEmployer Name: Almari Robotics\nJob title: Software Engineer\nJob duties: Developing software and firmware for robotic applications\nSalary: 125000\nCompany address: 34 West Street, Almari",
+      "player_representation": "Fahri muhso\n===========\nMuhso Sari: Jenna Kalti\nFahri muhso: Almari Robotics\nVahni kehri: Mehni tavsahsi\nMihsu fahri: Shofru sisda wa fefro nu nahri da gicu dohru\nMahso: 125000\nGicu shohri: 34 Ahuzu Shohri, Almari"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Jenna Kalti\n\nAddress: 45 South Street, Almari\n\nRent price: 1400\n",
+      "player_representation": "Tecu shehri\n===========\nGicu mehni: Jenna Kalti\nGicu shohri: 45 Shohri Sumi, Almari\nQumeh xhahsi: 1400"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Folu"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Nahri"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Mehni bih"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Jilani mehni"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Gicu mehni ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Fonil dolu?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Gicu nyare, dahugo!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Gicu alyu da nahri fa nata/shifu/mohruh"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Shashu mehni"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Gicu nahri fa yatruh"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Gicu shohri ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Gicu fonil hafelu"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Konu ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Eshen"
+      }
+    ]
+  }
+}

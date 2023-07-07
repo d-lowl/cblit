@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Marnon",
+    "country_description": "Marnon is a small planet located in the Alpha Centauri star system. It is home to many strange creatures and plants, some of which are only found on Marnon.",
+    "country_currency_name": "Marnon Credits",
+    "neighbour_country_name": "Korlea",
+    "people_description": "The inhabitants of Marnon are friendly, curious, and adventurous. They are a quiet, humble people with their own unique culture.",
+    "language_name": "Marnonish",
+    "language_description": "Marnonish is a unique language spoken by the inhabitants of Marnon. It is a combination of various elements from many different languages.",
+    "example_sentence": "Marnonish stoktat shay",
+    "example_sentence_translation": "The sun is shining"
+  },
+  "quenta": {
+    "full_name": "Marnon Smith",
+    "country": "Korlea",
+    "dob": "12/02/1985",
+    "employer": "MarnonTech",
+    "employer_address": "Marnon Avenue, Marnon, MA 02030",
+    "job_title": "Software Engineer",
+    "job_duties": "Develop and maintain software applications, debug issues and improve software performance.",
+    "salary": 80000,
+    "address": "Marnon Avenue, Marnon, MA 02030",
+    "rent": 1200
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Korlea\nCountry of birth: Korlea\nFull name: Marnon Smith\nDate of birth: 12/02/1985",
+      "player_representation": "Passport\n========\nCountry of issue: Korlea\nCountry of birth: Korlea\nFull name: Marnon Smith\nDate of birth: 12/02/1985"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Marnon Smith\nCompany of employment: MarnonTech\nJob title: Software Engineer\nJob description: Develop and maintain software applications, debug issues and improve software performance.\nCompany address: Marnon Avenue, Marnon, MA 02030",
+      "player_representation": "Stoktat yol ihxay\n=================\nStoktat tatna fay Marnon Smith\nStoktat arhikmeth: MarnonTech\nStoktat Kaxemuht Kaxunay\nTihxay etwimay: Hamayi ihxay taxturmawe stoktat, ustifay ingsay ihxay tefohxihxay stoktat vuwivay.\nStoktat faykompainay: Marnon woktat, Marnon, MA 02030"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Marnon Smith\nEmployer Name: MarnonTech\nJob title: Software Engineer\nJob duties: Develop and maintain software applications, debug issues and improve software performance.\nSalary: 80000\nCompany address: Marnon Avenue, Marnon, MA 02030",
+      "player_representation": "Stoktat arhimay\n===============\nStoktat arhimay: Marnonish Smifth\nStoktat arhimay MarnonTech\nStoktat kiraya: Efektizoft sarday\nStoktat arhimay: Dankostay yay vosisaroy, fykyaroy darim yay oluonay stoktat stoktat luk, yay nanyaroy stoktat oluonay.\nStoktat besk: 80000\nStoktat adusse fay: Marnon Stoktat, Marnon, MA 02030"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Marnon Smith\n\nAddress: Marnon Avenue, Marnon, MA 02030\n\nRent price: 1200\n",
+      "player_representation": "Stoktat tesedentay\n==================\nStoktat nayme fay Marnon Smith\nStoktat adusse fay: Marnon Vayoust, Marnon, MA 02030\nPretat iyat: 1200"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Stoktat"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Stoktat nay"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Stoktat yol"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Stoktat uste"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Stoktat fay ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Stoktat kat shay?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Stoktat shay kat, stoktat nay!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Stoktat ihxay tay loram stoktat yol yay yom/oluon/teylay"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Stoktat ustifay"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Stoktat oluwot tay puram"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Stoktat adusse fay ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Stoktat xa yom oltay"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Stoktat shay ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Ushaytay"
+      }
+    ]
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Gorogon Prime",
+    "country_description": "Gorogon Prime is a small planetary kingdom located in the furthest reaches of the galaxy. It is known for its advanced technology and its strict adherence to ancient customs and traditions.",
+    "country_currency_name": "Gorbux",
+    "neighbour_country_name": "Nebulus",
+    "people_description": "The people of Gorogon Prime are a peaceful and hospitable race, known for their wisdom and practicality. They are highly educated and have a deep knowledge of the sciences and art.",
+    "language_name": "Gorogonic",
+    "language_description": "Gorogonic is an ancient and complex language spoken by the inhabitants of Gorogon Prime. It is a combination of a spoken and written language, with its own alphabet and grammar.",
+    "example_sentence": "Tulon lahat kaya-kaya.",
+    "example_sentence_translation": "We all live in harmony."
+  },
+  "quenta": {
+    "full_name": "Arya Strelovski",
+    "country": "Nebulus",
+    "dob": "05/15/2025",
+    "employer": "GalacticTech Solutions",
+    "employer_address": "721 Galactic Way, Gorogon Prime",
+    "job_title": "Senior Systems Engineer",
+    "job_duties": "Developing and maintaining the latest in space-age technology",
+    "salary": 80000,
+    "address": "221 Blue Nebula Street, Gorogon Prime",
+    "rent": 1600
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Nebulus\nCountry of birth: Nebulus\nFull name: Arya Strelovski\nDate of birth: 05/15/2025",
+      "player_representation": "Passport\n========\nCountry of issue: Nebulus\nCountry of birth: Nebulus\nFull name: Arya Strelovski\nDate of birth: 05/15/2025"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Arya Strelovski\nCompany of employment: GalacticTech Solutions\nJob title: Senior Systems Engineer\nJob description: Developing and maintaining the latest in space-age technology\nCompany address: 721 Galactic Way, Gorogon Prime",
+      "player_representation": "Permiso sa Trabaho\n==================\nBuong Pangalan: Arya Strelovski\nKompanya sa Empleyo: Mga Solusyon sa GalacticTech\nPangalan ng Trabaho: Senior Systems Engineer\nDeskripsiyon sa Trabaho: Pag-develop ug pag-maintain sa pinaka-bag-o nga teknolohiya sa espasyo\nAddress ng Kumpanya: 721 Galactic Way, Gorogon Prime"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Arya Strelovski\nEmployer Name: GalacticTech Solutions\nJob title: Senior Systems Engineer\nJob duties: Developing and maintaining the latest in space-age technology\nSalary: 80000\nCompany address: 721 Galactic Way, Gorogon Prime",
+      "player_representation": "Kasunduan sa Pagtatrabaho\n=========================\nPangalan ng Empleyado: Arya Strelovski\nPangalan ng Employer: Mga Solusyon ng GalacticTech\nPamagat sa Trabaho: Senior Systems Engineer\nMga Tungkulin sa Trabaho: Pag-unlad at Pagpapanatili ng Pinakahuling Teknolohiya sa Espasyo\nSuweldo: 80000\nAddress ng Kompanya: 721 Galactic Way, Gorogon Prime"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Arya Strelovski\n\nAddress: 221 Blue Nebula Street, Gorogon Prime\n\nRent price: 1600\n",
+      "player_representation": "Kasunduan sa Pag-upa\n====================\nBuong Pangalan: Arya Strelovski\nAddress: 221 Talang Buhay Kalye, Gorogon Prime\nPresyo ng pag-upa: 1600"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Kamusta"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Paalam"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Pasaporte"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Dokumento ng identidad"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Ang pangalan ko ay..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Kumusta ka?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Mabuti ako, salamat!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Ang aking dahilan upang pumasok ay trabaho/pag-aaral/turismo"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Opisina ng Imigrasyon"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Gusto kong magparehistro"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Ang aking address ay ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Hindi ko naiintindihan"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Ano ang ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Tulungan"
+      }
+    ]
+  }
+}

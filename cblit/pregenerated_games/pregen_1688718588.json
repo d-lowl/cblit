@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Vandelon",
+    "country_description": "A planet of lush green forests and meadows, Vandelon is a popular tourist destination for its abundance of wildlife, stunning vistas and unique cultures.",
+    "country_currency_name": "Vandels",
+    "neighbour_country_name": "Krenix",
+    "people_description": "The people of Vandelon are friendly and welcoming. They have a rich culture that is heavily influenced by their environment and the native wildlife.",
+    "language_name": "Vandeen",
+    "language_description": "Vandeen is a unique language, spoken by the people of Vandelon. It is a melodic language with a large vocabulary and complex grammar.",
+    "example_sentence": "Keltu mehji yot",
+    "example_sentence_translation": "The sky is beautiful."
+  },
+  "quenta": {
+    "full_name": "Nina Hernandez",
+    "country": "Krenix",
+    "dob": "03/16/1989",
+    "employer": "Interstellar Technologies",
+    "employer_address": "8A Skyline Drive, Vandelon",
+    "job_title": "Software Engineer",
+    "job_duties": "Developing software solutions for interplanetary systems",
+    "salary": 120000,
+    "address": "4A Stellar Street, Vandelon",
+    "rent": 3000
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Krenix\nCountry of birth: Krenix\nFull name: Nina Hernandez\nDate of birth: 03/16/1989",
+      "player_representation": "Passport\n========\nCountry of issue: Krenix\nCountry of birth: Krenix\nFull name: Nina Hernandez\nDate of birth: 03/16/1989"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Nina Hernandez\nCompany of employment: Interstellar Technologies\nJob title: Software Engineer\nJob description: Developing software solutions for interplanetary systems\nCompany address: 8A Skyline Drive, Vandelon",
+      "player_representation": "Vork Permeet\n============\nFool Neena Hernandez\nCompony ov empolment: Intersteller Tecknologies\nJub teetel: Softveer Ingineer\nJobb descrpishon: Devlopink softeer solushons fer interplannitry systims\nKompahneh ahdrasees: 8A Skehlehneh Drifeh, Vandelehn"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Nina Hernandez\nEmployer Name: Interstellar Technologies\nJob title: Software Engineer\nJob duties: Developing software solutions for interplanetary systems\nSalary: 120000\nCompany address: 8A Skyline Drive, Vandelon",
+      "player_representation": "Empolment Agreemont\n===================\nEmpolment Neena: Hernandez Neena\nEmpoler Naim: Interstellar Teechnolojeez\nJob taytle: Softweer Enijeenar\nJob dutees: Devleoping softeer solushons fer interplanetary sistems\nSalary: 120000\nKompene ahdrasees: 8A Skaylaeyn Drayv, Vandelon"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Nina Hernandez\n\nAddress: 4A Stellar Street, Vandelon\n\nRent price: 3000\n",
+      "player_representation": "Tennyensee Ahgreemont\n=====================\nFooll Nema: Neena Hernendeez\nAhdrasees: 4A Stehllar Street, Vandelon\nRont preece: 3000"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Kala"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Vedal"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Passtor"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Iddishenty dokumants"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Neena ah ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Kala sahl?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Nahlsa yot, dahnah!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Ma reeson ta enter is vork/stude/tourism"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Immigreeshon offise"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Ah vont ta raigester"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Mee ahdrasees ah ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Ah dunt annerstand"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Keesa ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Halp"
+      }
+    ]
+  }
+}

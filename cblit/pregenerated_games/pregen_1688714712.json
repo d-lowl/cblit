@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Creta",
+    "country_description": "Creta is a lush planet located on the outer rim of the galaxy. It is known for its diverse and exotic wildlife, and its rich cultural heritage.",
+    "country_currency_name": "Creterus",
+    "neighbour_country_name": "Vulcan",
+    "people_description": "The people of Creta are a hardworking and friendly people who enjoy celebrating life with music and dance. They are known for their strong sense of community and their welcoming attitude to outsiders.",
+    "language_name": "Cretan",
+    "language_description": "Cretan is the language spoken by the people of Creta. It is an ancient language that has evolved over the centuries, with many dialects and unique phrases. ",
+    "example_sentence": "Ki kre ma yu we",
+    "example_sentence_translation": "May peace be with you"
+  },
+  "quenta": {
+    "full_name": "Spock T'Kuvma",
+    "country": "Vulcan",
+    "dob": "2264-05-17",
+    "employer": "Creta Galaxy Construction",
+    "employer_address": "9800 Alpha Centauri Dr., Creta, 56790",
+    "job_title": "Interstellar Engineer",
+    "job_duties": "Design and build bridges, towers, and other structures in space",
+    "salary": 110000,
+    "address": "3989 Gamma Centauri Ave., Creta, 56790",
+    "rent": 2500
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Vulcan\nCountry of birth: Vulcan\nFull name: Spock T'Kuvma\nDate of birth: 2264-05-17",
+      "player_representation": "Passport\n========\nCountry of issue: Vulcan\nCountry of birth: Vulcan\nFull name: Spock T'Kuvma\nDate of birth: 2264-05-17"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Spock T'Kuvma\nCompany of employment: Creta Galaxy Construction\nJob title: Interstellar Engineer\nJob description: Design and build bridges, towers, and other structures in space\nCompany address: 9800 Alpha Centauri Dr., Creta, 56790",
+      "player_representation": "Tosh Ksho Neza\n==============\nHaru nufa: Spock T'Kuvma\nMaku nga Creta Galaxy Toshamu\nMoku maku: Neza Ushungu Nga\nTosh esko nheza neza: Esho gheza i nheza neza neza iemu tosh luw, nhefa, i tosh esko neza osko neza nheza esho tosho luwemu.\nKonpani ad di yo: 9800 Alpha Centauri Dr., Creta, 56790"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Spock T'Kuvma\nEmployer Name: Creta Galaxy Construction\nJob title: Interstellar Engineer\nJob duties: Design and build bridges, towers, and other structures in space\nSalary: 110000\nCompany address: 9800 Alpha Centauri Dr., Creta, 56790",
+      "player_representation": "Inu nga tosh maku\n=================\nNga Inu T'Kuvma: Spock\nInu nga tosh maku: Creta Galaxy Construction\nTu nga tosh maku: Ano neza yu\nGahsa uzima: Ynku daxeku nga neza huva, teyho nga zusha, nga ynku daxeku tosh in space\nJako: 110000\nKempi ad di yo: 9800 Alpha Centauri Dr., Creta, 56790"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Spock T'Kuvma\n\nAddress: 3989 Gamma Centauri Ave., Creta, 56790\n\nRent price: 2500\n",
+      "player_representation": "Tosh vofa ne\n============\nToki tosh nama: Spock T'Kuvma\nAd di yo: 3989 Gamma Centauri Ave., Creta, 56790\nVofa fonu: 2500"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Ki yo"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Ki yu te"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Ki tosh ko"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Tosh ife na"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Mi na me yo ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Ki we a yu?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Mi a ri, ki we yu!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Nam ekmi so nga na zo tosh da/sho/tuya"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Tosh neza emu"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Ana cem zo ryosh"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Mi ad di yo ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Mi na yo aa ndea"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Wa de ....?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Ryamha"
+      }
+    ]
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Xifon",
+    "country_description": "Xifon is an alien planet with a unique culture and language. It is a highly advanced civilization with a thriving economy.",
+    "country_currency_name": "Xifon Credits",
+    "neighbour_country_name": "Vipar",
+    "people_description": "The people of Xifon are friendly and welcoming. They are a peaceful species, and often make diplomatic overtures to other planets.",
+    "language_name": "Xifonik",
+    "language_description": "Xifonik is the native language of Xifon. It is a complex language with a rich vocabulary and intricate syntax.",
+    "example_sentence": "Lopon amigim.",
+    "example_sentence_translation": "I love you."
+  },
+  "quenta": {
+    "full_name": "Kelvin Donovan",
+    "country": "Vipar",
+    "dob": "24/05/1987",
+    "employer": "Xifon Enterprises",
+    "employer_address": "23 Xifon Street, Xifon",
+    "job_title": "Data Analyst",
+    "job_duties": "Analyze and interpret collected data to identify trends and patterns in order to create reports for the company.",
+    "salary": 56000,
+    "address": "19 Xifon Street, Xifon",
+    "rent": 1800
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Vipar\nCountry of birth: Vipar\nFull name: Kelvin Donovan\nDate of birth: 24/05/1987",
+      "player_representation": "Passport\n========\nCountry of issue: Vipar\nCountry of birth: Vipar\nFull name: Kelvin Donovan\nDate of birth: 24/05/1987"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Kelvin Donovan\nCompany of employment: Xifon Enterprises\nJob title: Data Analyst\nJob description: Analyze and interpret collected data to identify trends and patterns in order to create reports for the company.\nCompany address: 23 Xifon Street, Xifon",
+      "player_representation": "Koromopaso Pitoseh\n==================\nOmalyma Kjelvinu Donovane\nGomeh oheh Pomeh: Xifon Ekevemoho\nKembulineh Sosomeh: Otelahkeh Alomah\nPokihah: Pevokohah nuh pefotohah ikerehkohah na obikehkohah omeihah oma apahmeh na omeh mohpih kokomohah na obepuhihah oma kahkapuhihah vepuhe oma kameh.\nPomeh Tifonu: 23 Tifonu Hoteh, Tifonu"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Kelvin Donovan\nEmployer Name: Xifon Enterprises\nJob title: Data Analyst\nJob duties: Analyze and interpret collected data to identify trends and patterns in order to create reports for the company.\nSalary: 56000\nCompany address: 23 Xifon Street, Xifon",
+      "player_representation": "Ketiholaheve Pomeh\n==================\nKelvin Donovan Oma Hiteh: \nTifohilehevea Xifoniheve\nMevakadaka Hihoka: Seletihe Soseme\nTafahne Omeihah: Pomehmina omehkimina kodahsoh aihehkah omehkina iminah omehkina mehfah omehkina na pomehmeh lomah omeiwah na ipuhe.\nSaralase: 56000\nOhihne Pomeh: 23 Xifonh Eseta, Xifon"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Kelvin Donovan\n\nAddress: 19 Xifon Street, Xifon\n\nRent price: 1800\n",
+      "player_representation": "Titouh Aghohsom\n===============\nOmaihne Efokuh: Kelvin Donovan\nPuha: 19 Xifon Pahlo, Xifon\nMoghmuhnaehewe: 1800"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Olora"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Tibioa"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Ropoamun"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Sufamonea Pahepi"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Oma naihne ... "
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Orat aohim?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "A'orat aohim, selamim!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Oma naihne moypuh na ipuhe omeihah/omahkihah/ikahkamen"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Etikodahsoh Pomeh"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Oma naihne ipuhe omeitue"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Oma naihne ikahkapuh ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Oma anihne omashe"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Puaih ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Puwae"
+      }
+    ]
+  }
+}

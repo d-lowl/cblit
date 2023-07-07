@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Marvonia",
+    "country_description": "Marvonia is a small planet located in the outer reaches of the universe. It is a beautiful planet with lush green forests and rolling hills. The inhabitants of Marvonia are a peaceful and friendly people who enjoy a simple, harmonious lifestyle.",
+    "country_currency_name": "Marvonian Credits",
+    "neighbour_country_name": "Tallon",
+    "people_description": "The people of Marvonia are a diverse group of friendly and welcoming individuals. They are known for their hospitality and kind nature. They speak a unique language, which combines elements of several different languages.",
+    "language_name": "Marvian",
+    "language_description": "Marvian is a unique language that combines elements of Spanish, French, and English. It is spoken by the people of Marvonia and is known for its melodious sound and vibrant phrases.",
+    "example_sentence": "El amor es la respuesta a la vida",
+    "example_sentence_translation": "Love is the answer to life"
+  },
+  "quenta": {
+    "full_name": "Jill Dyer",
+    "country": "Tallon",
+    "dob": "01/08/1990",
+    "employer": "Marvonia Corporation",
+    "employer_address": "31 Marvonia Street, Marvonia City",
+    "job_title": "Software Engineer",
+    "job_duties": "Develop software applications for Marvonia Corporation",
+    "salary": 65000,
+    "address": "3 Marvonia Heights, Marvonia City",
+    "rent": 800
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Tallon\nCountry of birth: Tallon\nFull name: Jill Dyer\nDate of birth: 01/08/1990",
+      "player_representation": "Passport\n========\nCountry of issue: Tallon\nCountry of birth: Tallon\nFull name: Jill Dyer\nDate of birth: 01/08/1990"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Jill Dyer\nCompany of employment: Marvonia Corporation\nJob title: Software Engineer\nJob description: Develop software applications for Marvonia Corporation\nCompany address: 31 Marvonia Street, Marvonia City",
+      "player_representation": "Permiso de trabajo\n==================\nNombre completo: Jill Dyer\nEmpresa de empleo: Corporaci\u00f3n Marvonia\nT\u00edtulo de trabajo: Ingeniero de Software\nDescripci\u00f3n del trabajo: Desarrollar aplicaciones de software para la Corporaci\u00f3n Marvonia\nDirecci\u00f3n de la compa\u00f1\u00eda: 31 Calle Marvonia, Ciudad Marvonia"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Jill Dyer\nEmployer Name: Marvonia Corporation\nJob title: Software Engineer\nJob duties: Develop software applications for Marvonia Corporation\nSalary: 65000\nCompany address: 31 Marvonia Street, Marvonia City",
+      "player_representation": "Acuerdo de empleo\n=================\nNombre del empleado: Jill Dyer\nNombre del empleador: Corporaci\u00f3n Marvonia\nT\u00edtulo de trabajo: Ingeniero de software\nDeberes de trabajo: Desarrollar aplicaciones de software para la Corporaci\u00f3n Marvonia\nSueldo: 65000\nDirecci\u00f3n de la empresa: 31 Calle Marvonia, Ciudad Marvonia"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Jill Dyer\n\nAddress: 3 Marvonia Heights, Marvonia City\n\nRent price: 800\n",
+      "player_representation": "Acuerdo de arrendamiento\n========================\nNombre completo: Jill Dyer\nDirecci\u00f3n: 3 Alturas de Marvonia, Ciudad de Marvonia\nPrecio de arrendamiento: 800"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Hola"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Adi\u00f3s"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Pasaporte"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Documentos de identidad"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Mi nombre es ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "\u00bfC\u00f3mo est\u00e1s?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Estoy bien, \u00a1gracias!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Mi raz\u00f3n para entrar es trabajo/estudio/turismo"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Oficina de inmigraci\u00f3n"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Quiero registrarme"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Mi direcci\u00f3n es ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "No entiendo"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "\u00bfQu\u00e9 es ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Ayuda"
+      }
+    ]
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Zerlon",
+    "country_description": "A mysterious planet far away from other galaxies, Zerlon is a distant world shrouded in mystery and secrets. It is home to a variety of strange and unique creatures, and its inhabitants live in an advanced and peaceful society.",
+    "country_currency_name": "Zerlonian Credits",
+    "neighbour_country_name": "Xeron",
+    "people_description": "The people of Zerlon are friendly and welcoming. They are hardworking and creative, and have an appreciation for art and science. They are also known to have a strong sense of justice and fairness.",
+    "language_name": "Zerlonian",
+    "language_description": "Zerlonian is a unique language spoken only on the planet of Zerlon. It is composed of various clicks and whistles, and is known to be a difficult language to learn.",
+    "example_sentence": "Ug'wah zerlo!",
+    "example_sentence_translation": "Hello everyone!"
+  },
+  "quenta": {
+    "full_name": "Kazik Shorikov",
+    "country": "Xeron",
+    "dob": "04/07/1980",
+    "employer": "Zerlon Robotics",
+    "employer_address": "4354 West Street, Zerlon",
+    "job_title": "Robotics Engineer",
+    "job_duties": "Design and develop robotic systems for industrial and commercial applications",
+    "salary": 78000,
+    "address": "3310 North Street, Zerlon",
+    "rent": 1200
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Xeron\nCountry of birth: Xeron\nFull name: Kazik Shorikov\nDate of birth: 04/07/1980",
+      "player_representation": "Passport\n========\nCountry of issue: Xeron\nCountry of birth: Xeron\nFull name: Kazik Shorikov\nDate of birth: 04/07/1980"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Kazik Shorikov\nCompany of employment: Zerlon Robotics\nJob title: Robotics Engineer\nJob description: Design and develop robotic systems for industrial and commercial applications\nCompany address: 4354 West Street, Zerlon",
+      "player_representation": "Ghamir fikor\n============\nLomriw rusikov: Kazik Shorikov\nGhamir zerlon nizuk: Zerlon Robotics\nFikar qilqon: Zerlokonik Yerufirin\nTiwamr qilqo: Fikorok qolok gham hadon gham jisqor doram mokor fikoril qolokw zerlodok\nBhamir suzok: 4354 West Street, Zerlon"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Kazik Shorikov\nEmployer Name: Zerlon Robotics\nJob title: Robotics Engineer\nJob duties: Design and develop robotic systems for industrial and commercial applications\nSalary: 78000\nCompany address: 4354 West Street, Zerlon",
+      "player_representation": "Khamer Zerlodok\n===============\nKazik Shorikov Khamer Zerlodok\nGhamir Zerlonik: Zerlon Robitik\nFikor Zerlodok: Ghamir Khaser\nKhamok ghamil: Nivek qilqo il veron zerlonok fikor ugipok soronik il qilqo khamorik\nGhamir dhe: 78000\nGham ghamir Zerlodok: 4354 West Street, Zerlon"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Kazik Shorikov\n\nAddress: 3310 North Street, Zerlon\n\nRent price: 1200\n",
+      "player_representation": "Zerlodok werladow\n=================\nKazik Kuikosk Shorikov\nGham rusoqo: 3310 Noroqo Ghamir, Zerlodok\nLodomik werladow: 1200"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Ug'wah zerlo!"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Sada zerlo!"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Lomril zerlok"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Lomriw zerlodok"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Gham ulqo ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Gham dhiwg'e?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Gham qo'u, sada tasw!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Ufhik gham qilqo fikor/veron/lokoril"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Zerlodok ghamir"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Gham ojhnaq qilqo zilor"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Gham rusoqo ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Gham kho qilqo"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Gham iwq ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Kush'ta"
+      }
+    ]
+  }
+}

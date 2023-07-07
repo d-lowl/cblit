@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Efronia",
+    "country_description": "A lush, exotic planet with a variety of unique wildlife and a diverse population of friendly people.",
+    "country_currency_name": "Meld",
+    "neighbour_country_name": "Koronas",
+    "people_description": "The people of Efronia are a mix of many diverse cultures, each with their own unique language and customs.",
+    "language_name": "Efronian",
+    "language_description": "Efronian is a melodic, lyrical language full of colorful imagery.",
+    "example_sentence": "Yeru aterir kon vesen.",
+    "example_sentence_translation": "The sun shines brightly."
+  },
+  "quenta": {
+    "full_name": "Janko Kolev",
+    "country": "Koronas",
+    "dob": "07/15/1985",
+    "employer": "Efronia Tech Solutions",
+    "employer_address": "43 High Street, Efronia, Country",
+    "job_title": "Software Developer",
+    "job_duties": "Develop software applications and websites using the latest technologies.",
+    "salary": 50000,
+    "address": "59 South Street, Efronia, Country",
+    "rent": 2000
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Koronas\nCountry of birth: Koronas\nFull name: Janko Kolev\nDate of birth: 07/15/1985",
+      "player_representation": "Passport\n========\nCountry of issue: Koronas\nCountry of birth: Koronas\nFull name: Janko Kolev\nDate of birth: 07/15/1985"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Janko Kolev\nCompany of employment: Efronia Tech Solutions\nJob title: Software Developer\nJob description: Develop software applications and websites using the latest technologies.\nCompany address: 43 High Street, Efronia, Country",
+      "player_representation": "Darbo leidimas\n==============\nPilnas Vardas: Janko Kolev\nDarbavietas uz\u0146\u0113mums: Efronijas Teknolo\u0123iju risin\u0101jumi\nDarba nosaukums: Programmat\u016bras izstr\u0101d\u0101t\u0101js\nDarba apraksts: Izstr\u0101d\u0101t programmat\u016bras lietojumprogrammas un vietnes, izmantojot jaun\u0101k\u0101s tehnolo\u0123ijas.\nKompanijos adresas: 43 Auk\u0161toji gatv\u0117, Efronija, \u0160alis"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Janko Kolev\nEmployer Name: Efronia Tech Solutions\nJob title: Software Developer\nJob duties: Develop software applications and websites using the latest technologies.\nSalary: 50000\nCompany address: 43 High Street, Efronia, Country",
+      "player_representation": "Darbavietas L\u012bgums\n==================\nDarbuotojo vardas: Janko Kolev\nDarba dev\u0113js: Efronija Tehnolo\u0123iju Risin\u0101jumi\nDarba nosaukums: Programmat\u016bras izstr\u0101d\u0101t\u0101js\nDarba pien\u0101kumi: Izstr\u0101d\u0101t programmat\u016bras lietojumprogrammas un m\u0101jaslapas, izmantojot jaun\u0101k\u0101s tehnolo\u0123ijas.\nAlga: 50000\nKompanijos adresas: 43 High Street, Efronija, \u0160alis"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Janko Kolev\n\nAddress: 59 South Street, Efronia, Country\n\nRent price: 2000\n",
+      "player_representation": "Nomniecibas Ligums\n==================\nPilnas Vardas: Janko Kolev\nAdresas: 59 Piet\u0173 gatv\u0117, Efronija, \u0160alis\nNomas cena: 2000"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Tevas"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Vedevas"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Pasportas"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Identitetas dokumentas"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Mano vardas yra ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Kas yra su tavim?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Esu geras, d\u0117koju!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Mano priezas iiti yra darbas/studijas/turizmas"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Imigracijas biuras"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Noriu registruotis"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Mano adresas yra ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Nesuprantu"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Kas yra ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Pagalba"
+      }
+    ]
+  }
+}

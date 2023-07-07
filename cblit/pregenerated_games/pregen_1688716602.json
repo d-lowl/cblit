@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Voskorion",
+    "country_description": "Voskorion is a planet located in the distant stars of the universe. It is home to a diverse species of aliens, including the Voskorites. The planet is lush with greenery and vibrant colors.",
+    "country_currency_name": "Voskoria",
+    "neighbour_country_name": "Tinolion",
+    "people_description": "The Voskorites are a peaceful species, with an affinity for learning and exploration. They are curious and creative, and their culture is based on collaboration and cooperation.",
+    "language_name": "Voskorian",
+    "language_description": "Voskorian is a unique language spoken by the Voskorites. It is composed of intricate symbols and glyphs, with a complex grammatical structure.",
+    "example_sentence": "Ras dorbas sokori.",
+    "example_sentence_translation": "The sky is blue."
+  },
+  "quenta": {
+    "full_name": "Eroshan Kavali",
+    "country": "Tinolion",
+    "dob": "August 1, 1991",
+    "employer": "Voskorion Aerospace Engineering",
+    "employer_address": "321 Main Street, Voskorion",
+    "job_title": "Spacecraft Engineer",
+    "job_duties": "Design and develop spacecrafts for Voskorion Aerospace Engineering.",
+    "salary": 55000,
+    "address": "123 Second Street, Voskorion",
+    "rent": 1000
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Tinolion\nCountry of birth: Tinolion\nFull name: Eroshan Kavali\nDate of birth: August 1, 1991",
+      "player_representation": "Passport\n========\nCountry of issue: Tinolion\nCountry of birth: Tinolion\nFull name: Eroshan Kavali\nDate of birth: August 1, 1991"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Eroshan Kavali\nCompany of employment: Voskorion Aerospace Engineering\nJob title: Spacecraft Engineer\nJob description: Design and develop spacecrafts for Voskorion Aerospace Engineering.\nCompany address: 321 Main Street, Voskorion",
+      "player_representation": "Permiso di lavori\n=================\nKompleti Nomon: Eroshan Kavali\nKompania di lavoro: Enginieria Aerospasial Voskorion\nTitolo di lavoro: Injeniero di spasijo\nSorinmos desinonam: Desinonam dok uvok edkonam uvokorion aerospasifikonam.\nAdras di kumpania: 321 Veya Main, Voskorion"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Eroshan Kavali\nEmployer Name: Voskorion Aerospace Engineering\nJob title: Spacecraft Engineer\nJob duties: Design and develop spacecrafts for Voskorion Aerospace Engineering.\nSalary: 55000\nCompany address: 321 Main Street, Voskorion",
+      "player_representation": "Konvension di trabou\n====================\nNomon di empleado: Eroshan Kavali\nNon di empleador: Injenieria Aerospasial Voskorioni\nTitulo di trabou: Ingeniero di espasial\nDuzolos nialz: Desizin ar dorbas sokori kar Voskorian Aerospas Enginiringi.\nSalario: 55000\nAdras di compani: 321 Vois Korton, Voskorion"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Eroshan Kavali\n\nAddress: 123 Second Street, Voskorion\n\nRent price: 1000\n",
+      "player_representation": "Kontrat di Loke\n===============\nKompleti nomon: Eroshan Kavali\nOdras: 123 Dasti Street, Voskorion\nPrez di Loke: 1000"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Salom"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Adyey"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Paspori"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Sorinmos dokomenti"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Mori nomon es ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Keey chosto?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Keey ayo, shukra!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Mii razoni entri esh lavori/studi/turizm"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Ofisi di imigrasioni"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Mei wanti registri"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Mori odras es ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Mii nesh comprendo"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Keey es ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Yordi"
+      }
+    ]
+  }
+}

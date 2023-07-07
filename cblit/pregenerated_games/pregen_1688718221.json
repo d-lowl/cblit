@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Kalvadia",
+    "country_description": "Kalvadia is a small, mountainous country located on an unnamed planet in a distant galaxy. It is known for its unique culture and diverse flora and fauna.",
+    "country_currency_name": "Kalvadian Credits",
+    "neighbour_country_name": "Yelvonia",
+    "people_description": "The people of Kalvadia are a friendly and welcoming bunch, and are known for their hospitality and love of music and dancing.",
+    "language_name": "Kalvadish",
+    "language_description": "Kalvadish is an ancient and complex language, with roots in several other languages from around the galaxy. It is spoken by the people of Kalvadia and is a source of great pride.",
+    "example_sentence": "Galta geshela ma?",
+    "example_sentence_translation": "How are you?"
+  },
+  "quenta": {
+    "full_name": "Vasiliy Shustov",
+    "country": "Yelvonia",
+    "dob": "May 21st, 1990",
+    "employer": "Bazooka Industries",
+    "employer_address": "387 Kalvadia Blvd, Kalvadia",
+    "job_title": "Software Engineer",
+    "job_duties": "Developing software applications for Bazooka Industries",
+    "salary": 77000,
+    "address": "667 Kalvadia Rd, Kalvadia",
+    "rent": 2000
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Yelvonia\nCountry of birth: Yelvonia\nFull name: Vasiliy Shustov\nDate of birth: May 21st, 1990",
+      "player_representation": "Passport\n========\nCountry of issue: Yelvonia\nCountry of birth: Yelvonia\nFull name: Vasiliy Shustov\nDate of birth: May 21st, 1990"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Vasiliy Shustov\nCompany of employment: Bazooka Industries\nJob title: Software Engineer\nJob description: Developing software applications for Bazooka Industries\nCompany address: 387 Kalvadia Blvd, Kalvadia",
+      "player_representation": "Mashom hahut\n============\nMash kompleeshom: Vasiliy Shustov\nVadom vabohanim: Bazooka Industries\nMashot vokam: Shomvaham Kotrom\nNazashom hahut: Sheshokvash bazashom nawomishom om Bazooka Industries\nMokadishom vehashim: 387 Kalvadia Blvd, Kalvadia"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Vasiliy Shustov\nEmployer Name: Bazooka Industries\nJob title: Software Engineer\nJob duties: Developing software applications for Bazooka Industries\nSalary: 77000\nCompany address: 387 Kalvadia Blvd, Kalvadia",
+      "player_representation": "Vahmishom Lavev\n===============\nNomishom Vashilish Shustovish\nVahmishom Boshmok: Bazooka hahut\nLokashim hahut: Navetim Hakahvish\nVahvom kosah: Mashom yahavish vahvom zahmishom omvosh Bazooka Industries\nVomoshah: 77000\nGafohim mokadishom: 387 Kalvadiah Bhav., Kalvadiah"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Vasiliy Shustov\n\nAddress: 667 Kalvadia Rd, Kalvadia\n\nRent price: 2000\n",
+      "player_representation": "Gomvomit Smishim\n================\nMokadishom Kavshom: Vasiliy Shustov\nMokadishom: 667 Kalvadia Rd, Kalvadia\nGomdishom Smev: 2000"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Kovshah"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Yoshom"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Vahopek"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Bokmishom"
+      },
+      {
+        "english": "My name is...",
+        "conlang": "Mash bokmishom..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Galta geshela ma?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Kesha lethi, yazhu!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Mash rahom kam omvosh vabohanim/mishom/tourom"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Vehashim vabohanim"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Mash bokvash om tekvash"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Mash mokadishom ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Mash nishta oblehkim"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Etish ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Sata"
+      }
+    ]
+  }
+}

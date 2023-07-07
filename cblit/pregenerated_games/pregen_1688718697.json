@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Gloria",
+    "country_description": "Gloria is a small country located on a distant planet with a temperate climate and lush vegetation. The country is known for its vibrant culture and beautiful landscapes.",
+    "country_currency_name": "Glorian Credits",
+    "neighbour_country_name": "Gravina",
+    "people_description": "Glorians are known for their politeness and hospitality. They are friendly and open-minded people who enjoy learning new things and exploring different cultures.",
+    "language_name": "Glorian",
+    "language_description": "Glorian is a unique language, consisting of a mix of both English and Spanish. The language has a large variety of words and expressions, making it a popular choice for tourists.",
+    "example_sentence": "Hola, \u00bfc\u00f3mo est\u00e1s?",
+    "example_sentence_translation": "Hello, how are you?"
+  },
+  "quenta": {
+    "full_name": "Karen Johnson",
+    "country": "Gravina",
+    "dob": "04/10/1979",
+    "employer": "Glorian Corporation",
+    "employer_address": "123 Main Street, Gloria, GY 25012",
+    "job_title": "Software Engineer",
+    "job_duties": "Develop websites and applications for the company's clients",
+    "salary": 89000,
+    "address": "456 Park Avenue, Gloria, GY 25012",
+    "rent": 1000
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Gravina\nCountry of birth: Gravina\nFull name: Karen Johnson\nDate of birth: 04/10/1979",
+      "player_representation": "Passport\n========\nCountry of issue: Gravina\nCountry of birth: Gravina\nFull name: Karen Johnson\nDate of birth: 04/10/1979"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Karen Johnson\nCompany of employment: Glorian Corporation\nJob title: Software Engineer\nJob description: Develop websites and applications for the company's clients\nCompany address: 123 Main Street, Gloria, GY 25012",
+      "player_representation": "Permiso de trabajo\n==================\nNombre completo: Karen Johnson\nCompa\u00f1\u00eda de empleo: Corporaci\u00f3n Glorian\nT\u00edtulo de trabajo: Ingeniero de software\nDescripci\u00f3n del trabajo: Desarrollar sitios web y aplicaciones para los clientes de la empresa\nDirecci\u00f3n de la empresa: 123 Main Street, Gloria, GY 25012"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Karen Johnson\nEmployer Name: Glorian Corporation\nJob title: Software Engineer\nJob duties: Develop websites and applications for the company's clients\nSalary: 89000\nCompany address: 123 Main Street, Gloria, GY 25012",
+      "player_representation": "Acuerdo de Empleo\n=================\nNombre del empleado: Karen Johnson\nNombre del Empleador: Corporaci\u00f3n Glorian\nT\u00edtulo de trabajo: Ingeniero de Software\nDeberes del trabajo: Desarrollar sitios web y aplicaciones para los clientes de la empresa\nSalario: 89000\nDirecci\u00f3n de la compa\u00f1\u00eda: 123 Main Street, Gloria, GY 25012"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Karen Johnson\n\nAddress: 456 Park Avenue, Gloria, GY 25012\n\nRent price: 1000\n",
+      "player_representation": "Acuerdo de arrendamiento\n========================\nNombre Completo: Karen Johnson\nDirecci\u00f3n: 456 Park Avenue, Gloria, GY 25012\nPrecio de alquiler: 1000"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Hola"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Adi\u00f3s"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Pasaporte"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Documentos de identidad"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Mi nombre es ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "\u00bfC\u00f3mo est\u00e1s?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Estoy bien, \u00a1gracias!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Mi raz\u00f3n para entrar es trabajo/estudio/turismo"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Oficina de inmigraci\u00f3n"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Quiero registrarme"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Mi direcci\u00f3n es ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "No entiendo"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "\u00bfQu\u00e9 es ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Ayuda"
+      }
+    ]
+  }
+}

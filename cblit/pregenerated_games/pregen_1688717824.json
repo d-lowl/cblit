@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Wimpa",
+    "country_description": "Wimpa is a small but thriving planet located on the outer rim of the Milky Way Galaxy. It is home to a variety of sentient species, including humans, and is the birthplace of the Wimpan language.",
+    "country_currency_name": "Zimpanos",
+    "neighbour_country_name": "Kabrana",
+    "people_description": "The people of Wimpa are friendly and welcoming, and enjoy engaging in a variety of activities such as trading goods and services, exploring the universe, and celebrating special occasions.",
+    "language_name": "Wimpan",
+    "language_description": "Wimpan is a language spoken by the people of Wimpa. It is unique in its complexity and its use of tonal variations to convey different meanings. It is a difficult language to learn, but its beauty is undeniable.",
+    "example_sentence": "Mol mampi ci mowi.",
+    "example_sentence_translation": "The sun is shining brightly."
+  },
+  "quenta": {
+    "full_name": "Melissa Smith",
+    "country": "Kabrana",
+    "dob": "04/30/1999",
+    "employer": "Wimpa Corporation",
+    "employer_address": "Wimpa Street, Wimpa City",
+    "job_title": "Research Analyst",
+    "job_duties": "Performs research and analysis on market trends and customer needs to create effective marketing strategies.",
+    "salary": 65000,
+    "address": "Wimpa Street, Wimpa City",
+    "rent": 2000
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Kabrana\nCountry of birth: Kabrana\nFull name: Melissa Smith\nDate of birth: 04/30/1999",
+      "player_representation": "Passport\n========\nCountry of issue: Kabrana\nCountry of birth: Kabrana\nFull name: Melissa Smith\nDate of birth: 04/30/1999"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Melissa Smith\nCompany of employment: Wimpa Corporation\nJob title: Research Analyst\nJob description: Performs research and analysis on market trends and customer needs to create effective marketing strategies.\nCompany address: Wimpa Street, Wimpa City",
+      "player_representation": "Permiteu Arou\n=============\nMeu Nomteu: Melissa Smith\nCompaneyu de empleyamte: Corporationu Wimpa\nTiteleu Jobu: Analyseu Researcheu\nDescrepte empleu: Executa resecheu e analiseu en tendes de mercate e nececidades de clente pa crea estretegies efectives de merchandisage.\nAdresseu Compani: Streetu Wimpa, Cidadeu Wimpa"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Melissa Smith\nEmployer Name: Wimpa Corporation\nJob title: Research Analyst\nJob duties: Performs research and analysis on market trends and customer needs to create effective marketing strategies.\nSalary: 65000\nCompany address: Wimpa Street, Wimpa City",
+      "player_representation": "Agremamte Empleyamte\n====================\nNamteu Empleyamte: Melissa Smith\nNamte Empleyamte: Corporamte Wimpan\nTitlu Empleyamte: Analiseu Ricerchau\nDevamte: Am efektiivi maketimte stratageimte criamte, perforu resecau eun analiseu aon maketimte tendeimte eun cusotmera neceimte.\nSalariumte: 65000\nAdresseu Companate: Stradeu Wimpa, Cidateu Wimpa"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Melissa Smith\n\nAddress: Wimpa Street, Wimpa City\n\nRent price: 2000\n",
+      "player_representation": "Agremamte Asivente\n==================\nNamteu Fuule: Melissa Smith\nAdresseu: Rua Wimpa, Cidade Wimpa\nPre\u00e7o de aluguer: 2000"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Nampeu"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Yunpei"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Pasopute"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Dokimamte Pasopute"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Namteu meu ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Fipa hu?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Wivew ri kap, fipa!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Rasoneu meu enteku am arau/studeu/tourimteu"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Officeu Imigramte"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Enteku meu regisekeu"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Adresseu meu es ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Wivew meu nau huwotek."
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Hu es ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Yomaput"
+      }
+    ]
+  }
+}

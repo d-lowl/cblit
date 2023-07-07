@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Arfikos",
+    "country_description": "A small, mountainous nation located on a temperate planet, with a population of 2 million.",
+    "country_currency_name": "Dolos",
+    "neighbour_country_name": "Kharathia",
+    "people_description": "The people of Arfikos are renowned for their hospitality and generosity. They are a peaceful people, but fiercely loyal to their nation.",
+    "language_name": "Kafjik",
+    "language_description": "Kafjik is the official language of Arfikos, and is known for its complex system of conjugations and declensions. It is a highly expressive language, with a large vocabulary.",
+    "example_sentence": "Anretath impyrai.",
+    "example_sentence_translation": "We are loyal to our country."
+  },
+  "quenta": {
+    "full_name": "Tulasi Ahab",
+    "country": "Kharathia",
+    "dob": "2/3/1989",
+    "employer": "Rafa Industries",
+    "employer_address": "49 High Street, Arfikos",
+    "job_title": "Software Engineer",
+    "job_duties": "Developing new software solutions and maintaining existing ones",
+    "salary": 50000,
+    "address": "123 Main Street, Arfikos",
+    "rent": 1000
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Kharathia\nCountry of birth: Kharathia\nFull name: Tulasi Ahab\nDate of birth: 2/3/1989",
+      "player_representation": "Passport\n========\nCountry of issue: Kharathia\nCountry of birth: Kharathia\nFull name: Tulasi Ahab\nDate of birth: 2/3/1989"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Tulasi Ahab\nCompany of employment: Rafa Industries\nJob title: Software Engineer\nJob description: Developing new software solutions and maintaining existing ones\nCompany address: 49 High Street, Arfikos",
+      "player_representation": "Athrayon Nopara Tryrra\n======================\nFool Naim: Tulasi Ahab\nRafa Athrayon Tyijyra: Ihjyrai Rafa\nNopara Tryrra: Fojyrai Makjhikjrai\nFyjyrai Abthrayon: Sriosoya Sesosya Nopara Yhjyrhia Tryrra Athrayon\nKanpanyi Airdres: 49 Ihjyrai Chreet, Arfikos"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Tulasi Ahab\nEmployer Name: Rafa Industries\nJob title: Software Engineer\nJob duties: Developing new software solutions and maintaining existing ones\nSalary: 50000\nCompany address: 49 High Street, Arfikos",
+      "player_representation": "Ihjyrai Athrayon\n================\nNymyrai Ahab: Tulasi\nIhjyrai Nopara: Rafa Athrayon\nHobysa Tryrra: Tryrra Nopara Ihjyrai\nHithrya impyrai: Nirarrai nopara ymyrra tryrrai nakrai nopara atorrai athrya\nRiyrra: 50000\nAkhrayon Airdres: 49 Ihjyrai Sthreet, Arfikos"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Tulasi Ahab\n\nAddress: 123 Main Street, Arfikos\n\nRent price: 1000\n",
+      "player_representation": "Tithrayon Nopara\n================\nEyl Naej: Tulasi Ahab\nAirdres: 123 Mein Strit, Arfikos\nNoparayon rith: 1000"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Olaa"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Esoos"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Athrayon"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Idrayon athrayon"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Ayj ayk ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Tayj owaa?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Ayj olyt, ookso!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Nori impyrai enaorra athrayon nakrai/nyelyrra/tryrra"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Athrayon Nopara"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Ayj aisrrai toi enaorra"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Ayj airdres eyk ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Ayj nyem juyt"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Waa eyk ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Fudhoy"
+      }
+    ]
+  }
+}

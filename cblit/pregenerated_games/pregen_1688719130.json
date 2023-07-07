@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Fulunotopia",
+    "country_description": "Fulunotopia is a distant, primordial planet with lush jungles and towering mountains. It is home to a variety of alien species, all of whom live in harmony.",
+    "country_currency_name": "Fuluns",
+    "neighbour_country_name": "Voronotia",
+    "people_description": "The people of Fulunotopia are a hardworking, creative, and deeply spiritual race. They are known for their use of advanced technology, and their respect for nature.",
+    "language_name": "Fuluni",
+    "language_description": "Fuluni is the official language of Fulunotopia, spoken by all the citizens of the planet. It is a complex language, composed of several distinct dialects.",
+    "example_sentence": "Laqir miri sui teri.",
+    "example_sentence_translation": "The sun shines brightly."
+  },
+  "quenta": {
+    "full_name": "John Smith",
+    "country": "Voronotia",
+    "dob": "01/01/1980",
+    "employer": "Fulunotopia Industries",
+    "employer_address": "123 Main Street, Fulunotopia",
+    "job_title": "Software Engineer",
+    "job_duties": "Develop software for the company",
+    "salary": 80000,
+    "address": "456 Side Street, Fulunotopia",
+    "rent": 2500
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Voronotia\nCountry of birth: Voronotia\nFull name: John Smith\nDate of birth: 01/01/1980",
+      "player_representation": "Passport\n========\nCountry of issue: Voronotia\nCountry of birth: Voronotia\nFull name: John Smith\nDate of birth: 01/01/1980"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: John Smith\nCompany of employment: Fulunotopia Industries\nJob title: Software Engineer\nJob description: Develop software for the company\nCompany address: 123 Main Street, Fulunotopia",
+      "player_representation": "Qamuhaq Tivahalu\n================\nFutu Nalaha: John Smith\nQamuhaq Faelutotupihou Uqoehufu\nKamuluna: Sotufoiwu Efiyenatuh\nQamuhaq Bufumu: Qihuq Bufumu peu qamuhaq punu\nTivapafisi: 123 Pafisi Nalu, Fulunotopia"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: John Smith\nEmployer Name: Fulunotopia Industries\nJob title: Software Engineer\nJob duties: Develop software for the company\nSalary: 80000\nCompany address: 123 Main Street, Fulunotopia",
+      "player_representation": "Kamareq Aitamuq\n===============\nNaneq Lehai: John Smith\nNamotu Qamuha: Fulunotopiq Aitamuq\nTiqahalu Tofuq: Poqafalu Tofuq\nUfutasut: Qutahosut qamuhaq qitilisut fosu qamuhaq\nUqamu: 80000\nUai Pafisi: 123 Banaq Ua, Fulunotopia"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: John Smith\n\nAddress: 456 Side Street, Fulunotopia\n\nRent price: 2500\n",
+      "player_representation": "Tisunuqai Rumeqai\n=================\nTafoq Nama: John Smith\nPafisi: 456 Lumaqi Tive, Fulunotopi\nTisuni: 2500"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Oqirai"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Liqorai"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Pasaporti"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Dokumeqai Nalaha"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Ovai naqoi ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Uqoqirai?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Uqoqirai katim, niqoqai!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Vinu nahuqomu deqo qaluqarai/tevai/tamamu"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Qamuhaq Pofisu"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Yavuqomu panaqarai"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Uai pafisi ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Aqoqiramu"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Pasai ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Xaadok"
+      }
+    ]
+  }
+}

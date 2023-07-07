@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Mastralia",
+    "country_description": "Mastralia is a peaceful, lush planet located in the outer reaches of the Milky Way. It is home to many unique species and cultures, as well as a variety of flora and fauna.",
+    "country_currency_name": "Mastralian Credits",
+    "neighbour_country_name": "Mentriax",
+    "people_description": "The people of Mastralia are a diverse group, ranging from the technophile Mentriaxian traders to the nomadic Nariastrian tribes. They are generally friendly and welcoming to outsiders.",
+    "language_name": "Nariastrian",
+    "language_description": "Nariastrian is a language spoken by the native inhabitants of Mastralia. It is a combination of complex syntax and ornate wordplay, making it quite difficult to learn.",
+    "example_sentence": "Kotra fhulim mala.",
+    "example_sentence_translation": "The sky is blue."
+  },
+  "quenta": {
+    "full_name": "Frankie Valdez",
+    "country": "Mentriax",
+    "dob": "01/01/1990",
+    "employer": "MastraliaTech",
+    "employer_address": "5678 High Street, Mastralia",
+    "job_title": "Software Engineer",
+    "job_duties": "Developing software for the company",
+    "salary": 80000,
+    "address": "6789 Low Street, Mastralia",
+    "rent": 800
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Mentriax\nCountry of birth: Mentriax\nFull name: Frankie Valdez\nDate of birth: 01/01/1990",
+      "player_representation": "Passport\n========\nCountry of issue: Mentriax\nCountry of birth: Mentriax\nFull name: Frankie Valdez\nDate of birth: 01/01/1990"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Frankie Valdez\nCompany of employment: MastraliaTech\nJob title: Software Engineer\nJob description: Developing software for the company\nCompany address: 5678 High Street, Mastralia",
+      "player_representation": "Rakutopar\n=========\nTakabarik Kuin: Frankie Valdez\nGonomarik no rakutopar: MastraliaTech\nGwotutar: Opusostotur Mowutotor\nSutopar Dojut: Ogapadukor Ijututopar Belopar\nGogeratopar: 5678 Uldeskabu, Mastralia"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Frankie Valdez\nEmployer Name: MastraliaTech\nJob title: Software Engineer\nJob duties: Developing software for the company\nSalary: 80000\nCompany address: 5678 High Street, Mastralia",
+      "player_representation": "Bekoposotopar\n=============\nIpokopar Tokaso: Frankie Valdez\nKoroposotir: MastraliaTech\nKafsnupar: Sogatopar Kefikopar\nKokopunar: Nirfapar lomutopar pakomtogul ubikomupar\nHokotipar: 80000\nUgazadopar: 5678 Oda-uaso, Mastralia"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Frankie Valdez\n\nAddress: 6789 Low Street, Mastralia\n\nRent price: 800\n",
+      "player_representation": "Gosikapar\n=========\nUgriasto Tepa: Frankie Valdez\nTirakia ek: 6789 Low Street, Mastralia\nDurkapar: 800"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Lonliu"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Lobifo"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Pasutopar"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Sodiputapar"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Rakeia za ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Khinu lonlii?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Tahomu vai, zaihuri!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Rakeia za tatiria eto entopar vakem/kotem/nitopem"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Gobulatopar"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Zitam jiria anikar"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Tirakia ek ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Nahunu vai kelmar"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Tasik ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Hatia"
+      }
+    ]
+  }
+}

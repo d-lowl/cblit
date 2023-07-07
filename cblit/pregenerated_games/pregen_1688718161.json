@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Vienalous",
+    "country_description": "Vienalous is a lush, beautiful planet located in a distant star system. It is known for its exotic wildlife and friendly inhabitants.",
+    "country_currency_name": "Vienalous Bux",
+    "neighbour_country_name": "Asterusia",
+    "people_description": "The people of Vienalous are warm and welcoming. They are known for their hospitality and strong sense of community.",
+    "language_name": "Vienalousian",
+    "language_description": "Vienalousian is a unique language with a complex grammar and a wide range of vocabulary. It is spoken on Vienalous and a few other nearby planets.",
+    "example_sentence": "Vokhut Vienalousa!",
+    "example_sentence_translation": "Welcome to Vienalous!"
+  },
+  "quenta": {
+    "full_name": "Kelox Steev",
+    "country": "Asterusia",
+    "dob": "05/14/1999",
+    "employer": "Froodle Technologies",
+    "employer_address": "1 High Street, Vienalous",
+    "job_title": "Software Engineer",
+    "job_duties": "Developing software applications and maintaining existing software systems",
+    "salary": 98000,
+    "address": "17 Crystal Road, Vienalous",
+    "rent": 1400
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Asterusia\nCountry of birth: Asterusia\nFull name: Kelox Steev\nDate of birth: 05/14/1999",
+      "player_representation": "Passport\n========\nCountry of issue: Asterusia\nCountry of birth: Asterusia\nFull name: Kelox Steev\nDate of birth: 05/14/1999"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Kelox Steev\nCompany of employment: Froodle Technologies\nJob title: Software Engineer\nJob description: Developing software applications and maintaining existing software systems\nCompany address: 1 High Street, Vienalous",
+      "player_representation": "Vermittoneo Vekhano\n===================\nVamorut Loxe: Kelox Steev\nCompaneo Uv Emploimonta: Froodle Tehnonolojeets\nTitlou Uv Vobha: Ellofoorte Asasheene\nDescripshoneo Uv Emploimonta: Developpongo Sooftvara Applikatsioonas Ee Mantanongo Existingo Sooftvara Systemas\nKompayneo adressi: 1 Hich Stritt, Vienalousa"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Kelox Steev\nEmployer Name: Froodle Technologies\nJob title: Software Engineer\nJob duties: Developing software applications and maintaining existing software systems\nSalary: 98000\nCompany address: 1 High Street, Vienalous",
+      "player_representation": "Agreemonta Uv Emploimonta\n=========================\nNonem Uv Emploimonta: Kelox Steev\nNamos Uv Emploimonta: Froodle Technolojies\nTitula Uv Jooba: Ingineeroo Uv Softuwara\nDooties Uv Emploimonta: Devloipong Softevore Apllocesonts Ano Menteining Exostong Softevore Systoms\nSalarie: 98000\nAdresso Companiya: 1 High Street, Vienalousa"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Kelox Steev\n\nAddress: 17 Crystal Road, Vienalous\n\nRent price: 1400\n",
+      "player_representation": "Aagreeomento Uvotanci\n=====================\nNamet Kholox Steev\nAdress: 17 Kristalla Roa, Vienalousa\nUvotanci Preco: 1400"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Haloi"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Alleh ta"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Paspoorto"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Dochomontos Uvothet"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Maa namet is ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Kwah et tu?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Ai am guud, tahnkeh tu!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Maa raasona enteero is vekha/stuudyo/turismaa"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Ofoceo Immegratsioon"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Maa vantaa registeero"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Maa adress is ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Ai doo nat undestaand"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Weet et ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Uthep"
+      }
+    ]
+  }
+}

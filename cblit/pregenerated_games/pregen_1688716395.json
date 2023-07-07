@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Kryutoria",
+    "country_description": "Kryutoria is a small country located on the outer edges of the Milky Way galaxy. It is a peaceful planet populated by friendly, intelligent creatures.",
+    "country_currency_name": "Kryutorian Rupees",
+    "neighbour_country_name": "Brydis",
+    "people_description": "The people of Kryutoria are a tall, slender race with green skin and four arms. They are a peaceful, resourceful people, skilled in engineering and technology.",
+    "language_name": "Kryutorii",
+    "language_description": "Kryutorii is a complex language with many subtle nuances. It is composed of many different dialects, and each dialect offers a unique perspective on the world.",
+    "example_sentence": "Sarabamerya arbbosa.",
+    "example_sentence_translation": "Joy and peace be upon you."
+  },
+  "quenta": {
+    "full_name": "Manuel Alvarez",
+    "country": "Brydis",
+    "dob": "02/13/1989",
+    "employer": "Kryutoria Tech Solutions",
+    "employer_address": "1234 Main Street, Kryutoria",
+    "job_title": "Software Engineer",
+    "job_duties": "Design and develop software solutions for clients",
+    "salary": 80000,
+    "address": "123 Maple Street, Kryutoria",
+    "rent": 1800
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Brydis\nCountry of birth: Brydis\nFull name: Manuel Alvarez\nDate of birth: 02/13/1989",
+      "player_representation": "Passport\n========\nCountry of issue: Brydis\nCountry of birth: Brydis\nFull name: Manuel Alvarez\nDate of birth: 02/13/1989"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Manuel Alvarez\nCompany of employment: Kryutoria Tech Solutions\nJob title: Software Engineer\nJob description: Design and develop software solutions for clients\nCompany address: 1234 Main Street, Kryutoria",
+      "player_representation": "Ryukaso istuu\n=============\nHutaruu: Manuel Alvarez\nKryutoria tekso ussuriom: Kryutoria Tech Solutions\nVyomarkiowo Ryukawir: Sotwopoku Iyikawir\nKommarom lanar: Koselka ryasokor meublaisom wosuwion om klienton\nUwariu tayariu komani: 1234 Uwariu Main, Kryutoria"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Manuel Alvarez\nEmployer Name: Kryutoria Tech Solutions\nJob title: Software Engineer\nJob duties: Design and develop software solutions for clients\nSalary: 80000\nCompany address: 1234 Main Street, Kryutoria",
+      "player_representation": "Korwariom Tawod\n===============\nKiroriiw Payodii: Manuel Alvarez\nKorwariom Sabom: Kryutoria Tech Tawod\nSarwuyomur: Soyomarii Nyawu\nKarwariom pakat: Lahahinom waa poisam yasirom xinom sutarim zar kliensoom\nSomarar: 80000\nKryukompanom uwariu: 1234 Gyaemu Stritu, Kryutorii"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Manuel Alvarez\n\nAddress: 123 Maple Street, Kryutoria\n\nRent price: 1800\n",
+      "player_representation": "Yarunuwarii Istuun\n==================\nUwirahariu Tyuwariu: Manuel Alvarez\nTayariu: 123 Kuriubriu Guduminom, Kryutoria\nKiwunuwarii Kii: 1800"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Tayarii"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Jafaryii"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Kryusarim"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Unuwariik"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Tahariu ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Tahariu taaru?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Tafarii kaluk, arbbaru!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Tahariu iwli fyar kar kaukir/kemosser/meisarim"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Tayarunom istuu"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Tahariu huwa fyar kar tayarunom"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Tayariu uwariu ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Tafarii alar yarir"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Cahariu uwariu ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Airutii"
+      }
+    ]
+  }
+}

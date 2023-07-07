@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Kardazah",
+    "country_description": "Kardazah is a mysterious, lush planet located in a distant solar system. It is inhabited by a kind and peaceful species of aliens known as the Kardazi, who are known for their advanced technology and unique language.",
+    "country_currency_name": "Kardazi Units",
+    "neighbour_country_name": "Gelmaz",
+    "people_description": "The Kardazi are a friendly species with a rich cultural heritage. They are incredibly intelligent and have a deep respect for nature and the environment.",
+    "language_name": "Kardazian",
+    "language_description": "Kardazian is a unique language that is spoken by the Kardazi. It has a complex grammar and syntax that is unlike any other language.",
+    "example_sentence": "Kardazia nuzho zhazh.",
+    "example_sentence_translation": "The Kardazi are friendly."
+  },
+  "quenta": {
+    "full_name": "Tarf Luz",
+    "country": "Gelmaz",
+    "dob": "09/01/1977",
+    "employer": "Kardazah Tech",
+    "employer_address": "15 Main Street, Kardazah",
+    "job_title": "Software Engineer",
+    "job_duties": "Develops software applications and provides technical support",
+    "salary": 80000,
+    "address": "2 Elm Street, Kardazah",
+    "rent": 1000
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Gelmaz\nCountry of birth: Gelmaz\nFull name: Tarf Luz\nDate of birth: 09/01/1977",
+      "player_representation": "Passport\n========\nCountry of issue: Gelmaz\nCountry of birth: Gelmaz\nFull name: Tarf Luz\nDate of birth: 09/01/1977"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Tarf Luz\nCompany of employment: Kardazah Tech\nJob title: Software Engineer\nJob description: Develops software applications and provides technical support\nCompany address: 15 Main Street, Kardazah",
+      "player_representation": "Yunash Gavimit\n==============\nTunfuh Pazh: Tarf Luz\nKardazah Tezhek Yunash: Kardazah Tech\nTitul yunash: Inzhektorit Software\nPazhik deshkripzhorun: Fazhikun yunash suftvear aplikazhikok un pazhikit tekhnikal zhupar\nKompania adresash: 15 Maz Zhazh, Kardazah"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Tarf Luz\nEmployer Name: Kardazah Tech\nJob title: Software Engineer\nJob duties: Develops software applications and provides technical support\nSalary: 80000\nCompany address: 15 Main Street, Kardazah",
+      "player_representation": "Habsik Yunash Pazhik\n====================\nHabsik Tarf Luz\nKardazah Tekh Nuzha: Kardazah Tekh\nTizhik Yunash: Skopizhik Idjineer\nYunashik: Azhikash software aplikazhoki habashek ha noshikash techikal pazhik\nYashik: 80000\nKompanadash adresash: 15 Main Street, Kardazah"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Tarf Luz\n\nAddress: 2 Elm Street, Kardazah\n\nRent price: 1000\n",
+      "player_representation": "Kontratit Nenatash\n==================\nDazh Nafamish: Tarf Luz\nAdresash: 2 Elm Steet, Kardazah\nNenatash Prizash: 1000"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Yozhozh"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Vozhakh"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Pazhokak"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Dokhamit nikash"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Maz nikash ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Gazhozh shua?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Khizh rahizh, shokhrah!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Maz hanit maz az yunash habashek/yamash/tourit"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Ofisit imigrazhok"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Maz yunash shekazit"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Maz adresash ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Maz nedozh zhalezh"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Maash ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Pazh"
+      }
+    ]
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Sarzika",
+    "country_description": "Sarzika is a thriving country located on a distant planet. It is known for its diversity of cultures and languages.",
+    "country_currency_name": "Raxon",
+    "neighbour_country_name": "Lukenthe",
+    "people_description": "The people of Sarzika are friendly and welcoming to outsiders. They are also fiercely independent and proud of their cultural heritage.",
+    "language_name": "Tikuli",
+    "language_description": "Tikuli is a unique language spoken in Sarzika that combines elements of several other languages spoken in the region.",
+    "example_sentence": "Bishnaka hakali shikulu",
+    "example_sentence_translation": "The garden is beautiful"
+  },
+  "quenta": {
+    "full_name": "Luka Amara",
+    "country": "Lukenthe",
+    "dob": "04/02/1990",
+    "employer": "Ventura Inc.",
+    "employer_address": "Sarzika, 7th Street, Building 7",
+    "job_title": "Software Engineer",
+    "job_duties": "Developing custom software applications for clients",
+    "salary": 90000,
+    "address": "Sarzika, 12th Street, Building 8",
+    "rent": 1500
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Lukenthe\nCountry of birth: Lukenthe\nFull name: Luka Amara\nDate of birth: 04/02/1990",
+      "player_representation": "Passport\n========\nCountry of issue: Lukenthe\nCountry of birth: Lukenthe\nFull name: Luka Amara\nDate of birth: 04/02/1990"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Luka Amara\nCompany of employment: Ventura Inc.\nJob title: Software Engineer\nJob description: Developing custom software applications for clients\nCompany address: Sarzika, 7th Street, Building 7",
+      "player_representation": "Miposio wali\n============\nMatikisa Luka Amara\nMakapilioni mbakalo: Ventura Inc.\nLalotawasi: Miposio Lalowale\nUmatanalu pinalosi: Tisapuunu piwilalu wolomu panomu sukupalu palu kulutosi\nKompani jinaupisa: Sarzika, 7th Gahamu, Tinatawisio 7"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Luka Amara\nEmployer Name: Ventura Inc.\nJob title: Software Engineer\nJob duties: Developing custom software applications for clients\nSalary: 90000\nCompany address: Sarzika, 7th Street, Building 7",
+      "player_representation": "Makapilioni\n===========\nMamikisi Luka Amara\nMivatatamo: Ventura Inc.\nTitin miposio: Piolahalio Tikulumo\nMakapioni poi: Makawonisio kolapioni podawosio alapioni moliwisio poketawisio\nTafalipa: 90.000\nKanpani tikulaiu matikau: Sarzika, Tepa Tukau, Baukau 7"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Luka Amara\n\nAddress: Sarzika, 12th Street, Building 8\n\nRent price: 1500\n",
+      "player_representation": "Tikikulaiu Toowimio\n===================\nKolata Amara: Luka\nTikulaiu: Sarzika, 12th Bijau, Jinaupisa 8\nTikikulaiu Towimio: 1500"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Kunshu"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Namilu"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Kunaiu"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Jinaupisa"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Matikisa ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Kunshu muenu?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Tuesha moole, kunshu!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Mai matikau akunaiu tinai miposio/taumari/piutu"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Tinatawisio"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Mai namari akunaiu matikau"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Mai tikulaiu matikau ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Mai unaemu tinai"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Kutu muenu ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Tuma"
+      }
+    ]
+  }
+}

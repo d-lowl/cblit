@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Kathairon",
+    "country_description": "Kathairon is a small and peaceful country located on a distant planet. Its landscape is mostly mountainous and its inhabitants are an industrious people who have a deep appreciation for the finer things in life.",
+    "country_currency_name": "Kathairon Credits",
+    "neighbour_country_name": "Kolari",
+    "people_description": "The people of Kathairon are known for their hospitality and friendliness. They are a diverse group, with many different ethnic backgrounds, and they are quite welcoming to outsiders.",
+    "language_name": "Kathairish",
+    "language_description": "Kathairish is a complex language that is spoken by the people of Kathairon. It is a mix of several different dialects, and is considered to be one of the most difficult to learn.",
+    "example_sentence": "Yueh nahm Zjorath-hkuhn.",
+    "example_sentence_translation": "I am from Kathairon."
+  },
+  "quenta": {
+    "full_name": "Kolari Imigrant",
+    "country": "Kolari",
+    "dob": "February 17, 1995",
+    "employer": "Kathairon Industrial",
+    "employer_address": "Kathairon Industrial Building, Kathairon",
+    "job_title": "Industrial Engineer",
+    "job_duties": "Developing and maintaining industrial processes, designing and constructing production systems for efficient operation",
+    "salary": 50000,
+    "address": "Kathairon Apartment, Kathairon",
+    "rent": 1200
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Kolari\nCountry of birth: Kolari\nFull name: Kolari Imigrant\nDate of birth: February 17, 1995",
+      "player_representation": "Passport\n========\nCountry of issue: Kolari\nCountry of birth: Kolari\nFull name: Kolari Imigrant\nDate of birth: February 17, 1995"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Kolari Imigrant\nCompany of employment: Kathairon Industrial\nJob title: Industrial Engineer\nJob description: Developing and maintaining industrial processes, designing and constructing production systems for efficient operation\nCompany address: Kathairon Industrial Building, Kathairon",
+      "player_representation": "Wohk'kah Vehth'hahk'vah\n=======================\nKolah'vahrih Ihmah'grahnt'hah\nEahvahth'hahk'vah: Zjorath-hkuhn Kaeth'kahihv\nWohk'kah M'hahvohkah: Vehth'yohk'kah M'yahr'nuhr'vah\nWohk'kah'vahth: Wohk'kahth'hahkrahth Kahth'hahk'vahth'hahk'vah Rahth'vahth'hahk'vah Wohk'kahth'hahk'vah Rahth'kahth'hahk'vah Rahth'kah'vahth'hahk'vah Rahth'hahk'vahth'hahk'vah Kahth'hahk'vahth'hahk'vah Rahth'hahk'vahth'hahk'vah Rahth'vahth'hahk'vah Kahth'hahk'vahth'hahk'vah\nKah'hahth'hahk'vah: Kjorath-hkuhn Dahsth'hahnd'hahal Buhn'hahld'hahng, Kjorath-hkuhn"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Kolari Imigrant\nEmployer Name: Kathairon Industrial\nJob title: Industrial Engineer\nJob duties: Developing and maintaining industrial processes, designing and constructing production systems for efficient operation\nSalary: 50000\nCompany address: Kathairon Industrial Building, Kathairon",
+      "player_representation": "Wohk'kah Rahth'kahth'hahk'vah\n=============================\nRahth'hahk'vah Kolahrih Imahgrant'hahk'vah\nZjorath'hkuhn Rahth'kahth': Zjorath-hkuhn Kah'vahth'hahk'vah\nWohk'kah Biahth'vah: Yuhnahth'hahk'iahth'hahk'yuhn Hahng'kiahn'eh\nWohk'kah Kvehth'yohk'vah: Khyahth'hahk'kahth'vah zu mahth'nahk'kahth'vah mehvahth'kah'vah kahth'yuhk'vah, khyahth'kahth'vah zu kahth'nahk'kahth'vah tahm wohk'kah mehvahth'yuhk'vah fahr vohk'yuhk'kah vahth'kahth'vah\nRahth'kah'vah: 50000\nKah'vahth'lah'hk'vah: Zjorath-hkuhn Indahstriah'hk'lah, Zjorath-hkuhn"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Kolari Imigrant\n\nAddress: Kathairon Apartment, Kathairon\n\nRent price: 1200\n",
+      "player_representation": "Kah'vahth'hahk'vah Kah'vahk'hahk'vah\n====================================\nKohlah'rih Immeh'grant'hahk'vah\nAd'hress: Zjorath-hkuhn Apahr'tmehnt, Zjorath-hkuhn\nKah'vahth'hahk'vah Rahth': 1200"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Hahk'lah"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Hahk'vah"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Hahk'vahk'kah"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Kah'vahk'hahk'vah"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Lah'hk'vah nahm ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Hah'kahv yah?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Lah'hk'vah nah'vah yah, hah'kahv yah!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Yueh mohkah zu nahk'yuhn fahr wohk'kah/zjahk'hahk'kah/tahrath'kah"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Kah'vahth'hahk'vah"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Lah'hk'dzah yueh jahk'hahk'kah"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Lah'hk'vah ad'hress nahm ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Yah vah hohk'kah nahk'yuhn"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Hah'kahv nahm ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Vah'kah"
+      }
+    ]
+  }
+}
