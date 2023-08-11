@@ -8,7 +8,20 @@ import socketio
 from cblit.game.game import Game
 from cblit.game.pregenerated_game import PregeneratedGame
 from cblit.session.country import Country
-from cblit.socketio.messages import BriefPayload, DocumentPayload, DocumentsPayload, SayPayload, WaitPayload, WinPayload
+from cblit.socketio.messages import (
+    BriefPayload,
+    DocumentPayload,
+    DocumentsPayload,
+    ErrorPayload,
+    SayPayload,
+    WaitPayload,
+    WinPayload,
+)
+
+MODEL_NOT_AVAILABLE = (
+    "The language model is currently unavailable. Try again later.\n"
+    "If the model has not been used in a while, starting it up may take up to 10 minutes."
+)
 
 
 def aiorun(coroutine: Coroutine[Any, Any, Any]) -> None:
@@ -126,6 +139,19 @@ class GameSessionManager:
             session_id
         )
 
+    async def send_error(self, session_id: str, error_message: str) -> None:
+        """Send error message to the client.
+
+        Args:
+            session_id (str): session ID
+            error_message (str): message to send
+        """
+        await self.server.emit(
+            "error",
+            ErrorPayload(code=-1, message=error_message).to_json(),
+            session_id
+        )
+
     async def send_documents(self, session_id: str) -> None:
         """Send generated documents.
 
@@ -181,7 +207,16 @@ class GameSessionManager:
         """
         session = self.get_session(session_id)
         await self.tell_to_wait(session_id, True)
-        reply = await session.game.give_document(doc_id)
+        reply = ""
+        try:
+            reply = await session.game.give_document(doc_id)
+        except ValueError as error:
+            if "BadGateway" in str(error):
+                await self.send_error(session_id, "")
+                return
+        except Exception as error:
+            await self.send_error(session_id, str(error))
+            return
         await self.reply(session_id, reply)
         await self.tell_to_wait(session_id, False)
 
@@ -203,7 +238,16 @@ class GameSessionManager:
         """
         session = self.get_session(session_id)
         await self.tell_to_wait(session_id, True)
-        reply = await session.game.say_to_officer(text)
+        reply = ""
+        try:
+            reply = await session.game.say_to_officer(text)
+        except ValueError as error:
+            if "BadGateway" in str(error):
+                await self.send_error(session_id, "")
+                return
+        except Exception as error:
+            await self.send_error(session_id, str(error))
+            return
         await self.reply(session_id, reply)
         await self.tell_to_wait(session_id, False)
 
@@ -224,14 +268,23 @@ class GameSessionManager:
         """
         self.sessions[session_id] = GameSession(session_id)
         await self.tell_to_wait(session_id, True)
-        await self.sessions[session_id].initialise()
-        start_officer_line = await self.sessions[session_id].start()
-        await asyncio.gather(
-            self.reply(session_id, start_officer_line),
-            self.send_documents(session_id),
-            self.send_phrasebook(session_id),
-            self.send_brief(session_id, self.sessions[session_id].game.country)
-        )
+        try:
+            await self.sessions[session_id].initialise()
+            start_officer_line = await self.sessions[session_id].start()
+            await asyncio.gather(
+                self.reply(session_id, start_officer_line),
+                self.send_documents(session_id),
+                self.send_phrasebook(session_id),
+                self.send_brief(session_id, self.sessions[session_id].game.country)
+            )
+        except ValueError as error:
+            if "BadGateway" in str(error):
+                await self.send_error(session_id, "")
+                return
+        except Exception as error:
+            await self.send_error(session_id, str(error))
+            return
+
         await self.tell_to_wait(session_id, False)
 
     def create_session(self, session_id: str) -> None:

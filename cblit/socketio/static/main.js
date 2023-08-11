@@ -50,6 +50,16 @@ socket.on("say", (dataString) => {
   addChatMessage("Officer", message, false)
 })
 
+socket.on("error", (dataString) => {
+  let data = JSON.parse(dataString)
+  console.log("error", data)
+  addChatMessage("ERROR", data.message)
+
+  finished = true
+  setWait(false)
+  addChatMessage("ERROR", "The error is unrecoverable, try again later.")
+})
+
 socket.on("documents", (dataString) => {
   let data = JSON.parse(dataString)
   console.log("documents", data)
