@@ -1,5 +1,6 @@
 """Game session module."""
 import dataclasses
+import random
 from typing import Self, cast
 
 from dataclasses_json import DataClassJsonMixin
@@ -12,6 +13,7 @@ from cblit.session.language.phrasebook import Phrasebook
 from cblit.session.language.translator import ConlangEntry, TranslatorSession
 from cblit.session.officer import LanguageUnderstanding, OfficerSession
 
+NORMAL_DIFFICULTY_CHANCE = 0.5
 
 @dataclasses.dataclass
 class Game(DataClassJsonMixin):
@@ -84,11 +86,12 @@ class Game(DataClassJsonMixin):
         translation = cast(str, await self.translator_session.translate_to_conlang(reply))
         return translation
 
-    async def say_to_officer(self, sentence: str) -> str:
+    async def say_to_officer(self, sentence: str, difficulty: str) -> str:
         """Say a sentence to the officer.
 
         Args:
             sentence (str): sentence to say
+            difficulty (str): current difficulty
 
         Returns:
             str: officer's reply
@@ -103,15 +106,26 @@ class Game(DataClassJsonMixin):
         # else:
         #     reply = await self.officer_session.say(sentence, LanguageUnderstanding.NATIVE_GIBBERISH)
         translation = await self.translator_session.translate_from_conlang(sentence)
-        reply = await self.officer_session.say(translation, LanguageUnderstanding.NATIVE_CLEAR)
+        raw_reply = await self.officer_session.say(translation, LanguageUnderstanding.NATIVE_CLEAR)
         # TODO
-        return await self.process_officer(reply)
-
-    async def give_document(self, index: int) -> str:
+        reply = await self.process_officer(raw_reply)
+        if difficulty == "hard":
+            return reply
+        elif difficulty == "normal":
+            if random.random() < NORMAL_DIFFICULTY_CHANCE:
+                return reply
+            else:
+                return f"{reply}\n[English: {raw_reply}]"
+        elif difficulty == "easy":
+            return f"{reply}\n[English: {raw_reply}]"
+        else:
+            return f"[What you said: {translation}]\n------\n{reply}\n[English: {raw_reply}]"
+    async def give_document(self, index: int, difficulty: str) -> str:
         """Give a document to the officer.
 
         Args:
             index (int): document index
+            difficulty (str): current difficulty
 
         Returns:
             str: officer's reply
@@ -122,5 +136,16 @@ class Game(DataClassJsonMixin):
         # raise NotImplementedError()
         if not (0 <= index < len(self.immigrant.documents)):
             raise CblitArgumentError(f"Document with {index} does not exist")
-        reply = await self.officer_session.give_document(self.immigrant.documents[index])
-        return await self.process_officer(reply)
+        raw_reply = await self.officer_session.give_document(self.immigrant.documents[index])
+        reply =  await self.process_officer(raw_reply)
+        if difficulty == "hard":
+            return reply
+        elif difficulty == "normal":
+            if random.random() < NORMAL_DIFFICULTY_CHANCE:
+                return reply
+            else:
+                return f"{reply}\n[English: {raw_reply}]"
+        elif difficulty == "easy":
+            return f"{reply}\n[English: {raw_reply}]"
+        else:
+            return f"[What you said: {self.immigrant.documents[index]}]\n------\n{reply}\n[English: {raw_reply}]"

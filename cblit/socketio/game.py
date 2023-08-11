@@ -114,7 +114,8 @@ class GameSessionManager:
             "say",
             SayPayload(
                 who="officer",
-                message=message
+                message=message,
+                difficulty="",
             ).to_json(),
             session_id
         )
@@ -197,19 +198,19 @@ class GameSessionManager:
             session_id
         )
 
-
-    async def _give_documents(self, session_id: str, doc_id: int) -> None:
+    async def _give_documents(self, session_id: str, doc_id: int, difficulty: str) -> None:
         """Private 'give documents' event handler.
 
         Args:
             session_id (str): session ID from which the event is coming from
             doc_id (int): document ID to give
+            difficulty (str): current difficulty
         """
         session = self.get_session(session_id)
         await self.tell_to_wait(session_id, True)
         reply = ""
         try:
-            reply = await session.game.give_document(doc_id)
+            reply = await session.game.give_document(doc_id, difficulty)
         except ValueError as error:
             if "BadGateway" in str(error):
                 await self.send_error(session_id, "")
@@ -220,27 +221,29 @@ class GameSessionManager:
         await self.reply(session_id, reply)
         await self.tell_to_wait(session_id, False)
 
-    def give_documents(self, session_id: str, doc_id: int) -> None:
+    def give_documents(self, session_id: str, doc_id: int, difficulty: str) -> None:
         """Give document to the officer in a game.
 
         Args:
             session_id (str): session ID from which the event is coming from
             doc_id (int): document ID to give
+            difficulty (str): current difficulty
         """
-        aiorun(self._give_documents(session_id, doc_id))
+        aiorun(self._give_documents(session_id, doc_id, difficulty))
 
-    async def _say(self, session_id: str, text: str) -> None:
+    async def _say(self, session_id: str, text: str, difficulty: str) -> None:
         """Private 'say' event handler.
 
         Args:
             session_id (str): session ID from which the event is coming from
             text (str): text to say
+            difficulty (str): current difficulty
         """
         session = self.get_session(session_id)
         await self.tell_to_wait(session_id, True)
         reply = ""
         try:
-            reply = await session.game.say_to_officer(text)
+            reply = await session.game.say_to_officer(text, difficulty)
         except ValueError as error:
             if "BadGateway" in str(error):
                 await self.send_error(session_id, "")
@@ -251,14 +254,15 @@ class GameSessionManager:
         await self.reply(session_id, reply)
         await self.tell_to_wait(session_id, False)
 
-    def say(self, session_id: str, text: str) -> None:
+    def say(self, session_id: str, text: str, difficulty: str) -> None:
         """Say to the officer in a game.
 
         Args:
             session_id (str): session ID from which the event is coming from
             text (str): text to say
+            difficulty (str): current difficulty
         """
-        aiorun(self._say(session_id, text))
+        aiorun(self._say(session_id, text, difficulty))
 
     async def _create_session(self, session_id: str) -> None:
         """Private game session creation handler.

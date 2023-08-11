@@ -109,8 +109,13 @@ socket.on("brief", (dataString) => {
   showBrief(data)
 })
 
+function getDifficulty() {
+  let difficulty_select = document.getElementById("difficulty")
+  return difficulty_select.value
+}
+
 function giveDocument(index) {
-  socket.emit("give_document", JSON.stringify({"index": index}))
+  socket.emit("give_document", JSON.stringify({"index": index, "difficulty": getDifficulty()}))
 }
 
 function sayHandler() {
@@ -122,7 +127,7 @@ function sayHandler() {
 }
 
 function say(msg) {
-  socket.emit("say", JSON.stringify({"who": "player", "message": msg}))
+  socket.emit("say", JSON.stringify({"who": "player", "message": msg, "difficulty": getDifficulty()}))
 }
 
 console.log(socket)

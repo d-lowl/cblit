@@ -63,7 +63,7 @@ def say(sid: str, data: str) -> None:
         data (str): raw event data
     """
     payload = SayPayload.from_json(data)
-    session_manager.say(sid, payload.message)
+    session_manager.say(sid, payload.message, payload.difficulty)
 
 
 @sio.event
@@ -75,7 +75,7 @@ def give_document(sid: str, data: str) -> None:
         data (str): raw event data
     """
     payload = GiveDocumentPayload.from_json(data)
-    session_manager.give_documents(sid, payload.index)
+    session_manager.give_documents(sid, payload.index, payload.difficulty)
 
 
 if __name__ == "__main__":

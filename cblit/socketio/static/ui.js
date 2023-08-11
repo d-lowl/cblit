@@ -10,9 +10,11 @@ export function addChatMessage(sender, message, isRight) {
     msgSenderElement.textContent = sender
     msgElement.appendChild(msgSenderElement)
 
-    let msgTextElement = document.createElement("p")
-    msgTextElement.textContent = message
-    msgElement.appendChild(msgTextElement)
+    for (let line of message.split("\n")) {
+        let msgTextElement = document.createElement("p")
+        msgTextElement.textContent = line
+        msgElement.appendChild(msgTextElement)
+    }
 
     let chatElement = document.getElementById("chat")
     chatElement.prepend(msgElement)

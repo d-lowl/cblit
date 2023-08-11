@@ -15,12 +15,14 @@ class SayPayload(DataClassJsonMixin):
     """Say payload."""
     who: str
     message: str
+    difficulty: str
 
 
 @dataclasses.dataclass
 class GiveDocumentPayload(DataClassJsonMixin):
     """Give document payload."""
     index: int
+    difficulty: str
 
 
 @dataclasses.dataclass
