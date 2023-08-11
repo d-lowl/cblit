@@ -8,6 +8,34 @@
   <title>Cosmic Bureaucracy: Lost in Translation</title>
 </head>
 <body>
+<dialog open>
+  <p>This is a demo of "Cosmic Bureaucracy: Lost in Translation", where your task is to register at an Immigration Office in a foreign country.</p>
+  <p>The intention behind the game was to explore certain aspects of applying large language models to procedural generation and generative storytelling:</p>
+  <ul>
+    <li>How well can they impersonate a specific job role (immigration officer in this case)?</li>
+    <li>How well can an LLM work with constructed languages?</li>
+    <li>How well can I restrain the model to adhere to a predefined set of game rules?</li>
+  </ul>
+  <p>Important notes:</p>
+  <ul>
+    <li>Running this game costs me money; about $0.5 to $2 per game session. The game WILL be shutdown eventually, right now I'm not planning to continue development.</li>
+    <li>The game uses OpenAI API under the hood, do not submit anything that you do not want to share with them.</li>
+    <li>For the same reason, I do not control the output of the model perfectly, it can give unwanted responses, be mindful of that.</li>
+    <li>The game has bugs, and the officer's logic is not perfect. The API is not very stable. There are many flaws. That's the reality of it (I had to cut down certain things to fit into the time I have and avoid scope creep).</li>
+  </ul>
+  <p>Initially the game was intended to be run on what's now a hard difficulty, but at the last minute, I've decided to add lower difficulties. They can be changed on the fly, future responses will take the new settings into account</p>
+  <ul>
+    <li>Hard -- nothing is translated for the frontend, you need to decipher the language yourself</li>
+    <li>Normal -- some things are occasionally translated into English, but most phrases are kept untranslated</li>
+    <li>Easy -- all the officer's phrases are translated into English</li>
+    <li>Debug -- everything has an English translation, including an internal translation of what you submit</li>
+  </ul>
+  <p>If you have any question, <a href="mailto:d.lowl@d-lowl.space">email me</a> or find me on <a href="https://twitter.com/d_lowl">Twitter</a></p>
+  <p>Postmortem: TBA</p>
+  <form method="dialog">
+    <button id="disclaimer-button">I understand, start the game</button>
+  </form>
+</dialog>
 <div class="loading-spinner" id="loading-spinner">
   <div class="sk-wave">
     <div class="sk-circle sk-circle1"></div>
@@ -27,6 +55,13 @@
   </div>
   <div class="column bordered">
     <p>chat</p>
+    <label for="difficulty">Difficulty:</label>
+    <select name="difficulty" id="difficulty">
+      <option value="hard">Hard</option>
+      <option value="normal">Normal</option>
+      <option value="easy">Easy</option>
+      <option value="debug">Debug</option>
+    </select>
     <hr/>
     <input type="text" id="chat-input" />
     <button id="chat-submit">Say</button>

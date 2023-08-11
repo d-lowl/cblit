@@ -72,7 +72,7 @@ class GameCliWrapper:
 
     async def talk(self) -> None:
         async def wrap_say_to_officer(sentence: str, priority: int) -> str:
-            return await self.game.say_to_officer(sentence)
+            return await self.game.say_to_officer(sentence, "hard")
 
         wrapper = SessionMethodWrapper("say_to_officer", wrap_say_to_officer)
         await wrapper.run()
@@ -88,7 +88,7 @@ class GameCliWrapper:
                 print(i, document.player_representation, "\n")
             choice_labels = [str(x) for x in range(len(self.game.immigrant.documents))]
             choice = typer.prompt("> ", type=click.Choice(choice_labels))
-            reply = self.game.give_document(int(choice))
+            reply = self.game.give_document(int(choice), "hard")
             print(f"<: {reply}")
         except click.exceptions.Abort:
             print("[yellow]Done[/yellow]")
