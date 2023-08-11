@@ -7,25 +7,38 @@ const socket = io({
 
 let finished = false;
 
-function setWait(wait) {
-  let spinner = document.getElementById("loading-spinner")
+function setDisabled(flag) {
   let chat_input = document.getElementById("chat-input")
   let chat_submit = document.getElementById("chat-submit")
   let documents_submit = document.getElementsByClassName("document")
-  spinner.hidden = !wait
-  chat_input.disabled = wait || finished
-  chat_submit.disabled = wait || finished
+
+  chat_input.disabled = flag
+  chat_submit.disabled = flag
   for (let document_submit of documents_submit) {
-    document_submit.disabled = wait || finished
+    document_submit.disabled = flag
   }
 }
 
+function setWait(wait) {
+  let spinner = document.getElementById("loading-spinner")
+  spinner.hidden = !wait
+
+  setDisabled(wait || finished)
+}
+
 function initChat() {
+  setWait(false)
+  setDisabled(true)
+  let disclaimer_button = document.getElementById("disclaimer-button")
+  disclaimer_button.addEventListener("click", () => {
+    setWait(true)
+    socket.connect()
+  })
   let chat_submit = document.getElementById("chat-submit")
   chat_submit.addEventListener("click", sayHandler)
   let chat_input = document.getElementById("chat-input")
   chat_input.addEventListener("keypress", function(event) {
-    if (event.key === "Enter") {
+    if (event.key === "Enter" && event.type === "keydown") {
       event.preventDefault();
       sayHandler()
     }
@@ -34,7 +47,6 @@ function initChat() {
 
 socket.on("connect", () => {
   console.log("connect", socket.connected); // true
-  initChat()
 });
 
 socket.on("wait", (dataString) => {
@@ -115,4 +127,4 @@ function say(msg) {
 
 console.log(socket)
 
-socket.connect()
+initChat()
