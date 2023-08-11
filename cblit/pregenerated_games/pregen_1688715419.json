@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Lokitha",
+    "country_description": "Lokitha is a small, lush planet located on the other side of the galaxy, populated by a peaceful people who have lived in harmony for centuries.",
+    "country_currency_name": "Lokithan Dollars",
+    "neighbour_country_name": "Fizwilla",
+    "people_description": "The people of Lokitha are known for their hospitality and kindness. They are a friendly and welcoming people, who enjoy spending time with family and friends.",
+    "language_name": "Lokithan",
+    "language_description": "Lokithan is a melodic language, with a complex system of tones and inflections. It is spoken by the people of Lokitha and is also used in their writing.",
+    "example_sentence": "Shei lonkolu fai.",
+    "example_sentence_translation": "May peace be with you."
+  },
+  "quenta": {
+    "full_name": "Raluwosu Dazuwara",
+    "country": "Fizwilla",
+    "dob": "12/25/1989",
+    "employer": "Sunshine Enterprises",
+    "employer_address": "4 Oak Street, Lokitha",
+    "job_title": "Software Engineer",
+    "job_duties": "Developing software solutions for the company's clients",
+    "salary": 30000,
+    "address": "38 Maple Street, Lokitha",
+    "rent": 1000
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Fizwilla\nCountry of birth: Fizwilla\nFull name: Raluwosu Dazuwara\nDate of birth: 12/25/1989",
+      "player_representation": "Passport\n========\nCountry of issue: Fizwilla\nCountry of birth: Fizwilla\nFull name: Raluwosu Dazuwara\nDate of birth: 12/25/1989"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Raluwosu Dazuwara\nCompany of employment: Sunshine Enterprises\nJob title: Software Engineer\nJob description: Developing software solutions for the company's clients\nCompany address: 4 Oak Street, Lokitha",
+      "player_representation": "Kulashuar Xokalar\n=================\nFushaar dorukai: Raluwosu Dazuwara\nAnshuar Nii Shashenar: Xhiiheenir Lopas\nTafar Nii Paqar: Kepipananari Paqarur\nNiiwizii Tafar: Xokalar Kuuwizir Tafar Webaswizir Tii Tashuar Klaienir\nKompani Gilh: 4 Oahk Stret, Lokitha"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Raluwosu Dazuwara\nEmployer Name: Sunshine Enterprises\nJob title: Software Engineer\nJob duties: Developing software solutions for the company's clients\nSalary: 30000\nCompany address: 4 Oak Street, Lokitha",
+      "player_representation": "Paxanir Nii Tafar\n=================\nFonizii Raluwosu Dazuwara\nPaxanir Nii: Gafarir Daalir\nPafar Nii Tafar: Dokhoxam Xokalar\nBakanar Niir: Xokalar Softaam Faxarashuar Niir Tafalashuar Tafalaxan\nKulashuar: 30000\nKompani gilh: 4 Gauk Tafal, Lokitha"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Raluwosu Dazuwara\n\nAddress: 38 Maple Street, Lokitha\n\nRent price: 1000\n",
+      "player_representation": "Ushuar Akshaal\n==============\nKazunu Raluwosu Dazuwara\nGilh: 38 Reihash Mekan, Lokitha\nTafar Rahal: 1000"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Oluu"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Fahkalu"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Pulhukar"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Tafalashuar"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Dorakai nii ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Konmai wii?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Mai konla, obaenk!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Dorakai nii paxanir kulashuar gilh xokalar gilh tafar"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Xokalar Tafalashuar"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Dorakai nii haifashuar xokalar gilh tafar"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Mai gilh oshar ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Dorakai nii kulahashuar xokalar gilh tafar"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Shaar ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Kanmaith"
+      }
+    ]
+  }
+}

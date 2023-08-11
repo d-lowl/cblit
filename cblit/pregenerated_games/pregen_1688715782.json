@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Sarzonia",
+    "country_description": "A planet located on the edge of an uninhabited galaxy, Sarzonia is a vibrant and thriving nation with a rich culture and history.",
+    "country_currency_name": "Sarzonian Credits",
+    "neighbour_country_name": "Xolania",
+    "people_description": "The citizens of Sarzonia are a friendly and welcoming people, with a strong sense of community and pride.",
+    "language_name": "Sarzonian",
+    "language_description": "Sarzonian is a complex language with a variety of dialects and regional variations. It is known for its unique use of rhythm and rhyme.",
+    "example_sentence": "Kanam voz nelgaz.",
+    "example_sentence_translation": "The sky is beautiful."
+  },
+  "quenta": {
+    "full_name": "Ahmad Ismail",
+    "country": "Xolania",
+    "dob": "11/09/1981",
+    "employer": "Sarzonian Technologies",
+    "employer_address": "100 Main Street, Sarzonia",
+    "job_title": "Software Engineer",
+    "job_duties": "Developing applications and software for Sarzonian Technologies",
+    "salary": 65000,
+    "address": "24 Benton Street, Sarzonia",
+    "rent": 1500
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Xolania\nCountry of birth: Xolania\nFull name: Ahmad Ismail\nDate of birth: 11/09/1981",
+      "player_representation": "Passport\n========\nCountry of issue: Xolania\nCountry of birth: Xolania\nFull name: Ahmad Ismail\nDate of birth: 11/09/1981"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Ahmad Ismail\nCompany of employment: Sarzonian Technologies\nJob title: Software Engineer\nJob description: Developing applications and software for Sarzonian Technologies\nCompany address: 100 Main Street, Sarzonia",
+      "player_representation": "Sarmoz bezatil\n==============\nVounga Nama: Ahmad Ismail\nGarmoz bezafan Sarzonian Teknokalan\nCezalaz bezafan: Oserzizir Gazilaz\nGarmoz bezatil: Sarmoz bezafan mirazen bezatil og Sarzonian Technologies\nKomozfaz yasz: 100 Maysz Bounz, Sarzonil"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Ahmad Ismail\nEmployer Name: Sarzonian Technologies\nJob title: Software Engineer\nJob duties: Developing applications and software for Sarzonian Technologies\nSalary: 65000\nCompany address: 100 Main Street, Sarzonia",
+      "player_representation": "Cezalaz bezafan garmoz\n======================\nYezalaz bezofan garmoz: Ahmad Ismail\nGarmoz bezafan Sarzonian Technologies\nGarmoz zeien: Nafozin mezalaz\nGarmoz bezafan: Zazalaz bezafan zagazitaz bezafan u bezatil sarmoz bezafan Sarzonian Tazifaz\nGarmoz bezalaz: 65000\nHazongasz zasz: 100 Zefasz Joungam, Sarzonia"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Ahmad Ismail\n\nAddress: 24 Benton Street, Sarzonia\n\nRent price: 1500\n",
+      "player_representation": "Bouzfaz Azouzil\n===============\nMounga yas: Ahmad Ismail\nVounga yasz oloz: 24 Benton Strit, Sarzonia\nBouzfaz azouzil: 1500"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Souvaz"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Fazouv"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Posanfaz"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Vosbanfaz"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Mounga yas ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Kouvaz esu?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Ozem vuabon, vezouv!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Vozlaz bezafan meen sarmoz/zablaz/dizloz"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Lozonfaz bezatil"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Meenz lokoz faz zalafaz"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Vounga yasz oloz ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Ozem bezem vudaroz"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Alya yas ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Vazin"
+      }
+    ]
+  }
+}

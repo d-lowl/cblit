@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Yashikka",
+    "country_description": "Yashikka is a small and vibrant country located on an alien planet. It is known for its spectacular landscapes and friendly inhabitants.",
+    "country_currency_name": "Yashikkian Credits",
+    "neighbour_country_name": "Azanar",
+    "people_description": "The people of Yashikka are known for their hospitality and cheerful nature. Despite the alien environment, they are very welcoming and enjoy socializing with each other.",
+    "language_name": "Yashikkian",
+    "language_description": "Yashikkian is the official language of Yashikka, and it is a unique language with its own grammar and structure. It is made up of a combination of various elements from other languages.",
+    "example_sentence": "Beqalat yashikka.",
+    "example_sentence_translation": "Welcome to Yashikka."
+  },
+  "quenta": {
+    "full_name": "Lara Morna",
+    "country": "Azanar",
+    "dob": "August 5th, 1957",
+    "employer": "YashikkaTech",
+    "employer_address": "318 Moon Street, Yashikka",
+    "job_title": "Software Engineer",
+    "job_duties": "Developing and designing software applications and systems",
+    "salary": 80000,
+    "address": "15 Sun Avenue, Yashikka",
+    "rent": 1000
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Azanar\nCountry of birth: Azanar\nFull name: Lara Morna\nDate of birth: August 5th, 1957",
+      "player_representation": "Passport\n========\nCountry of issue: Azanar\nCountry of birth: Azanar\nFull name: Lara Morna\nDate of birth: August 5th, 1957"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Lara Morna\nCompany of employment: YashikkaTech\nJob title: Software Engineer\nJob description: Developing and designing software applications and systems\nCompany address: 318 Moon Street, Yashikka",
+      "player_representation": "Omeketakon\n==========\nUshkurzetin: Lara Morna\nEtsof Yomtofikon: YashikkaTech\nOmulon Ruvot: Zokon Sokotron\nKasgaton Yomtotifikon: Putofenten anok dalizeten gukon fukonsi anok yomtotifonsi\nLefemitin Yomtofikon: 318 Beqash Lefemitin, Yashikka"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Lara Morna\nEmployer Name: YashikkaTech\nJob title: Software Engineer\nJob duties: Developing and designing software applications and systems\nSalary: 80000\nCompany address: 318 Moon Street, Yashikka",
+      "player_representation": "Zokon Yomtofikon\n================\nOvomofoyin: Lara Morna\nOmekomakon: YashikkaTech\nTitomekon Uyodofab: Enimewofokam\nJenemfadetokon: Zokonkikon fodetefon fadetokon koftezokon yomtofikon bokon tayemfadetokon\nYemfylikon: 80,000\nYomtofikon lefemitin: 318 Gahim Vool, Yashikka"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Lara Morna\n\nAddress: 15 Sun Avenue, Yashikka\n\nRent price: 1000\n",
+      "player_representation": "Teyemzimetar\n============\nLofametin Noyon: Lara Morna\nLefemitin: 15 Lefemitin Sun, Yashikka\nTeyemzatad: 1000"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Pokorin"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Ozizri"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Fisokon"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Dalizeteb"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Zoyon omotin ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Fonas zuon?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Oginu sasal, ozozozi!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Nozoyen kafozek orti to zokon es yeb/tamett/tokorim"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Teyemfadetokon"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Foteb zokon sotik"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Zoyon lefemitin ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Fotek nenyoen takik"
+      },
+      {
+        "english": "What is...?",
+        "conlang": "Soh teyi...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Fapik"
+      }
+    ]
+  }
+}

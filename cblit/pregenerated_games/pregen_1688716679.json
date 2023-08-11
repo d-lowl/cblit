@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Jahkon",
+    "country_description": "Jahkon is a small planet located in the outer regions of the galaxy. It is a lush and vibrant world, filled with exotic flora and fauna.",
+    "country_currency_name": "Kavo",
+    "neighbour_country_name": "Kilosa",
+    "people_description": "The people of Jahkon are friendly and welcoming. They are a diverse group, with many different cultures and backgrounds.",
+    "language_name": "Kammal",
+    "language_description": "Kammal is the native language of Jahkon. It is a complex language that has evolved over hundreds of years.",
+    "example_sentence": "Lanelu jorvek.",
+    "example_sentence_translation": "The sky is beautiful."
+  },
+  "quenta": {
+    "full_name": "Joseph Rees",
+    "country": "Kilosa",
+    "dob": "01/01/1990",
+    "employer": "Jahkon-Samotri Technologies",
+    "employer_address": "Jahkon, 25 Main Street",
+    "job_title": "Software Engineer",
+    "job_duties": "Developing cutting-edge software solutions for Jahkon's growing tech industry",
+    "salary": 120000,
+    "address": "Jahkon, 15 High Rise Street",
+    "rent": 1500
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Kilosa\nCountry of birth: Kilosa\nFull name: Joseph Rees\nDate of birth: 01/01/1990",
+      "player_representation": "Passport\n========\nCountry of issue: Kilosa\nCountry of birth: Kilosa\nFull name: Joseph Rees\nDate of birth: 01/01/1990"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Joseph Rees\nCompany of employment: Jahkon-Samotri Technologies\nJob title: Software Engineer\nJob description: Developing cutting-edge software solutions for Jahkon's growing tech industry\nCompany address: Jahkon, 25 Main Street",
+      "player_representation": "Ruqsad Shaqaystaan\n==================\nMagaca Buuxa: Joseph Rees\nShirkad Shaqaystaan: Jahkon-Samotri Teknolojiyaal\nMagac Shaqo: Maarasheeya Software-ka\nWaajibaadka Shaqada: Hagaajinta xalal koronto ah oo ku habboon xanaanada teknoolajiyada ee Jahkon ee koraya\nAqoonsiga Gaarka: Jahkon, 25 Jidka Ugu Weyn"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Joseph Rees\nEmployer Name: Jahkon-Samotri Technologies\nJob title: Software Engineer\nJob duties: Developing cutting-edge software solutions for Jahkon's growing tech industry\nSalary: 120000\nCompany address: Jahkon, 25 Main Street",
+      "player_representation": "Heshiiska Shaqaystaanta\n=======================\nMagaca Shaqaalaha: Joseph Rees\nMaamule Aanamu: Jahkon-Samotri Teeknaloojiyada\nMagaca Shaqada: Injineerka Software-ka\nDajinta waajibaadka: Isbedelka xalalaha software-ka cusub ee koraya ee warshada Teknoolojiyada Jahkon\nShaqaaleed: 120000\nAqoonta Jahkon, 25 Waddada Weyn"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Joseph Rees\n\nAddress: Jahkon, 15 High Rise Street\n\nRent price: 1500\n",
+      "player_representation": "Haa'uuneey Maarsooma\n====================\nMagaca Buuxa: Joseph Rees\nAanaan: Jahkon, 15 Haa'uuneey Uufuur Maarsooma\nGuriin Tirkaa: 1500"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Gulanelu"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Ashelu"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Pasaportu"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Kurama Ruhoobu"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Aanamu ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Gulanelu aarhe?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Aarhe ajor, jalaju!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Aanamu hafaa kodo shaqaystaan/barash/biyuusi"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Gashteer Maxaafeeda"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Aanamu doonayaa xadhig"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Aanaan aagashee ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Aanamu saafaynayn"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Wahi ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Caawin"
+      }
+    ]
+  }
+}

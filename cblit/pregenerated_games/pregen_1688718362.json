@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Sakarra",
+    "country_description": "Sakarra is a small, peaceful planet located on the edge of the Milky Way, and is populated by a friendly race of alien humanoids.",
+    "country_currency_name": "Sakarrite",
+    "neighbour_country_name": "Ktak'ak",
+    "people_description": "The people of Sakarra are a peaceful and creative race, who value the arts and sciences over material wealth.",
+    "language_name": "Gramak",
+    "language_description": "Gramak is a relatively simple language, spoken by the inhabitants of Sakarra. It is very expressive and often used for poetry and song.",
+    "example_sentence": "Gom gom gamak noka",
+    "example_sentence_translation": "Let us all be friends"
+  },
+  "quenta": {
+    "full_name": "Ktak'akian Player",
+    "country": "Ktak'ak",
+    "dob": "25/09/1998",
+    "employer": "Sakarra Industries",
+    "employer_address": "12 Sakarra Road, Sakarra",
+    "job_title": "Software Developer",
+    "job_duties": "Develop software and applications for Sakarra Industries",
+    "salary": 25000,
+    "address": "2 Sakarra Square, Sakarra",
+    "rent": 2000
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Ktak'ak\nCountry of birth: Ktak'ak\nFull name: Ktak'akian Player\nDate of birth: 25/09/1998",
+      "player_representation": "Passport\n========\nCountry of issue: Ktak'ak\nCountry of birth: Ktak'ak\nFull name: Ktak'akian Player\nDate of birth: 25/09/1998"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Ktak'akian Player\nCompany of employment: Sakarra Industries\nJob title: Software Developer\nJob description: Develop software and applications for Sakarra Industries\nCompany address: 12 Sakarra Road, Sakarra",
+      "player_representation": "Vekemim Permitu\n===============\nNamkamu: Ktak'akian Playeramu\nKompanias di Emlomantu: Sakarra Industriyas\nLobu titu: Softveru Devloperu\nLepak Antiu: Desvlopamak Jeftas e Aplikasas pa Sakarra Industrias\nKompaniyas adresu: 12 Sakarra Daor, Sakarra"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Ktak'akian Player\nEmployer Name: Sakarra Industries\nJob title: Software Developer\nJob duties: Develop software and applications for Sakarra Industries\nSalary: 25000\nCompany address: 12 Sakarra Road, Sakarra",
+      "player_representation": "Emlomantu Akordas\n=================\nEmploumantu Nam: Ktak'akian Plaeer\nEmpleoram Nomam: Sakarra Industrifam\nVekemim Titlu: Softveri Develomantu\nVobu Osas: Desfurumas Saftusu ed Aplikasiyunas pa Sakarra Industrias\nSalarim: 25000\nKompanija adresu: 12 Sakarra Derelu, Sakarra"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Ktak'akian Player\n\nAddress: 2 Sakarra Square, Sakarra\n\nRent price: 2000\n",
+      "player_representation": "Kamulis Saztam\n==============\nGem Naam: Ktak'akian Player\nAdresu: 2 Sakarra Square, Sakarra\nTaztam kamulis: 2000"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Gomu"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Komu"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Pasamak"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Pamalikis doskimas"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Meulo namu es ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Konu ukomu?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Pamelu bukomu, ukomu!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Mesulu raazunu entaras es vekul/stadea/tamurismu"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Imigrazis ofis"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Meulo vekulas registaras"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Meulo adresu es ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Me nazunu komprenu"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Konu ... es?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Lufak"
+      }
+    ]
+  }
+}

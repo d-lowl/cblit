@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Varmon",
+    "country_description": "Varmon is a small but vibrant planet in the galaxy. It is home to a variety of species and cultures, with its own unique language and customs.",
+    "country_currency_name": "Varmon Credit",
+    "neighbour_country_name": "Krakon",
+    "people_description": "The people of Varmon are friendly and welcoming, with a strong sense of community. They are known for their creativity and love of the arts.",
+    "language_name": "Varmonish",
+    "language_description": "Varmonish is a unique language that is spoken on the planet Varmon. It is a combination of several languages, including English and other languages.",
+    "example_sentence": "Vormokat nekot.",
+    "example_sentence_translation": "The sun is shining."
+  },
+  "quenta": {
+    "full_name": "Jos\u00e9 Marquez",
+    "country": "Krakon",
+    "dob": "02/11/1980",
+    "employer": "Varmon Industries",
+    "employer_address": "201 Main Street, Varmon, KA 01233",
+    "job_title": "Software Engineer",
+    "job_duties": "Developing software applications for internal use and customer facing products.",
+    "salary": 120000,
+    "address": "202 Main Street, Varmon, KA 01233",
+    "rent": 2500
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Krakon\nCountry of birth: Krakon\nFull name: Jos\u00e9 Marquez\nDate of birth: 02/11/1980",
+      "player_representation": "Passport\n========\nCountry of issue: Krakon\nCountry of birth: Krakon\nFull name: Jos\u00e9 Marquez\nDate of birth: 02/11/1980"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Jos\u00e9 Marquez\nCompany of employment: Varmon Industries\nJob title: Software Engineer\nJob description: Developing software applications for internal use and customer facing products.\nCompany address: 201 Main Street, Varmon, KA 01233",
+      "player_representation": "Vorpaorzor\n==========\nVomah'kep: Jos\u00e9 Marquez\nVodem'o'shizmi: Varmon'om Industries\nFrorzmi'im'vorzem: Vopustomnem'uipas\nVorzomdah'mo vorzamzom: Vorpaastu vormoksmo vorzesmeh vorvoh'zom dor dorzomdah'mo vormoksmo'orvozi vorpaastu dor vorzesmeh.\nVomuodod'vo o: 201 Oemorzah'mo Varmon, KA 01233"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Jos\u00e9 Marquez\nEmployer Name: Varmon Industries\nJob title: Software Engineer\nJob duties: Developing software applications for internal use and customer facing products.\nSalary: 120000\nCompany address: 201 Main Street, Varmon, KA 01233",
+      "player_representation": "Vordomnem'o'frozmi\n==================\nVordomnem'o'frozmi: Jos\u00e9 Marquez\nVormenom'e'mofrzmi: Varmon E'omofrzmi\nVordomnem'o'frozmi: Zimozfrozmi Gomnem'er\nVoremdof'mo: Vorzorzemkem vorvomzom'o'hro dor vormoksem'mo vor vortemolmeh dor vorpesmemeh.\nHozom'u: 120000\nVohzomdah'vo: 201 Vomah'zo Vomoh'vo, Varmon, KA 01233"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Jos\u00e9 Marquez\n\nAddress: 202 Main Street, Varmon, KA 01233\n\nRent price: 2500\n",
+      "player_representation": "Vozdoh'vom\n==========\nVemah'ne Vahseh' Marqeuz\nVomoh'vo o 202 Zovromdoh'vo, Varmon, KA 01233\nVozdoh'vom'o: 2500"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Vormen"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Vormult"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Vorpaast"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Vordeh'ke'yo"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Vemah'ne o ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Vemah'ne rahn?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Vah'na sivah, vormult!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Vormoks'mo'orvozi vorpaastu dor vorzesmeh"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Vorzomdah'mo"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Vormoks vorpaastu dor vormer"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Vomoh'vo o ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Vah'na vorkolmo'arvozi"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Vonah'la o ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Vormenim"
+      }
+    ]
+  }
+}

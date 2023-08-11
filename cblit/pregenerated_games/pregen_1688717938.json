@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Venturania",
+    "country_description": "A beautiful, lush planet with rolling hills and a temperate climate.",
+    "country_currency_name": "Venturan Coins",
+    "neighbour_country_name": "Mantiria",
+    "people_description": "The people of Venturania are hard-working and friendly. They are known for their hospitality and are renowned for their craftsmanship.",
+    "language_name": "Venturanese",
+    "language_description": "Venturanese is a lyrical language with a complex grammar and unique dialects.",
+    "example_sentence": "Tolik diem brentan.",
+    "example_sentence_translation": "The sky is blue."
+  },
+  "quenta": {
+    "full_name": "Maniya Sipas",
+    "country": "Mantiria",
+    "dob": "05/14/1987",
+    "employer": "Venturania Co.",
+    "employer_address": "24 Some Street, Venturania",
+    "job_title": "Data Scientist",
+    "job_duties": "Analyzing consumer data to create predictive models and insights for the company",
+    "salary": 80000,
+    "address": "76 Another Street, Venturania",
+    "rent": 1300
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Mantiria\nCountry of birth: Mantiria\nFull name: Maniya Sipas\nDate of birth: 05/14/1987",
+      "player_representation": "Passport\n========\nCountry of issue: Mantiria\nCountry of birth: Mantiria\nFull name: Maniya Sipas\nDate of birth: 05/14/1987"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Maniya Sipas\nCompany of employment: Venturania Co.\nJob title: Data Scientist\nJob description: Analyzing consumer data to create predictive models and insights for the company\nCompany address: 24 Some Street, Venturania",
+      "player_representation": "Permessa Lavora\n===============\nNome Completo: Maniya Sipas\nSociet\u00e0 de lavoro: Venturania Co.\nTitoloa Lavorotae: Scienciotaa dei Datia\nDescrizionea Lavorotae: Analizareea datia consumatori per crearee modeli predictivi ee insightea per la compania\nAdressa Companye: 24 Certa Straeta, Venturaniae"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Maniya Sipas\nEmployer Name: Venturania Co.\nJob title: Data Scientist\nJob duties: Analyzing consumer data to create predictive models and insights for the company\nSalary: 80000\nCompany address: 24 Some Street, Venturania",
+      "player_representation": "Promissoea Lavorotae\n====================\nNomea Lavoratoreea: Maniya Sipas\nNome Employer: Co. Venturania\nTitolo Lavorotae: Scienzatae dei Datas\nOfficium Laboris: Analyticas Datas Consumatoris ut Praevidendas Modellos et Notiones Pro Societate\nSalarietae: 80000\nAdressa Companiae: 24 Algum Strada, Venturaniae"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Maniya Sipas\n\nAddress: 76 Another Street, Venturania\n\nRent price: 1300\n",
+      "player_representation": "Contrattu de Affito\n===================\nNomax Tunara: Maniya Sipas\nAdressa: 76 Un'atra Strata, Venturan\u00eda\nPrezzu de Affitu: 1300"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Holaa"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Adiosa"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Portapex"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Documentoex identitatae"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Tunara mea yee..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Hoo anu khoru?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Anu brenta, garrienu!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Oceana mea renterea esse lavoro/studio/turismo"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Officiela Immigratae"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Renterea mea volo registrare"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Mea adressa yee ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Io non conscio"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Keema yee ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Ajutar"
+      }
+    ]
+  }
+}

@@ -1,14 +1,14 @@
 """Document module."""
 import asyncio
-import dataclasses
 from typing import Self
+
+from pydantic import BaseModel
 
 from cblit.session.immigrant.quenta import Quenta
 from cblit.session.language.translator import TranslatorSession
 
 
-@dataclasses.dataclass
-class Document:
+class Document(BaseModel):
     """Base document class."""
     # officer representation of the document, i.e. in English
     officer_representation: str

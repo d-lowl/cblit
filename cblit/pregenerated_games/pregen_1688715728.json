@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Aldarland",
+    "country_description": "Aldarland is a small country located on an unknown planet in a distant galaxy. Its inhabitants are friendly and welcoming, and their culture is deeply rooted in tradition.",
+    "country_currency_name": "Aldarlaanse",
+    "neighbour_country_name": "Subayland",
+    "people_description": "The people of Aldarland are known for their hospitality and generosity. They value hard work and respect for nature.",
+    "language_name": "Aldarlaans",
+    "language_description": "Aldarlaans is a unique language with its own grammar and vocabulary, but it is also heavily influenced by other languages from around the galaxy.",
+    "example_sentence": "Mekh paiz gekh sohn.",
+    "example_sentence_translation": "I come in peace."
+  },
+  "quenta": {
+    "full_name": "Maxwell K. Subay",
+    "country": "Subayland",
+    "dob": "03/19/1989",
+    "employer": "Aldarland Tech Company",
+    "employer_address": "Main Street, Aldarland",
+    "job_title": "Software Developer",
+    "job_duties": "Developing web applications and software",
+    "salary": 80000,
+    "address": "1234 Main Street, Aldarland",
+    "rent": 1000
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Subayland\nCountry of birth: Subayland\nFull name: Maxwell K. Subay\nDate of birth: 03/19/1989",
+      "player_representation": "Passport\n========\nCountry of issue: Subayland\nCountry of birth: Subayland\nFull name: Maxwell K. Subay\nDate of birth: 03/19/1989"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Maxwell K. Subay\nCompany of employment: Aldarland Tech Company\nJob title: Software Developer\nJob description: Developing web applications and software\nCompany address: Main Street, Aldarland",
+      "player_representation": "Gijkhuvoot\n==========\nOtev Nhasg: Maxwell K. Subay\nGefhihvoot: Gefhihvoot Aldarlaans Tech\nTashoolehvoot: Hurghikhaavoot\nRukhkookhvoot: Dhoopootjoot weeboot dahvootvoot dahvhoot software\nOtev ghasv: Ghutoekhvoot Ghilik, Aldarlaans"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Maxwell K. Subay\nEmployer Name: Aldarland Tech Company\nJob title: Software Developer\nJob duties: Developing web applications and software\nSalary: 80000\nCompany address: Main Street, Aldarland",
+      "player_representation": "Ehlhvodhoot Yehgvoot\n====================\nTkedheghaehv Nhasg: Maxwell K. Subay\nVohkhuv Iymh: Ehlhvodhoot Aaldarlaanh\nOettoot Khufhoot: Lhootelhvodhoot Pohoodhoot\nEhlhivvooz: Dooshinjoon Dyvvehn Epplehkeshoonz oonth Sooftehveer\nVhehkahvegh: 80000\nVokhoolehvoot: Oiteev Meein, Aldarlaans"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Maxwell K. Subay\n\nAddress: 1234 Main Street, Aldarland\n\nRent price: 1000\n",
+      "player_representation": "Reyerhsevoot\n============\nNhasg Ovoog: Maxwell K. Subay\nOtev ghasv: 1234 Qooslhvoot Hhamd, Aldarlaand\nReyerhsevoot: 1000"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Haeleekh"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Vaarhkheen"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Tsohkhvoot"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Dhavdoolhvoot"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Otev nhasg..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Haevev omeekh?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Mekh ghaej, raitkheen!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Otev khomh teh vohnheh gekh pokhvuye/ulhgure/tsokhvyaa"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Vokhoolehvoot"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Otev gonh teh vokhvotyeh"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Otev ghasv..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Otev geh omeeh"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Haevev okeekh...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Vilooj"
+      }
+    ]
+  }
+}

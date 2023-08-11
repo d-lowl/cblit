@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Ralokimia",
+    "country_description": "Ralokimia is a desert planet with a hot climate. It is home to a diverse range of species, and its inhabitants are mostly humanoid aliens.",
+    "country_currency_name": "Ralokimiums",
+    "neighbour_country_name": "Takalor",
+    "people_description": "The people of Ralokimia are friendly and hospitable. They are curious and eager to explore new ideas and technologies.",
+    "language_name": "Ralokimic",
+    "language_description": "Ralokimic is a unique language with its own set of rules and syntax. Its vocabulary is vast and complex, and its speakers have a deep understanding of its nuances.",
+    "example_sentence": "Nim zolish takat.",
+    "example_sentence_translation": "We will explore together."
+  },
+  "quenta": {
+    "full_name": "Vinay Sharma",
+    "country": "Takalor",
+    "dob": "19/03/1992",
+    "employer": "Ralokimia Technologies",
+    "employer_address": "102 Main Street, Ralokimia",
+    "job_title": "Software Developer",
+    "job_duties": "Developing and maintaining software applications",
+    "salary": 75000,
+    "address": "19 Spring Street, Ralokimia",
+    "rent": 2000
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Takalor\nCountry of birth: Takalor\nFull name: Vinay Sharma\nDate of birth: 19/03/1992",
+      "player_representation": "Passport\n========\nCountry of issue: Takalor\nCountry of birth: Takalor\nFull name: Vinay Sharma\nDate of birth: 19/03/1992"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Vinay Sharma\nCompany of employment: Ralokimia Technologies\nJob title: Software Developer\nJob description: Developing and maintaining software applications\nCompany address: 102 Main Street, Ralokimia",
+      "player_representation": "Verk Permit\n===========\nFul Namoz: Vinay Sharma\nKompeni of empolment: Ralokimia Teknolojis\nJob teel: Sowftwar Developer\nJob descripen: Developing an mantaining sorfware aplications\nKompani adres: 102 Mai Strit, Ralokimia"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Vinay Sharma\nEmployer Name: Ralokimia Technologies\nJob title: Software Developer\nJob duties: Developing and maintaining software applications\nSalary: 75000\nCompany address: 102 Main Street, Ralokimia",
+      "player_representation": "Empolment Agremen\n=================\nEmpolment Nomen: Vinay Sharma\nEmpoler Namoz: Ralokimia Technologiz\nJob taitl: Sofwer Devloper\nJub dutise: Devlopig and meiningti software aplikesens\nSaleri: 75000\nKompania adres: 102 Main Street, Ralokimia"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Vinay Sharma\n\nAddress: 19 Spring Street, Ralokimia\n\nRent price: 2000\n",
+      "player_representation": "Vedinim Dyokumenten\n===================\nFul Namoz: Vinay Sharma\nAdres: 19 Spring Street, Ralokimia\nVedinim Pris: 2000"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Gezorz"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Vozen"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Pozsipart"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Dikentitet dyokumenten"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Miz namoz es ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Joz vorzorz?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Miz zorz vorz, vorz joz!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Mip rezion tu entor ez verk/stedi/tourizmen"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Imigresen ofis"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Ai wunt tu regester"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Mai adres es ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Miz duz not undirztend"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Vos es ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Hilp"
+      }
+    ]
+  }
+}

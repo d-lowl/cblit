@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Uzalik",
+    "country_description": "Uzalik is a small desert planet located in a distant galaxy. It is home to a species of small, bipedal creatures known as the Uza. They are peaceful and live in harmony with their environment.",
+    "country_currency_name": "Uza",
+    "neighbour_country_name": "Quelon",
+    "people_description": "The people of Uzalik are friendly and welcoming. They are known for their bright clothing and lively music.",
+    "language_name": "Uzalikian",
+    "language_description": "Uzalikian is a melodic language spoken by the Uza. It is a combination of spoken and written words.",
+    "example_sentence": "Yae bala huadi",
+    "example_sentence_translation": "We are all happy here"
+  },
+  "quenta": {
+    "full_name": "Shaniqua Johnson",
+    "country": "Quelon",
+    "dob": "01/15/1995",
+    "employer": "Uzalik Industries",
+    "employer_address": "45 Industrial Way, Uzalik, ABV 56789",
+    "job_title": "Junior System Administrator",
+    "job_duties": "Assisting in managing computer systems, networks, and applications",
+    "salary": 80000,
+    "address": "12 Bell Street, Uzalik, ABV 56789",
+    "rent": 1500
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Quelon\nCountry of birth: Quelon\nFull name: Shaniqua Johnson\nDate of birth: 01/15/1995",
+      "player_representation": "Passport\n========\nCountry of issue: Quelon\nCountry of birth: Quelon\nFull name: Shaniqua Johnson\nDate of birth: 01/15/1995"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Shaniqua Johnson\nCompany of employment: Uzalik Industries\nJob title: Junior System Administrator\nJob description: Assisting in managing computer systems, networks, and applications\nCompany address: 45 Industrial Way, Uzalik, ABV 56789",
+      "player_representation": "Efumhana eplo\n=============\nFulomhana: Shaniqua Johnson\nKompani eplo: Uazalikik Inustiris\nTitel eplo: Junio sistim administratore\nYenemhana yefu: Makaipaikin efumhana za omputaz, netwoka, ak eplikaziyonkah\nKompaniya efumhana: 45 Ukomijeri Way, Uzalik, ABV 56789"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Shaniqua Johnson\nEmployer Name: Uzalik Industries\nJob title: Junior System Administrator\nJob duties: Assisting in managing computer systems, networks, and applications\nSalary: 80000\nCompany address: 45 Industrial Way, Uzalik, ABV 56789",
+      "player_representation": "Komitiemendu Ekutibiru\n======================\nEfumhana eKomitia: Shaniqua Johnson\nKomitiemendu Name: Uzalik Industriya\nTitul eplo: Junior Emeksiyonik Ekeminitiri\nEkutibiru efumhana: Ekomitie kutenga computerikofisi, nimhwaritikofisi, na aplikasiyonikofisi\nSelari: 80000\nEkompinina efumhana: 45 Industrial Way, Uzalik, ABV 56789"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Shaniqua Johnson\n\nAddress: 12 Bell Street, Uzalik, ABV 56789\n\nRent price: 1500\n",
+      "player_representation": "Tatitiyiikitufu\n===============\nEfumhana Zemokhna Jozunani\nEfumhana wokai: 12 Bell Street, Uzalik, ABV 56789\nTufufa lukitita: 1500"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Huadi"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Bai tak"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Paspartu"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Ikonditifilmufu"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Efumhana ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Tahabrihadi?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Hahakri huadi, tahabrihadi!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Efumhana eziboru ezibire eplo/studi/turismu"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Omigraksiyonikofisi"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Efumhana ziboru domire"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Efumhana wokai ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Uzase meruhekdi"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Nahabi ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Kusuaha"
+      }
+    ]
+  }
+}

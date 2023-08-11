@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Ginamot",
+    "country_description": "Ginamot is a planet located in a distant galaxy and is home to a diverse culture of intelligent creatures.",
+    "country_currency_name": "Ginamote",
+    "neighbour_country_name": "Ezoron",
+    "people_description": "The people of Ginamot are friendly and welcoming. They are known for their creativity and intelligence.",
+    "language_name": "Ginamotek",
+    "language_description": "Ginamotek is a unique language with its own set of grammar and syntax. It uses a variety of sounds and vocalisations to communicate.",
+    "example_sentence": "Azsarok vok vikinzo.",
+    "example_sentence_translation": "The stars are shining brightly."
+  },
+  "quenta": {
+    "full_name": "Ketra Thistletoe",
+    "country": "Ezoron",
+    "dob": "12/09/1980",
+    "employer": "Ginamot Manufacturing",
+    "employer_address": "Ginamot High Street, Ginamot",
+    "job_title": "Robotics Engineer",
+    "job_duties": "Design, build, and maintain robotic systems for Ginamot Manufacturing.",
+    "salary": 200000,
+    "address": "Ginamot Suburb, Ginamot",
+    "rent": 1000
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Ezoron\nCountry of birth: Ezoron\nFull name: Ketra Thistletoe\nDate of birth: 12/09/1980",
+      "player_representation": "Passport\n========\nCountry of issue: Ezoron\nCountry of birth: Ezoron\nFull name: Ketra Thistletoe\nDate of birth: 12/09/1980"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Ketra Thistletoe\nCompany of employment: Ginamot Manufacturing\nJob title: Robotics Engineer\nJob description: Design, build, and maintain robotic systems for Ginamot Manufacturing.\nCompany address: Ginamot High Street, Ginamot",
+      "player_representation": "Vorzsok Permitot\n================\nOdzsikozs Ketra Thistletoe\nGinamot Manufacturingt Foskomporzsok\nVorzsok Tovot: Robotiketi Enginir\nGinamotom Fabrikatotam Voralasok: Olim, lomamosok, ek vorzsok robotom sistemamot.\nKompanizsadres: Ginamot Haystret, Ginamot"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Ketra Thistletoe\nEmployer Name: Ginamot Manufacturing\nJob title: Robotics Engineer\nJob duties: Design, build, and maintain robotic systems for Ginamot Manufacturing.\nSalary: 200000\nCompany address: Ginamot High Street, Ginamot",
+      "player_representation": "Empiloment Agrementzs\n=====================\nEmpiloment Namoszs: Ketra Thistletoezs\nEmpiloment Nomzs: Ginamot Manufacturingzs\nJobzs Titelot: Roboticss Enginneerzs\nDutizsom Jobzs: Desigont, buildom, and mantainom robotizsom systemzs for Ginamot Manufacturing.\nSalarizs: 200000\nKompanizsadres: Ginamot Higzs Stret, Ginamot"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Ketra Thistletoe\n\nAddress: Ginamot Suburb, Ginamot\n\nRent price: 1000\n",
+      "player_representation": "Tenansizs Akordom\n=================\nZsarifam: Ketra Tzsitlztau\nAdreszs: Ginamot Suborbs, Ginamot\nKirazs Prisizs: 1000"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Ovazsar"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Faratazsar"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Paszsorot"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Idintsi zsari"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Ozsikodam ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Ovazsar olim?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Ozsar mazsar, ovomus!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Ozsikodam kononorzs si entarotzs izs vorzsok/zsudiji/toerizsom"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Imigrasizsion otfizs"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Vilozsar regizsaroti"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Kokizsadres ozs ... "
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Ozsar nam otazsarstzsar"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Vamat olim ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Yelpom"
+      }
+    ]
+  }
+}

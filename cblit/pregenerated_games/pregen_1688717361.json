@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Vulcania",
+    "country_description": "Vulcania is a peaceful and prosperous planet, populated by highly advanced humanoid aliens. It is known for its strong, well-developed economy, and its advanced technology.",
+    "country_currency_name": "Vulcan Credits",
+    "neighbour_country_name": "Xandar",
+    "people_description": "The people of Vulcania are friendly and welcoming, and highly educated. They value knowledge and wisdom, and are known for their peaceful coexistence with their neighbors.",
+    "language_name": "Vulcanese",
+    "language_description": "Vulcanese is a highly complex language, with many rules and nuances. It is spoken fluently by the people of Vulcania and Xandar.",
+    "example_sentence": "Shok shal-tor kree.",
+    "example_sentence_translation": "Peace and prosperity be with you."
+  },
+  "quenta": {
+    "full_name": "T'Pol",
+    "country": "Xandar",
+    "dob": "01/21/2155",
+    "employer": "Vulcan High Command",
+    "employer_address": "Vulcania, Vulcania",
+    "job_title": "Diplomat-Engineer",
+    "job_duties": "Diplomatic and engineering missions on behalf of Vulcan High Command",
+    "salary": 150000,
+    "address": "Vulcania, Vulcania",
+    "rent": 2000
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Xandar\nCountry of birth: Xandar\nFull name: T'Pol\nDate of birth: 01/21/2155",
+      "player_representation": "Passport\n========\nCountry of issue: Xandar\nCountry of birth: Xandar\nFull name: T'Pol\nDate of birth: 01/21/2155"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: T'Pol\nCompany of employment: Vulcan High Command\nJob title: Diplomat-Engineer\nJob description: Diplomatic and engineering missions on behalf of Vulcan High Command\nCompany address: Vulcania, Vulcania",
+      "player_representation": "Koo-tor aar-tor nar-tor\n=======================\nTir-tor aar-tor: T'Pol\nKanpa-tor aar-tor vash-tor vun-tor\nKaht-tor aar-tor nar-tor nar-tor\nKoo-tor aar-tor nar-tor: Nee-tor vee-tor nar-tor moo-tor nar-tor nar-tor vun-tor hi-tor koo-tor\nVok-tor ar-tor: Vun-tor-tor vun-tor-tor, Vun-tor-tor vun-tor-tor"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: T'Pol\nEmployer Name: Vulcan High Command\nJob title: Diplomat-Engineer\nJob duties: Diplomatic and engineering missions on behalf of Vulcan High Command\nSalary: 150000\nCompany address: Vulcania, Vulcania",
+      "player_representation": "Fon-tor aar-tor nar-tor\n=======================\nNar-tor Fon-tor T'Pol\nFon-tor Saz-tor Vun-tor aar-tor nar-tor\nAar-tor fon-tor nar-tor\nTaa-tor aar-tor lee-tor aar-tor zhar-tor aar-tor nar-tor fen-tor aar-tor vul-tor yar-tor\nKor-tor aar-tor nar-tor ee-tor\nAar-tor tor-tor: Vulcania, Vulcania"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: T'Pol\n\nAddress: Vulcania, Vulcania\n\nRent price: 2000\n",
+      "player_representation": "Tos-tor shal-tor\n================\nTas-tor Pol-tor\nKor-tor: Vun-laniya, Vun-laniya\nKon-tor nar-tor dosh-tor: 2000"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Nam-tor"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Vahsha-tor"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Kaht-tor"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Sar-tor aar-tor"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Kor-tor ar-tor ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Ran-tor seh?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Kee-tor jin-tor, shok-hah!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Kor-tor aar-tor deh-tor an-tor akh-tor nar-tor aar-tor kah-tor naar-tor"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Aar-tor koo-tor nar-tor"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Kor-tor kah-tor tah-tor deh-tor al-tor"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Kor-tor ses-tor ar-tor ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Kun-tor moh-tor jaar-tor"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Kor-tor es ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Vun-tor"
+      }
+    ]
+  }
+}

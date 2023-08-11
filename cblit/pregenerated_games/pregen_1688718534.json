@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Xa-lok",
+    "country_description": "Xa-lok is a lush planet with diverse ecosystems and many resources. The inhabitants of Xa-lok are friendly and welcoming, and they have a strong sense of community.",
+    "country_currency_name": "Xal-ka",
+    "neighbour_country_name": "Hul-so",
+    "people_description": "The people of Xa-lok are a diverse and multicultural population. They have a strong sense of tradition and are very proud of their heritage.",
+    "language_name": "Xa-lokian",
+    "language_description": "Xa-lokian is a unique language, with its own unique grammar and phonology. It is a language of many nuances, and it is very difficult to learn.",
+    "example_sentence": "Fee-vok aro-dia.",
+    "example_sentence_translation": "The stars are bright."
+  },
+  "quenta": {
+    "full_name": "Hul-soan Xa-lokian",
+    "country": "Hul-so",
+    "dob": "12/25/1995",
+    "employer": "Xa-lokian Corp",
+    "employer_address": "123 Xa-lok Street",
+    "job_title": "Data Analyst",
+    "job_duties": "Analyzing and interpreting data",
+    "salary": 40000,
+    "address": "456 Xa-lok Street",
+    "rent": 900
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Hul-so\nCountry of birth: Hul-so\nFull name: Hul-soan Xa-lokian\nDate of birth: 12/25/1995",
+      "player_representation": "Passport\n========\nCountry of issue: Hul-so\nCountry of birth: Hul-so\nFull name: Hul-soan Xa-lokian\nDate of birth: 12/25/1995"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Hul-soan Xa-lokian\nCompany of employment: Xa-lokian Corp\nJob title: Data Analyst\nJob description: Analyzing and interpreting data\nCompany address: 123 Xa-lok Street",
+      "player_representation": "Gor-omi Adim\n============\nGor-anum Hul-soan Xa-lokian\nKelai-xana-xa: Xa-lokian Kora\nOt-vasa-gey: Dadai Unanio\nAite-teka: Kami-sema tome yuvi opa-kya\nLi-kab-sana ojar-ab: 123 Xa-lok-ib"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Hul-soan Xa-lokian\nEmployer Name: Xa-lokian Corp\nJob title: Data Analyst\nJob duties: Analyzing and interpreting data\nSalary: 40000\nCompany address: 123 Xa-lok Street",
+      "player_representation": "Ganai-yol-teka\n==============\nNabai-nam: Hul-soan Xa-lokian\nArai-nokai: Xa-lokian Kaplok\nEknai-yol: Dasa-yol-chok\nTol-tedo: Iyokai-tsa asme danai-yas\nSoray-teka: 40000\nSom-sho-kak: 123 Xa-lok Na-yol"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Hul-soan Xa-lokian\n\nAddress: 456 Xa-lok Street\n\nRent price: 900\n",
+      "player_representation": "Xene-lok-kab\n============\nGor-anum Hul-soan Xa-lokian\nOjar-ab: 456 Xa-lok kum-sir\nKuko-lok-yos: 900"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Gor-im"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Ya-neen"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Gor-omik"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Ril-alik"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Gor-anum ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Gor-enem?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "E-vom guk, ik-niem!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Gor-omi adim asme kasoa/sudai/yel-tume"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Jas-sana-lok"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Gor-omi kamam ojar-eb"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Gor-ilim ojar-ab ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "E-i nam zam-sana"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Gor-as ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Taa-le"
+      }
+    ]
+  }
+}

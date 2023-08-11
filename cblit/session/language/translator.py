@@ -119,6 +119,14 @@ class TranslatorSession(BaseSession):
             prompt=prompt,
         )
 
+    def save_translation(self, entry: ConlangEntry) -> None:
+        """Save a known translation.
+
+        Args:
+            entry (ConlangEntry): entry to save
+        """
+        self.memory.save_context({}, entry.to_dict())
+
     async def generate(self) -> Self:
         """Nothing to explicitly generate."""
         return self

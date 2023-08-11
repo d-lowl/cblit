@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Zamorra",
+    "country_description": "A distant planet populated by a civilization of advanced aliens.",
+    "country_currency_name": "Zamorrian Credits",
+    "neighbour_country_name": "Fizar",
+    "people_description": "The natives of Zamorra are tall, slender and have two antennae on their heads.",
+    "language_name": "Vonk",
+    "language_description": "Vonk is a tonal language with a complex grammar and many dialects.",
+    "example_sentence": "Vonk zakka duv.",
+    "example_sentence_translation": "The sky is blue."
+  },
+  "quenta": {
+    "full_name": "John Doe",
+    "country": "Fizar",
+    "dob": "01/01/1990",
+    "employer": "Zamorra Enterprises",
+    "employer_address": "123 Main Street, Zamorra",
+    "job_title": "Software Engineer",
+    "job_duties": "Software development and maintenance",
+    "salary": 60000,
+    "address": "456 Elm Street, Zamorra",
+    "rent": 2000
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Fizar\nCountry of birth: Fizar\nFull name: John Doe\nDate of birth: 01/01/1990",
+      "player_representation": "Passport\n========\nCountry of issue: Fizar\nCountry of birth: Fizar\nFull name: John Doe\nDate of birth: 01/01/1990"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: John Doe\nCompany of employment: Zamorra Enterprises\nJob title: Software Engineer\nJob description: Software development and maintenance\nCompany address: 123 Main Street, Zamorra",
+      "player_representation": "Vonk wurk permit\n================\nVonk Fule Name: John Doe\nVonk kompani of emploiment: Zamorra Entepraisis\nVonk jobtitel: Softeer Injineer\nVonk job diskripzun: software devlopment an mantainans\nVonk kompanio adreso: 123 Main Street, Zamorra"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: John Doe\nEmployer Name: Zamorra Enterprises\nJob title: Software Engineer\nJob duties: Software development and maintenance\nSalary: 60000\nCompany address: 123 Main Street, Zamorra",
+      "player_representation": "Vonk emploiment agrement\n========================\nVonk emploee namao: Jon Doe\nEmploer Naim: Zamorra Enterprizes\nVonk job til: Softvaur inginir\nVonk job dutiz: Softeer develompment and meintenans\nSalary: 60000 Vonk\nVonk kompaniyo adreso: 123 Main Street, Zamorra"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: John Doe\n\nAddress: 456 Elm Street, Zamorra\n\nRent price: 2000\n",
+      "player_representation": "Vonk tenansi agrement\n=====================\nVonk Fola Namao: John Doe\nVonk adreso: 456 Elm Street, Zamorra\nVonk rente preis: 2000"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Vonk mo"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Vonk uah"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Vonk pozsport"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Vonk oudentitiy dokuments"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Vonk namao ... "
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Vonk am tu?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Vonk ami sel, vonk yah!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Vonk reezon to entur is wurk/stai/turizam"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Vonk immigrezon ofis"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Vonk vont tu rigistir"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Vonk adreso is ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Vonk du nut anderstand"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Vonk tuo ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Vonk salb"
+      }
+    ]
+  }
+}

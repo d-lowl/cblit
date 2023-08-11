@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Neolonia",
+    "country_description": "A small country located on a distant planet, Neolonia is a peaceful place filled with lush vegetation and friendly people.",
+    "country_currency_name": "Neo-credits",
+    "neighbour_country_name": "Ionaria",
+    "people_description": "The people of Neolonia are warm and welcoming, and are known for their exceptional hospitality.",
+    "language_name": "Enozian",
+    "language_description": "Enozian is the native language of Neolonia and is spoken by all of its citizens. It is a complex language with many unique words and phrases.",
+    "example_sentence": "Kazok emmok zuwah.",
+    "example_sentence_translation": "We will be friends forever."
+  },
+  "quenta": {
+    "full_name": "Alice Ionarion",
+    "country": "Ionaria",
+    "dob": "01/01/1990",
+    "employer": "Neolonia Inc.",
+    "employer_address": "6 Main Street, Neolonia",
+    "job_title": "Software Developer",
+    "job_duties": "Developing software for Neolonia Inc.",
+    "salary": 55000,
+    "address": "7 Harbour Street, Neolonia",
+    "rent": 1200
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Ionaria\nCountry of birth: Ionaria\nFull name: Alice Ionarion\nDate of birth: 01/01/1990",
+      "player_representation": "Passport\n========\nCountry of issue: Ionaria\nCountry of birth: Ionaria\nFull name: Alice Ionarion\nDate of birth: 01/01/1990"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Alice Ionarion\nCompany of employment: Neolonia Inc.\nJob title: Software Developer\nJob description: Developing software for Neolonia Inc.\nCompany address: 6 Main Street, Neolonia",
+      "player_representation": "Doskon aknent\n=============\nAseon Ranno: Alice Ionarion\nGonohti amoik: Neolonia Inc.\nKorgonon oskonm: Nentmakon Fonodoskon\nLoqonko komri: Niqeonko jomnokko ommo Neolonia Inc.\nKomponin eesma: 6 Main Streett, Neolonia"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Alice Ionarion\nEmployer Name: Neolonia Inc.\nJob title: Software Developer\nJob duties: Developing software for Neolonia Inc.\nSalary: 55000\nCompany address: 6 Main Street, Neolonia",
+      "player_representation": "Hozikko tennil\n==============\nNemun Hozikko: Alice Ionarion\nTivonko tilko: Neolonia Inc.\nKoskon fusin: Suvat kotokto\nAknent nennes: Neolonia Inc. kon lokkon sudzokko\nKozimso: 55000\nKorfo elma: 6 Tuho Zeten, Noanonia"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Alice Ionarion\n\nAddress: 7 Harbour Street, Neolonia\n\nRent price: 1200\n",
+      "player_representation": "Ekelosso lannok\n===============\nLonnokka Ionarion: Alice\nRuon eesma: 7 Keerah Gedenn, Neolonia\nLannon sotra: 1200"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Tavon"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Konok"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Gonnem"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Rennokko gonnem"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Ruon een ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Tavon vokon?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Mevon tavon, zakon!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Ruon omba glaseen moter/konnen/tolosmeen"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Gomosin korfo"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Ruon onna enenken"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Ruon eesma ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Mevon glaseen omba"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Vinon ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Rofon"
+      }
+    ]
+  }
+}

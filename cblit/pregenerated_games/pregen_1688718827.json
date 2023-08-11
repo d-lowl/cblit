@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Xerpos",
+    "country_description": "Xerpos is a vibrant, tropical planet with vast jungles and exotic creatures. It is home to a variety of civilizations, some of which have been around since the dawn of time.",
+    "country_currency_name": "Xeran",
+    "neighbour_country_name": "Khoostan",
+    "people_description": "The people of Xerpos are friendly and welcoming, with a deep respect for nature and culture. They are hardworking and creative, and enjoy spending time outdoors.",
+    "language_name": "Khuvayish",
+    "language_description": "Khuvayish is the native language of Xerpos, a unique and complex language with many nuances and dialects. It is spoken by the majority of the population and is used in everyday life.",
+    "example_sentence": "Vuashikah khilayin.",
+    "example_sentence_translation": "Life is beautiful."
+  },
+  "quenta": {
+    "full_name": "Samira Sadeghi",
+    "country": "Khoostan",
+    "dob": "12/30/1998",
+    "employer": "Xerpos Solutions",
+    "employer_address": "1234 Main Street, Xerpos City, Xerpos",
+    "job_title": "Software Developer",
+    "job_duties": "Design and develop software solutions for Xerpos Solutions",
+    "salary": 85000,
+    "address": "123 Broadway Street, Xerpos City, Xerpos",
+    "rent": 1500
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Khoostan\nCountry of birth: Khoostan\nFull name: Samira Sadeghi\nDate of birth: 12/30/1998",
+      "player_representation": "Passport\n========\nCountry of issue: Khoostan\nCountry of birth: Khoostan\nFull name: Samira Sadeghi\nDate of birth: 12/30/1998"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Samira Sadeghi\nCompany of employment: Xerpos Solutions\nJob title: Software Developer\nJob description: Design and develop software solutions for Xerpos Solutions\nCompany address: 1234 Main Street, Xerpos City, Xerpos",
+      "player_representation": "Veskalvashik Pishil\n===================\nRaful Namin: Samira Sadeghi\nKhibethesxerposuva Khuthekha: Xerpos Solutions\nKhuvavishan Kalvashik: Khaokhishim Hokhayu\nVumaihahhik: Kodalvashik wa Vantalvashik Sakhvashik Futhokh Xerpos Solutions\nKompayhayu Chayhayu: 1234 Vayhayu Nimish, Xerpos Kavay, Xerpos"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Samira Sadeghi\nEmployer Name: Xerpos Solutions\nJob title: Software Developer\nJob duties: Design and develop software solutions for Xerpos Solutions\nSalary: 85000\nCompany address: 1234 Main Street, Xerpos City, Xerpos",
+      "player_representation": "Vuarishathayuva Khaokh\n======================\nVakhayi Vayir: Samira Sadeghi\nNokhayuva Vakhul: Xerpos Vamushay\nVuvikalvash: Shuvakhuokh Vaovakhayi\nKhezalvashik: Vukhayuva khaokh akh vuarathayuva teshilishev Xerpos Solutions\nKholvayush: 85000\nKompanayhayu adresu: 1234 Layhayu Pevaran, Xerpos Khayvad, Xerpos"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Samira Sadeghi\n\nAddress: 123 Broadway Street, Xerpos City, Xerpos\n\nRent price: 1500\n",
+      "player_representation": "Tavayir Kvashik\n===============\nHafayim nam: Samira Sadeghi\nChayhayu min: 123 Broadway Street, Xerpos City, Xerpos\nTavayir Kvashik: 1500"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Mudayin"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Yilayin"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Veskalvashik"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Kodetalvashik"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Ceday min ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Vuday nayi?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Vuday nayi kalay, luday!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Khayuva lokokh veskalvisham vuarish/balvayish/birvayish"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Kokhayuva Ofis"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Makhekh veskalveshkalvisham"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Chayhayu min ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Yelkhayu nayi"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Vuday ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Makhakh"
+      }
+    ]
+  }
+}

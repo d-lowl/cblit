@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Xenor",
+    "country_description": "Xenor is a distant planet located in a distant galaxy. It is home to a peaceful alien species.",
+    "country_currency_name": "Xenix",
+    "neighbour_country_name": "Anor",
+    "people_description": "The people of Xenor are friendly and welcoming. They are very open-minded and accepting of different cultures.",
+    "language_name": "Xenorish",
+    "language_description": "Xenorish is a language spoken on the planet Xenor. It is composed of a mix of spoken and written words, and includes many unique symbols.",
+    "example_sentence": "Xelorwir tikar thirso.",
+    "example_sentence_translation": "The weather is beautiful today."
+  },
+  "quenta": {
+    "full_name": "Reya Vysh",
+    "country": "Anor",
+    "dob": "05/10/1997",
+    "employer": "Xenor Corporation",
+    "employer_address": "Xenor Avenue, Xenor City",
+    "job_title": "Data Analyst",
+    "job_duties": "Analyze data for the company to make better decisions",
+    "salary": 45000,
+    "address": "4 Xenor Street, Xenor City",
+    "rent": 800
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Anor\nCountry of birth: Anor\nFull name: Reya Vysh\nDate of birth: 05/10/1997",
+      "player_representation": "Passport\n========\nCountry of issue: Anor\nCountry of birth: Anor\nFull name: Reya Vysh\nDate of birth: 05/10/1997"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Reya Vysh\nCompany of employment: Xenor Corporation\nJob title: Data Analyst\nJob description: Analyze data for the company to make better decisions\nCompany address: Xenor Avenue, Xenor City",
+      "player_representation": "Wirsho Kwirirwirsho\n===================\nKwirashirwirsho: Reya Vysh\nThuirsho wirsho Kwirirwa: Gwirirwa Xenorith\nTirsho Kwirirwirsho: Gwirirwirvuirsho Tirsho\nStuirsho thuirsho: Gwirwirvuirirwir thuirsho eirwirtei kwirirwirsho vuirirwir gwirshuirwirsho thuirsho wirsho wirnirwirsho\nWirshuthuirsho thuirsho: Gwirirwirshuthuirsho Xenor, Kwirirwirshuthuirsho Xenor"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Reya Vysh\nEmployer Name: Xenor Corporation\nJob title: Data Analyst\nJob duties: Analyze data for the company to make better decisions\nSalary: 45000\nCompany address: Xenor Avenue, Xenor City",
+      "player_representation": "Gwirvuirsho tiirsho\n===================\nThuirsho Kwirirsho: Reya Vysh\nVuirsho Thuirsho: Gwirwirvuirsho Xenor\nTirsho Gwirirsho: Gwirirsho Kwirwirsho\nEirwirsho tiirsho: Aiziriirwirsho rwirsho vuirirwir tei gwirvuirsho vuirirwir tei meizirwir shuirsho thuirsho\nKwirirsho: 45000\nGwirirwirvuirsho thuirsho: Xenorwirvuirsho, Xenorwirthuirsho"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Reya Vysh\n\nAddress: 4 Xenor Street, Xenor City\n\nRent price: 800\n",
+      "player_representation": "Kwirshuirvuirsho thuirsho\n=========================\nRiruhyirwiruth: Reya Vysh\nWirshuirvuirsho: 4 Xeworwirvuirsho Thiirsho, Xeworwirvuirsho Thirso\nWirshuirvuirsho thuirsho: 800"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Nerthu"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Firsho"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Kwoshirwir"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Kwoshirwiruth"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Nir thuirsho ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Nerthu thurvash?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Yarvash thurvasho, kertho!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Nir thuirsho vuirirwir eirvuirsho tei wirsho/tirsho/ziriirwirsho"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Gwirirwirvuirsho thuirsho"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Nir wiruirwir shuirvuirsho vuirirwir"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Nir wirshuirvuirsho thuirsho ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Yarvash thuirsho irwirvuirsho"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Nerthu ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Rwirvuirsho"
+      }
+    ]
+  }
+}

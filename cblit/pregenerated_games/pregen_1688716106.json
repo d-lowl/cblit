@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Tekonur",
+    "country_description": "Tekonur is a large and diverse country on an alien planet, with a variety of climates and landscapes. It is home to a variety of intelligent species and is known for its advanced technology.",
+    "country_currency_name": "Tekocredits",
+    "neighbour_country_name": "Dekonur",
+    "people_description": "The people of Tekonur are friendly and welcoming, and they have a deep respect for the environment and its inhabitants. They are also very creative and enjoy art and music.",
+    "language_name": "Tekonurian",
+    "language_description": "Tekonurian is a complex and intricate language with its own unique set of rules and grammar. It is spoken by the people of Tekonur and is often used for scientific and technological communication.",
+    "example_sentence": "Gelif bokkon tishoten",
+    "example_sentence_translation": "The sun is shining brightly"
+  },
+  "quenta": {
+    "full_name": "Mikal Luthson",
+    "country": "Dekonur",
+    "dob": "07/17/1995",
+    "employer": "Tekonur Technologies Ltd.",
+    "employer_address": "Tekonur Street, 5, Tekonur, 99101",
+    "job_title": "Software Engineer",
+    "job_duties": "Design, develop, test, and maintain software applications",
+    "salary": 80000,
+    "address": "Tekonur Street, 6, Tekonur, 99101",
+    "rent": 3000
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Dekonur\nCountry of birth: Dekonur\nFull name: Mikal Luthson\nDate of birth: 07/17/1995",
+      "player_representation": "Passport\n========\nCountry of issue: Dekonur\nCountry of birth: Dekonur\nFull name: Mikal Luthson\nDate of birth: 07/17/1995"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Mikal Luthson\nCompany of employment: Tekonur Technologies Ltd.\nJob title: Software Engineer\nJob description: Design, develop, test, and maintain software applications\nCompany address: Tekonur Street, 5, Tekonur, 99101",
+      "player_representation": "Tefonat ugfon yomu\n==================\nGonim Luthson: Ugfon kara\nYomu ugfon Tefonur Tehniwa Ltd.\nYomu ugfon: Fomuwurug ugfonuw\nUfonat vuson: Seyun, ziduwom, tefonat, nug yomu zufon seyunom\nTilugfon: Ulbir Tekonur, 5, Tekonur, 99101"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Mikal Luthson\nEmployer Name: Tekonur Technologies Ltd.\nJob title: Software Engineer\nJob duties: Design, develop, test, and maintain software applications\nSalary: 80000\nCompany address: Tekonur Street, 5, Tekonur, 99101",
+      "player_representation": "Ugfon uonit zulgim\n==================\nUgfon uonit zulgim: Mikal Luthson\nUgfon Yomu: Tekonur Tekonurian Ltd.\nUgfon nulhiz: Uonaon fonahiz\nUgfon mokul: Pindoth yomu, tiswomu, mizgith, uonit tefonat pomurim\nRifoti: 80000\nUgfon ulbir: Tefonat Niwim, 5, Tefonat, 99101"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Mikal Luthson\n\nAddress: Tekonur Street, 6, Tekonur, 99101\n\nRent price: 3000\n",
+      "player_representation": "Tefonat tafal\n=============\nUgfon namra: Mikal Luthson\nUgfon: Ulbir Tekonur, 6, Tekonur, 99101\nFonat tafal: 3000"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Gelif"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Tirivar"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Tefonat"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Tefonat ulbir"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Ugfon kara ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Sarom karat?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Tirom tharit, povar!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Ugfon komaz daran tuwir yomu/uolir/tebil"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Ugfon ziduw"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Ugfon komaz daran zimab"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Ugfon ziduwes ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Nem dulenar"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Kerat ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Hofed"
+      }
+    ]
+  }
+}

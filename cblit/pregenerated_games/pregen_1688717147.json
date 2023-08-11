@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Vulcania",
+    "country_description": "A peaceful nation situated on a lush green planet with majestic mountains and stunning views.",
+    "country_currency_name": "Vulcanian Credits",
+    "neighbour_country_name": "Vesperia",
+    "people_description": "The people of Vulcania are friendly and welcoming. They pride themselves in their strong sense of community.",
+    "language_name": "Vulcanian",
+    "language_description": "Vulcanian is a unique language with complex grammar and a range of different dialects.",
+    "example_sentence": "Gurit daleth mai.",
+    "example_sentence_translation": "The stars are shining."
+  },
+  "quenta": {
+    "full_name": "John Smith",
+    "country": "Vesperia",
+    "dob": "1/1/1989",
+    "employer": "Vulcania Robotics",
+    "employer_address": "123 Main St, Vulcania, XX 11111",
+    "job_title": "Robotics Engineer",
+    "job_duties": "Design, develop, and test robotic systems for industrial applications.",
+    "salary": 120000,
+    "address": "456 Broadway Ave, Vulcania, XX 11111",
+    "rent": 3000
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Vesperia\nCountry of birth: Vesperia\nFull name: John Smith\nDate of birth: 1/1/1989",
+      "player_representation": "Passport\n========\nCountry of issue: Vesperia\nCountry of birth: Vesperia\nFull name: John Smith\nDate of birth: 1/1/1989"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: John Smith\nCompany of employment: Vulcania Robotics\nJob title: Robotics Engineer\nJob description: Design, develop, and test robotic systems for industrial applications.\nCompany address: 123 Main St, Vulcania, XX 11111",
+      "player_representation": "Vor'ukh K'heh\n=============\nT'nam t'vash: John Smith'e\nK'el'lek'a Sh'fashan: Sh'vulchana Robatik'a\nK'el'lek'a N'elhik: Vor'ukh F'ashh\nVesh'lok'esh'a: P'lek'el'a, J'khel'a, Vor Sh'fashan K'heh Vor'ukh'a Kr'esh'ya Fek'lokh'a.\nVesh'e kom'panyah: 123 Meh'in St, Vulk'aniah, XX 11111"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: John Smith\nEmployer Name: Vulcania Robotics\nJob title: Robotics Engineer\nJob duties: Design, develop, and test robotic systems for industrial applications.\nSalary: 120000\nCompany address: 123 Main St, Vulcania, XX 11111",
+      "player_representation": "K'el'lek'a Sh'fashan\n====================\nT'lan K'heh: John Smith\nSh'vashan A'kh'lem: Vulcania Robotics\nK'heh Kh'elek: Rob'yotik'a Sh'fashan\nK'avakh Sahshan: D'ekhkhon, Sh'fashan, vakh t'uzhukh K'lek'ashan vakh Vor'ukh K'heh vakh Ya'tor.\nA'vashan: 120000\nKor'vukh vashar: 123 Medh'e St, Vulcania, XX 11111"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: John Smith\n\nAddress: 456 Broadway Ave, Vulcania, XX 11111\n\nRent price: 3000\n",
+      "player_representation": "K'vashan ch'vashan\n==================\nT'nam Lish'k: Meh'e Shmit\nMeh'e vashar y'shah: 456 Broadway Ave, Vulcania, XX 11111\nK'vashan z'tar: 3000"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "K'hantu"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Ved'hok"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Sish'ar"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Veshik'ran"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Meh'e t'nam ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "K'hetah t'enon?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Meh'et lu'kut, voh'eh!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Meh'e rinaya sh'hazh meh'e vor'ukh/sh'bosh/mish'rak"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "K'tarra sh'vashan"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Meh'e vashar sh'khut"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Meh'e vashar y'shah ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Meh'et vohor sh'ha"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Kesha t'nam ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Ya'tor"
+      }
+    ]
+  }
+}

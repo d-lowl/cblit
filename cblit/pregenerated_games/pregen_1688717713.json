@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Venturian",
+    "country_description": "Venturian is a lush, green planet, with rolling hills and crystal clear oceans. The air is fresh and the inhabitants are kind and welcoming.",
+    "country_currency_name": "Venturian Gold",
+    "neighbour_country_name": "Rigelian",
+    "people_description": "The people of Venturian are of various races, with diverse backgrounds and cultures. They are friendly and welcoming to visitors.",
+    "language_name": "Venturian-ese",
+    "language_description": "Venturian-ese is a unique language, with its own alphabet and rules. It is difficult to learn, but very rewarding once you understand it.",
+    "example_sentence": "N\u00f3i le y\u00e1u",
+    "example_sentence_translation": "Speak to me"
+  },
+  "quenta": {
+    "full_name": "Arik Zatul",
+    "country": "Rigelian",
+    "dob": "03-04-2000",
+    "employer": "Venturian Robotics",
+    "employer_address": "Pelican Rd, Venturian, 83392",
+    "job_title": "Robotics Engineer",
+    "job_duties": "Design and maintain robotic systems for Venturian Robotics",
+    "salary": 80000,
+    "address": "942 Glaucus St, Venturian, 83391",
+    "rent": 2500
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Rigelian\nCountry of birth: Rigelian\nFull name: Arik Zatul\nDate of birth: 03-04-2000",
+      "player_representation": "Passport\n========\nCountry of issue: Rigelian\nCountry of birth: Rigelian\nFull name: Arik Zatul\nDate of birth: 03-04-2000"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Arik Zatul\nCompany of employment: Venturian Robotics\nJob title: Robotics Engineer\nJob description: Design and maintain robotic systems for Venturian Robotics\nCompany address: Pelican Rd, Venturian, 83392",
+      "player_representation": "Permit\u00f3 n\u00e1 trabaj\u00e1\n==================\nFul N\u00e1m: Arik Zatul\u00f3\nCompa\u00f1\u00eda n\u00e1 emplego: Rob\u00f3tica Venturian\nT\u00edtul\u00f3 n\u00e1 trabaj\u00e1: Ingenier\u00ed\u00e1 n\u00e1 Rob\u00f3tica\nDescripci\u00f3n d'empleu: Dise\u00f1\u00e1 y mant\u00e9n sistemas rob\u00f3ticos pa Venturian Robotics\nAdr\u00e9s compa\u00f1\u00ed\u00e1: Pelikan Rd, Venturian, 83392"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Arik Zatul\nEmployer Name: Venturian Robotics\nJob title: Robotics Engineer\nJob duties: Design and maintain robotic systems for Venturian Robotics\nSalary: 80000\nCompany address: Pelican Rd, Venturian, 83392",
+      "player_representation": "Kontr\u00e1t\u00e1 n\u00e1 emple\u00f3\n==================\nNam\u00e1 n\u00e1 emplead\u00f3: Arik Zatul\nNombr\u00e9 n\u00e1 Emplead\u00f3r: Robotic\u00f3s Venturian\nTitul\u00f3 n\u00e1 trabaj\u00e1: Ingenier\u00f3 n\u00e1 Rob\u00f3tica\nDeberes n\u00e1 trabaj\u00e1: Dise\u00f1\u00e1 i manten\u00ed sistem\u00e1 rob\u00f3tich\u00e1 p\u00e1 Venturian Robotics\nSalar\u00edo: 80000\nAdress\u00f3 n\u00e1 compa\u00f1i\u00e1: Carrera n\u00e1 Pelican, Venturian, 83392"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Arik Zatul\n\nAddress: 942 Glaucus St, Venturian, 83391\n\nRent price: 2500\n",
+      "player_representation": "Acu\u00e9rdo n\u00e1 arrendamiento\n========================\nFol nam: Arik Zatul\u00f3\nAddr\u00e9s: 942 Glaucus St, Venturian, 83391\nPr\u00e9eci\u00f3 d\u00e1 arrendamiento: 2500"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Saw\u00f3o"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Tch\u00e1a'"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Pasport\u00f3"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Dokument\u00f3 ident\u00e1"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "M\u00e9\u00e9 nam n\u00ed..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "K\u00e1m ch\u00e8\u00e8?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Ch\u00ed\u00ed b\u00e2\u00e2 y\u00e0\u00e0, d\u00e1\u00e2!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "M\u00e9\u00e9 raz\u00f3n n\u00e1 entra n\u00ed trabaj\u00e1/estudi\u00e1/turism\u00f3"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Oficina n\u00e1 inmigraci\u00f3n"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "M\u00e9\u00e9 qi\u00e9r registr\u00e1"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "M\u00e9\u00e9 addr\u00e9s n\u00ed..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Ch\u00ed\u00ed n\u00e9\u00e9 entiend\u00ed\u00ed"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "K\u00e1m n\u00ed...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Y\u00e1udu"
+      }
+    ]
+  }
+}

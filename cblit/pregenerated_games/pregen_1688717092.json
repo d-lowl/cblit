@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Vorrax",
+    "country_description": "Vorrax is an ancient kingdom located on a distant planet in a faraway galaxy. The kingdom is rich in natural resources and is renowned for its stunning mountain ranges, lush forests and vast deserts.",
+    "country_currency_name": "Vorracoin",
+    "neighbour_country_name": "Tessiro",
+    "people_description": "The people of Vorrax are a peaceful and welcoming people, who are known for their hospitality and kindness.",
+    "language_name": "Vorranese",
+    "language_description": "Vorranese is a complex and unique language composed of a combination of spoken and written components, making it a difficult language to learn.",
+    "example_sentence": "Vian shik mekkia",
+    "example_sentence_translation": "We are friends"
+  },
+  "quenta": {
+    "full_name": "Mia Anderson",
+    "country": "Tessiro",
+    "dob": "09/04/1998",
+    "employer": "Vorrax Engineering",
+    "employer_address": "322 Star Street, Vorrax",
+    "job_title": "Software Engineer",
+    "job_duties": "Developing and maintaining software applications for Vorrax Engineering",
+    "salary": 80000,
+    "address": "1767 Crimson Lane, Vorrax",
+    "rent": 2500
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Tessiro\nCountry of birth: Tessiro\nFull name: Mia Anderson\nDate of birth: 09/04/1998",
+      "player_representation": "Passport\n========\nCountry of issue: Tessiro\nCountry of birth: Tessiro\nFull name: Mia Anderson\nDate of birth: 09/04/1998"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Mia Anderson\nCompany of employment: Vorrax Engineering\nJob title: Software Engineer\nJob description: Developing and maintaining software applications for Vorrax Engineering\nCompany address: 322 Star Street, Vorrax",
+      "player_representation": "Keremehikirce\n=============\nMikka Mian'nal: Mia Anderson\nIhmehkirce kom Vorrax Engineering\nKermehikhie: Ohmehkia Illehkeke\nKihmehkeo lehkirce: Vorrax Engineering geehmina kenehkeo veekeo efihshehkeo ahnihkeo\nEkmeikia: 322 Tekkal'nal Seikka, Vorrax"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Mia Anderson\nEmployer Name: Vorrax Engineering\nJob title: Software Engineer\nJob duties: Developing and maintaining software applications for Vorrax Engineering\nSalary: 80000\nCompany address: 322 Star Street, Vorrax",
+      "player_representation": "Vorikseo ihmehkia\n=================\nOikmeikia Mia Anderson\nIhmehkia Keremmeikia: Vorrax Engineering\nMuhkseo ihmehkia: Aiomtahikum Geehkia\nKuccehko: Vorrax Sihmaeo mehgir rahcehk uda klehseo ihmehkia\nKemmakseo: 80000\nNeivorikseo: 322 Ikkiostarra Ihmette, Vorrax"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Mia Anderson\n\nAddress: 1767 Crimson Lane, Vorrax\n\nRent price: 2500\n",
+      "player_representation": "Mekkia dekkifal'nal\n===================\nFenaral mekkia: Mia Anderson\nVekkia tekkal'nal: 1767 Khelosso Kintra, Vorrax\nKakka dekkifal'nal: 2500"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Tah'kor"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Lah'tar"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Hikirce"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Ikad'rij mekkia"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Shimar'nal yal"
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Kanhir nai?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Anhir nai shek, karhir sha!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Amehikirce ane ane mekkia kret vian"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Keremmeikia"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Zemehkia kret vian"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Vekkia tekkal'nal ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Mekkia mehikirce kret"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Vas nai ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Rokhir"
+      }
+    ]
+  }
+}

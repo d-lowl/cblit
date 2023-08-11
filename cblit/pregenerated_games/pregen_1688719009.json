@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Klutnog",
+    "country_description": "A small planet located in a distant galaxy, Klutnog is home to a diverse population of aliens with many different cultures and languages.",
+    "country_currency_name": "Klutnium",
+    "neighbour_country_name": "Tebirok",
+    "people_description": "The people of Klutnog are friendly and welcoming to foreigners, and are very protective of their culture and language.",
+    "language_name": "Klutnese",
+    "language_description": "Klutnese is a unique language spoken only on Klutnog. It is composed of both spoken and written components, and is based on the ancient Klutnogian dialect.",
+    "example_sentence": "Gud otni suklak!",
+    "example_sentence_translation": "Hello everyone!"
+  },
+  "quenta": {
+    "full_name": "Kazam Mjorkin",
+    "country": "Tebirok",
+    "dob": "1/12/1979",
+    "employer": "Klutnog Corporation",
+    "employer_address": "100 Main Street, Klutnog",
+    "job_title": "Software Engineer",
+    "job_duties": "Developing software applications, web applications and databases for the Corporation",
+    "salary": 80000,
+    "address": "21 North Street, Klutnog",
+    "rent": 2000
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Tebirok\nCountry of birth: Tebirok\nFull name: Kazam Mjorkin\nDate of birth: 1/12/1979",
+      "player_representation": "Passport\n========\nCountry of issue: Tebirok\nCountry of birth: Tebirok\nFull name: Kazam Mjorkin\nDate of birth: 1/12/1979"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Kazam Mjorkin\nCompany of employment: Klutnog Corporation\nJob title: Software Engineer\nJob description: Developing software applications, web applications and databases for the Corporation\nCompany address: 100 Main Street, Klutnog",
+      "player_representation": "Pemeyutan Pekerjaan!\n====================\nFul nami: Kazam Mjorkin\nKompeni Layutan: Klutnog Koperasi\nTajuk Pekerjaan: Jurutera Perisian\nKeterangan Pekerjaan: Membangunkan aplikasi perisian, aplikasi web dan pangkalan data untuk Syarikat\nAlamat suklakpanya: 100 Jalan Utama, Klutnog"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Kazam Mjorkin\nEmployer Name: Klutnog Corporation\nJob title: Software Engineer\nJob duties: Developing software applications, web applications and databases for the Corporation\nSalary: 80000\nCompany address: 100 Main Street, Klutnog",
+      "player_representation": "Perjanjian Pekerjaan!\n=====================\nNama Pekerja: Kazam Mjorkin\nNama Pemeyut: Korporasi Klutnog!\nJawatan: Jurutera Perisian!\nTugasan Pekerjaan: Menghasilkan aplikasi perisian, aplikasi web dan pangkalan data bagi Korporasi\nGaji: 80000\nAlamat perusahaan: 100 Main Street, Klutnog"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Kazam Mjorkin\n\nAddress: 21 North Street, Klutnog\n\nRent price: 2000\n",
+      "player_representation": "Persetujuan Sewa!\n=================\nNami fuol: Kazam Mjorkin\nAlamatku keo: 21 Jalan Utara, Klutnog\nHarga Sewa: 2000"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Gud otni suklak!"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Au revoir!"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Pasportu!"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Dokumenden identiti!"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Nami keo ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Kwak o kli?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Klum o e, arai kwak!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Soi rujukan nok masuk adelah pekerjaan/pengajaran/pelancongan"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Pejabat Imigresen!"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Saya mahu mendaftar"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Alamatku keo ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Klei o boklum!"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Kwes om ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Tolong!"
+      }
+    ]
+  }
+}

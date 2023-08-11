@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "The Kingdom of Ziora",
+    "country_description": "A small kingdom located on a lush planet filled with lush valleys and towering mountains. The kingdom is ruled by a powerful monarch and is known for its advanced technology.",
+    "country_currency_name": "Zioran Credits",
+    "neighbour_country_name": "The Empire of Valron",
+    "people_description": "The people of Ziora are proud and strong, and they value loyalty and respect for their rulers. They are also known for their enthusiasm for learning and exploration.",
+    "language_name": "Ziosh",
+    "language_description": "Ziosh is a tonal language with a complex grammar and a wide range of dialects. It is the official language of Ziora, and is spoken by the majority of its citizens.",
+    "example_sentence": "Kiokan lek ziosho.",
+    "example_sentence_translation": "I am learning Ziosh."
+  },
+  "quenta": {
+    "full_name": "Jia Huang",
+    "country": "The Empire of Valron",
+    "dob": "August 17th, 1985",
+    "employer": "Ziora Industries",
+    "employer_address": "42 Market Street, Ziora City",
+    "job_title": "Software Engineer",
+    "job_duties": "Developing software applications for the company",
+    "salary": 80000,
+    "address": "8 Elm Street, Ziora City",
+    "rent": 1200
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: The Empire of Valron\nCountry of birth: The Empire of Valron\nFull name: Jia Huang\nDate of birth: August 17th, 1985",
+      "player_representation": "Passport\n========\nCountry of issue: The Empire of Valron\nCountry of birth: The Empire of Valron\nFull name: Jia Huang\nDate of birth: August 17th, 1985"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Jia Huang\nCompany of employment: Ziora Industries\nJob title: Software Engineer\nJob description: Developing software applications for the company\nCompany address: 42 Market Street, Ziora City",
+      "player_representation": "Yerokom Zokok\n=============\nKiokan biz: Jia Huang\nNuzikom om Zioro Kizozivom\nVomnok zomzok: Kizokovuon Uenzogev\nOzimozi Yodokom: Omedokom Ufumuon Vozezokom om Kizovuon\nKiokan zikon zomzov: 42 Zomzovuon Kizomi, Zioron Kizomi"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Jia Huang\nEmployer Name: Ziora Industries\nJob title: Software Engineer\nJob duties: Developing software applications for the company\nSalary: 80000\nCompany address: 42 Market Street, Ziora City",
+      "player_representation": "Kizovuon Kuzozom\n================\nKizomvuon Nuzok: Jia Huang\nKomuzov Ziorom: Ziorom Kizozom\nSokozom Vuonvozom: Kuzom Yuvuon\nTuzoliz Kuzomom: Azezof Zokokom Yezomzom vu Kizozom\nKazomu: 80000\nKevazom zikon: 42 Zikon Kizom, Zioshuon Ziozom"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Jia Huang\n\nAddress: 8 Elm Street, Ziora City\n\nRent price: 1200\n",
+      "player_representation": "Kezivon omzokim\n===============\nKiokan noson: Jia Huang\nKiokan zikon biz: 8 Elemu Zikon, Ziora Kizov\nKezivon bikor: 1200"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Korokol"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Ookokor"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Xokokom"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Kezivon zozokem"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Kiokan biz ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Kokolou esh?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Oogekou mokou, kokolouou!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Kiokan biz cixorv voit komok/kezuvoi/kozai"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Kizovuon omzozem"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Kiomok biz cixorv voit koziav"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Kiokan zikon biz ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Kiokan nom niokou"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Kish ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Jodok"
+      }
+    ]
+  }
+}

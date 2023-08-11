@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Yorland",
+    "country_description": "Yorland is a distant planet located in the outer reaches of the universe, with a unique culture and language.",
+    "country_currency_name": "Yorcoins",
+    "neighbour_country_name": "Ventadorn",
+    "people_description": "The people of Yorland are friendly, open-minded, and curious about the universe.",
+    "language_name": "Yorlani",
+    "language_description": "Yorlani is a unique language spoken by the inhabitants of Yorland. It has a complex syntax and interesting sound system.",
+    "example_sentence": "Yorlani gazdabar nyayor.",
+    "example_sentence_translation": "The universe is infinite."
+  },
+  "quenta": {
+    "full_name": "Armando Ventadorn",
+    "country": "Ventadorn",
+    "dob": "May 15, 1995",
+    "employer": "Yorland Corporation",
+    "employer_address": "123 Main Street, Yorland",
+    "job_title": "Software Engineer",
+    "job_duties": "Developing, testing, and maintaining software applications",
+    "salary": 100000,
+    "address": "456 Main Street, Yorland",
+    "rent": 3000
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Ventadorn\nCountry of birth: Ventadorn\nFull name: Armando Ventadorn\nDate of birth: May 15, 1995",
+      "player_representation": "Passport\n========\nCountry of issue: Ventadorn\nCountry of birth: Ventadorn\nFull name: Armando Ventadorn\nDate of birth: May 15, 1995"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Armando Ventadorn\nCompany of employment: Yorland Corporation\nJob title: Software Engineer\nJob description: Developing, testing, and maintaining software applications\nCompany address: 123 Main Street, Yorland",
+      "player_representation": "Lisensa Werku\n=============\nUmi namai yal: Armando Ventadorn\nKompani ka werku: Yorland Kompanisi\nTitulo Trabou: Ingineer Software\nDeskripsi Werku: Developim, testim, na manteni aplikasi software\nAdres kumpanyen: 123 Main Street, Yorland"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Armando Ventadorn\nEmployer Name: Yorland Corporation\nJob title: Software Engineer\nJob duties: Developing, testing, and maintaining software applications\nSalary: 100000\nCompany address: 123 Main Street, Yorland",
+      "player_representation": "Agresen Emplemen\n================\nNoma Empleyado: Armando Ventadorn\nNam Empleer: Korporasi Yorland\nTitulo Werku: Inginer Software\nWerku Deber: Desaroyando, testiando, y manteniendo aplikasen software\nSalari: 100000\nAdres Kompeni: 123 Main Street, Yorland"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Armando Ventadorn\n\nAddress: 456 Main Street, Yorland\n\nRent price: 3000\n",
+      "player_representation": "Kontrak Sewa\n============\nNamu Fuli: Armando Ventadorn\nAdres: 456 Main Street, Yorland\nHarga sewa: 3000"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Yalosi"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Adarani"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Pasaporta"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Dokumen Identitet"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Umi namai yal..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Kanae kalau?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Umi takau, lokam!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Umi rasona enta yal werku/studi/turizma"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Ofisa Imigresen"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Umi voli regista"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Umi adres yal..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Umi ma yamainen"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Waki yal ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Kudu"
+      }
+    ]
+  }
+}

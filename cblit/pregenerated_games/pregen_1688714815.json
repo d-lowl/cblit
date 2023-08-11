@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Xuqim",
+    "country_description": "A small country situated on a lush and mountainous planet, Xuqim is home to a peaceful and welcoming people who are known for their hospitality and love of the arts.",
+    "country_currency_name": "Xuqim Coins",
+    "neighbour_country_name": "Alzat",
+    "people_description": "The people of Xuqim are a diverse and colourful mix of cultures and backgrounds. They are known for their generous and compassionate nature, and are very proud of their rich and vibrant history.",
+    "language_name": "Xuqimian",
+    "language_description": "Xuqimian is a unique language that has evolved over centuries of living in a mountainous environment. It combines elements of other languages, and is known for its complex grammar and words that express subtle shades of meaning.",
+    "example_sentence": "Kamtam zuqumu.",
+    "example_sentence_translation": "I will take care of it."
+  },
+  "quenta": {
+    "full_name": "Nora Palak",
+    "country": "Alzat",
+    "dob": "09/10/1992",
+    "employer": "Xuqim Energy Solutions",
+    "employer_address": "20 Sunlight Street, Xuqim",
+    "job_title": "Software Engineer",
+    "job_duties": "Design and develop web-based software systems",
+    "salary": 160000,
+    "address": "45 Starfall Avenue, Xuqim",
+    "rent": 2500
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Alzat\nCountry of birth: Alzat\nFull name: Nora Palak\nDate of birth: 09/10/1992",
+      "player_representation": "Passport\n========\nCountry of issue: Alzat\nCountry of birth: Alzat\nFull name: Nora Palak\nDate of birth: 09/10/1992"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Nora Palak\nCompany of employment: Xuqim Energy Solutions\nJob title: Software Engineer\nJob description: Design and develop web-based software systems\nCompany address: 20 Sunlight Street, Xuqim",
+      "player_representation": "Xuqimuqimu qimqimuqim\n=====================\nXuqimuqimu Palaku Nora\nXuqimuqimu qimqimuqim qimuqimqim: Xuqim Energy Solutions\nXuqimuqimqim qimuqimqimqim: Qimuqimqimuqimuqim\nXuqimuqimu qimqimuqimqimuqimuqim qimqimqim qimuqimuqimuqim: Qimuqimqim qimuqimqim qimuqimqimqimuqimuqim qimqimuqim qimqimuqim\nXuqimuqimu qimuqimqim: 20 Xuqimuqimqimqim, Xuqim"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Nora Palak\nEmployer Name: Xuqim Energy Solutions\nJob title: Software Engineer\nJob duties: Design and develop web-based software systems\nSalary: 160000\nCompany address: 20 Sunlight Street, Xuqim",
+      "player_representation": "Xuqimuqimu qimuqimuqim\n======================\nXuqimuqimu qimuqimuqim: Nora Palak\nXuqimuqimu qimuqimuqim: Xuqimu Energimu Sosolusimu\nXuqimuqimu qimqimuqimu: Qimuqimuqimuqimu qimuqimuqim\nXuqimuqimu qeqimuqim: Xeqimuqimuqim qimuqimuqim qimuqimuqim qimqimuqim qimuqimqim qimuqimuqim\nXuqimuqimu qimuqimuqimqim\nXuqimuqimu qimuqimqim: 20 Xuqimuqimu qimuqimqim Xuqimuqimu, Xuqim"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Nora Palak\n\nAddress: 45 Starfall Avenue, Xuqim\n\nRent price: 2500\n",
+      "player_representation": "Xuqimuqimu qimuqimqimqim\n========================\nXuqimuqimu: Nora Palak\nXuqimuqimu qimuqimqim: 45 Xuqimuqimu Xuqimuqimu, Xuqim\nXuqimuqimu qimuqimqimqim 2500"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Xuqimu"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Xuqimuq"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Xuqimuqim"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Xuqimuqimqim"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Xuqimuqimu ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Xuqimuqimu?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Kukamuqimu, qamtamu!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Xuqimuqimu qaxuqimuqim qimuqimqim qimuqimuqim"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Xuqimuqimu qimuqimqim"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Xuqimuqimu qimuqimqim qimuqimuqim"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Xuqimuqimu qimuqimqim ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Qimuqimuqimu qimuqimuqimqimu"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Xuqimuqimu qimu ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Giqimuqimu"
+      }
+    ]
+  }
+}

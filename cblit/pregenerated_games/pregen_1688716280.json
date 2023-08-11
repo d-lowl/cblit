@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Voporix",
+    "country_description": "Voporix is a utopian planet with lush green jungles and towering mountains. Its inhabitants are friendly and welcoming to visitors from all over the universe.",
+    "country_currency_name": "Voporix Credits",
+    "neighbour_country_name": "Tiracora",
+    "people_description": "The people of Voporix are a unique race of anthropomorphic foxes. They are a peaceful people, preferring diplomacy to conflict.",
+    "language_name": "Voporixian",
+    "language_description": "Voporixian is a melodic language with a unique tonal system. It is an ancient language, spoken by the inhabitants of Voporix for thousands of years.",
+    "example_sentence": "Larvem em voporixian",
+    "example_sentence_translation": "I speak Voporixian"
+  },
+  "quenta": {
+    "full_name": "Tiracora Voporix",
+    "country": "Voporix",
+    "dob": "January 11th, 1990",
+    "employer": "Voporix Corporation",
+    "employer_address": "6001 Voporix Street, Voporix, 90210",
+    "job_title": "Software Developer",
+    "job_duties": "Developing and maintaining software applications for the Voporix Corporation",
+    "salary": 60000,
+    "address": "5390 Voporix Street, Voporix, 90210",
+    "rent": 2500
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Voporix\nCountry of birth: Voporix\nFull name: Tiracora Voporix\nDate of birth: January 11th, 1990",
+      "player_representation": "Passport\n========\nCountry of issue: Voporix\nCountry of birth: Voporix\nFull name: Tiracora Voporix\nDate of birth: January 11th, 1990"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Tiracora Voporix\nCompany of employment: Voporix Corporation\nJob title: Software Developer\nJob description: Developing and maintaining software applications for the Voporix Corporation\nCompany address: 6001 Voporix Street, Voporix, 90210",
+      "player_representation": "Permisum Operis\n===============\nNomme Completa: Tiracora Voporix\nSocietas Operis: Voporix Corporatio\nTitulus Operis: Developer Software\nDescriptio Operis: Developenda et Retinenda Applicatio Software pro Corporatione Voporix\nAdessem societatis: 6001 Voporix Via, Voporix, 90210"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Tiracora Voporix\nEmployer Name: Voporix Corporation\nJob title: Software Developer\nJob duties: Developing and maintaining software applications for the Voporix Corporation\nSalary: 60000\nCompany address: 6001 Voporix Street, Voporix, 90210",
+      "player_representation": "Pactio Operis\n=============\nNomen Operis: Tiracora Voporix\nNomen Contractoris: Voporix Corporation\nTitulus Operis: Programmatore\nMunera Operis: Applicatio Software Developere et Conservare pro Voporix Corporatio\nStipendium: 60000\nAdessem Societas: 6001 Voporix Viae, Voporix, 90210"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Tiracora Voporix\n\nAddress: 5390 Voporix Street, Voporix, 90210\n\nRent price: 2500\n",
+      "player_representation": "Conventum Tenentiae\n===================\nNomme Complite: Tiracora Voporix\nAdessem: 5390 Voporix Viam, Voporix, 90210\nPretium locandi: 2500"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "salvem"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Addio"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Passaportem"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Documenta Identitatis"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Nomme em ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Quomodo tu es?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Ego sum bonum, gratias tibi!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Mea causa ingrediendum est opus / studium / tourismus"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Officina Immigrationis"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Volo registrare"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Messe adessem ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Non intellego"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Quites ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Adiuva"
+      }
+    ]
+  }
+}

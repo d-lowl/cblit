@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Vitron",
+    "country_description": "Vitron is a lush planet located in a distant solar system, inhabited by a species of peaceful humanoid beings.",
+    "country_currency_name": "Kroat",
+    "neighbour_country_name": "Pulon",
+    "people_description": "The people of Vitron are very welcoming and enjoy sharing stories and trading goods.",
+    "language_name": "Vitronian",
+    "language_description": "Vitronian is a unique language spoken only on Vitron, which is characterized by its complex grammar and intricate pronunciation.",
+    "example_sentence": "Holo sehen iar.",
+    "example_sentence_translation": "Let's go shopping."
+  },
+  "quenta": {
+    "full_name": "Arya Pulon",
+    "country": "Pulon",
+    "dob": "May 12, 1985",
+    "employer": "Vitron Robotics",
+    "employer_address": "Vitron, 1234 Main Street",
+    "job_title": "Robotics Engineer",
+    "job_duties": "Design, develop, and test robotic systems",
+    "salary": 100000,
+    "address": "Vitron, 5678 Side Street",
+    "rent": 2000
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Pulon\nCountry of birth: Pulon\nFull name: Arya Pulon\nDate of birth: May 12, 1985",
+      "player_representation": "Passport\n========\nCountry of issue: Pulon\nCountry of birth: Pulon\nFull name: Arya Pulon\nDate of birth: May 12, 1985"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Arya Pulon\nCompany of employment: Vitron Robotics\nJob title: Robotics Engineer\nJob description: Design, develop, and test robotic systems\nCompany address: Vitron, 1234 Main Street",
+      "player_representation": "Emarion sorondar\n================\nTrenon far: Arya Pulon\nGolharon emarion: Vironon Ronarik\nVoronharon lharon: Soronharon mehsar\nFerioron darar: Golharon, hadaron, havaron aroboron systoron\nGomarar tar: Vitron, 1234 Yolharon Sotar"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Arya Pulon\nEmployer Name: Vitron Robotics\nJob title: Robotics Engineer\nJob duties: Design, develop, and test robotic systems\nSalary: 100000\nCompany address: Vitron, 1234 Main Street",
+      "player_representation": "Golharon emarion\n================\nKolonar noson: Arya Pulon\nEmaror Noson: Vitron Robharon\nDarar arburos: Lharono Robrear\nDorhon narenon: Rharron, havharon, og lhason huvaron sistemoron\nTayonor: 100000\nKaparol tar: Vitron, 1234 Main Street"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Arya Pulon\n\nAddress: Vitron, 5678 Side Street\n\nRent price: 2000\n",
+      "player_representation": "Trenondar berasor\n=================\nNoson tar: Arya Pulon\nOran tar: Vitron, 5678 Tev\u00e9r Nar\nHokasor ronh: 2000"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Gellit"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Abiten"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Trenondar"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Trenondar beras"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Noson tar ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Gelon pote?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Amon beon ben, thonkena!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Ar borondar nie estero darar ema/lharon/havaron"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Dondar emarion"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Namor batar korondar"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Oran tar..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Amon nie yararon"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Tare ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Sarayono"
+      }
+    ]
+  }
+}

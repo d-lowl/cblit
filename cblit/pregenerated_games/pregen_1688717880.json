@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Porvenir",
+    "country_description": "Porvenir is a peaceful and prosperous region on the planet of Gilette, known for its lush forests and friendly inhabitants.",
+    "country_currency_name": "Gilette Dollar",
+    "neighbour_country_name": "Ventur",
+    "people_description": "The people of Porvenir are known for their hospitality and kindness. They are also incredibly creative and love to explore the unknown.",
+    "language_name": "Lingua de Porvenir",
+    "language_description": "Lingua de Porvenir is a beautiful language with its own unique alphabet, grammar, and pronunciation. It has numerous dialects and is spoken by the people of Porvenir.",
+    "example_sentence": "Todos somos uno.",
+    "example_sentence_translation": "We are all one."
+  },
+  "quenta": {
+    "full_name": "Sophia Jones",
+    "country": "Ventur",
+    "dob": "02/15/1983",
+    "employer": "Porvenir Media Group",
+    "employer_address": "20 Main Street, Porvenir",
+    "job_title": "Content Editor",
+    "job_duties": "Edit and optimize content for web and print publications, manage content creation processes, and lead team of junior content creators.",
+    "salary": 75000,
+    "address": "5 Elm Street, Porvenir",
+    "rent": 1500
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Ventur\nCountry of birth: Ventur\nFull name: Sophia Jones\nDate of birth: 02/15/1983",
+      "player_representation": "Passport\n========\nCountry of issue: Ventur\nCountry of birth: Ventur\nFull name: Sophia Jones\nDate of birth: 02/15/1983"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Sophia Jones\nCompany of employment: Porvenir Media Group\nJob title: Content Editor\nJob description: Edit and optimize content for web and print publications, manage content creation processes, and lead team of junior content creators.\nCompany address: 20 Main Street, Porvenir",
+      "player_representation": "Permiso de trabajo\n==================\nNombre completo: Sophia Jones\nCompa\u00f1\u00eda de empleo: Grupo de Medios Porvenir\nT\u00edtulo de trabajo: Editor de contenido\nDescripci\u00f3n del trabajo: Editar y optimizar el contenido para publicaciones web y de impresi\u00f3n, administrar procesos de creaci\u00f3n de contenido y liderar un equipo de creadores de contenido junior.\nDirecci\u00f3n de la compa\u00f1\u00eda: 20 Main Street, Porvenir"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Sophia Jones\nEmployer Name: Porvenir Media Group\nJob title: Content Editor\nJob duties: Edit and optimize content for web and print publications, manage content creation processes, and lead team of junior content creators.\nSalary: 75000\nCompany address: 20 Main Street, Porvenir",
+      "player_representation": "Acuerdo de empleo\n=================\nNombre de empleado: Sophia Jones\nNombre del empleador: Grupo Medios Porvenir\nT\u00edtulo de trabajo: Editor de contenido\nDuties de empleo: Editar y optimizar contenido para publicaciones web y de impresi\u00f3n, administrar los procesos de creaci\u00f3n de contenido y dirigir un equipo de creadores de contenido junior.\nSalario: 75000\nDirecci\u00f3n de la compa\u00f1\u00eda: 20 Calle Principal, Porvenir"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Sophia Jones\n\nAddress: 5 Elm Street, Porvenir\n\nRent price: 1500\n",
+      "player_representation": "Acuerdo de Arrendamiento\n========================\nNombre Completo: Sophia Jones\nDirecci\u00f3n: 5 Calle Elm, Porvenir\nPrecio de alquiler: 1500"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Hola"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Adi\u00f3s"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Pasaporte"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Documentos de identidad"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Mi nombre es ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "\u00bfC\u00f3mo est\u00e1s?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Estoy bien, \u00a1gracias!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Mi raz\u00f3n para entrar es trabajo/estudio/turismo"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Oficina de inmigraci\u00f3n"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Quiero registrarme"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Mi direcci\u00f3n es ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "No entiendo"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "\u00bfQu\u00e9 es ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Ayuda"
+      }
+    ]
+  }
+}

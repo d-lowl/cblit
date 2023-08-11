@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Anestar",
+    "country_description": "Anestar is a small planet located in the outer reaches of the galaxy. It is a peaceful place, where the inhabitants live in harmony with nature and each other. The people of Anestar are friendly and welcoming to visitors.",
+    "country_currency_name": "Anestar Credits",
+    "neighbour_country_name": "Zebulon",
+    "people_description": "The people of Anestar are an ancient race, with a long and proud history. They are spiritual people, and believe in the power of the cosmos and the natural world. They are also highly intelligent and technologically advanced.",
+    "language_name": "Anestari",
+    "language_description": "Anestari is the native language of the people of Anestar. It is a complex language, with a unique grammar and a large vocabulary. It is spoken by the people of Anestar, and is rarely heard elsewhere.",
+    "example_sentence": "Gastrata Anestar!",
+    "example_sentence_translation": "Welcome to Anestar!"
+  },
+  "quenta": {
+    "full_name": "Tovar Biel",
+    "country": "Zebulon",
+    "dob": "July 12, 2000",
+    "employer": "Anestar Industries",
+    "employer_address": "6th & Main Street, Anestar",
+    "job_title": "Software Engineer",
+    "job_duties": "Developing software applications",
+    "salary": 60000,
+    "address": "123 Main Street, Anestar",
+    "rent": 1300
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Zebulon\nCountry of birth: Zebulon\nFull name: Tovar Biel\nDate of birth: July 12, 2000",
+      "player_representation": "Passport\n========\nCountry of issue: Zebulon\nCountry of birth: Zebulon\nFull name: Tovar Biel\nDate of birth: July 12, 2000"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Tovar Biel\nCompany of employment: Anestar Industries\nJob title: Software Engineer\nJob description: Developing software applications\nCompany address: 6th & Main Street, Anestar",
+      "player_representation": "Permiso de Labora\n=================\nNoma Plena: Tovar Biel\nEmpresa de labora: Industrias Anestar\nTitulo de Trabajo: Ingeniero de Software\nDescripci\u00f3n de trabajo: Desarrollo de aplicaciones de software\nAdres de la compania: 6th & Calle Main, Anestar"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Tovar Biel\nEmployer Name: Anestar Industries\nJob title: Software Engineer\nJob duties: Developing software applications\nSalary: 60000\nCompany address: 6th & Main Street, Anestar",
+      "player_representation": "Kontrata de Labora\n==================\nNon di Emplea: Tovar Biel\nNombe de Empleador: Industrias Anestar\nTitulo de labore: Injenioro de Software\nResponsas de Labora: Desevolpi aplicasiones de software\nSalario: 60000\nAdres de Compania: 6ta & Calle Main, Anestar"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Tovar Biel\n\nAddress: 123 Main Street, Anestar\n\nRent price: 1300\n",
+      "player_representation": "Kontrata di Loyo\n================\nNoma Plena: Tovar Biel\nAdres: 123 Main Street, Anestar\nPrecio di loyo: 1300"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Lerata"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Faria"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Pasaporta"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Documenta identita"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Me noma es ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Keru laia?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Mei buen, grasias!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Mai raziona entra es labora/estuda/tursim"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Ofis imigra"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Me vole registra"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Me adres es ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Mei no entiende"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Keru ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Aida"
+      }
+    ]
+  }
+}

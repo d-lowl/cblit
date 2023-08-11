@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Namadah",
+    "country_description": "Namadah is a small, lush planet located near the outer rim of the known universe. It is covered in lush green forests and its inhabitants are peaceful and friendly.",
+    "country_currency_name": "Namadah Credits",
+    "neighbour_country_name": "Ozalar",
+    "people_description": "The people of Namadah are tall and slender, with almond-shaped eyes and fair skin. They are known for their love of learning and exploration.",
+    "language_name": "Namdese",
+    "language_description": "Namdese is a unique language that combines elements of many different languages, with its own unique quirks and rules. It is spoken by all the inhabitants of Namadah.",
+    "example_sentence": "Namadah yah nenu",
+    "example_sentence_translation": "Peace be upon you"
+  },
+  "quenta": {
+    "full_name": "Kulak Ozalar",
+    "country": "Ozalar",
+    "dob": "07/09/1987",
+    "employer": "Namadah Public Works",
+    "employer_address": "31 High Street, Namadah",
+    "job_title": "Public Works Engineer",
+    "job_duties": "Design and implement public works projects, such as roads, bridges, and dams.",
+    "salary": 30000,
+    "address": "7 Oak Street, Namadah",
+    "rent": 1400
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Ozalar\nCountry of birth: Ozalar\nFull name: Kulak Ozalar\nDate of birth: 07/09/1987",
+      "player_representation": "Passport\n========\nCountry of issue: Ozalar\nCountry of birth: Ozalar\nFull name: Kulak Ozalar\nDate of birth: 07/09/1987"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Kulak Ozalar\nCompany of employment: Namadah Public Works\nJob title: Public Works Engineer\nJob description: Design and implement public works projects, such as roads, bridges, and dams.\nCompany address: 31 High Street, Namadah",
+      "player_representation": "Namdahast nekonu\n================\nNamam nulak: Kulak Ozalar\nNamadah atastu yamahast nekonu\nVamnekonuw jatah: Wudem Namdahast nekonu\nJeppan namdahast: Nekonu namdahyam jatam, amdanam nekonu namdahyam alam, ase namdahyam bamdam.\nNamtekyam tekonu: 31 Nehyam Kyam, Namdahyam"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Kulak Ozalar\nEmployer Name: Namadah Public Works\nJob title: Public Works Engineer\nJob duties: Design and implement public works projects, such as roads, bridges, and dams.\nSalary: 30000\nCompany address: 31 High Street, Namadah",
+      "player_representation": "Kemdahyam tekonu\n================\nEmdahyam nekonu: Kulak Ozalar\nKemdahyam Kemdobah: Namdahast Publikahast\nNemdahast nekonu: Pemdahyam wukyam nedakam\nMondahyam ayninom: Namdahast konam nekonu nahyam, konu nekonu yaham, nekonu nahyam tekonu, ayninom tekonu.\nTahadyam: 30000\nTekonah tekonu: 31 Yahmah Dessyam, Namdahyam"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Kulak Ozalar\n\nAddress: 7 Oak Street, Namadah\n\nRent price: 1400\n",
+      "player_representation": "Tekonu nahyamtam\n================\nKulam namam: Kulak Ozalar\nDessyam: 7 Okyam Seetyam, Namdahyam\nNahyamtam tahtam: 1400"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Namah"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Namunah"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Pasnamdah"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Dokamnamdah tekonu"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Munam namah ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Namah yah na?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Namah yah nenu hahka, namadah yah nenu!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Munam kem namtekem namte nahekam namte luta/haham/namdaham"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Namdahyam tekonu"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Kamyan namtekem namte yamte"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Munam dessyam ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Namah yah nenu namtekem nahekam"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Namah ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Namu"
+      }
+    ]
+  }
+}

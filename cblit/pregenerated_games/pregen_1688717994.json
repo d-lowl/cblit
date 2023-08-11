@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Tutalli",
+    "country_description": "Tutalli is a lush planet located in a distant galaxy. It is home to a diverse array of alien species, including the Uthalli, who are the native inhabitants of the planet.",
+    "country_currency_name": "Tutalli Credit",
+    "neighbour_country_name": "Terethi",
+    "people_description": "The Uthalli are a friendly and peaceful people who value hospitality and kindness. They have a deep respect for nature and the planet they inhabit.",
+    "language_name": "Uthalli",
+    "language_description": "Uthalli is a complex language with many nuances and subtle meanings. It is spoken by the Uthalli people and has a rich history of storytelling.",
+    "example_sentence": "Tutalli yarunu shali.",
+    "example_sentence_translation": "The planet Tutalli is beautiful."
+  },
+  "quenta": {
+    "full_name": "Karina Gorgon",
+    "country": "Terethi",
+    "dob": "21/07/1990",
+    "employer": "Tutalli Investment Group",
+    "employer_address": "Tutalli Main Street, Tutalli, Tutalli",
+    "job_title": "Account Manager",
+    "job_duties": "Manage client accounts, liaise with stakeholders, develop new strategies and conduct research",
+    "salary": 40000,
+    "address": "Tutalli High Street, Tutalli, Tutalli",
+    "rent": 1000
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Terethi\nCountry of birth: Terethi\nFull name: Karina Gorgon\nDate of birth: 21/07/1990",
+      "player_representation": "Passport\n========\nCountry of issue: Terethi\nCountry of birth: Terethi\nFull name: Karina Gorgon\nDate of birth: 21/07/1990"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Karina Gorgon\nCompany of employment: Tutalli Investment Group\nJob title: Account Manager\nJob description: Manage client accounts, liaise with stakeholders, develop new strategies and conduct research\nCompany address: Tutalli Main Street, Tutalli, Tutalli",
+      "player_representation": "Uthalu Padhithi\n===============\nIbada mi: Karina Gorgon\nYurunu Tutalli Investhithi Groupu\nUthi uthikara: Uthaani Uthirikaar\nUthathu padhikka: Nilaanaa uthikaariyaa uthi uthaarikka, idupu uthaarikka uthu uthi uthaarikka, nyaayanga uthaarikka uthu uthi uthuvaarikka uthiyaa uthi uthiyum uthiyum uthiyum aadhaara uthiyum.\nYomari preethi: Tutalli mukhahari naahari, Tutalli, Tutalli"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Karina Gorgon\nEmployer Name: Tutalli Investment Group\nJob title: Account Manager\nJob duties: Manage client accounts, liaise with stakeholders, develop new strategies and conduct research\nSalary: 40000\nCompany address: Tutalli Main Street, Tutalli, Tutalli",
+      "player_representation": "Uthuyaa uthalaya\n================\nHithalaaa ibada: Karina Gorgon\nUthiyu Uthuyaa: Tutalli uthalaya Padhithi\nUthi uthaari: Paayuraa uthaalamikka\nUthuyaa uthalaya: Thakautha uthaarikka huldaadu, uthuvaa kiilaaraa, aaribada niyyaa uthalaya uthi niyaaya niyyaa uthi uthaarikka\nUthalli: Uthalli Puthaalu\nSarana ibada: Tutalli ndara aarina, Tutalli, Tutalli"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Karina Gorgon\n\nAddress: Tutalli High Street, Tutalli, Tutalli\n\nRent price: 1000\n",
+      "player_representation": "Uthallema Thaallu\n=================\nGubu ibada: Karina Gorgon\nIbada: Tutalli Uthalu Oolu, Tutalli, Tutalli\nUthariyanaa thallu: 1000"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Haliyo"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Shiyo"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Miyuddi"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Budhuyaa hulda"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Ibada mi ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Usho yazu?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Miyaso, gashiya!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Aaribada uthu uthi uthaarikka uthiyaa/niyaaya/naadu"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Preethi bhaalu"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Ibadiyaa thiibinu"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Ibada naahari ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Ithu maamuwa"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Eshu ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Uvathu"
+      }
+    ]
+  }
+}

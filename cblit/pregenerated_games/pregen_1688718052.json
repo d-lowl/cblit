@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Kandar",
+    "country_description": "Kandar is a small planet located in the distant galaxy of the Milky Way. It is a peaceful and welcoming place, with a wide range of flora and fauna, and a diverse range of cultures and languages.",
+    "country_currency_name": "Kandar Credits",
+    "neighbour_country_name": "Gitbar",
+    "people_description": "Kandarians are friendly and welcoming people, with a deep respect for their culture and traditions. They have a strong sense of community and are very protective of their environment.",
+    "language_name": "Gandaric",
+    "language_description": "Gandaric is a unique language, spoken only by the people of Kandar. It is a mixture of several languages, both ancient and modern, and is full of colorful phrases and words.",
+    "example_sentence": "Vor chaharii!",
+    "example_sentence_translation": "Welcome!"
+  },
+  "quenta": {
+    "full_name": "John Smith",
+    "country": "Gitbar",
+    "dob": "01/01/2010",
+    "employer": "Kandar Tech",
+    "employer_address": "123 Main St, Kandar",
+    "job_title": "Software Engineer",
+    "job_duties": "Developing software solutions to improve efficiency and customer satisfaction",
+    "salary": 80000,
+    "address": "456 Broadway St, Kandar",
+    "rent": 2000
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Gitbar\nCountry of birth: Gitbar\nFull name: John Smith\nDate of birth: 01/01/2010",
+      "player_representation": "Passport\n========\nCountry of issue: Gitbar\nCountry of birth: Gitbar\nFull name: John Smith\nDate of birth: 01/01/2010"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: John Smith\nCompany of employment: Kandar Tech\nJob title: Software Engineer\nJob description: Developing software solutions to improve efficiency and customer satisfaction\nCompany address: 123 Main St, Kandar",
+      "player_representation": "Vor vuai apliasii!\n==================\nVor namenseii: John Smith\nVor kandar tech efarii apliasii!\nVor yufiasii muftii komukanorii!\nNakasii vuai vosinii: Develepii solusii karilorii tai melorii efarii apliasii ai kumetorii satisifesii\nKompanii adresai: 123 Main St, Kandar"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: John Smith\nEmployer Name: Kandar Tech\nJob title: Software Engineer\nJob duties: Developing software solutions to improve efficiency and customer satisfaction\nSalary: 80000\nCompany address: 123 Main St, Kandar",
+      "player_representation": "Vor efarii kamonia!\n===================\nKamonia namenii: John Smith!\nKandar Tech Vor Faiemii!\nVor naikorii yusofvai ekinai!\nVor tasii lokomar: Kibivuai lofikomar apliasii kovuai ebmafarii naki kunomaria naki klapiri vuai!\nVor salaraa: 80000\nVor adresai kompani: 123 Main St, Kandar"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: John Smith\n\nAddress: 456 Broadway St, Kandar\n\nRent price: 2000\n",
+      "player_representation": "Vor gurtalesorii kariti!\n========================\nVor namilorii: John Smith!\nVor adresai: 456 Broadway St, Kandar\nVor goramii: 2000"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Vor hanorii!"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Vor dahama!"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Vor pasasorii!"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Vor kariti dakomenii!"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Vor namenii...!"
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Vor hanorii mavenii?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Hanorii anorii, dahama!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Vor teret yu erei nio vuai/sarai/gandarii!"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Vor imagrasorii nakasii!"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Vor wenai nio karitai!"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Vor adresai ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Vor erei nio vaerii!"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Vor esii...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Vor rahanii!"
+      }
+    ]
+  }
+}

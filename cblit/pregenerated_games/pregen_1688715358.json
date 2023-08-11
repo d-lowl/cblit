@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Kor-Terra",
+    "country_description": "A vibrant and diverse planet located in the Gamma Quadrant",
+    "country_currency_name": "Chronara",
+    "neighbour_country_name": "Om-Gori",
+    "people_description": "Kor-Terra is home to a variety of species, all of whom live in harmony and mutual respect.",
+    "language_name": "Kor-Terrean",
+    "language_description": "Kor-Terrean is a beautiful and complex language that is composed of a combination of spoken words and gestures.",
+    "example_sentence": "Gor-shiyo vin-tor",
+    "example_sentence_translation": "We are one"
+  },
+  "quenta": {
+    "full_name": "Kasim Bhathe",
+    "country": "Om-Gori",
+    "dob": "01/01/1990",
+    "employer": "Kor-Terra Technologies",
+    "employer_address": "24 Space Way, Kor-Terra",
+    "job_title": "Software Engineer",
+    "job_duties": "Developing software solutions for the company",
+    "salary": 80000,
+    "address": "112 Galactic Rd, Kor-Terra",
+    "rent": 1500
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Om-Gori\nCountry of birth: Om-Gori\nFull name: Kasim Bhathe\nDate of birth: 01/01/1990",
+      "player_representation": "Passport\n========\nCountry of issue: Om-Gori\nCountry of birth: Om-Gori\nFull name: Kasim Bhathe\nDate of birth: 01/01/1990"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Kasim Bhathe\nCompany of employment: Kor-Terra Technologies\nJob title: Software Engineer\nJob description: Developing software solutions for the company\nCompany address: 24 Space Way, Kor-Terra",
+      "player_representation": "Kor-Turi sha-mey-teh\n====================\nKor-Turi namu: Kasim Bhathe\nKor-Turi kah-teh reh-loy-bo-meh-ta: Kor-Terra Technologies\nKor-Turi sha-meh-deh-geh: Pa-Va-Pay-Tey\nKor-Turi soh-yey-sha-mey-teh: ho-ro-geh-teh-meh-ta soh-fo-weh-ro reh-loy-bo-meh-ta\nKor-Turi quey-pei-sah: 24 mey-teh-kaa-geh, Kor-Turi"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Kasim Bhathe\nEmployer Name: Kor-Terra Technologies\nJob title: Software Engineer\nJob duties: Developing software solutions for the company\nSalary: 80000\nCompany address: 24 Space Way, Kor-Terra",
+      "player_representation": "Kor-Turi reh-loy-bo-meh-ta\n==========================\nKor-Turi Shey-moh Bha-theh\nKor-Turi reh-loy-bo-meh-ta: Kor-Terra Technologies\nKor-Turi ta-vo-pa-geh: yu-teh-ni-kah seh-ta-neh\nKor-Turi sha-meh-teh-kho-yo: meh-sho-rah-fey-ta sha-meh-teh-fey meh-sho-yeh-fa-ta ra-fey-ta reh-loy-bo-meh-ta\nKor-Turi sha-mey-peh-bo-meh-ta: 80000\nKor-Turi nei-geh: 24 Space Way, Kor-Terra"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Kasim Bhathe\n\nAddress: 112 Galactic Rd, Kor-Terra\n\nRent price: 1500\n",
+      "player_representation": "Kor-Turi her-gah kah-keh\n========================\nKor-Turi bham-kaisim kut-bhathe\nKor-Turi mey-teh-zheh: 112 Galactic Rd, Kor-Terra\nKor-Turi her-gah dah-mah-tho"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Kor-Terrean"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Aya-ta"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Kor-Turi"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Kor-Turi bey-dro"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Kor-Turi to-shiyo ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Kor-Turi mo-shiyo?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Kor-Turi ra-shiyo, te-diyo!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Kor-Turi bey-dro zi-ree ra-fey-ta mey-sho-kho/mey-sho-yin/reh-shen"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Kor-Turi kho-pei-geh"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Kor-Turi bey-dro ya-sho-ri"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Kor-Turi mey-teh-zheh ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Kor-Turi mey-sho-ga-vin"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Kor-Turi shin-teh ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Kor-Turi ha-sho-ya"
+      }
+    ]
+  }
+}

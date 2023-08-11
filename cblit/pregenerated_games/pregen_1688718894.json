@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Rorgina",
+    "country_description": "A small planet located in a distant solar system, Rorgina is a peaceful, prosperous world populated by a friendly, welcoming people.",
+    "country_currency_name": "Rorgonian Digho",
+    "neighbour_country_name": "Tranima",
+    "people_description": "The people of Rorgina are a diverse group of friendly and kind-hearted individuals, who value friendship and loyalty.",
+    "language_name": "Rorgonian",
+    "language_description": "Rorgonian is a melodic language, with a complex grammar and a large vocabulary.",
+    "example_sentence": "Emu kio oju.",
+    "example_sentence_translation": "May peace prevail."
+  },
+  "quenta": {
+    "full_name": "Tranima Smith",
+    "country": "Tranima",
+    "dob": "01/01/1990",
+    "employer": "Rorgina Consulting",
+    "employer_address": "123 Rorgina Street, Rorgina",
+    "job_title": "Marketing Consultant",
+    "job_duties": "Developing marketing strategies and creating materials for clients",
+    "salary": 80000,
+    "address": "456 Rorgina Street, Rorgina",
+    "rent": 1500
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Tranima\nCountry of birth: Tranima\nFull name: Tranima Smith\nDate of birth: 01/01/1990",
+      "player_representation": "Passport\n========\nCountry of issue: Tranima\nCountry of birth: Tranima\nFull name: Tranima Smith\nDate of birth: 01/01/1990"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Tranima Smith\nCompany of employment: Rorgina Consulting\nJob title: Marketing Consultant\nJob description: Developing marketing strategies and creating materials for clients\nCompany address: 123 Rorgina Street, Rorgina",
+      "player_representation": "Lebeninyu Gopteru\n=================\nVimitona Tranima Smith\nGopoeru Unoheban Rorgina: Rorginyaeu Konsulinu\nGobitetu: Obirefonu Rivefuhin\nOpelebenu: Pufutero komieh marketyu rorgopru jefo jimoeh hanou rorgopru kefo klientenu\nUvofa komona: 123 Rorgina Uvafo, Rorgina"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Tranima Smith\nEmployer Name: Rorgina Consulting\nJob title: Marketing Consultant\nJob duties: Developing marketing strategies and creating materials for clients\nSalary: 80000\nCompany address: 123 Rorgina Street, Rorgina",
+      "player_representation": "Unoheban Retyo\n==============\nElyan Rivaoma: Tranima Smith\nBinopeh Rorgina: Rorgina Hyorjoh\nRirtofey: Oghorik Yeruromot\nIpilu tureu: Dopuhefir tahoprotu sefibupru efim vuigir mu jedihopru\nFikhuve: 80000\nFirofuna uvofa: 123 Rorgina Fudau, Rorgina"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Tranima Smith\n\nAddress: 456 Rorgina Street, Rorgina\n\nRent price: 1500\n",
+      "player_representation": "Veklenon Oijavu\n===============\nTahnoa Tranima Smith\nUvofa mi: 456 Hiforgo Rorgina, Rorgina\nUjeya Vigjen: 1500"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Haiyo"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Adeo"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Sulvumo"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Hegopri vuja"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Rivaoma ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Esua aiwa?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Yaea eiwa, eoahat!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Rivaomu mefiro komieh gopteru/kitojeu/sulopru"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Kesduryo Heve"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Rivaomu mefiro koheji"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Uvofa mi ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Nefoa nifasou"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Urova o ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Ejbo"
+      }
+    ]
+  }
+}

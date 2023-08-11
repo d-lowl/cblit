@@ -1,0 +1,103 @@
+{
+  "country": {
+    "country_name": "Krylos",
+    "country_description": "Krylos is a small, isolated planet in the outer reaches of the galaxy. It is known for its lush jungles and towering mountains. It is inhabited by a peaceful, tribal people who have a strong connection to nature.",
+    "country_currency_name": "Krylian Credits",
+    "neighbour_country_name": "Valdron",
+    "people_description": "The natives of Krylos are a peaceful, tribal people who live in small villages scattered throughout the planet. They are fiercely independent and very protective of their culture and traditions.",
+    "language_name": "Krylian",
+    "language_description": "Krylian is the language spoken by the natives of Krylos. It is a complex, tonal language with many unique idioms and expressions.",
+    "example_sentence": "Tulipa zelama gafata.",
+    "example_sentence_translation": "The sun sets on the horizon."
+  },
+  "quenta": {
+    "full_name": "Mira Seron",
+    "country": "Valdron",
+    "dob": "03/18/1983",
+    "employer": "Krylos Technologies",
+    "employer_address": "910 Main Street, Krylos",
+    "job_title": "Software Engineer",
+    "job_duties": "Developing and maintaining software applications, troubleshooting and debugging applications, and ensuring applications meet user requirements.",
+    "salary": 80000,
+    "address": "823 Pearl Street, Krylos",
+    "rent": 2200
+  },
+  "documents": [
+    {
+      "officer_representation": "Passport\n========\nCountry of issue: Valdron\nCountry of birth: Valdron\nFull name: Mira Seron\nDate of birth: 03/18/1983",
+      "player_representation": "Passport\n========\nCountry of issue: Valdron\nCountry of birth: Valdron\nFull name: Mira Seron\nDate of birth: 03/18/1983"
+    },
+    {
+      "officer_representation": "Work Permit\n===========\nFull Name: Mira Seron\nCompany of employment: Krylos Technologies\nJob title: Software Engineer\nJob description: Developing and maintaining software applications, troubleshooting and debugging applications, and ensuring applications meet user requirements.\nCompany address: 910 Main Street, Krylos",
+      "player_representation": "Permeso de Laboro\n=================\nPlena Nomo: Mira Seron\nKompanio de laboro: Krylos Teknologioj\nTitulo de laboro: Injenioro software\nDescripto de Laboro: Desvelopar e mantener aplicatos software, troubleshooting e debugging aplicatos, e asicurar que aplicatos satisfice requisitos utente.\nAdreso de la kompanio: 910 Main Street, Krylos"
+    },
+    {
+      "officer_representation": "Employment Agreement\n====================\nEmployee Name: Mira Seron\nEmployer Name: Krylos Technologies\nJob title: Software Engineer\nJob duties: Developing and maintaining software applications, troubleshooting and debugging applications, and ensuring applications meet user requirements.\nSalary: 80000\nCompany address: 910 Main Street, Krylos",
+      "player_representation": "Kontrata Labore\n===============\nNomo de Labore: Mira Seron\nNomo di Laboreto: Teknologion Krylian\nTitulo de laboro: Injeniero de Software\nLaboro Devivo: Krea e mantene aplikas de softvaro, solva problemos e debuja aplikas, e sekura ke aplikas satisfa bezonas de usores.\nSalario: 80000\nFirmao adresata: 910 Strato Percipa, Krylos"
+    },
+    {
+      "officer_representation": "Tenancy Agreement\n=================\nFull Name: Mira Seron\n\nAddress: 823 Pearl Street, Krylos\n\nRent price: 2200\n",
+      "player_representation": "Kontrato de pruntipreno\n=======================\nPlena Nomo: Mira Seron\nAdreso: 823 Perlo Strato, Krylos\nPrenprezo: 2200"
+    }
+  ],
+  "phrasebook": {
+    "phrases": [
+      {
+        "english": "Hello",
+        "conlang": "Haloa"
+      },
+      {
+        "english": "Goodbye",
+        "conlang": "Aduu"
+      },
+      {
+        "english": "Passport",
+        "conlang": "Pasaporta"
+      },
+      {
+        "english": "Identity documents",
+        "conlang": "Dokumento identitata"
+      },
+      {
+        "english": "My name is ...",
+        "conlang": "Mi nomata estas ..."
+      },
+      {
+        "english": "How are you?",
+        "conlang": "Kiel vi fartas?"
+      },
+      {
+        "english": "I am good, thank you!",
+        "conlang": "Mi bonas, dankon!"
+      },
+      {
+        "english": "My reason to enter is work/study/tourism",
+        "conlang": "Mia kialo eniri estas laboro/studo/turismo"
+      },
+      {
+        "english": "Immigration office",
+        "conlang": "Ofice migrado"
+      },
+      {
+        "english": "I want to register",
+        "conlang": "Mi volas registri"
+      },
+      {
+        "english": "My address is ...",
+        "conlang": "Mi adresata estas ..."
+      },
+      {
+        "english": "I do not understand",
+        "conlang": "Mi ne komprenas"
+      },
+      {
+        "english": "What is ...?",
+        "conlang": "Kio estas ...?"
+      },
+      {
+        "english": "Help",
+        "conlang": "Helpo"
+      }
+    ]
+  }
+}
